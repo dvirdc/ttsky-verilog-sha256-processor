@@ -5,7 +5,12 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = tt_um_sha256_processor_dvirdc.v \
+                  top_uart_sha256.v \
+                  sha256_processor.v \
+                  sha256_core.v \
+                  uart_rx_core.v \
+                  uart_tx_core.v
 
 ifneq ($(GATES),yes)
 
