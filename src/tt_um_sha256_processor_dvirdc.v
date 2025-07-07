@@ -13,10 +13,9 @@ module tt_um_sha256_processor_dvirdc (
     
     wire uart_rx;  
     wire uart_tx;
-    wire led0;  
 
     assign uart_rx = ui_in[3];
-    assign uart_tx = uo_out[4];
+    assign uo_out[4] = uart_tx;
 
     assign uo_out[7:5] = 3'b000;
     assign uo_out[3:0] = 4'b0000;
@@ -31,9 +30,5 @@ module tt_um_sha256_processor_dvirdc (
         .uart_rx(uart_rx),
         .uart_tx(uart_tx)
     );
-
-    // Debug LED: toggles when a hash is completed (optional enhancement)
-    // You can wire this to the `done` signal from the processor internally if desired
-    assign led0 = uart_tx; // Visual activity on TX as heartbeat/debug
 
 endmodule
