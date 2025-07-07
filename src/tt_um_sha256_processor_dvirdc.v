@@ -24,7 +24,7 @@ module tt_um_sha256_processor_dvirdc (
 
     wire internal_rst = ~rst_n;
 
-    top_uart_sha256 top (
+    top_uart_sha256_v2 top (
         .clk(clk),
         .rst(internal_rst),
         .uart_rx(uart_rx),

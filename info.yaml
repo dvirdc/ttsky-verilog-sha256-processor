@@ -18,7 +18,7 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_sha256_processor_dvirdc.v"
-    - "top_uart_sha256.v"
+    - "top_uart_sha256_v2.v"
     - "sha256_processor.v"
     - "sha256_core_v2.v"
     - "uart_rx_core.v"
