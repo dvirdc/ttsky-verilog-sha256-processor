@@ -10,7 +10,7 @@ VERILATOR_FLAGS = --cc --exe --build -Wall -Wno-fatal --trace --timing --assert 
 EXECUTABLE = obj_dir/Vsha256_processor_tb
 
 # Verilog sources (don't modify sha256_core.v)
-VERILOG_SOURCES = sha256_processor.v sha256_core.v sha256_processor_tb.v
+VERILOG_SOURCES = sha256_processor.v sha256_core.v sha256_core_v2.v sha256_processor_tb.v
 
 all: $(EXECUTABLE)
 
