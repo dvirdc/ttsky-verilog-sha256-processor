@@ -5,8 +5,7 @@ module sha256_core_v2 (
     input         rst,
     input         start,
     input  [511:0] block_in,
-    input  [255:0] hash_init,    // Initial hash (for chaining)
-    input         use_init,      // 1 = use hash_init, 0 = use IV
+    input         first_run,     // 0 = use existing state, 1 = use IV
     output reg [255:0] hash_out,
     output reg    ready
 );
@@ -91,10 +90,12 @@ module sha256_core_v2 (
                 IDLE: begin
                     if (start) begin
                         ready <= 1'b0;
-                        if (use_init) begin
-                            {h0,h1,h2,h3,h4,h5,h6,h7} <= hash_init;
-                        end else begin
+                        // Initialize working variables for compression.
+                        if (first_run) begin
                             {h0,h1,h2,h3,h4,h5,h6,h7} <= {H0_INIT,H1_INIT,H2_INIT,H3_INIT,H4_INIT,H5_INIT,H6_INIT,H7_INIT};
+                            {a,b,c,d,e,f,g,h} <= {H0_INIT,H1_INIT,H2_INIT,H3_INIT,H4_INIT,H5_INIT,H6_INIT,H7_INIT};
+                        end else begin
+                            {a,b,c,d,e,f,g,h} <= {h0,h1,h2,h3,h4,h5,h6,h7};
                         end
                         t <= 7'b0;
                         state <= PREP;
@@ -107,9 +108,6 @@ module sha256_core_v2 (
                         w[t] <= block_in[511 - 32*t -: 32];
                         t <= t + 1;
                     end else begin
-                        // Initial message schedule is ready, initialize working variables for compression.
-                        a <= h0; b <= h1; c <= h2; d <= h3;
-                        e <= h4; f <= h5; g <= h6; h <= h7;
                         t <= 7'b0; // Reset counter for compression rounds
                         state <= COMP;
                     end

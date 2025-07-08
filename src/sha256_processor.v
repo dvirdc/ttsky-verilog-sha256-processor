@@ -32,8 +32,7 @@ module sha256_processor (
     wire         core_ready;
     reg          core_start;
     reg  [511:0] core_block;
-    reg  [255:0] core_hash_init;
-    reg          core_use_init;
+    reg          core_first_run;
     reg          core_busy;
     // Previous value of core_ready to detect rising edge (completion)
     reg          core_ready_prev;
@@ -43,14 +42,12 @@ module sha256_processor (
         .rst(rst),
         .start(core_start),
         .block_in(core_block),
-        .hash_init(core_hash_init),
-        .use_init(core_use_init),
+        .first_run(core_first_run),
         .hash_out(core_hash_out),
         .ready(core_ready)
     );
 
-    reg [255:0] hash_state;
-    assign hash_out = hash_state;
+    assign hash_out = core_hash_out;
     assign done = (state == DONE);
 
     reg [63:0] total_bits;
@@ -67,11 +64,9 @@ module sha256_processor (
             block_ready <= 0;
             core_start <= 0;
             core_block <= 0;
-            core_hash_init <= 0;
-            core_use_init <= 0;
+            core_first_run <= 0;
             core_busy <= 0;
             core_ready_prev <= 0;
-            hash_state <= 256'h6a09e667bb67ae853c6ef372a54ff53a510e527f9b05688c1f83d9ab5be0cd19;
             total_bits <= 0;
             seen_last <= 0;
             need_length_block <= 0;
@@ -80,7 +75,7 @@ module sha256_processor (
             case (state)
                 IDLE: begin
                     if (start) begin
-                        hash_state <= 256'h6a09e667bb67ae853c6ef372a54ff53a510e527f9b05688c1f83d9ab5be0cd19;
+                        core_first_run <= 1;
                         state <= LOAD;
                         byte_index <= 0;
                         total_bits <= 0;
@@ -152,19 +147,17 @@ module sha256_processor (
                     // Issue a new block to the core only when it is not busy.
                     if (block_ready && !core_busy) begin
                         core_block <= block_buffer;
-                        core_hash_init <= hash_state;
-                        core_use_init <= 1;
                         core_start <= 1;
                         block_ready <= 0;
                         core_busy <= 1;   // Core is now busy with this block
                     end else begin
+                        core_first_run <= 0;
                         core_start <= 0;
                     end
 
                     // Detect rising edge of core_ready (block just finished)
                     if (core_ready && !core_ready_prev) begin
                         core_busy <= 0;           // Core is no longer busy
-                        hash_state <= core_hash_out;  // Update hash chain
 
                         if (seen_last && need_length_block) begin
                             /*
