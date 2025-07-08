@@ -6,9 +6,9 @@ SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = tt_um_sha256_processor_dvirdc.v \
-                  top_uart_sha256.v \
+                  top_uart_sha256_v2.v \
                   sha256_processor.v \
-                  sha256_core.v \
+                  sha256_core_v2.v \
                   uart_rx_core.v \
                   uart_tx_core.v
 
