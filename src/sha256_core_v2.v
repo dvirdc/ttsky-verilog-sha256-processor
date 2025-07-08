@@ -47,7 +47,7 @@ module sha256_core_v2 (
 
     // State machine
     reg [1:0] state;
-    localparam IDLE = 2'd0, PREP = 2'd1, COMP = 2'd2, DONE = 2'd3;
+    localparam IDLE = 2'd0, COMP = 2'd1, DONE = 2'd2;
 
     // Corrected, portable syntax for circular buffer indexing
     wire [3:0] w_idx_m2   = t - 7'd2;
@@ -109,18 +109,24 @@ module sha256_core_v2 (
                         end else begin
                             {a,b,c,d,e,f,g,h} <= {h0,h1,h2,h3,h4,h5,h6,h7};
                         end
+                        // Load the first 16 words of the message block into the circular buffer.
+                        w[0] <= block_in[511 - 32*0 -: 32];
+                        w[1] <= block_in[511 - 32*1 -: 32];
+                        w[2] <= block_in[511 - 32*2 -: 32];
+                        w[3] <= block_in[511 - 32*3 -: 32];
+                        w[4] <= block_in[511 - 32*4 -: 32];
+                        w[5] <= block_in[511 - 32*5 -: 32];
+                        w[6] <= block_in[511 - 32*6 -: 32];
+                        w[7] <= block_in[511 - 32*7 -: 32];
+                        w[8] <= block_in[511 - 32*8 -: 32];
+                        w[9] <= block_in[511 - 32*9 -: 32];
+                        w[10] <= block_in[511 - 32*10 -: 32];
+                        w[11] <= block_in[511 - 32*11 -: 32];
+                        w[12] <= block_in[511 - 32*12 -: 32];
+                        w[13] <= block_in[511 - 32*13 -: 32];
+                        w[14] <= block_in[511 - 32*14 -: 32];
+                        w[15] <= block_in[511 - 32*15 -: 32];
                         t <= 7'b0;
-                        state <= PREP;
-                    end
-                end
-
-                PREP: begin
-                    // Load the first 16 words of the message block into the circular buffer.
-                    if (t < 16) begin
-                        w[t] <= block_in[511 - 32*t -: 32];
-                        t <= t + 1;
-                    end else begin
-                        t <= 7'b0; // Reset counter for compression rounds
                         state <= COMP;
                     end
                 end
