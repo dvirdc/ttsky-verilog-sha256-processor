@@ -6,7 +6,7 @@ module sha256_core_v2 (
     input         start,
     input  [511:0] block_in,
     input         first_run,     // 0 = use existing state, 1 = use IV
-    output reg [255:0] hash_out,
+    output [255:0] hash_out,
     output reg    ready
 );
 
@@ -69,6 +69,9 @@ module sha256_core_v2 (
     wire [31:0] maj = (a & b) ^ (a & c) ^ (b & c);
     wire [31:0] T2 = S0 + maj;
 
+    // The additions from COMP are now registered in h0-h7. Output the final hash.
+    assign hash_out = {h0, h1, h2, h3, h4, h5, h6, h7};
+
     // ─────────────────────────────────────────────────────────────
     // 3. Helper Functions
     // ─────────────────────────────────────────────────────────────
@@ -83,7 +86,6 @@ module sha256_core_v2 (
         if (rst) begin
             state <= IDLE;
             ready <= 1'b0;
-            hash_out <= 256'b0;
             t <= 7'b0;
 
             a <= 0; b <= 0; c <= 0; d <= 0;
@@ -165,8 +167,7 @@ module sha256_core_v2 (
                 end
 
                 DONE: begin
-                    // The additions from COMP are now latched in h0-h7. Output the final hash.
-                    hash_out <= {h0, h1, h2, h3, h4, h5, h6, h7};
+                    // The additions from COMP are now registered in h0-h7. Set ready bit.
                     ready <= 1'b1;
                     if (!start) begin
                         state <= IDLE;
