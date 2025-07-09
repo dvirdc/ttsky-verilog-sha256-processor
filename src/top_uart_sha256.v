@@ -7,7 +7,7 @@ module top_uart_sha256 (
     output       uart_tx
 );
 
-    parameter CLK_FREQ = 100_000_000;
+    parameter CLK_FREQ = 27_000_000;
     parameter BAUD     = 115200;
     localparam BAUD_DIV = CLK_FREQ / BAUD;
 
@@ -62,7 +62,7 @@ module top_uart_sha256 (
     reg [7:0] byte_counter;
     reg [6:0] send_index;
 
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= IDLE;
             data_valid <= 0;

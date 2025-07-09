@@ -17,7 +17,7 @@ module uart_tx_core #(parameter BAUD_DIV = 868) (  // 868 = 100_000_000 / 115200
     reg [15:0] baud_cnt = 0;
     reg [9:0] shift_reg;
 
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             tx <= 1;
             tx_busy <= 0;

@@ -57,11 +57,12 @@ module sha256_processor (
 
     integer i;
 
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= IDLE;
             byte_index <= 0;
             block_ready <= 0;
+            block_buffer <= 512'b0;
             core_start <= 0;
             core_block <= 0;
             core_first_run <= 0;

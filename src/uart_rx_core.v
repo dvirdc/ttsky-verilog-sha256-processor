@@ -14,12 +14,13 @@ module uart_rx_core #(parameter BAUD_DIV = 868)(
     reg [15:0] baud_cnt;
     reg       rx_d, rx_dd;
 
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= IDLE;
             bit_cnt <= 0;
             baud_cnt <= 0;
             rx_valid <= 0;
+            rx_data <= 0;
         end else begin
             rx_d <= rx;
             rx_dd <= rx_d;

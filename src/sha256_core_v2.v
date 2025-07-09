@@ -79,12 +79,24 @@ module sha256_core_v2 (
     // ─────────────────────────────────────────────────────────────
     // 4. Main State Machine
     // ─────────────────────────────────────────────────────────────
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= IDLE;
             ready <= 1'b0;
             hash_out <= 256'b0;
             t <= 7'b0;
+
+            a <= 0; b <= 0; c <= 0; d <= 0;
+            e <= 0; f <= 0; g <= 0; h <= 0;
+            
+            h0 <= 0; h1 <= 0; h2 <= 0; h3 <= 0; 
+            h4 <= 0; h5 <= 0; h6 <= 0; h7 <= 0;
+
+            w[0] <= 0; w[1] <= 0; w[2] <= 0; w[3] <= 0;
+            w[4] <= 0; w[5] <= 0; w[6] <= 0; w[7] <= 0;
+            w[8] <= 0; w[9] <= 0; w[10] <= 0; w[11] <= 0;
+            w[12] <= 0; w[13] <= 0; w[14] <= 0; w[15] <= 0;
+
         end else begin
             case (state)
                 IDLE: begin
