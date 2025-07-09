@@ -31,7 +31,6 @@ module sha256_processor (
     wire [255:0] core_hash_out;
     wire         core_ready;
     reg          core_start;
-    reg  [511:0] core_block;
     reg          core_first_run;
     reg          core_busy;
     // Previous value of core_ready to detect rising edge (completion)
@@ -41,7 +40,7 @@ module sha256_processor (
         .clk(clk),
         .rst(rst),
         .start(core_start),
-        .block_in(core_block),
+        .block_in(block_buffer),
         .first_run(core_first_run),
         .hash_out(core_hash_out),
         .ready(core_ready)
@@ -64,7 +63,6 @@ module sha256_processor (
             block_ready <= 0;
             block_buffer <= 512'b0;
             core_start <= 0;
-            core_block <= 0;
             core_first_run <= 0;
             core_busy <= 0;
             core_ready_prev <= 0;
@@ -147,7 +145,6 @@ module sha256_processor (
                 HASH: begin
                     // Issue a new block to the core only when it is not busy.
                     if (block_ready && !core_busy) begin
-                        core_block <= block_buffer;
                         core_start <= 1;
                         block_ready <= 0;
                         core_busy <= 1;   // Core is now busy with this block
