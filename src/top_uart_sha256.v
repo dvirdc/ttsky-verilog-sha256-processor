@@ -59,7 +59,7 @@ module top_uart_sha256 (
     // State machine
     reg [2:0] state;
     localparam IDLE=0, RECEIVE=1, WAIT_DONE=2, SEND=3, DONE=4;
-    reg [7:0] byte_counter;
+    // reg [7:0] byte_counter;
     reg [6:0] send_index;
 
     always @(posedge clk or posedge rst) begin
@@ -69,7 +69,7 @@ module top_uart_sha256 (
             data_last <= 0;
             start_hash <= 0;
             tx_start <= 0;
-            byte_counter <= 0;
+            // byte_counter <= 0;
             send_index <= 0;
         end else begin
             tx_start <= 0;
@@ -80,21 +80,24 @@ module top_uart_sha256 (
             case (state)
                 IDLE: begin
                     if (rx_valid && rx_data == 8'h01) begin // Start command
-                        byte_counter <= 0;
+                        start_hash <= 1;
+                        // byte_counter <= 0;
                         state <= RECEIVE;
                     end
                 end
 
                 RECEIVE: begin
                     if (rx_valid) begin
-                        data_in <= rx_data;
                         data_valid <= 1;
-                        byte_counter <= byte_counter + 1;
-                        if (rx_data == 8'hFF) begin
+                        if (rx_data == 8'hFF) begin   // terminator
                             data_last <= 1;
-                            start_hash <= 1;
-                            state <= WAIT_DONE;
+                            state     <= WAIT_DONE;
+                        end else begin
+                            data_in <= rx_data;
+                            // data_valid <= 1;
+                            // byte_counter <= byte_counter + 1;
                         end
+                        
                     end
                 end
 

@@ -86,8 +86,8 @@ module sha256_processor (
 
                 LOAD: begin
                     if (data_valid && byte_index < BLOCK_SIZE) begin
-                        block_buffer[511 - byte_index*8 -: 8] <= data_in;
-                        total_bits <= total_bits + 8;
+                        // block_buffer[511 - byte_index*8 -: 8] <= data_in;
+                        // total_bits <= total_bits + 8;
                         
                         if (data_last) begin
                             seen_last <= 1;
@@ -98,10 +98,12 @@ module sha256_processor (
                                 state <= HASH;
                                 need_length_block <= 1;
                             end else begin
-                                byte_index <= byte_index + 1; // Point to position for 0x80
+                                // byte_index <= byte_index + 1; // Point to position for 0x80
                                 state <= PAD;
                             end
                         end else begin
+                            block_buffer[511 - byte_index*8 -: 8] <= data_in;
+                            total_bits <= total_bits + 8;
                             byte_index <= byte_index + 1;
                             if (byte_index + 1 == BLOCK_SIZE) begin
                                 // Block is full with data, need to hash it
