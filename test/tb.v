@@ -22,6 +22,9 @@ module tb ();
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
+  wire uart_tx = uo_out[4];
+  wire uart_rx = ui_in[3];
+
   // Replace tt_um_example with your module name:
   tt_um_sha256_processor_dvirdc user_project (
       .ui_in  (ui_in),    // Dedicated inputs
