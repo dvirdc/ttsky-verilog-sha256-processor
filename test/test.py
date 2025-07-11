@@ -38,34 +38,33 @@ async def uart_read_byte(dut) -> int:
     Timing: centre-sampling, so we wait half a bit after the start edge,
     then exactly one bit-period between subsequent samples.
     """
-    # Extract UART TX from bit 4 of uo_out
-    def get_uart_tx():
-        return (int(dut.uo_out.value) >> 4) & 1
+    # Create a signal for UART TX bit
+    uart_tx_bit = dut.uart_tx
 
     # ── wait for falling edge of start bit ──
-    while get_uart_tx() == 1:  # Wait for start bit (falling edge)
-        await ClockCycles(dut.clk, 1)
+    await FallingEdge(uart_tx_bit)
     
     # to middle of start bit
     await ClockCycles(dut.clk, BIT_PERIOD_CYCLES // 2)
     
     # Verify we're still in start bit
     await ReadOnly()
-    if get_uart_tx() != 0:
+    if int(uart_tx_bit.value) != 0:
         dut._log.warning("Start bit verification failed")
 
     # ── data bits (LSB first) ───────────────────────────
     val = 0
     for i in range(8):
+        # Move to middle of next data bit
         await ClockCycles(dut.clk, BIT_PERIOD_CYCLES)
         await ReadOnly()
-        bit = get_uart_tx()
+        bit = int(uart_tx_bit.value)
         val |= bit << i  # LSB first
         
     # ── stop bit (should be high) ──
     await ClockCycles(dut.clk, BIT_PERIOD_CYCLES)
     await ReadOnly()
-    if get_uart_tx() != 1:
+    if int(uart_tx_bit.value) != 1:
         dut._log.warning("Stop bit should be high")
         
     dut._log.info(f"[UART RX] Received byte: 0x{val:02X} ('{chr(val) if 32 <= val <= 126 else '?'}')")
