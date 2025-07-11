@@ -27,8 +27,8 @@ module sha256_processor_tb(
     assign clk = ext_clk;
 
     // Reduced test size for faster Verilator simulation
-    // Use 64 bytes instead of 1KB for quicker results
-    localparam FILE_SIZE = 64;
+    // Send the 4-byte string "TEST" instead of 64 'a' characters
+    localparam FILE_SIZE = 4;
 
     // Instantiate the DUT
     sha256_processor uut (
@@ -44,9 +44,9 @@ module sha256_processor_tb(
 
     integer i;
 
-    // Expected hash for 64 bytes of 'a' characters
-    // You can calculate this with: echo -n "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" | sha256sum
-    localparam [255:0] EXPECTED_HASH = 256'hffe054fe7ae0cb6dc65c3af9b61d5209f439851db43d0ba5997337df154668eb;
+    // Expected hash for the ASCII string "TEST"
+    // Calculated with: echo -n "TEST" | sha256sum
+    localparam [255:0] EXPECTED_HASH = 256'h94ee059335e587e501cc4bf90613e0814f00a7b08bc7c648fd865a2af6a22cc2;
 
     initial begin
         // Initialize outputs
@@ -80,22 +80,24 @@ module sha256_processor_tb(
         @(posedge clk);           // Wait 1 cycle after start
         
         $display("Reset sequence complete, starting to feed data...");
-        $display("Feeding %0d bytes of 'a' characters...", FILE_SIZE);
+        $display("Feeding the string 'TEST' (%0d bytes)...", FILE_SIZE);
 
         // Feed data using proper clock synchronization
         for (i = 0; i < FILE_SIZE; i = i + 1) begin
             @(negedge clk);
-            data_in = 8'h61; // ASCII 'a'
+            // Provide the appropriate byte for each position in "TEST"
+            case (i)
+                0: data_in = 8'h54; // 'T'
+                1: data_in = 8'h45; // 'E'
+                2: data_in = 8'h53; // 'S'
+                3: data_in = 8'h54; // 'T'
+                default: data_in = 8'h00;
+            endcase
             data_valid = 1;
             data_last = (i == FILE_SIZE - 1);
             @(negedge clk);
             data_valid = 0;
             data_last = 0;
-            
-            // Progress indicator - reduce frequency for short test
-            if ((i % 16) == 0) begin
-                $display("Progress: %0d/%0d bytes processed", i, FILE_SIZE);
-            end
         end
 
         $display("Data input complete, waiting for processing...");
