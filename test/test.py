@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import ClockCycles, FallingEdge, ReadOnly
+from cocotb.triggers import ClockCycles, FallingEdge, ReadOnly, RisingEdge
 import hashlib
 
 BIT_PERIOD_CYCLES = 868          # 100 MHz → 115 200 baud
@@ -38,23 +38,37 @@ async def uart_read_byte(dut) -> int:
     Timing: centre-sampling, so we wait half a bit after the start edge,
     then exactly one bit-period between subsequent samples.
     """
-    tx = dut.uart_tx
+    # Extract UART TX from bit 4 of uo_out
+    def get_uart_tx():
+        return (int(dut.uo_out.value) >> 4) & 1
 
     # ── wait for falling edge of start bit ──
-    await FallingEdge(tx)
-
+    while get_uart_tx() == 1:  # Wait for start bit (falling edge)
+        await ClockCycles(dut.clk, 1)
+    
     # to middle of start bit
     await ClockCycles(dut.clk, BIT_PERIOD_CYCLES // 2)
+    
+    # Verify we're still in start bit
+    await ReadOnly()
+    if get_uart_tx() != 0:
+        dut._log.warning("Start bit verification failed")
 
-    # ── data bits ───────────────────────────
+    # ── data bits (LSB first) ───────────────────────────
     val = 0
     for i in range(8):
-        await ReadOnly()
-        val |= int(tx.value) << i
         await ClockCycles(dut.clk, BIT_PERIOD_CYCLES)
-
-    # ── stop bit (ignore value, just wait) ──
+        await ReadOnly()
+        bit = get_uart_tx()
+        val |= bit << i  # LSB first
+        
+    # ── stop bit (should be high) ──
     await ClockCycles(dut.clk, BIT_PERIOD_CYCLES)
+    await ReadOnly()
+    if get_uart_tx() != 1:
+        dut._log.warning("Stop bit should be high")
+        
+    dut._log.info(f"[UART RX] Received byte: 0x{val:02X} ('{chr(val) if 32 <= val <= 126 else '?'}')")
     return val
 
 async def uart_read_string(dut, length: int) -> str:
