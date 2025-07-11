@@ -64,6 +64,7 @@ module top_uart_sha256 (
     localparam IDLE=0, RECEIVE=1, WAIT_DONE=2, SEND=3, DONE=4;
     // reg [7:0] byte_counter;
     reg [6:0] send_index;
+    reg tx_initiated;
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin
@@ -74,6 +75,7 @@ module top_uart_sha256 (
             tx_start <= 0;
             // byte_counter <= 0;
             send_index <= 0;
+            tx_initiated <= 0;
         end else begin
             tx_start <= 0;
             data_valid <= 0;
@@ -112,11 +114,14 @@ module top_uart_sha256 (
                 end
 
                 SEND: begin
-                    if (!tx_busy) begin
+                    if (!tx_busy && !tx_initiated) begin
                         tx_data <= to_ascii(hash_out[255 - send_index*4 -: 4]);
                         tx_start <= 1;
+                        tx_initiated <= 1;
                         send_index <= send_index + 1;
                         if (send_index == 63) state <= DONE;
+                    end else if (tx_busy) begin
+                        tx_initiated <= 0;
                     end
                 end
 
