@@ -86,7 +86,8 @@ module sha256_processor (
 
                 LOAD: begin
                     if (data_valid && byte_index < BLOCK_SIZE) begin
-                        // block_buffer[511 - byte_index*8 -: 8] <= data_in;
+                        // block_buffer[511 - byte_index*8 -: 8] <= data_in; // this works on verilator but not on icarus
+                        // byte_index <= byte_index + 1;
                         // total_bits <= total_bits + 8;
                         
                         if (data_last) begin

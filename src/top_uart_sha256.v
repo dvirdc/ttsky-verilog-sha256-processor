@@ -1,5 +1,8 @@
 `timescale 1ns/1ps
-
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTH */
+/* verilator lint_off CASEINCOMPLETE */
+/* verilator lint_off UNUSEDPARAM */
 module top_uart_sha256 (
     input        clk,
     input        rst,

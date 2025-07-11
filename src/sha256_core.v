@@ -1,5 +1,8 @@
 `timescale 1ns/1ps
-
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTH */
+/* verilator lint_off CASEINCOMPLETE */
+/* verilator lint_off UNUSEDPARAM */
 module sha256_core (
     input         clk,
     input         rst,
