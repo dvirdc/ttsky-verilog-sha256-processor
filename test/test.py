@@ -103,7 +103,7 @@ async def test_project(dut):
     await ClockCycles(dut.clk, 20)
 
     # UART TX (bit 4 of uo_out) should idle high
-    assert ((int(dut.uo_out.value) >> 4) & 1) == 1, "TX not idle high"
+    assert dut.uart_tx.value == 1, "TX not idle high"
 
     # prepare RX idle
     await uart_set_rx(dut, 1)
