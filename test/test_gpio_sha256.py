@@ -85,7 +85,7 @@ async def push_message(dut, payload: bytes):
             strobe |= (1 << LAST_BIT)
         dut.uio_in.value = strobe
         dut.ui_in.value = byte
-        dut._log.info(f"uio_in: {dut.uio_in.value}")
+        # dut._log.info(f"uio_in: {dut.uio_in.value}")
 
         await RisingEdge(dut.clk)      # one full clock of VALID/LAST high
         dut.uio_in.value = 0           # de-assert
