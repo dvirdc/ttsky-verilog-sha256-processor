@@ -11,22 +11,41 @@ module tt_um_sha256_processor_dvirdc (
     input  wire       rst_n
 );
     
-    wire uart_rx;  
-    wire uart_tx;
+    // wire uart_rx;  
+    // wire uart_tx;
 
-    assign uart_rx = ui_in[3];
-    assign uo_out = { 3'b000, uart_tx, 4'b0000 };   // {bits[7:5], bit4, bits[3:0]}
+    // assign uart_rx = ui_in[3];
+    // assign uo_out = { 3'b000, uart_tx, 4'b0000 };   // {bits[7:5], bit4, bits[3:0]}
+    wire  busy;
+    wire  dvalid;
 
-    assign uio_out = 8'b00000000;
-    assign uio_oe = 8'b00000000;  // All pins as inputs
+    assign uio_out = {
+        4'b0000, 
+        busy, 
+        dvalid, 
+        2'b00
+    };
+    
+    assign uio_oe = 8'b0000_1100; // pins 2 and 3 are outputs
 
     wire internal_rst = ~rst_n;
 
-    top_uart_sha256 top (
+    // top_uart_sha256 top (
+    //     .clk(clk),
+    //     .rst(internal_rst),
+    //     .uart_rx(uart_rx),
+    //     .uart_tx(uart_tx)
+    // );
+
+    top_gpio_sha256 top (
         .clk(clk),
         .rst(internal_rst),
-        .uart_rx(uart_rx),
-        .uart_tx(uart_tx)
+        .din(ui_in),
+        .valid(uio_in[0]),
+        .last(uio_in[1]),
+        .busy(busy),
+        .dout(uo_out),
+        .dvalid(dvalid)
     );
 
 endmodule
