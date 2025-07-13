@@ -5,7 +5,7 @@ project:
   discord:      "dvirdc"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "SHA-256 Processor"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     20000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "4x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -19,43 +19,43 @@ project:
   source_files:
     - "tt_um_sha256_processor_dvirdc.v"
     - "top_gpio_sha256.v"
-    - "top_uart_sha256_v2.v"
-    - "top_uart_sha256.v"
+    # - "top_uart_sha256_v2.v"
+    # - "top_uart_sha256.v"
     - "sha256_processor.v"
     - "sha256_core_v2.v"
     - "sha256_core.v"
-    - "uart_rx_core.v"
-    - "uart_tx_core.v"
+    # - "uart_rx_core.v"
+    # - "uart_tx_core.v"
 
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: "UART_RX"
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "DATA_IN[0]"
+  ui[1]: "DATA_IN[1]"
+  ui[2]: "DATA_IN[2]"
+  ui[3]: "DATA_IN[3]"
+  ui[4]: "DATA_IN[4]"
+  ui[5]: "DATA_IN[5]"
+  ui[6]: "DATA_IN[6]"
+  ui[7]: "DATA_IN[7]"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: "UART_TX"
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "DATA_OUT[0]"
+  uo[1]: "DATA_OUT[1]"
+  uo[2]: "DATA_OUT[2]"
+  uo[3]: "DATA_OUT[3]"
+  uo[4]: "DATA_OUT[4]"
+  uo[5]: "DATA_OUT[5]"
+  uo[6]: "DATA_OUT[6]"
+  uo[7]: "DATA_OUT[7]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
+  uio[0]: "VALID"
+  uio[1]: "LAST"
+  uio[2]: "DVALID"
+  uio[3]: "BUSY"
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
