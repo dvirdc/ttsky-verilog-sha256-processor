@@ -29,7 +29,7 @@ from cocotb.triggers  import RisingEdge, ClockCycles
 import pdb
 
 # --------- Hardware constants -------------------------------------------------
-CLK_PERIOD_NS = 75          # 15 MHz Tiny Tapeout clock
+CLK_PERIOD_NS = 100          # 10 MHz Tiny Tapeout clock
 
 # Bit positions in the uio buses
 VALID_BIT  = 0
