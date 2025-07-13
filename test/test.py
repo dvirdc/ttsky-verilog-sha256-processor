@@ -4,8 +4,9 @@ import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles, FallingEdge, ReadOnly, RisingEdge
 import hashlib
+# import pdb
 
-BIT_PERIOD_CYCLES = 868          # 100 MHz → 115 200 baud
+BIT_PERIOD_CYCLES = 1736          # 50 MHz → 115 200 baud
 
 # ──────────────────────────────────────────────────────────────
 # UART helpers
@@ -98,12 +99,14 @@ async def test_project(dut):
     dut.ui_in.value = 0          # pull-ups not modelled
     dut.uio_in.value = 0
     dut.rst_n.value = 0
-    await ClockCycles(dut.clk, 10)
-    dut.rst_n.value = 1
     await ClockCycles(dut.clk, 20)
+    dut.rst_n.value = 1
+    await ClockCycles(dut.clk, 200)
 
+    # pdb.set_trace()
     # UART TX (bit 4 of uo_out) should idle high
-    # assert dut.uart_tx == 1, "TX not idle high"
+    assert dut.uart_tx.value == 1, "TX not idle high"
+    
 
     # prepare RX idle
     await uart_set_rx(dut, 1)
@@ -117,7 +120,7 @@ async def test_project(dut):
     
     expected_digest = hashlib.sha256(msg_bytes).hexdigest()
     dut._log.info(f"Expect digest:  {expected_digest}")
-
+    # pdb.set_trace()
     # read 64 ASCII hex chars back
     received_digest = await uart_read_string(dut, 64)
     dut._log.info(f"Got   digest:  {received_digest}")

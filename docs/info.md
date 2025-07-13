@@ -38,7 +38,7 @@ The TX line stays idle while the hash is calculated (64 + overhead cycles per 51
 
 ### Timing & area
 
-Running at 100 MHz a 1-block message is processed in ≈ 1 µs (64 cycles for the core + control overhead).  Longer messages add 64 cycles per additional block.  The design fits comfortably in Tiny Tapeout's area budget.
+Running at 50 MHz a 1-block message is processed in ≈ 1 µs (64 cycles for the core + control overhead).  Longer messages add 64 cycles per additional block.  The design fits comfortably in Tiny Tapeout's area budget.
 
 ---
 
@@ -75,4 +75,4 @@ The supplied `test.py` can be extended to feed a sample string and compare the r
 
 ## External hardware
 
-No special peripherals are required – just a **USB-UART dongle** (3.3 V level) and a 100 MHz clock provided by the Tiny Tapeout infrastructure.  A status LED can optionally be wired to `uo_out[4]` to observe TX activity.
+No special peripherals are required – just a **USB-UART dongle** (3.3 V level) and a 50 MHz clock provided by the Tiny Tapeout infrastructure.  A status LED can optionally be wired to `uo_out[4]` to observe TX activity.
