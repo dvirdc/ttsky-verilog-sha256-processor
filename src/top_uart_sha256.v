@@ -10,7 +10,7 @@ module top_uart_sha256 (
     output       uart_tx
 );
 
-    parameter CLK_FREQ = 50_000_000;
+    parameter CLK_FREQ = 25_000_000;
     parameter BAUD     = 115200;
     localparam BAUD_DIV = CLK_FREQ / BAUD;
 
