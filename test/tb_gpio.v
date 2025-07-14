@@ -22,7 +22,11 @@ module tb_gpio ();
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
-
+  // Power pins for gate-level simulation
+`ifdef GL_TEST
+  wire VPWR = 1'b1;
+  wire VGND = 1'b0;
+`endif
 
   // Replace tt_um_example with your module name:
   tt_um_sha256_processor_dvirdc user_project (
@@ -34,6 +38,11 @@ module tb_gpio ();
       .ena    (ena),      // enable - goes high when design is selected
       .clk    (clk),      // clock
       .rst_n  (rst_n)     // not reset
+`ifdef GL_TEST
+      ,
+      .VPWR   (VPWR),     // power
+      .VGND   (VGND)      // ground
+`endif
   );
 
 endmodule
