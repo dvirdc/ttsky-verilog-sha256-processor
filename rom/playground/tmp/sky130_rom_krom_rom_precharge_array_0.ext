@@ -1,0 +1,830 @@
+timestamp 1581320207
+version 8.3
+tech sky130A
+style ngspice(si)
+scale 1000 1 0.5
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_rom_krom_rom_poly_tap_3 sky130_rom_krom_rom_poly_tap_3_4 1 0 42 0 1 204
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_31 1 0 104 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_30 1 0 308 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_29 1 0 512 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_28 1 0 716 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_27 1 0 920 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_26 1 0 1124 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_25 1 0 1328 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_24 1 0 1532 0 1 0
+use sky130_rom_krom_rom_poly_tap_3 sky130_rom_krom_rom_poly_tap_3_3 1 0 1778 0 1 204
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_23 1 0 1840 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_22 1 0 2044 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_21 1 0 2248 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_20 1 0 2452 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_19 1 0 2656 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_18 1 0 2860 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_17 1 0 3064 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_16 1 0 3268 0 1 0
+use sky130_rom_krom_rom_poly_tap_3 sky130_rom_krom_rom_poly_tap_3_2 1 0 3514 0 1 204
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_15 1 0 3576 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_14 1 0 3780 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_13 1 0 3984 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_12 1 0 4188 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_11 1 0 4392 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_10 1 0 4596 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_9 1 0 4800 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_8 1 0 5004 0 1 0
+use sky130_rom_krom_rom_poly_tap_3 sky130_rom_krom_rom_poly_tap_3_1 1 0 5250 0 1 204
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_7 1 0 5312 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_6 1 0 5516 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_5 1 0 5720 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_4 1 0 5924 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_3 1 0 6128 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_2 1 0 6332 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_1 1 0 6536 0 1 0
+use sky130_rom_krom_precharge_cell sky130_rom_krom_precharge_cell_0 1 0 6740 0 1 0
+use sky130_rom_krom_rom_poly_tap_3 sky130_rom_krom_rom_poly_tap_3_0 1 0 6986 0 1 204
+port "precharge_r" 72 7005 240 7033 268 m2
+port "gate" 33 61 240 89 268 m2
+port "pre_bl31_out" 32 6862 86 6890 114 m1
+port "pre_bl30_out" 31 6658 86 6686 114 m1
+port "pre_bl29_out" 30 6454 86 6482 114 m1
+port "pre_bl28_out" 29 6250 86 6278 114 m1
+port "pre_bl27_out" 28 6046 86 6074 114 m1
+port "pre_bl26_out" 27 5842 86 5870 114 m1
+port "pre_bl25_out" 26 5638 86 5666 114 m1
+port "pre_bl24_out" 25 5434 86 5462 114 m1
+port "pre_bl23_out" 24 5126 86 5154 114 m1
+port "pre_bl22_out" 23 4922 86 4950 114 m1
+port "pre_bl21_out" 22 4718 86 4746 114 m1
+port "pre_bl20_out" 21 4514 86 4542 114 m1
+port "pre_bl19_out" 20 4310 86 4338 114 m1
+port "pre_bl18_out" 19 4106 86 4134 114 m1
+port "pre_bl17_out" 18 3902 86 3930 114 m1
+port "pre_bl16_out" 17 3698 86 3726 114 m1
+port "pre_bl15_out" 16 3390 86 3418 114 m1
+port "pre_bl14_out" 15 3186 86 3214 114 m1
+port "pre_bl13_out" 14 2982 86 3010 114 m1
+port "pre_bl12_out" 13 2778 86 2806 114 m1
+port "pre_bl11_out" 12 2574 86 2602 114 m1
+port "pre_bl10_out" 11 2370 86 2398 114 m1
+port "pre_bl9_out" 10 2166 86 2194 114 m1
+port "pre_bl8_out" 9 1962 86 1990 114 m1
+port "pre_bl7_out" 8 1654 86 1682 114 m1
+port "pre_bl6_out" 7 1450 86 1478 114 m1
+port "pre_bl5_out" 6 1246 86 1274 114 m1
+port "pre_bl4_out" 5 1042 86 1070 114 m1
+port "pre_bl3_out" 4 838 86 866 114 m1
+port "pre_bl2_out" 3 634 86 662 114 m1
+port "pre_bl1_out" 2 430 86 458 114 m1
+port "pre_bl0_out" 1 226 86 254 114 m1
+port "vdd" 34 12 -160 40 -96 m2
+node "precharge_r" 31 1375.72 7005 240 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195216 14000 0 0 0 0 0 0 0 0
+equiv "precharge_r" "gate"
+node "pre_bl31_out" 0 12.145 6862 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl30_out" 0 8.5871 6658 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl29_out" 0 8.42184 6454 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl28_out" 0 8.28158 6250 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl27_out" 0 8.17194 6046 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl26_out" 0 8.09729 5842 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl25_out" 0 8.06062 5638 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl24_out" 0 8.05345 5434 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl23_out" 0 8.05394 5126 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl22_out" 0 8.05544 4922 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl21_out" 0 8.05236 4718 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl20_out" 0 8.05075 4514 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl19_out" 0 8.05067 4310 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl18_out" 0 8.05212 4106 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl17_out" 0 8.05504 3902 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl16_out" 0 8.05345 3698 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl15_out" 0 8.05394 3390 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl14_out" 0 8.05544 3186 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl13_out" 0 8.05236 2982 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl12_out" 0 8.05075 2778 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl11_out" 0 8.05067 2574 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl10_out" 0 8.05212 2370 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl9_out" 0 8.05504 2166 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl8_out" 0 8.05345 1962 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl7_out" 0 8.05394 1654 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl6_out" 0 8.06581 1450 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl5_out" 0 8.10966 1246 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl4_out" 0 8.19099 1042 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl3_out" 0 8.30655 838 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl2_out" 0 8.45173 634 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl1_out" 0 8.62072 430 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "pre_bl0_out" 0 12.3574 226 86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1829 2448.39 12 -160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71808 6400 106496 7424 436672 13774 0 0 0 0 0 0 0 0
+node "a_60_50#" 12612 2894.48 60 50 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235455 15758 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "upper right" 11255 12966.7 0 -196 nw 0 0 0 0 4322224 15520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "gnd" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "pre_bl14_out" "upper right" 5.56203
+cap "precharge_r" "pre_bl30_out" 0.266505
+cap "pre_bl25_out" "upper right" 5.55645
+cap "pre_bl4_out" "precharge_r" 0.266505
+cap "pre_bl5_out" "precharge_r" 0.266505
+cap "pre_bl11_out" "pre_bl10_out" 5.45133
+cap "pre_bl1_out" "precharge_r" 0.266505
+cap "a_60_50#" "precharge_r" 25.685
+cap "pre_bl8_out" "upper right" 6.11671
+cap "pre_bl22_out" "precharge_r" 0.266505
+cap "pre_bl31_out" "pre_bl30_out" 5.45133
+cap "precharge_r" "pre_bl13_out" 0.266505
+cap "pre_bl2_out" "pre_bl3_out" 5.45133
+cap "pre_bl8_out" "pre_bl7_out" 3.73333
+cap "pre_bl6_out" "upper right" 5.55166
+cap "pre_bl21_out" "precharge_r" 0.266505
+cap "pre_bl0_out" "precharge_r" 0.266505
+cap "vdd" "precharge_r" 886.605
+cap "pre_bl24_out" "precharge_r" 0.266505
+cap "pre_bl6_out" "pre_bl7_out" 5.45133
+cap "pre_bl31_out" "a_60_50#" 0.513592
+cap "pre_bl20_out" "pre_bl19_out" 5.45133
+cap "pre_bl9_out" "precharge_r" 0.266505
+cap "pre_bl26_out" "a_60_50#" 0.381563
+cap "pre_bl18_out" "precharge_r" 0.266505
+cap "vdd" "pre_bl26_out" 0.496561
+cap "precharge_r" "pre_bl15_out" 0.266505
+cap "pre_bl23_out" "a_60_50#" 0.374375
+cap "precharge_r" "upper right" 437.66
+cap "pre_bl28_out" "precharge_r" 0.266505
+cap "pre_bl22_out" "pre_bl23_out" 5.45133
+cap "pre_bl7_out" "precharge_r" 0.266505
+cap "pre_bl23_out" "vdd" 0.496561
+cap "pre_bl24_out" "pre_bl23_out" 3.73333
+cap "precharge_r" "pre_bl17_out" 0.266505
+cap "pre_bl31_out" "upper right" 6.04265
+cap "a_60_50#" "pre_bl30_out" 0.370315
+cap "pre_bl4_out" "pre_bl5_out" 5.45133
+cap "pre_bl4_out" "a_60_50#" 0.386188
+cap "pre_bl26_out" "upper right" 5.51686
+cap "pre_bl5_out" "a_60_50#" 0.38073
+cap "pre_bl29_out" "precharge_r" 0.266505
+cap "pre_bl1_out" "a_60_50#" 0.371665
+cap "pre_bl12_out" "precharge_r" 0.266505
+cap "vdd" "pre_bl30_out" 0.496561
+cap "pre_bl22_out" "a_60_50#" 0.370315
+cap "pre_bl4_out" "vdd" 0.496561
+cap "a_60_50#" "pre_bl13_out" 0.38073
+cap "pre_bl5_out" "vdd" 0.496561
+cap "pre_bl1_out" "pre_bl0_out" 5.45133
+cap "pre_bl1_out" "vdd" 0.496561
+cap "pre_bl0_out" "a_60_50#" 0.514934
+cap "vdd" "a_60_50#" 77.2392
+cap "pre_bl21_out" "a_60_50#" 0.38073
+cap "pre_bl22_out" "pre_bl21_out" 5.45133
+cap "pre_bl20_out" "precharge_r" 0.266505
+cap "pre_bl22_out" "vdd" 0.496561
+cap "pre_bl23_out" "upper right" 6.11671
+cap "pre_bl24_out" "a_60_50#" 0.376134
+cap "vdd" "pre_bl13_out" 0.496561
+cap "precharge_r" "pre_bl10_out" 0.266505
+cap "pre_bl2_out" "precharge_r" 0.266505
+cap "vdd" "pre_bl21_out" 0.496561
+cap "vdd" "pre_bl0_out" 0.496561
+cap "pre_bl9_out" "a_60_50#" 0.371665
+cap "pre_bl24_out" "vdd" 0.496561
+cap "pre_bl16_out" "precharge_r" 0.266505
+cap "pre_bl11_out" "precharge_r" 0.266505
+cap "pre_bl30_out" "upper right" 5.03037
+cap "pre_bl9_out" "vdd" 0.496561
+cap "precharge_r" "pre_bl3_out" 0.266505
+cap "pre_bl18_out" "a_60_50#" 0.381563
+cap "pre_bl4_out" "upper right" 5.42179
+cap "pre_bl5_out" "upper right" 5.50474
+cap "a_60_50#" "pre_bl15_out" 0.374375
+cap "pre_bl1_out" "upper right" 4.99635
+cap "pre_bl27_out" "precharge_r" 0.266505
+cap "a_60_50#" "upper right" 1460.24
+cap "pre_bl28_out" "a_60_50#" 0.386188
+cap "pre_bl18_out" "vdd" 0.496561
+cap "pre_bl22_out" "upper right" 5.56203
+cap "pre_bl7_out" "a_60_50#" 0.374375
+cap "upper right" "pre_bl13_out" 5.56203
+cap "vdd" "pre_bl15_out" 0.496561
+cap "pre_bl21_out" "upper right" 5.56203
+cap "pre_bl0_out" "upper right" 5.83015
+cap "vdd" "upper right" 1032.91
+cap "pre_bl28_out" "vdd" 0.496561
+cap "pre_bl24_out" "upper right" 6.11671
+cap "a_60_50#" "pre_bl17_out" 0.371665
+cap "vdd" "pre_bl7_out" 0.496561
+cap "pre_bl29_out" "pre_bl30_out" 5.45133
+cap "pre_bl19_out" "precharge_r" 0.266505
+cap "pre_bl9_out" "upper right" 5.56203
+cap "pre_bl26_out" "pre_bl27_out" 5.45133
+cap "pre_bl14_out" "precharge_r" 0.266505
+cap "vdd" "pre_bl17_out" 0.496561
+cap "precharge_r" "pre_bl25_out" 0.266505
+cap "pre_bl29_out" "a_60_50#" 0.38073
+cap "pre_bl12_out" "a_60_50#" 0.386188
+cap "pre_bl12_out" "pre_bl13_out" 5.45133
+cap "pre_bl18_out" "upper right" 5.56203
+cap "pre_bl29_out" "vdd" 0.496561
+cap "pre_bl8_out" "precharge_r" 0.266505
+cap "pre_bl12_out" "vdd" 0.496561
+cap "upper right" "pre_bl15_out" 6.11671
+cap "pre_bl20_out" "a_60_50#" 0.386188
+cap "pre_bl28_out" "upper right" 5.3312
+cap "pre_bl6_out" "precharge_r" 0.266505
+cap "pre_bl2_out" "pre_bl1_out" 5.45133
+cap "pre_bl7_out" "upper right" 6.11671
+cap "a_60_50#" "pre_bl10_out" 0.381563
+cap "pre_bl18_out" "pre_bl17_out" 5.45133
+cap "pre_bl2_out" "a_60_50#" 0.381563
+cap "pre_bl26_out" "pre_bl25_out" 5.45133
+cap "pre_bl21_out" "pre_bl20_out" 5.45133
+cap "vdd" "pre_bl20_out" 0.496561
+cap "pre_bl4_out" "pre_bl3_out" 5.45133
+cap "upper right" "pre_bl17_out" 5.56203
+cap "pre_bl16_out" "a_60_50#" 0.376134
+cap "pre_bl11_out" "a_60_50#" 0.386469
+cap "vdd" "pre_bl10_out" 0.496561
+cap "pre_bl2_out" "vdd" 0.496561
+cap "a_60_50#" "pre_bl3_out" 0.386469
+cap "pre_bl16_out" "vdd" 0.496561
+cap "pre_bl11_out" "vdd" 0.496561
+cap "pre_bl29_out" "upper right" 5.19255
+cap "pre_bl29_out" "pre_bl28_out" 5.45133
+cap "pre_bl9_out" "pre_bl10_out" 5.45133
+cap "pre_bl12_out" "upper right" 5.56203
+cap "pre_bl27_out" "a_60_50#" 0.386469
+cap "vdd" "pre_bl3_out" 0.496561
+cap "vdd" "pre_bl27_out" 0.496561
+cap "pre_bl20_out" "upper right" 5.56203
+cap "pre_bl19_out" "a_60_50#" 0.386469
+cap "upper right" "pre_bl10_out" 5.56203
+cap "pre_bl2_out" "upper right" 5.16242
+cap "pre_bl31_out" "precharge_r" 0.266505
+cap "pre_bl14_out" "a_60_50#" 0.370315
+cap "pre_bl16_out" "pre_bl15_out" 3.73333
+cap "a_60_50#" "pre_bl25_out" 0.371665
+cap "vdd" "pre_bl19_out" 0.496561
+cap "pre_bl14_out" "pre_bl13_out" 5.45133
+cap "pre_bl16_out" "upper right" 6.11671
+cap "pre_bl11_out" "upper right" 5.56203
+cap "pre_bl26_out" "precharge_r" 0.266505
+cap "pre_bl3_out" "upper right" 5.30615
+cap "pre_bl14_out" "vdd" 0.496561
+cap "pre_bl8_out" "a_60_50#" 0.376134
+cap "vdd" "pre_bl25_out" 0.496561
+cap "pre_bl24_out" "pre_bl25_out" 5.45133
+cap "pre_bl6_out" "pre_bl5_out" 5.45133
+cap "pre_bl27_out" "upper right" 5.44076
+cap "pre_bl28_out" "pre_bl27_out" 5.45133
+cap "pre_bl16_out" "pre_bl17_out" 5.45133
+cap "pre_bl6_out" "a_60_50#" 0.370315
+cap "pre_bl8_out" "vdd" 0.496561
+cap "pre_bl23_out" "precharge_r" 0.266505
+cap "pre_bl18_out" "pre_bl19_out" 5.45133
+cap "pre_bl6_out" "vdd" 0.496561
+cap "pre_bl11_out" "pre_bl12_out" 5.45133
+cap "pre_bl9_out" "pre_bl8_out" 5.45133
+cap "pre_bl19_out" "upper right" 5.56203
+cap "pre_bl14_out" "pre_bl15_out" 5.45133
+cap "pre_bl5_out" "pre_bl10_out" 0.161382
+cap "pre_bl5_out" "pre_bl8_out" 0.264544
+cap "pre_bl4_out" "pre_bl10_out" 0.0990056
+cap "pre_bl4_out" "pre_bl8_out" 0.217306
+cap "pre_bl8_out" "pre_bl2_out" 0.0990056
+cap "gate" "pre_bl7_out" 0.0095964
+cap "pre_bl9_out" "pre_bl3_out" 0.0990056
+cap "pre_bl0_out" "pre_bl1_out" 10.7649
+cap "pre_bl5_out" "pre_bl12_out" 0.0326714
+cap "gate" "pre_bl3_out" 1.18479
+cap "pre_bl6_out" "pre_bl0_out" 0.131461
+cap "pre_bl1_out" "pre_bl7_out" 0.131461
+cap "pre_bl0_out" "pre_bl5_out" 0.381693
+cap "pre_bl4_out" "pre_bl0_out" 0.485203
+cap "pre_bl0_out" "pre_bl2_out" 0.630671
+cap "pre_bl1_out" "pre_bl3_out" 0.630671
+cap "gate" "pre_bl1_out" 1.26624
+cap "pre_bl0_out" "vdd" 2.44474
+cap "pre_bl5_out" "pre_bl7_out" 0.315336
+cap "pre_bl4_out" "pre_bl7_out" 0.284659
+cap "pre_bl2_out" "pre_bl7_out" 0.190846
+cap "pre_bl9_out" "pre_bl5_out" 0.217306
+cap "pre_bl9_out" "pre_bl4_out" 0.161382
+cap "pre_bl6_out" "pre_bl3_out" 0.284659
+cap "pre_bl9_out" "pre_bl2_out" 0.0326714
+cap "gate" "pre_bl6_out" 0.0943344
+cap "pre_bl5_out" "pre_bl3_out" 0.630671
+cap "pre_bl4_out" "pre_bl3_out" 10.7649
+cap "pre_bl2_out" "pre_bl3_out" 10.7649
+cap "gate" "pre_bl5_out" 1.04335
+cap "pre_bl4_out" "gate" 1.12035
+cap "gate" "pre_bl2_out" 1.23407
+cap "vdd" "pre_bl3_out" 1.07547
+cap "pre_bl6_out" "pre_bl1_out" 0.190846
+cap "gate" "vdd" -20.9932
+cap "pre_bl5_out" "pre_bl11_out" 0.0990056
+cap "pre_bl4_out" "pre_bl11_out" 0.0326714
+cap "pre_bl3_out" "pre_bl10_out" 0.0326714
+cap "pre_bl8_out" "pre_bl3_out" 0.161382
+cap "pre_bl1_out" "pre_bl5_out" 0.485203
+cap "pre_bl4_out" "pre_bl1_out" 0.569317
+cap "pre_bl1_out" "pre_bl2_out" 10.7649
+cap "pre_bl6_out" "pre_bl5_out" 5.38245
+cap "pre_bl4_out" "pre_bl6_out" 0.315336
+cap "pre_bl6_out" "pre_bl2_out" 0.242602
+cap "pre_bl1_out" "vdd" 0.873655
+cap "pre_bl0_out" "pre_bl7_out" 0.0668212
+cap "pre_bl4_out" "pre_bl5_out" 10.7649
+cap "pre_bl5_out" "pre_bl2_out" 0.569317
+cap "pre_bl4_out" "pre_bl2_out" 0.630671
+cap "pre_bl1_out" "pre_bl8_out" 0.0326714
+cap "pre_bl0_out" "pre_bl3_out" 0.569317
+cap "gate" "pre_bl0_out" 1.61373
+cap "vdd" "pre_bl5_out" 1.04836
+cap "pre_bl4_out" "vdd" 1.0875
+cap "vdd" "pre_bl2_out" 1.0053
+cap "pre_bl7_out" "pre_bl3_out" 0.242602
+cap "pre_bl15_out" "pre_bl9_out" 0.131461
+cap "pre_bl3_out" "gate" 0.25739
+cap "pre_bl7_out" "pre_bl12_out" 0.438461
+cap "pre_bl7_out" "pre_bl10_out" 0.718734
+cap "pre_bl6_out" "pre_bl8_out" 0.818336
+cap "pre_bl3_out" "pre_bl9_out" 0.0990056
+cap "pre_bl7_out" "pre_bl14_out" 0.0561047
+cap "pre_bl7_out" "vdd" 1.29193
+cap "pre_bl7_out" "gate" 1.31871
+cap "pre_bl4_out" "pre_bl8_out" 0.373092
+cap "pre_bl1_out" "pre_bl8_out" 0.0561047
+cap "pre_bl6_out" "pre_bl4_out" 0.315336
+cap "pre_bl6_out" "pre_bl1_out" 0.190846
+cap "pre_bl5_out" "pre_bl8_out" 0.45419
+cap "pre_bl7_out" "pre_bl9_out" 0.818336
+cap "pre_bl6_out" "pre_bl5_out" 5.38245
+cap "pre_bl10_out" "pre_bl8_out" 0.630671
+cap "pre_bl12_out" "pre_bl8_out" 0.485203
+cap "vdd" "pre_bl8_out" 1.29193
+cap "pre_bl6_out" "pre_bl10_out" 0.434613
+cap "pre_bl13_out" "pre_bl11_out" 0.315336
+cap "pre_bl14_out" "pre_bl8_out" 0.131461
+cap "pre_bl6_out" "pre_bl12_out" 0.198011
+cap "pre_bl6_out" "vdd" 0.968095
+cap "gate" "pre_bl8_out" 1.31826
+cap "pre_bl15_out" "pre_bl11_out" 0.242602
+cap "pre_bl4_out" "pre_bl10_out" 0.0990056
+cap "pre_bl6_out" "gate" 1.26862
+cap "pre_bl5_out" "pre_bl10_out" 0.161382
+cap "pre_bl8_out" "pre_bl9_out" 10.7649
+cap "gate" "pre_bl4_out" 0.320444
+cap "gate" "pre_bl1_out" 0.103344
+cap "pre_bl5_out" "pre_bl12_out" 0.0326714
+cap "pre_bl7_out" "pre_bl2_out" 0.190846
+cap "pre_bl6_out" "pre_bl9_out" 0.529088
+cap "pre_bl17_out" "pre_bl11_out" 0.0990056
+cap "pre_bl5_out" "gate" 0.370688
+cap "pre_bl12_out" "pre_bl10_out" 0.630671
+cap "vdd" "pre_bl10_out" 0.858632
+cap "pre_bl4_out" "pre_bl9_out" 0.161382
+cap "pre_bl12_out" "vdd" -0.191586
+cap "pre_bl14_out" "pre_bl10_out" 0.242602
+cap "pre_bl5_out" "pre_bl9_out" 0.217306
+cap "pre_bl7_out" "pre_bl11_out" 0.590399
+cap "gate" "pre_bl12_out" 0.695838
+cap "gate" "pre_bl10_out" 1.23407
+cap "gate" "vdd" 31.1881
+cap "pre_bl7_out" "pre_bl13_out" 0.16999
+cap "pre_bl7_out" "pre_bl0_out" 0.0668212
+cap "gate" "pre_bl14_out" 0.0943344
+cap "pre_bl10_out" "pre_bl9_out" 10.7649
+cap "pre_bl16_out" "pre_bl10_out" 0.0990056
+cap "pre_bl12_out" "pre_bl9_out" 0.569317
+cap "vdd" "pre_bl9_out" 0.858632
+cap "pre_bl2_out" "pre_bl8_out" 0.16999
+cap "pre_bl6_out" "pre_bl2_out" 0.242602
+cap "pre_bl14_out" "pre_bl9_out" 0.190846
+cap "gate" "pre_bl9_out" 1.26624
+cap "pre_bl3_out" "pre_bl7_out" 0.242602
+cap "pre_bl11_out" "pre_bl8_out" 0.569317
+cap "pre_bl16_out" "pre_bl9_out" 0.0326714
+cap "pre_bl13_out" "pre_bl8_out" 0.190846
+cap "pre_bl6_out" "pre_bl13_out" 0.0326714
+cap "pre_bl6_out" "pre_bl11_out" 0.322764
+cap "pre_bl4_out" "pre_bl11_out" 0.0326714
+cap "pre_bl15_out" "pre_bl8_out" 0.0668212
+cap "pre_bl6_out" "pre_bl0_out" 0.131461
+cap "pre_bl18_out" "pre_bl11_out" 0.0326714
+cap "pre_bl5_out" "pre_bl11_out" 0.0990056
+cap "gate" "pre_bl2_out" 0.184046
+cap "pre_bl3_out" "pre_bl8_out" 0.277079
+cap "pre_bl3_out" "pre_bl6_out" 0.284659
+cap "pre_bl12_out" "pre_bl11_out" 10.7649
+cap "pre_bl13_out" "pre_bl10_out" 0.284659
+cap "pre_bl10_out" "pre_bl11_out" 10.7649
+cap "pre_bl2_out" "pre_bl9_out" 0.0326714
+cap "pre_bl14_out" "pre_bl11_out" 0.284659
+cap "vdd" "pre_bl11_out" 0.858632
+cap "pre_bl15_out" "pre_bl10_out" 0.190846
+cap "pre_bl7_out" "pre_bl8_out" 7.34324
+cap "gate" "pre_bl11_out" 1.18479
+cap "pre_bl6_out" "pre_bl7_out" 10.7649
+cap "gate" "pre_bl13_out" 0.175641
+cap "gate" "pre_bl0_out" 0.0185105
+cap "pre_bl7_out" "pre_bl4_out" 0.284659
+cap "pre_bl7_out" "pre_bl1_out" 0.131461
+cap "gate" "pre_bl15_out" 0.0095964
+cap "pre_bl3_out" "pre_bl10_out" 0.0326714
+cap "pre_bl11_out" "pre_bl9_out" 0.630671
+cap "pre_bl16_out" "pre_bl11_out" 0.161382
+cap "pre_bl17_out" "pre_bl10_out" 0.0326714
+cap "pre_bl13_out" "pre_bl9_out" 0.242602
+cap "pre_bl7_out" "pre_bl5_out" 0.315336
+cap "pre_bl18_out" "pre_bl21_out" 0.284659
+cap "pre_bl20_out" "pre_bl14_out" 0.0990056
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl16_out" 1.31826
+cap "pre_bl10_out" "pre_bl17_out" 0.0326714
+cap "pre_bl22_out" "pre_bl15_out" 0.0561047
+cap "pre_bl19_out" "pre_bl15_out" 0.373092
+cap "pre_bl15_out" "pre_bl14_out" 10.7649
+cap "pre_bl21_out" "pre_bl15_out" 0.16999
+cap "pre_bl18_out" "pre_bl13_out" 0.322764
+cap "pre_bl19_out" "pre_bl12_out" 0.0326714
+cap "pre_bl12_out" "pre_bl14_out" 0.630671
+cap "pre_bl10_out" "sky130_rom_krom_precharge_cell_26/G" 0.184046
+cap "pre_bl18_out" "pre_bl16_out" 0.630671
+cap "pre_bl15_out" "pre_bl9_out" 0.131461
+cap "pre_bl20_out" "pre_bl13_out" 0.0326714
+cap "pre_bl20_out" "pre_bl16_out" 0.242602
+cap "pre_bl13_out" "pre_bl15_out" 0.630671
+cap "pre_bl13_out" "pre_bl12_out" 10.7649
+cap "pre_bl18_out" "pre_bl25_out" 0.0326714
+cap "pre_bl15_out" "pre_bl16_out" 7.34324
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl14_out" 0.858632
+cap "pre_bl12_out" "pre_bl16_out" 0.590399
+cap "pre_bl10_out" "pre_bl15_out" 0.190846
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl13_out" 0.858632
+cap "pre_bl23_out" "pre_bl17_out" 0.131461
+cap "pre_bl11_out" "pre_bl14_out" 0.284659
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl16_out" 1.29193
+cap "pre_bl8_out" "pre_bl14_out" 0.131461
+cap "pre_bl23_out" "sky130_rom_krom_precharge_cell_26/G" 0.0095964
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl17_out" 1.26624
+cap "pre_bl19_out" "pre_bl14_out" 0.161382
+cap "pre_bl13_out" "pre_bl11_out" 0.315336
+cap "pre_bl23_out" "pre_bl18_out" 0.190846
+cap "pre_bl11_out" "pre_bl16_out" 0.277079
+cap "pre_bl21_out" "pre_bl14_out" 0.0326714
+cap "pre_bl8_out" "pre_bl13_out" 0.190846
+cap "pre_bl6_out" "pre_bl13_out" 0.0326714
+cap "pre_bl18_out" "pre_bl17_out" 10.7649
+cap "pre_bl9_out" "pre_bl14_out" 0.190846
+cap "pre_bl20_out" "pre_bl17_out" 0.284659
+cap "pre_bl19_out" "pre_bl13_out" 0.0990056
+cap "pre_bl13_out" "pre_bl14_out" 10.7649
+cap "pre_bl18_out" "sky130_rom_krom_precharge_cell_26/G" 1.23407
+cap "pre_bl19_out" "pre_bl16_out" 0.284659
+cap "pre_bl17_out" "pre_bl15_out" 0.818336
+cap "pre_bl14_out" "pre_bl16_out" 0.818336
+cap "pre_bl20_out" "sky130_rom_krom_precharge_cell_26/G" 0.249926
+cap "pre_bl22_out" "pre_bl16_out" 0.131461
+cap "pre_bl21_out" "pre_bl16_out" 0.190846
+cap "pre_bl13_out" "pre_bl9_out" 0.242602
+cap "pre_bl17_out" "pre_bl12_out" 0.322764
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl15_out" 1.31871
+cap "pre_bl9_out" "pre_bl16_out" 0.0561047
+cap "pre_bl10_out" "pre_bl14_out" 0.242602
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl12_out" 0.744959
+cap "pre_bl18_out" "pre_bl20_out" 0.315336
+cap "pre_bl13_out" "pre_bl16_out" 0.718734
+cap "pre_bl17_out" "pre_bl24_out" 0.0326714
+cap "pre_bl18_out" "pre_bl15_out" 0.718734
+cap "pre_bl18_out" "pre_bl12_out" 0.198011
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl17_out" 0.858632
+cap "pre_bl20_out" "pre_bl15_out" 0.277079
+cap "pre_bl10_out" "pre_bl13_out" 0.284659
+cap "pre_bl10_out" "pre_bl16_out" 0.16999
+cap "pre_bl15_out" "pre_bl12_out" 0.569317
+cap "sky130_rom_krom_precharge_cell_25/vdd" "sky130_rom_krom_precharge_cell_26/G" 31.5975
+cap "pre_bl18_out" "pre_bl24_out" 0.0990056
+cap "pre_bl14_out" "pre_bl7_out" 0.0326714
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl18_out" 0.858632
+cap "pre_bl17_out" "pre_bl11_out" 0.0990056
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl11_out" 0.25739
+cap "pre_bl13_out" "pre_bl7_out" 0.0990056
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl8_out" 0.0185105
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl15_out" 1.29193
+cap "pre_bl17_out" "pre_bl14_out" 0.529088
+cap "sky130_rom_krom_precharge_cell_25/vdd" "pre_bl12_out" 1.05022
+cap "pre_bl18_out" "pre_bl11_out" 0.0326714
+cap "pre_bl22_out" "pre_bl17_out" 0.190846
+cap "pre_bl19_out" "pre_bl17_out" 0.315336
+cap "pre_bl19_out" "sky130_rom_krom_precharge_cell_26/G" 0.31422
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl14_out" 1.26862
+cap "pre_bl21_out" "pre_bl17_out" 0.242602
+cap "pre_bl22_out" "sky130_rom_krom_precharge_cell_26/G" 0.0943344
+cap "pre_bl21_out" "sky130_rom_krom_precharge_cell_26/G" 0.175641
+cap "pre_bl23_out" "pre_bl16_out" 0.0668212
+cap "pre_bl11_out" "pre_bl15_out" 0.242602
+cap "pre_bl17_out" "pre_bl13_out" 0.434613
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl9_out" 0.103344
+cap "pre_bl22_out" "pre_bl18_out" 0.242602
+cap "pre_bl18_out" "pre_bl19_out" 5.38245
+cap "pre_bl17_out" "pre_bl16_out" 10.7649
+cap "pre_bl8_out" "pre_bl15_out" 0.0668212
+cap "pre_bl18_out" "pre_bl14_out" 0.434613
+cap "sky130_rom_krom_precharge_cell_26/G" "pre_bl13_out" 1.23839
+cap "pre_bl24_out" "precharge_r" 1.31826
+cap "pre_bl17_out" "precharge_r" 0.103344
+cap "pre_bl23_out" "pre_bl24_out" 7.34324
+cap "pre_bl23_out" "pre_bl17_out" 0.131461
+cap "pre_bl24_out" "pre_bl19_out" 0.438461
+cap "pre_bl17_out" "pre_bl19_out" 0.315336
+cap "pre_bl24_out" "pre_bl26_out" 0.315336
+cap "pre_bl22_out" "pre_bl28_out" 0.0990056
+cap "pre_bl13_out" "pre_bl20_out" 0.0326714
+cap "pre_bl18_out" "precharge_r" 0.184046
+cap "pre_bl23_out" "pre_bl18_out" 0.190846
+cap "pre_bl24_out" "pre_bl21_out" 0.718734
+cap "pre_bl21_out" "pre_bl17_out" 0.242602
+cap "upper right" "precharge_r" 26.6838
+cap "pre_bl23_out" "upper right" 1.29193
+cap "pre_bl24_out" "pre_bl20_out" 0.590399
+cap "pre_bl17_out" "pre_bl20_out" 0.284659
+cap "pre_bl18_out" "pre_bl19_out" 5.38245
+cap "pre_bl14_out" "pre_bl19_out" 0.161382
+cap "upper right" "pre_bl19_out" 0.858632
+cap "pre_bl18_out" "pre_bl21_out" 0.284659
+cap "pre_bl25_out" "precharge_r" 0.403054
+cap "pre_bl23_out" "pre_bl25_out" 0.51713
+cap "pre_bl22_out" "pre_bl24_out" 0.818336
+cap "pre_bl14_out" "pre_bl21_out" 0.0326714
+cap "pre_bl21_out" "upper right" 0.858632
+cap "pre_bl18_out" "pre_bl20_out" 0.315336
+cap "pre_bl25_out" "pre_bl19_out" 0.0990056
+cap "pre_bl31_out" "precharge_r" 0.0095964
+cap "pre_bl24_out" "pre_bl30_out" 0.131461
+cap "pre_bl24_out" "pre_bl28_out" 0.242602
+cap "pre_bl22_out" "pre_bl17_out" 0.190846
+cap "pre_bl14_out" "pre_bl20_out" 0.0990056
+cap "upper right" "pre_bl20_out" 0.858632
+cap "pre_bl12_out" "pre_bl19_out" 0.0326714
+cap "pre_bl25_out" "pre_bl21_out" 0.217306
+cap "pre_bl22_out" "pre_bl18_out" 0.242602
+cap "pre_bl25_out" "pre_bl20_out" 0.161382
+cap "pre_bl22_out" "upper right" 0.858632
+cap "pre_bl29_out" "precharge_r" 0.175641
+cap "precharge_r" "pre_bl27_out" 0.31422
+cap "pre_bl23_out" "pre_bl29_out" 0.16999
+cap "pre_bl23_out" "pre_bl27_out" 0.373092
+cap "pre_bl24_out" "pre_bl17_out" 0.0561047
+cap "pre_bl16_out" "precharge_r" 0.0185105
+cap "pre_bl23_out" "pre_bl16_out" 0.0668212
+cap "pre_bl22_out" "pre_bl25_out" 0.264544
+cap "pre_bl16_out" "pre_bl19_out" 0.284659
+cap "pre_bl21_out" "pre_bl27_out" 0.0990056
+cap "pre_bl24_out" "pre_bl18_out" 0.16999
+cap "pre_bl20_out" "pre_bl27_out" 0.0326714
+cap "pre_bl23_out" "precharge_r" 1.31871
+cap "precharge_r" "pre_bl19_out" 1.12796
+cap "pre_bl24_out" "upper right" 1.29193
+cap "pre_bl21_out" "pre_bl16_out" 0.190846
+cap "pre_bl16_out" "pre_bl20_out" 0.242602
+cap "pre_bl23_out" "pre_bl19_out" 0.485203
+cap "pre_bl26_out" "precharge_r" 0.365952
+cap "pre_bl15_out" "pre_bl19_out" 0.217306
+cap "pre_bl21_out" "precharge_r" 1.23839
+cap "pre_bl24_out" "pre_bl25_out" 5.38245
+cap "pre_bl23_out" "pre_bl26_out" 0.45419
+cap "pre_bl22_out" "pre_bl29_out" 0.0326714
+cap "pre_bl22_out" "pre_bl27_out" 0.161382
+cap "pre_bl23_out" "pre_bl21_out" 0.630671
+cap "pre_bl26_out" "pre_bl19_out" 0.0326714
+cap "precharge_r" "pre_bl20_out" 1.19087
+cap "pre_bl31_out" "pre_bl24_out" 0.0668212
+cap "pre_bl23_out" "pre_bl20_out" 0.569317
+cap "pre_bl21_out" "pre_bl19_out" 0.630671
+cap "pre_bl22_out" "pre_bl16_out" 0.131461
+cap "pre_bl26_out" "pre_bl21_out" 0.161382
+cap "pre_bl21_out" "pre_bl15_out" 0.0990056
+cap "pre_bl20_out" "pre_bl19_out" 10.7649
+cap "pre_bl15_out" "pre_bl20_out" 0.161382
+cap "pre_bl26_out" "pre_bl20_out" 0.0990056
+cap "pre_bl21_out" "pre_bl20_out" 10.7649
+cap "pre_bl30_out" "precharge_r" 0.0943344
+cap "precharge_r" "pre_bl28_out" 0.249926
+cap "pre_bl22_out" "precharge_r" 1.26862
+cap "pre_bl22_out" "pre_bl23_out" 10.7649
+cap "pre_bl22_out" "pre_bl19_out" 0.569317
+cap "pre_bl24_out" "pre_bl29_out" 0.190846
+cap "pre_bl24_out" "pre_bl27_out" 0.284659
+cap "pre_bl23_out" "pre_bl30_out" 0.0561047
+cap "pre_bl23_out" "pre_bl28_out" 0.277079
+cap "pre_bl22_out" "pre_bl15_out" 0.0326714
+cap "pre_bl22_out" "pre_bl26_out" 0.217306
+cap "pre_bl21_out" "pre_bl28_out" 0.0326714
+cap "pre_bl22_out" "pre_bl21_out" 10.7649
+cap "pre_bl22_out" "pre_bl20_out" 0.630671
+cap "pre_bl13_out" "pre_bl19_out" 0.0990056
+cap "pre_bl22_out" "pre_bl27_out" 0.161382
+cap "pre_bl23_out" "pre_bl27_out" 0.217306
+cap "pre_bl26_out" "pre_bl24_out" 0.315336
+cap "pre_bl20_out" "pre_bl25_out" 0.161382
+cap "precharge_r" "pre_bl27_out" 0.870568
+cap "pre_bl28_out" "pre_bl27_out" 10.7649
+cap "pre_bl28_out" "pre_bl24_out" 0.242602
+cap "pre_bl30_out" "pre_bl29_out" 10.7649
+cap "pre_bl20_out" "pre_bl26_out" 0.0990056
+cap "pre_bl29_out" "pre_bl31_out" 0.630671
+cap "pre_bl29_out" "pre_bl25_out" 0.485203
+cap "upper right" "pre_bl29_out" 1.0379
+cap "pre_bl30_out" "pre_bl31_out" 10.7649
+cap "pre_bl24_out" "pre_bl27_out" 0.284659
+cap "pre_bl25_out" "pre_bl31_out" 0.262923
+cap "pre_bl30_out" "pre_bl25_out" 0.381693
+cap "upper right" "pre_bl31_out" 1.7034
+cap "pre_bl30_out" "upper right" 0.914392
+cap "pre_bl26_out" "pre_bl29_out" 0.569317
+cap "pre_bl21_out" "pre_bl25_out" 0.217306
+cap "pre_bl19_out" "pre_bl25_out" 0.0990056
+cap "upper right" "pre_bl25_out" 0.971727
+cap "pre_bl22_out" "pre_bl29_out" 0.0326714
+cap "pre_bl29_out" "pre_bl23_out" 0.0990056
+cap "pre_bl20_out" "pre_bl27_out" 0.0326714
+cap "pre_bl26_out" "pre_bl30_out" 0.485203
+cap "pre_bl29_out" "precharge_r" 0.867704
+cap "pre_bl26_out" "pre_bl31_out" 0.381693
+cap "pre_bl19_out" "pre_bl26_out" 0.0326714
+cap "pre_bl28_out" "pre_bl29_out" 10.7649
+cap "pre_bl26_out" "pre_bl21_out" 0.161382
+cap "pre_bl26_out" "upper right" 1.05763
+cap "pre_bl26_out" "pre_bl25_out" 10.7649
+cap "pre_bl30_out" "pre_bl23_out" 0.0326714
+cap "pre_bl30_out" "precharge_r" 0.862507
+cap "pre_bl22_out" "pre_bl25_out" 0.264544
+cap "precharge_r" "pre_bl31_out" 1.1896
+cap "pre_bl28_out" "pre_bl30_out" 0.630671
+cap "pre_bl25_out" "pre_bl23_out" 0.301206
+cap "precharge_r" "pre_bl25_out" 0.863181
+cap "pre_bl28_out" "pre_bl31_out" 0.569317
+cap "pre_bl29_out" "pre_bl27_out" 0.630671
+cap "upper right" "precharge_r" -40.191
+cap "pre_bl28_out" "pre_bl21_out" 0.0326714
+cap "pre_bl28_out" "upper right" 1.09971
+cap "pre_bl28_out" "pre_bl25_out" 0.569317
+cap "pre_bl24_out" "pre_bl29_out" 0.190846
+cap "pre_bl26_out" "pre_bl22_out" 0.217306
+cap "pre_bl25_out" "pre_bl18_out" 0.0326714
+cap "pre_bl30_out" "pre_bl27_out" 0.569317
+cap "pre_bl26_out" "pre_bl23_out" 0.264544
+cap "pre_bl27_out" "pre_bl31_out" 0.485203
+cap "pre_bl26_out" "precharge_r" 0.86812
+cap "pre_bl21_out" "pre_bl27_out" 0.0990056
+cap "upper right" "pre_bl27_out" 1.10378
+cap "pre_bl28_out" "pre_bl26_out" 0.630671
+cap "pre_bl25_out" "pre_bl27_out" 0.630671
+cap "pre_bl24_out" "pre_bl31_out" 0.0668212
+cap "pre_bl24_out" "pre_bl30_out" 0.131461
+cap "pre_bl28_out" "pre_bl22_out" 0.0990056
+cap "pre_bl24_out" "pre_bl25_out" 5.38245
+cap "pre_bl28_out" "pre_bl23_out" 0.161382
+cap "pre_bl28_out" "precharge_r" 0.870427
+cap "pre_bl26_out" "pre_bl27_out" 10.7649
+cap "pre_bl29_out" "precharge_r" 0.370688
+cap "pre_bl25_out" "precharge_r" 0.103344
+cap "pre_bl26_out" "precharge_r" 0.184046
+cap "pre_bl31_out" "precharge_r" 0.425304
+cap "pre_bl24_out" "precharge_r" 0.0185105
+cap "precharge_r" "pre_bl30_out" 0.406114
+cap "pre_bl28_out" "precharge_r" 0.320444
+cap "pre_bl27_out" "precharge_r" 0.25739
+cap "upper right" "precharge_r" 23.715
+merge "sky130_rom_krom_precharge_cell_19/D" "pre_bl12_out" -43.1806 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_0/vdd" "sky130_rom_krom_precharge_cell_1/vdd" -10307.9 0 0 0 0 -2699264 -39168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36992 -4352 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_1/vdd" "sky130_rom_krom_precharge_cell_2/vdd"
+merge "sky130_rom_krom_precharge_cell_2/vdd" "sky130_rom_krom_precharge_cell_3/vdd"
+merge "sky130_rom_krom_precharge_cell_3/vdd" "sky130_rom_krom_precharge_cell_4/vdd"
+merge "sky130_rom_krom_precharge_cell_4/vdd" "sky130_rom_krom_precharge_cell_5/vdd"
+merge "sky130_rom_krom_precharge_cell_5/vdd" "sky130_rom_krom_precharge_cell_6/vdd"
+merge "sky130_rom_krom_precharge_cell_6/vdd" "sky130_rom_krom_precharge_cell_7/vdd"
+merge "sky130_rom_krom_precharge_cell_7/vdd" "sky130_rom_krom_precharge_cell_8/vdd"
+merge "sky130_rom_krom_precharge_cell_8/vdd" "sky130_rom_krom_precharge_cell_9/vdd"
+merge "sky130_rom_krom_precharge_cell_9/vdd" "sky130_rom_krom_precharge_cell_10/vdd"
+merge "sky130_rom_krom_precharge_cell_10/vdd" "sky130_rom_krom_precharge_cell_11/vdd"
+merge "sky130_rom_krom_precharge_cell_11/vdd" "sky130_rom_krom_precharge_cell_12/vdd"
+merge "sky130_rom_krom_precharge_cell_12/vdd" "sky130_rom_krom_precharge_cell_13/vdd"
+merge "sky130_rom_krom_precharge_cell_13/vdd" "sky130_rom_krom_precharge_cell_14/vdd"
+merge "sky130_rom_krom_precharge_cell_14/vdd" "sky130_rom_krom_precharge_cell_15/vdd"
+merge "sky130_rom_krom_precharge_cell_15/vdd" "sky130_rom_krom_precharge_cell_16/vdd"
+merge "sky130_rom_krom_precharge_cell_16/vdd" "sky130_rom_krom_precharge_cell_17/vdd"
+merge "sky130_rom_krom_precharge_cell_17/vdd" "sky130_rom_krom_precharge_cell_18/vdd"
+merge "sky130_rom_krom_precharge_cell_18/vdd" "sky130_rom_krom_precharge_cell_19/vdd"
+merge "sky130_rom_krom_precharge_cell_19/vdd" "sky130_rom_krom_precharge_cell_20/vdd"
+merge "sky130_rom_krom_precharge_cell_20/vdd" "sky130_rom_krom_precharge_cell_21/vdd"
+merge "sky130_rom_krom_precharge_cell_21/vdd" "sky130_rom_krom_precharge_cell_22/vdd"
+merge "sky130_rom_krom_precharge_cell_22/vdd" "sky130_rom_krom_precharge_cell_23/vdd"
+merge "sky130_rom_krom_precharge_cell_23/vdd" "sky130_rom_krom_precharge_cell_24/vdd"
+merge "sky130_rom_krom_precharge_cell_24/vdd" "sky130_rom_krom_precharge_cell_25/vdd"
+merge "sky130_rom_krom_precharge_cell_25/vdd" "sky130_rom_krom_precharge_cell_26/vdd"
+merge "sky130_rom_krom_precharge_cell_26/vdd" "sky130_rom_krom_precharge_cell_27/vdd"
+merge "sky130_rom_krom_precharge_cell_27/vdd" "sky130_rom_krom_precharge_cell_28/vdd"
+merge "sky130_rom_krom_precharge_cell_28/vdd" "sky130_rom_krom_precharge_cell_29/vdd"
+merge "sky130_rom_krom_precharge_cell_29/vdd" "sky130_rom_krom_precharge_cell_30/vdd"
+merge "sky130_rom_krom_precharge_cell_30/vdd" "sky130_rom_krom_precharge_cell_31/vdd"
+merge "sky130_rom_krom_precharge_cell_31/vdd" "vdd"
+merge "vdd" "upper right"
+merge "sky130_rom_krom_precharge_cell_31/D" "pre_bl0_out" -34.931 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_5/D" "pre_bl26_out" -43.2876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_14/D" "pre_bl17_out" -43.1952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_poly_tap_3_0/gnd" "sky130_rom_krom_precharge_cell_0/gnd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_0/gnd" "sky130_rom_krom_precharge_cell_1/gnd"
+merge "sky130_rom_krom_precharge_cell_1/gnd" "sky130_rom_krom_precharge_cell_2/gnd"
+merge "sky130_rom_krom_precharge_cell_2/gnd" "sky130_rom_krom_precharge_cell_3/gnd"
+merge "sky130_rom_krom_precharge_cell_3/gnd" "sky130_rom_krom_precharge_cell_4/gnd"
+merge "sky130_rom_krom_precharge_cell_4/gnd" "sky130_rom_krom_precharge_cell_5/gnd"
+merge "sky130_rom_krom_precharge_cell_5/gnd" "sky130_rom_krom_precharge_cell_6/gnd"
+merge "sky130_rom_krom_precharge_cell_6/gnd" "sky130_rom_krom_precharge_cell_7/gnd"
+merge "sky130_rom_krom_precharge_cell_7/gnd" "sky130_rom_krom_rom_poly_tap_3_1/gnd"
+merge "sky130_rom_krom_rom_poly_tap_3_1/gnd" "sky130_rom_krom_precharge_cell_8/gnd"
+merge "sky130_rom_krom_precharge_cell_8/gnd" "sky130_rom_krom_precharge_cell_9/gnd"
+merge "sky130_rom_krom_precharge_cell_9/gnd" "sky130_rom_krom_precharge_cell_10/gnd"
+merge "sky130_rom_krom_precharge_cell_10/gnd" "sky130_rom_krom_precharge_cell_11/gnd"
+merge "sky130_rom_krom_precharge_cell_11/gnd" "sky130_rom_krom_precharge_cell_12/gnd"
+merge "sky130_rom_krom_precharge_cell_12/gnd" "sky130_rom_krom_precharge_cell_13/gnd"
+merge "sky130_rom_krom_precharge_cell_13/gnd" "sky130_rom_krom_precharge_cell_14/gnd"
+merge "sky130_rom_krom_precharge_cell_14/gnd" "sky130_rom_krom_precharge_cell_15/gnd"
+merge "sky130_rom_krom_precharge_cell_15/gnd" "sky130_rom_krom_rom_poly_tap_3_2/gnd"
+merge "sky130_rom_krom_rom_poly_tap_3_2/gnd" "sky130_rom_krom_precharge_cell_16/gnd"
+merge "sky130_rom_krom_precharge_cell_16/gnd" "sky130_rom_krom_precharge_cell_17/gnd"
+merge "sky130_rom_krom_precharge_cell_17/gnd" "sky130_rom_krom_precharge_cell_18/gnd"
+merge "sky130_rom_krom_precharge_cell_18/gnd" "sky130_rom_krom_precharge_cell_19/gnd"
+merge "sky130_rom_krom_precharge_cell_19/gnd" "sky130_rom_krom_precharge_cell_20/gnd"
+merge "sky130_rom_krom_precharge_cell_20/gnd" "sky130_rom_krom_precharge_cell_21/gnd"
+merge "sky130_rom_krom_precharge_cell_21/gnd" "sky130_rom_krom_precharge_cell_22/gnd"
+merge "sky130_rom_krom_precharge_cell_22/gnd" "sky130_rom_krom_precharge_cell_23/gnd"
+merge "sky130_rom_krom_precharge_cell_23/gnd" "sky130_rom_krom_rom_poly_tap_3_3/gnd"
+merge "sky130_rom_krom_rom_poly_tap_3_3/gnd" "sky130_rom_krom_precharge_cell_24/gnd"
+merge "sky130_rom_krom_precharge_cell_24/gnd" "sky130_rom_krom_precharge_cell_25/gnd"
+merge "sky130_rom_krom_precharge_cell_25/gnd" "sky130_rom_krom_precharge_cell_26/gnd"
+merge "sky130_rom_krom_precharge_cell_26/gnd" "sky130_rom_krom_precharge_cell_27/gnd"
+merge "sky130_rom_krom_precharge_cell_27/gnd" "sky130_rom_krom_precharge_cell_28/gnd"
+merge "sky130_rom_krom_precharge_cell_28/gnd" "sky130_rom_krom_precharge_cell_29/gnd"
+merge "sky130_rom_krom_precharge_cell_29/gnd" "sky130_rom_krom_precharge_cell_30/gnd"
+merge "sky130_rom_krom_precharge_cell_30/gnd" "sky130_rom_krom_precharge_cell_31/gnd"
+merge "sky130_rom_krom_precharge_cell_31/gnd" "sky130_rom_krom_rom_poly_tap_3_4/gnd"
+merge "sky130_rom_krom_rom_poly_tap_3_4/gnd" "gnd"
+merge "sky130_rom_krom_rom_poly_tap_3_0/poly_tap" "sky130_rom_krom_precharge_cell_0/G" -4760.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -198690 -15466 0 0 0 0 0 0 -6608 -752 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_0/G" "sky130_rom_krom_precharge_cell_1/G"
+merge "sky130_rom_krom_precharge_cell_1/G" "sky130_rom_krom_precharge_cell_2/G"
+merge "sky130_rom_krom_precharge_cell_2/G" "sky130_rom_krom_precharge_cell_3/G"
+merge "sky130_rom_krom_precharge_cell_3/G" "sky130_rom_krom_precharge_cell_4/G"
+merge "sky130_rom_krom_precharge_cell_4/G" "sky130_rom_krom_precharge_cell_5/G"
+merge "sky130_rom_krom_precharge_cell_5/G" "sky130_rom_krom_precharge_cell_6/G"
+merge "sky130_rom_krom_precharge_cell_6/G" "sky130_rom_krom_precharge_cell_7/G"
+merge "sky130_rom_krom_precharge_cell_7/G" "sky130_rom_krom_rom_poly_tap_3_1/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_3_1/poly_tap" "sky130_rom_krom_precharge_cell_8/G"
+merge "sky130_rom_krom_precharge_cell_8/G" "sky130_rom_krom_precharge_cell_9/G"
+merge "sky130_rom_krom_precharge_cell_9/G" "sky130_rom_krom_precharge_cell_10/G"
+merge "sky130_rom_krom_precharge_cell_10/G" "sky130_rom_krom_precharge_cell_11/G"
+merge "sky130_rom_krom_precharge_cell_11/G" "sky130_rom_krom_precharge_cell_12/G"
+merge "sky130_rom_krom_precharge_cell_12/G" "sky130_rom_krom_precharge_cell_13/G"
+merge "sky130_rom_krom_precharge_cell_13/G" "sky130_rom_krom_precharge_cell_14/G"
+merge "sky130_rom_krom_precharge_cell_14/G" "sky130_rom_krom_precharge_cell_15/G"
+merge "sky130_rom_krom_precharge_cell_15/G" "sky130_rom_krom_rom_poly_tap_3_2/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_3_2/poly_tap" "sky130_rom_krom_precharge_cell_16/G"
+merge "sky130_rom_krom_precharge_cell_16/G" "sky130_rom_krom_precharge_cell_17/G"
+merge "sky130_rom_krom_precharge_cell_17/G" "sky130_rom_krom_precharge_cell_18/G"
+merge "sky130_rom_krom_precharge_cell_18/G" "sky130_rom_krom_precharge_cell_19/G"
+merge "sky130_rom_krom_precharge_cell_19/G" "sky130_rom_krom_precharge_cell_20/G"
+merge "sky130_rom_krom_precharge_cell_20/G" "sky130_rom_krom_precharge_cell_21/G"
+merge "sky130_rom_krom_precharge_cell_21/G" "sky130_rom_krom_precharge_cell_22/G"
+merge "sky130_rom_krom_precharge_cell_22/G" "sky130_rom_krom_precharge_cell_23/G"
+merge "sky130_rom_krom_precharge_cell_23/G" "sky130_rom_krom_rom_poly_tap_3_3/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_3_3/poly_tap" "sky130_rom_krom_precharge_cell_24/G"
+merge "sky130_rom_krom_precharge_cell_24/G" "sky130_rom_krom_precharge_cell_25/G"
+merge "sky130_rom_krom_precharge_cell_25/G" "sky130_rom_krom_precharge_cell_26/G"
+merge "sky130_rom_krom_precharge_cell_26/G" "sky130_rom_krom_precharge_cell_27/G"
+merge "sky130_rom_krom_precharge_cell_27/G" "sky130_rom_krom_precharge_cell_28/G"
+merge "sky130_rom_krom_precharge_cell_28/G" "sky130_rom_krom_precharge_cell_29/G"
+merge "sky130_rom_krom_precharge_cell_29/G" "sky130_rom_krom_precharge_cell_30/G"
+merge "sky130_rom_krom_precharge_cell_30/G" "sky130_rom_krom_precharge_cell_31/G"
+merge "sky130_rom_krom_precharge_cell_31/G" "sky130_rom_krom_rom_poly_tap_3_4/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_3_4/poly_tap" "gate"
+merge "gate" "precharge_r"
+merge "precharge_r" "a_60_50#"
+merge "sky130_rom_krom_precharge_cell_24/D" "pre_bl7_out" -43.3684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_8/D" "pre_bl23_out" -43.3684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_17/D" "pre_bl14_out" -43.1946 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_2/D" "pre_bl29_out" -42.7931 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_28/D" "pre_bl3_out" -43.0212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_22/D" "pre_bl9_out" -43.1952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_6/D" "pre_bl25_out" -43.2842 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_15/D" "pre_bl16_out" -43.369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_21/D" "pre_bl10_out" -43.1856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_25/D" "pre_bl6_out" -43.2801 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_20/D" "pre_bl11_out" -43.1807 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_4/D" "pre_bl27_out" -43.2098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_13/D" "pre_bl18_out" -43.1856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_0/D" "pre_bl31_out" -35.3244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_9/D" "pre_bl22_out" -43.1946 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_18/D" "pre_bl13_out" -43.1853 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_29/D" "pre_bl2_out" -42.7609 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_11/D" "pre_bl20_out" -43.1806 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_3/D" "pre_bl28_out" -43.0454 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_12/D" "pre_bl19_out" -43.1807 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_27/D" "pre_bl4_out" -43.1934 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_26/D" "pre_bl5_out" -43.278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_1/D" "pre_bl30_out" -42.4567 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_10/D" "pre_bl21_out" -43.1853 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_30/D" "pre_bl1_out" -42.4165 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_23/D" "pre_bl8_out" -43.369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_7/D" "pre_bl24_out" -43.369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_precharge_cell_16/D" "pre_bl15_out" -43.3684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -784 -112 0 0 0 0 0 0 0 0 0 0
