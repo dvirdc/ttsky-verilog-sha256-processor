@@ -1,0 +1,95 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1581321264
+<< checkpaint >>
+rect -1260 -1472 2188 1668
+<< nwell >>
+rect 0 -196 928 408
+<< poly >>
+rect 60 65 90 240
+rect 776 65 806 240
+rect 60 50 806 65
+rect 61 35 806 50
+<< locali >>
+rect 139 -111 173 -95
+rect 139 -161 173 -145
+rect 343 -111 377 -95
+rect 343 -161 377 -145
+rect 547 -111 581 -95
+rect 547 -161 581 -145
+<< viali >>
+rect 139 -145 173 -111
+rect 343 -145 377 -111
+rect 547 -145 581 -111
+<< metal1 >>
+rect 226 86 254 114
+rect 430 86 458 114
+rect 634 86 662 114
+rect 124 -154 130 -102
+rect 182 -154 188 -102
+rect 328 -154 334 -102
+rect 386 -154 392 -102
+rect 532 -154 538 -102
+rect 590 -154 596 -102
+<< via1 >>
+rect 130 -111 182 -102
+rect 130 -145 139 -111
+rect 139 -145 173 -111
+rect 173 -145 182 -111
+rect 130 -154 182 -145
+rect 334 -111 386 -102
+rect 334 -145 343 -111
+rect 343 -145 377 -111
+rect 377 -145 386 -111
+rect 334 -154 386 -145
+rect 538 -111 590 -102
+rect 538 -145 547 -111
+rect 547 -145 581 -111
+rect 581 -145 590 -111
+rect 538 -154 590 -145
+<< metal2 >>
+rect 61 240 805 268
+rect 12 -102 638 -96
+rect 12 -154 130 -102
+rect 182 -154 334 -102
+rect 386 -154 538 -102
+rect 590 -154 638 -102
+rect 12 -160 638 -154
+use sky130_rom_krom_precharge_cell  sky130_rom_krom_precharge_cell_0
+timestamp 1581321262
+transform 1 0 512 0 1 0
+box 0 -212 232 184
+use sky130_rom_krom_precharge_cell  sky130_rom_krom_precharge_cell_1
+timestamp 1581321262
+transform 1 0 308 0 1 0
+box 0 -212 232 184
+use sky130_rom_krom_precharge_cell  sky130_rom_krom_precharge_cell_2
+timestamp 1581321262
+transform 1 0 104 0 1 0
+box 0 -212 232 184
+use sky130_rom_krom_rom_poly_tap_3  sky130_rom_krom_rom_poly_tap_3_0
+timestamp 1581321264
+transform 1 0 758 0 1 204
+box 0 17 66 83
+use sky130_rom_krom_rom_poly_tap_3  sky130_rom_krom_rom_poly_tap_3_1
+timestamp 1581321264
+transform 1 0 42 0 1 204
+box 0 17 66 83
+<< labels >>
+rlabel nwell s 928 408 928 408 4 upper right
+rlabel metal2 s 61 240 89 268 4 gate
+port 3 nsew
+rlabel metal2 s 777 240 805 268 4 precharge_r
+port 5 nsew
+rlabel metal1 s 226 86 254 114 4 pre_bl0_out
+port 7 nsew
+rlabel metal1 s 430 86 458 114 4 pre_bl1_out
+port 9 nsew
+rlabel metal1 s 634 86 662 114 4 pre_bl2_out
+port 11 nsew
+rlabel metal2 s 12 -160 40 -96 4 vdd
+port 13 nsew
+<< properties >>
+string FIXED_BBOX 535 -161 593 -160
+<< end >>

@@ -1,0 +1,172 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1581321264
+<< checkpaint >>
+rect -1299 -1216 4365 5497
+<< locali >>
+rect 1953 3863 1987 3879
+rect 3053 3829 3087 3863
+rect 1953 3813 1987 3829
+rect 1953 3659 1987 3675
+rect 3053 3625 3087 3659
+rect 1953 3609 1987 3625
+rect 1953 3455 1987 3471
+rect 3053 3421 3087 3455
+rect 1953 3405 1987 3421
+rect 321 60 387 94
+rect 729 60 795 94
+<< viali >>
+rect 1953 3829 1987 3863
+rect 1953 3625 1987 3659
+rect 1953 3421 1987 3455
+<< metal1 >>
+rect 1469 4209 1497 4237
+rect 2115 3952 2143 3980
+rect 2737 3952 2765 3980
+rect 1941 3863 1999 3869
+rect 1941 3860 1953 3863
+rect 1851 3832 1953 3860
+rect 1941 3829 1953 3832
+rect 1987 3829 1999 3863
+rect 1941 3823 1999 3829
+rect 1941 3659 1999 3665
+rect 1941 3656 1953 3659
+rect 1851 3628 1953 3656
+rect 1941 3625 1953 3628
+rect 1987 3625 1999 3659
+rect 1941 3619 1999 3625
+rect 1941 3455 1999 3461
+rect 1941 3452 1953 3455
+rect 1851 3424 1953 3452
+rect 1941 3421 1953 3424
+rect 1987 3421 1999 3455
+rect 1941 3415 1999 3421
+rect 2115 3256 2143 3284
+rect 2737 3256 2765 3284
+rect 298 3199 304 3251
+rect 356 3199 362 3251
+rect 502 3199 508 3251
+rect 560 3199 566 3251
+rect 706 3199 712 3251
+rect 764 3199 770 3251
+rect 910 3199 916 3251
+rect 968 3199 974 3251
+rect 316 3138 344 3199
+rect 298 3086 304 3138
+rect 356 3086 362 3138
+rect 438 3086 444 3138
+rect 496 3126 502 3138
+rect 520 3126 548 3199
+rect 724 3138 752 3199
+rect 496 3098 548 3126
+rect 496 3086 502 3098
+rect 706 3086 712 3138
+rect 764 3086 770 3138
+rect 846 3086 852 3138
+rect 904 3126 910 3138
+rect 928 3126 956 3199
+rect 904 3098 956 3126
+rect 904 3086 910 3098
+rect 127 2833 155 2861
+rect 943 2408 971 2436
+rect 127 2160 943 2188
+rect 127 1881 155 1909
+rect 943 1456 971 1484
+rect 127 844 155 872
+rect 943 222 971 250
+<< via1 >>
+rect 304 3199 356 3251
+rect 508 3199 560 3251
+rect 712 3199 764 3251
+rect 916 3199 968 3251
+rect 304 3086 356 3138
+rect 444 3086 496 3138
+rect 712 3086 764 3138
+rect 852 3086 904 3138
+<< metal2 >>
+rect 304 3251 356 3257
+rect 304 3193 356 3199
+rect 508 3251 560 3257
+rect 508 3193 560 3199
+rect 712 3251 764 3257
+rect 712 3193 764 3199
+rect 916 3251 968 3257
+rect 1469 3253 1497 3281
+rect 1833 3204 1897 3232
+rect 916 3193 968 3199
+rect 304 3138 356 3144
+rect 304 3080 356 3086
+rect 444 3138 496 3144
+rect 444 3080 496 3086
+rect 712 3138 764 3144
+rect 712 3080 764 3086
+rect 852 3138 904 3144
+rect 852 3080 904 3086
+<< metal3 >>
+rect -31 3939 29 3999
+rect 827 3939 887 3999
+rect -31 3223 29 3283
+rect 827 3223 887 3283
+use sky130_rom_krom_rom_address_control_array_0  sky130_rom_krom_rom_address_control_array_0_0
+timestamp 1581321264
+transform 1 0 127 0 1 0
+box -48 44 911 3128
+use sky130_rom_krom_rom_column_decode_array  sky130_rom_krom_rom_column_decode_array_0
+timestamp 1581321264
+transform 0 -1 1865 1 0 3192
+box -6 -84 1045 1904
+use sky130_rom_krom_rom_column_decode_wordline_buffer  sky130_rom_krom_rom_column_decode_wordline_buffer_0
+timestamp 1581321264
+transform 1 0 1893 0 1 3250
+box 44 -50 1212 811
+<< labels >>
+rlabel metal1 s 127 2160 943 2188 4 clk
+port 3 nsew
+rlabel locali s 3070 3438 3070 3438 4 wl_0
+port 4 nsew
+rlabel locali s 3070 3642 3070 3642 4 wl_1
+port 5 nsew
+rlabel locali s 3070 3846 3070 3846 4 wl_2
+port 6 nsew
+rlabel metal2 s 1469 3253 1497 3281 4 precharge
+port 8 nsew
+rlabel metal1 s 1469 4209 1497 4237 4 precharge_r
+port 10 nsew
+rlabel locali s 354 77 354 77 4 A0
+port 11 nsew
+rlabel locali s 762 77 762 77 4 A1
+port 12 nsew
+rlabel metal1 s 2737 3952 2765 3980 4 vdd
+port 14 nsew
+rlabel metal1 s 127 2833 155 2861 4 vdd
+port 14 nsew
+rlabel metal1 s 2737 3256 2765 3284 4 vdd
+port 14 nsew
+rlabel metal1 s 127 1881 155 1909 4 vdd
+port 14 nsew
+rlabel metal2 s 1833 3204 1897 3232 4 vdd
+port 14 nsew
+rlabel metal1 s 127 844 155 872 4 vdd
+port 14 nsew
+rlabel metal3 s 827 3223 887 3283 4 gnd
+port 16 nsew
+rlabel metal3 s 827 3939 887 3999 4 gnd
+port 16 nsew
+rlabel metal3 s -31 3223 29 3283 4 gnd
+port 16 nsew
+rlabel metal1 s 943 1456 971 1484 4 gnd
+port 16 nsew
+rlabel metal1 s 943 222 971 250 4 gnd
+port 16 nsew
+rlabel metal1 s 2115 3256 2143 3284 4 gnd
+port 16 nsew
+rlabel metal1 s 943 2408 971 2436 4 gnd
+port 16 nsew
+rlabel metal1 s 2115 3952 2143 3980 4 gnd
+port 16 nsew
+rlabel metal3 s -31 3939 29 3999 4 gnd
+port 16 nsew
+<< properties >>
+string FIXED_BBOX -31 0 3087 4237
+<< end >>

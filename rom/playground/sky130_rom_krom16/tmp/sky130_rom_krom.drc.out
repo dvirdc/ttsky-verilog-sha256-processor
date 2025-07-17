@@ -1,0 +1,22 @@
+Thu Jul 17 02:31:22 AM UTC 2025: Starting DRC using Magic /workspaces/OpenRAM/miniconda/bin/magic
+
+Magic 8.3 revision 363 - Compiled on Tue 11 Apr 2023 03:01:40 PM PDT.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.291-63-ge829452
+Finished loading cell sky130_rom_krom
+sky130_rom_krom_rom_base_array: 10000 rects
+Finished expanding
+Finished drc check
+Finished drc catchup
+Total DRC errors found: 0
+Thu Jul 17 02:31:22 AM UTC 2025: Finished (0) DRC using Magic /workspaces/OpenRAM/miniconda/bin/magic
