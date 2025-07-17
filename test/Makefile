@@ -8,10 +8,10 @@ SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = tt_um_sha256_processor_dvirdc.v \
                   top_gpio_sha256.v \
                   sha256_processor.v \
+                  sha256_core_v3.v \
                   sha256_core_v2.v \
                   sha256_core.v \
-                  uart_rx_core.v \
-                  uart_tx_core.v
+                  ../rom/playground/sky130_rom_krom32/sky130_rom_krom.v
 
 ifneq ($(GATES),yes)
 

@@ -1,0 +1,162 @@
+# Makefile for sky130_rom_krom.v ROM testing with cocotb
+# See https://docs.cocotb.org/en/stable/quickstart.html for more info
+
+# defaults
+SIM ?= icarus
+TOPLEVEL_LANG ?= verilog
+
+# ROM module path
+ROM_DIR = $(PWD)/../rom/playground/sky130_rom_krom32
+
+# RTL simulation sources
+SIM_BUILD = sim_build/rom_test
+VERILOG_SOURCES = $(ROM_DIR)/sky130_rom_krom.v
+
+# DUT is the top level module
+TOPLEVEL = sky130_rom_krom
+
+# MODULE is the basename of the Python test file
+MODULE = test_rom_krom
+
+# Compiler arguments
+COMPILE_ARGS += -I$(ROM_DIR)
+COMPILE_ARGS += -DSIM
+
+# Add search paths for ROM data files
+COMPILE_ARGS += -I$(ROM_DIR)/rom_configs
+
+# For timing simulation with delays (only for supported simulators)
+ifeq ($(SIM),icarus)
+# Icarus handles delays automatically, no special flags needed
+else ifeq ($(SIM),verilator)
+COMPILE_ARGS += --timing
+endif
+
+# Waveform generation (optional)
+WAVES ?= 1
+ifeq ($(WAVES),1)
+COMPILE_ARGS += -DWAVE
+COMPILE_ARGS += -DDUMPFILE=tb_rom.vcd
+endif
+
+# Verbose output
+VERBOSE ?= 0
+ifeq ($(VERBOSE),1)
+COMPILE_ARGS += -DVERBOSE=1
+endif
+
+# Test-specific environment variables
+export PYTHONPATH := $(PWD):$(PYTHONPATH)
+
+# Custom test targets
+.PHONY: rom_clean test_rom test_basic test_timing test_all help rom_debug
+
+help:
+	@echo "Available targets:"
+	@echo "  test_rom      - Run all ROM tests"
+	@echo "  test_basic    - Run basic functionality test only"
+	@echo "  test_timing   - Run timing-related tests only"
+	@echo "  test_all      - Run all tests with verbose output"
+	@echo "  rom_clean     - Clean build artifacts"
+	@echo "  rom_debug     - Show configuration information"
+	@echo "  waves         - Generate waveforms (set WAVES=1)"
+	@echo ""
+	@echo "Options:"
+	@echo "  SIM=<simulator>  - Choose simulator (icarus, verilator, etc.)"
+	@echo "  WAVES=1          - Enable waveform generation"
+	@echo "  VERBOSE=1        - Enable verbose output"
+	@echo ""
+	@echo "Example usage:"
+	@echo "  make test_rom"
+	@echo "  make test_rom WAVES=1"
+	@echo "  make test_rom SIM=verilator"
+
+# Default target
+test_rom: check_rom_files
+	@echo "Running ROM tests..."
+	@echo "ROM file: $(ROM_DIR)/sky130_rom_krom.v"
+	@echo "Data file: $(ROM_DIR)/rom_configs/k.bin"
+	@$(MAKE) -f $(MAKEFILE_LIST) sim
+
+test_basic:
+	@echo "Running basic functionality test..."
+	TESTCASE=test_rom_basic_functionality $(MAKE) -f $(MAKEFILE_LIST) sim
+
+test_timing:
+	@echo "Running timing tests..."
+	TESTCASE=test_rom_timing $(MAKE) -f $(MAKEFILE_LIST) sim
+
+test_all: VERBOSE=1
+test_all: test_rom
+
+# Check if required files exist
+check_rom_files:
+	@if [ ! -f "$(ROM_DIR)/sky130_rom_krom.v" ]; then \
+		echo "Error: ROM Verilog file not found: $(ROM_DIR)/sky130_rom_krom.v"; \
+		exit 1; \
+	fi
+	@if [ ! -f "$(ROM_DIR)/rom_configs/k.bin" ]; then \
+		echo "Error: ROM data file not found: $(ROM_DIR)/rom_configs/k.bin"; \
+		exit 1; \
+	fi
+	@echo "ROM files verified."
+
+# Clean build artifacts
+rom_clean:
+	@echo "Cleaning ROM test artifacts..."
+	rm -rf sim_build/rom_test
+	rm -rf __pycache__
+	rm -f *.vcd
+	rm -f *.fst
+	rm -f *.ghw
+	rm -f *.log
+	rm -f *.xml
+	rm -f .coverage
+	rm -f cocotb_coverage.xml
+
+# Advanced simulation options
+sim_waves: WAVES=1
+sim_waves: test_rom
+
+sim_verbose: VERBOSE=1
+sim_verbose: test_rom
+
+# For different simulators
+sim_verilator:
+	@$(MAKE) -f $(MAKEFILE_LIST) test_rom SIM=verilator
+
+sim_ghdl:
+	@$(MAKE) -f $(MAKEFILE_LIST) test_rom SIM=ghdl
+
+sim_modelsim:
+	@$(MAKE) -f $(MAKEFILE_LIST) test_rom SIM=modelsim
+
+# Debug targets
+rom_debug:
+	@echo "ROM_DIR: $(ROM_DIR)"
+	@echo "VERILOG_SOURCES: $(VERILOG_SOURCES)"
+	@echo "TOPLEVEL: $(TOPLEVEL)"
+	@echo "MODULE: $(MODULE)"
+	@echo "COMPILE_ARGS: $(COMPILE_ARGS)"
+	@echo "SIM_BUILD: $(SIM_BUILD)"
+
+# Performance testing
+perf_test:
+	@echo "Running performance test..."
+	MODULE=test_rom_krom pytest test_rom_krom.py::test_rom_continuous_operation -v
+
+# Coverage analysis (if supported)
+coverage:
+	@echo "Running coverage analysis..."
+	COVERAGE=1 $(MAKE) -f $(MAKEFILE_LIST) test_rom
+
+# Installation check
+check_deps:
+	@echo "Checking cocotb installation..."
+	@python3 -c "import cocotb; print(f'cocotb version: {cocotb.__version__}')"
+	@echo "Checking simulator..."
+	@which $(SIM) > /dev/null || (echo "Error: $(SIM) not found in PATH"; exit 1)
+	@echo "Dependencies OK."
+
+# include cocotb's make rules to take care of the simulator setup
+include $(shell cocotb-config --makefiles)/Makefile.sim 
