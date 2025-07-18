@@ -19,13 +19,9 @@ project:
   source_files:
     - "tt_um_sha256_processor_dvirdc.v"
     - "top_gpio_sha256.v"
-    # - "top_uart_sha256_v2.v"
-    # - "top_uart_sha256.v"
     - "sha256_processor.v"
-    - "sha256_core_v2.v"
-    # - "sha256_core.v"
-    # - "uart_rx_core.v"
-    # - "uart_tx_core.v"
+    - "sha256_core_v3.v"
+    - "sky130_rom_krom.v"
 
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
