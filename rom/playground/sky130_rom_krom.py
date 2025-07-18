@@ -1,8 +1,7 @@
 # Sky130 ROM configuration for SHA-256 K constants
-from openram.tech import m1_stack          # ("m1", "via1", "m2")
 
 # 1. Make M1 the first layer of the power grid
-power_grid      = m1_stack                 # << pins will now stop on m1
+power_grid = ("m1", "via1", "m2")                 # << pins will now stop on m1
 
 # 2. Keep pins where they are (don’t escape them to the boundary on M3/M4)
 perimeter_pins  = False 
