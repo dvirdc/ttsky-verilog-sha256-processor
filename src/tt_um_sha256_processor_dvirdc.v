@@ -1,6 +1,10 @@
 `timescale 1ns/1ps
 
 module tt_um_sha256_processor_dvirdc (
+`ifdef USE_POWER_PINS
+    inout vccd1,
+    inout vssd1,
+`endif
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -10,12 +14,7 @@ module tt_um_sha256_processor_dvirdc (
     input  wire       clk,      // clock
     input  wire       rst_n
 );
-    
-    // wire uart_rx;  
-    // wire uart_tx;
 
-    // assign uart_rx = ui_in[3];
-    // assign uo_out = { 3'b000, uart_tx, 4'b0000 };   // {bits[7:5], bit4, bits[3:0]}
     wire  busy;
     wire  dvalid;
 
@@ -29,13 +28,6 @@ module tt_um_sha256_processor_dvirdc (
     assign uio_oe = 8'b0000_1100; // pins 2 and 3 are outputs
 
     wire internal_rst = ~rst_n;
-
-    // top_uart_sha256 top (
-    //     .clk(clk),
-    //     .rst(internal_rst),
-    //     .uart_rx(uart_rx),
-    //     .uart_tx(uart_tx)
-    // );
 
     top_gpio_sha256 top (
         .clk(clk),
