@@ -1,0 +1,171 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1581398725
+<< checkpaint >>
+rect -1216 -1310 6970 3091
+<< nwell >>
+rect 1626 -50 1794 118
+rect 4872 -50 5040 118
+<< pwell >>
+rect 395 -17 529 85
+rect 3241 -17 3375 85
+<< psubdiff >>
+rect 421 51 503 59
+rect 421 17 445 51
+rect 479 17 503 51
+rect 421 9 503 17
+rect 3267 51 3349 59
+rect 3267 17 3291 51
+rect 3325 17 3349 51
+rect 3267 9 3349 17
+<< nsubdiff >>
+rect 1669 51 1751 59
+rect 1669 17 1693 51
+rect 1727 17 1751 51
+rect 1669 9 1751 17
+rect 4915 51 4997 59
+rect 4915 17 4939 51
+rect 4973 17 4997 51
+rect 4915 9 4997 17
+<< psubdiffcont >>
+rect 445 17 479 51
+rect 3291 17 3325 51
+<< nsubdiffcont >>
+rect 1693 17 1727 51
+rect 4939 17 4973 51
+<< locali >>
+rect 60 1583 94 1649
+rect 5658 1566 5692 1633
+rect 60 1379 94 1445
+rect 5658 1362 5692 1429
+rect 60 1175 94 1241
+rect 5658 1158 5692 1225
+rect 60 971 94 1037
+rect 5658 954 5692 1021
+rect 60 767 94 833
+rect 5658 750 5692 817
+rect 60 563 94 629
+rect 5658 546 5692 613
+rect 60 359 94 425
+rect 5658 342 5692 409
+rect 60 155 94 221
+rect 5658 138 5692 205
+rect 429 17 445 51
+rect 479 17 495 51
+rect 1677 17 1693 51
+rect 1727 17 1743 51
+rect 3275 17 3291 51
+rect 3325 17 3341 51
+rect 4923 17 4939 51
+rect 4973 17 4989 51
+<< viali >>
+rect 445 17 479 51
+rect 1693 17 1727 51
+rect 3291 17 3325 51
+rect 4939 17 4973 51
+<< metal1 >>
+rect 448 63 476 1750
+rect 1696 63 1724 1750
+rect 3294 63 3322 1750
+rect 4942 63 4970 1750
+rect 439 51 485 63
+rect 439 17 445 51
+rect 479 17 485 51
+rect 439 5 485 17
+rect 1687 51 1733 63
+rect 1687 17 1693 51
+rect 1727 17 1733 51
+rect 1687 5 1733 17
+rect 3285 51 3331 63
+rect 3285 17 3291 51
+rect 3325 17 3331 51
+rect 3285 5 3331 17
+rect 4933 51 4979 63
+rect 4933 17 4939 51
+rect 4973 17 4979 51
+rect 4933 5 4979 17
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_0
+timestamp 1581398725
+transform 1 0 0 0 1 1532
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_1
+timestamp 1581398725
+transform 1 0 0 0 1 1328
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_2
+timestamp 1581398725
+transform 1 0 0 0 1 1124
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_3
+timestamp 1581398725
+transform 1 0 0 0 1 920
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_4
+timestamp 1581398725
+transform 1 0 0 0 1 716
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_5
+timestamp 1581398725
+transform 1 0 0 0 1 512
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_6
+timestamp 1581398725
+transform 1 0 0 0 1 308
+box 44 -50 5710 299
+use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_7
+timestamp 1581398725
+transform 1 0 0 0 1 104
+box 44 -50 5710 299
+<< labels >>
+rlabel locali s 77 188 77 188 4 in_0
+port 2 nsew
+rlabel locali s 5675 188 5675 188 4 out_0
+port 3 nsew
+rlabel locali s 77 392 77 392 4 in_1
+port 4 nsew
+rlabel locali s 5675 392 5675 392 4 out_1
+port 5 nsew
+rlabel locali s 77 596 77 596 4 in_2
+port 6 nsew
+rlabel locali s 5675 596 5675 596 4 out_2
+port 7 nsew
+rlabel locali s 77 800 77 800 4 in_3
+port 8 nsew
+rlabel locali s 5675 800 5675 800 4 out_3
+port 9 nsew
+rlabel locali s 77 1004 77 1004 4 in_4
+port 10 nsew
+rlabel locali s 5675 1004 5675 1004 4 out_4
+port 11 nsew
+rlabel locali s 77 1208 77 1208 4 in_5
+port 12 nsew
+rlabel locali s 5675 1208 5675 1208 4 out_5
+port 13 nsew
+rlabel locali s 77 1412 77 1412 4 in_6
+port 14 nsew
+rlabel locali s 5675 1412 5675 1412 4 out_6
+port 15 nsew
+rlabel locali s 77 1616 77 1616 4 in_7
+port 16 nsew
+rlabel locali s 5675 1616 5675 1616 4 out_7
+port 17 nsew
+rlabel metal1 s 3294 1722 3322 1750 4 gnd
+port 19 nsew
+rlabel metal1 s 448 6 476 34 4 gnd
+port 19 nsew
+rlabel metal1 s 448 1722 476 1750 4 gnd
+port 19 nsew
+rlabel metal1 s 3294 6 3322 34 4 gnd
+port 19 nsew
+rlabel metal1 s 1696 6 1724 34 4 vdd
+port 21 nsew
+rlabel metal1 s 4942 1722 4970 1750 4 vdd
+port 21 nsew
+rlabel metal1 s 4942 6 4970 34 4 vdd
+port 21 nsew
+rlabel metal1 s 1696 1722 1724 1750 4 vdd
+port 21 nsew
+<< properties >>
+string FIXED_BBOX 4872 -50 5040 0
+<< end >>
