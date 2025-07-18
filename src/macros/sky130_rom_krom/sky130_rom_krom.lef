@@ -69,7 +69,7 @@ MACRO sky130_rom_krom
       DIRECTION OUTPUT ;
       PORT
          LAYER met4 ;
-         RECT  73.355 -7.48 73.735 -7.1 ;
+         RECT  74.1 -7.48 74.48 -7.1 ;
       END
    END dout0[0]
    PIN dout0[1]
@@ -286,7 +286,7 @@ MACRO sky130_rom_krom
       DIRECTION OUTPUT ;
       PORT
          LAYER met4 ;
-         RECT  122.385 -7.48 122.765 -7.1 ;
+         RECT  121.84 -7.48 122.22 -7.1 ;
       END
    END dout0[31]
    PIN vccd1
@@ -296,12 +296,12 @@ MACRO sky130_rom_krom
       PORT
          LAYER met4 ;
          RECT  308.63 -7.48 310.37 68.76 ;
-         LAYER met4 ;
-         RECT  -7.48 -7.48 -5.74 68.76 ;
-         LAYER met3 ;
-         RECT  -7.48 -7.48 310.37 -5.74 ;
          LAYER met3 ;
          RECT  -7.48 67.02 310.37 68.76 ;
+         LAYER met3 ;
+         RECT  -7.48 -7.48 310.37 -5.74 ;
+         LAYER met4 ;
+         RECT  -7.48 -7.48 -5.74 68.76 ;
       END
    END vccd1
    PIN vssd1
@@ -309,14 +309,14 @@ MACRO sky130_rom_krom
       USE GROUND ; 
       SHAPE ABUTMENT ; 
       PORT
-         LAYER met3 ;
-         RECT  -4.0 63.54 306.89 65.28 ;
          LAYER met4 ;
          RECT  -4.0 -4.0 -2.26 65.28 ;
-         LAYER met4 ;
-         RECT  305.15 -4.0 306.89 65.28 ;
+         LAYER met3 ;
+         RECT  -4.0 63.54 306.89 65.28 ;
          LAYER met3 ;
          RECT  -4.0 -4.0 306.89 -2.26 ;
+         LAYER met4 ;
+         RECT  305.15 -4.0 306.89 65.28 ;
       END
    END vssd1
    OBS
