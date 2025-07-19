@@ -73,13 +73,13 @@
   "//": "Only export pin area in LEF (without any connected nets)",
   "MAGIC_WRITE_LEF_PINONLY": 1,
 
-  "EXTRA_LEFS"      : ["dir::macros/sky130_rom_krom/sky130_rom_krom.lef"],
-  "EXTRA_GDS" : ["dir::macros/sky130_rom_krom/sky130_rom_krom.gds"],
+  "EXTRA_LEFS"      : ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.lef"],
+  "EXTRA_GDS" : ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.gds"],
 
   "MACROS": {
     "sky130_rom_krom": {
-      "lef": ["dir::macros/sky130_rom_krom/sky130_rom_krom.lef"],
-      "gds": ["dir::macros/sky130_rom_krom/sky130_rom_krom.gds"],
+      "lef": ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.lef"],
+      "gds": ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.gds"],
       "instances": {
         "top.u_proc.sha_core.k_rom_inst": {
           "location": [ 100, 100 ],
