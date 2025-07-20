@@ -4,6 +4,10 @@
 /* verilator lint_off CASEINCOMPLETE */
 /* verilator lint_off UNUSEDPARAM */
 module sha256_core_v3 (
+`ifdef USE_POWER_PINS
+    inout vccd1,
+    inout vssd1,
+`endif
     input         clk,
     input         rst,
     input         start,
