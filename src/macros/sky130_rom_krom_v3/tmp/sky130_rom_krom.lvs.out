@@ -1,0 +1,814 @@
+Sun Jul 20 03:11:52 AM UTC 2025: Starting LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
+Netgen 1.5.253 compiled on Thu 18 May 2023 01:41:22 PM PDT
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file sky130_rom_krom.spice
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Reading netlist file sky130_rom_krom.sp
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+
+Reading setup file setup.tcl
+
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8
+No property ad found for device sky130_fd_pr__nfet_01v8
+No property ps found for device sky130_fd_pr__nfet_01v8
+No property pd found for device sky130_fd_pr__nfet_01v8
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8
+No property ad found for device sky130_fd_pr__pfet_01v8
+No property ps found for device sky130_fd_pr__pfet_01v8
+No property pd found for device sky130_fd_pr__pfet_01v8
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Comparison output logged to file sky130_rom_krom.lvs.report
+Logging to file "sky130_rom_krom.lvs.report" enabled
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_precharge_cell'
+Circuit sky130_rom_krom_precharge_cell contains 1 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_precharge_cell'
+Circuit sky130_rom_krom_precharge_cell contains 1 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 3 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_inv_array_mod'
+Circuit sky130_rom_krom_inv_array_mod contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_inv_array_mod'
+Circuit sky130_rom_krom_inv_array_mod contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_inv_array_mod sky130_rom_krom_inv_array_mod
+
+Flattening instances of sky130_rom_krom_inv_array_mod in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_inv_array_mod in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand2_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand2_dec contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand2_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand2_dec contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_dec_1'
+Circuit sky130_rom_krom_pinv_dec_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_dec_1'
+Circuit sky130_rom_krom_pinv_dec_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pinv_dec_1 sky130_rom_krom_pinv_dec_1
+
+Flattening instances of sky130_rom_krom_pinv_dec_1 in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pinv_dec_1 in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_dec_0'
+Circuit sky130_rom_krom_pinv_dec_0 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_dec_0'
+Circuit sky130_rom_krom_pinv_dec_0 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pinv_dec_0 sky130_rom_krom_pinv_dec_0
+
+Flattening instances of sky130_rom_krom_pinv_dec_0 in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pinv_dec_0 in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_base_one_cell'
+Circuit sky130_rom_krom_rom_base_one_cell contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_base_one_cell'
+Circuit sky130_rom_krom_rom_base_one_cell contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_base_zero_cell'
+Circuit sky130_rom_krom_rom_base_zero_cell contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_base_zero_cell'
+Circuit sky130_rom_krom_rom_base_zero_cell contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 3 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_precharge_array_0'
+Circuit sky130_rom_krom_rom_precharge_array_0 contains 8 device instances.
+  Class: sky130_rom_krom_precharge_cell instances:   8
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_precharge_array_0'
+Circuit sky130_rom_krom_rom_precharge_array_0 contains 8 device instances.
+  Class: sky130_rom_krom_precharge_cell instances:   8
+Circuit contains 10 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_address_control_buf'
+Circuit sky130_rom_krom_rom_address_control_buf contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_address_control_buf'
+Circuit sky130_rom_krom_rom_address_control_buf contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 7 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 7 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_address_control_buf sky130_rom_krom_rom_address_control_buf
+
+Flattening instances of sky130_rom_krom_rom_address_control_buf in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_address_control_buf in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pbuf_dec'
+Circuit sky130_rom_krom_pbuf_dec contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pbuf_dec'
+Circuit sky130_rom_krom_pbuf_dec contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 5 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 5 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec
+
+Flattening instances of sky130_rom_krom_pbuf_dec in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pbuf_dec in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_0'
+Circuit sky130_rom_krom_pinv_0 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_0'
+Circuit sky130_rom_krom_pinv_0 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_0'
+Circuit sky130_rom_krom_pinv_0 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_0'
+Circuit sky130_rom_krom_pinv_0 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_1'
+Circuit sky130_rom_krom_pinv_1 contains 6 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_1'
+Circuit sky130_rom_krom_pinv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_1'
+Circuit sky130_rom_krom_pinv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_1'
+Circuit sky130_rom_krom_pinv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv'
+Circuit sky130_rom_krom_pinv contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv'
+Circuit sky130_rom_krom_pinv contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_4'
+Circuit sky130_rom_krom_pinv_4 contains 14 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_4'
+Circuit sky130_rom_krom_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_4'
+Circuit sky130_rom_krom_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_4'
+Circuit sky130_rom_krom_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_2'
+Circuit sky130_rom_krom_pinv_2 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_2'
+Circuit sky130_rom_krom_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_2'
+Circuit sky130_rom_krom_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_2'
+Circuit sky130_rom_krom_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_5'
+Circuit sky130_rom_krom_pinv_5 contains 40 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  20
+  Class: sky130_fd_pr__pfet_01v8 instances:  20
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_5'
+Circuit sky130_rom_krom_pinv_5 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_5'
+Circuit sky130_rom_krom_pinv_5 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_5'
+Circuit sky130_rom_krom_pinv_5 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_3'
+Circuit sky130_rom_krom_pinv_3 contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_3'
+Circuit sky130_rom_krom_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_3'
+Circuit sky130_rom_krom_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_3'
+Circuit sky130_rom_krom_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_dec_2'
+Circuit sky130_rom_krom_pinv_dec_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_dec_2'
+Circuit sky130_rom_krom_pinv_dec_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pinv_dec_2 sky130_rom_krom_pinv_dec_2
+
+Flattening instances of sky130_rom_krom_pinv_dec_2 in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pinv_dec_2 in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_row_decode_array'
+Circuit sky130_rom_krom_rom_row_decode_array contains 57 device instances.
+  Class: sky130_rom_krom_rom_base_zero_cell instances:  24
+  Class: sky130_rom_krom_rom_base_one_cell instances:  32
+  Class: sky130_rom_krom_rom_precharge_array_0 instances:   1
+Circuit contains 41 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_row_decode_array'
+Circuit sky130_rom_krom_rom_row_decode_array contains 57 device instances.
+  Class: sky130_rom_krom_rom_base_zero_cell instances:  24
+  Class: sky130_rom_krom_rom_base_one_cell instances:  32
+  Class: sky130_rom_krom_rom_precharge_array_0 instances:   1
+Circuit contains 41 nets.
+
+Circuit 1 contains 57 devices, Circuit 2 contains 57 devices.
+Circuit 1 contains 41 nets,    Circuit 2 contains 41 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_address_control_array'
+Circuit sky130_rom_krom_rom_address_control_array contains 12 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 17 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_address_control_array'
+Circuit sky130_rom_krom_rom_address_control_array contains 12 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 15 nets.
+
+Circuit 1 contains 12 devices, Circuit 2 contains 12 devices.
+Circuit 1 contains 17 nets,    Circuit 2 contains 15 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_address_control_array sky130_rom_krom_rom_address_control_array
+
+Flattening instances of sky130_rom_krom_rom_address_control_array in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_address_control_array in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_row_decode_wordline_buffer'
+Circuit sky130_rom_krom_rom_row_decode_wordline_buffer contains 32 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+  Class: sky130_fd_pr__pfet_01v8 instances:  16
+Circuit contains 27 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_row_decode_wordline_buffer'
+Circuit sky130_rom_krom_rom_row_decode_wordline_buffer contains 32 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+  Class: sky130_fd_pr__pfet_01v8 instances:  16
+Circuit contains 26 nets.
+
+Circuit 1 contains 32 devices, Circuit 2 contains 32 devices.
+Circuit 1 contains 27 nets,    Circuit 2 contains 26 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_row_decode_wordline_buffer sky130_rom_krom_rom_row_decode_wordline_buffer
+
+Flattening instances of sky130_rom_krom_rom_row_decode_wordline_buffer in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_row_decode_wordline_buffer in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_dec_4'
+Circuit sky130_rom_krom_pinv_dec_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_dec_4'
+Circuit sky130_rom_krom_pinv_dec_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pinv_dec_4 sky130_rom_krom_pinv_dec_4
+
+Flattening instances of sky130_rom_krom_pinv_dec_4 in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pinv_dec_4 in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_clock_driver'
+Circuit sky130_rom_krom_rom_clock_driver contains 4 device instances.
+  Class: sky130_rom_krom_pinv  instances:   2
+  Class: sky130_rom_krom_pinv_0 instances:   1
+  Class: sky130_rom_krom_pinv_1 instances:   1
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_clock_driver'
+Circuit sky130_rom_krom_rom_clock_driver contains 4 device instances.
+  Class: sky130_rom_krom_pinv  instances:   2
+  Class: sky130_rom_krom_pinv_0 instances:   1
+  Class: sky130_rom_krom_pinv_1 instances:   1
+Circuit contains 7 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_control_nand'
+Circuit sky130_rom_krom_rom_control_nand contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_control_nand'
+Circuit sky130_rom_krom_rom_control_nand contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_control_nand sky130_rom_krom_rom_control_nand
+
+Flattening instances of sky130_rom_krom_rom_control_nand in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_control_nand in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_precharge_driver'
+Circuit sky130_rom_krom_rom_precharge_driver contains 7 device instances.
+  Class: sky130_rom_krom_pinv  instances:   3
+  Class: sky130_rom_krom_pinv_2 instances:   1
+  Class: sky130_rom_krom_pinv_3 instances:   1
+  Class: sky130_rom_krom_pinv_4 instances:   1
+  Class: sky130_rom_krom_pinv_5 instances:   1
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_precharge_driver'
+Circuit sky130_rom_krom_rom_precharge_driver contains 7 device instances.
+  Class: sky130_rom_krom_pinv  instances:   3
+  Class: sky130_rom_krom_pinv_2 instances:   1
+  Class: sky130_rom_krom_pinv_3 instances:   1
+  Class: sky130_rom_krom_pinv_4 instances:   1
+  Class: sky130_rom_krom_pinv_5 instances:   1
+Circuit contains 10 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_column_mux'
+Circuit sky130_rom_krom_rom_column_mux contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_column_mux'
+Circuit sky130_rom_krom_rom_column_mux contains 1 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_precharge_array'
+Circuit sky130_rom_krom_rom_precharge_array contains 256 device instances.
+  Class: sky130_rom_krom_precharge_cell instances: 256
+Circuit contains 258 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_precharge_array'
+Circuit sky130_rom_krom_rom_precharge_array contains 256 device instances.
+  Class: sky130_rom_krom_precharge_cell instances: 256
+Circuit contains 258 nets.
+
+Circuit 1 contains 256 devices, Circuit 2 contains 256 devices.
+Circuit 1 contains 258 nets,    Circuit 2 contains 258 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_pinv_dec_3'
+Circuit sky130_rom_krom_pinv_dec_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_pinv_dec_3'
+Circuit sky130_rom_krom_pinv_dec_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 4 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_pinv_dec_3 sky130_rom_krom_pinv_dec_3
+
+Flattening instances of sky130_rom_krom_pinv_dec_3 in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_pinv_dec_3 in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_column_decode_wordline_buffer'
+Circuit sky130_rom_krom_rom_column_decode_wordline_buffer contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 18 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_column_decode_wordline_buffer'
+Circuit sky130_rom_krom_rom_column_decode_wordline_buffer contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 18 nets.
+
+Circuit 1 contains 16 devices, Circuit 2 contains 16 devices.
+Circuit 1 contains 18 nets,    Circuit 2 contains 18 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_row_decode'
+Circuit sky130_rom_krom_rom_row_decode contains 45 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  19
+  Class: sky130_rom_krom_rom_row_decode_array instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:  19
+Circuit contains 45 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_row_decode'
+Circuit sky130_rom_krom_rom_row_decode contains 45 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  19
+  Class: sky130_rom_krom_rom_row_decode_array instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:  19
+Circuit contains 40 nets.
+
+Circuit 1 contains 45 devices, Circuit 2 contains 45 devices.
+Circuit 1 contains 45 nets,    Circuit 2 contains 40 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_row_decode sky130_rom_krom_rom_row_decode
+
+Flattening instances of sky130_rom_krom_rom_row_decode in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_row_decode in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_output_buffer'
+Circuit sky130_rom_krom_rom_output_buffer contains 64 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  32
+  Class: sky130_fd_pr__pfet_01v8 instances:  32
+Circuit contains 66 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_output_buffer'
+Circuit sky130_rom_krom_rom_output_buffer contains 64 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  32
+  Class: sky130_fd_pr__pfet_01v8 instances:  32
+Circuit contains 66 nets.
+
+Circuit 1 contains 64 devices, Circuit 2 contains 64 devices.
+Circuit 1 contains 66 nets,    Circuit 2 contains 66 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_control_logic'
+Circuit sky130_rom_krom_rom_control_logic contains 6 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_rom_krom_rom_clock_driver instances:   1
+  Class: sky130_rom_krom_rom_precharge_driver instances:   1
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_control_logic'
+Circuit sky130_rom_krom_rom_control_logic contains 6 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_rom_krom_rom_clock_driver instances:   1
+  Class: sky130_rom_krom_rom_precharge_driver instances:   1
+Circuit contains 8 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 8 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_column_mux_array'
+Circuit sky130_rom_krom_rom_column_mux_array contains 256 device instances.
+  Class: sky130_rom_krom_rom_column_mux instances: 256
+Circuit contains 297 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_column_mux_array'
+Circuit sky130_rom_krom_rom_column_mux_array contains 256 device instances.
+  Class: sky130_rom_krom_rom_column_mux instances: 256
+Circuit contains 297 nets.
+
+Circuit 1 contains 256 devices, Circuit 2 contains 256 devices.
+Circuit 1 contains 297 nets,    Circuit 2 contains 297 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_base_array'
+Circuit sky130_rom_krom_rom_base_array contains 2305 device instances.
+  Class: sky130_rom_krom_rom_base_zero_cell instances: 1055
+  Class: sky130_rom_krom_rom_precharge_array instances:   1
+  Class: sky130_rom_krom_rom_base_one_cell instances: 1249
+Circuit contains 1261 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_base_array'
+Circuit sky130_rom_krom_rom_base_array contains 2305 device instances.
+  Class: sky130_rom_krom_rom_base_zero_cell instances: 1055
+  Class: sky130_rom_krom_rom_precharge_array instances:   1
+  Class: sky130_rom_krom_rom_base_one_cell instances: 1249
+Circuit contains 1260 nets.
+
+Circuit 1 contains 2305 devices, Circuit 2 contains 2305 devices.
+Circuit 1 contains 1261 nets,    Circuit 2 contains 1260 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_base_array sky130_rom_krom_rom_base_array
+
+Flattening instances of sky130_rom_krom_rom_base_array in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_base_array in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_bitline_inverter'
+Circuit sky130_rom_krom_rom_bitline_inverter contains 512 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 256
+  Class: sky130_fd_pr__pfet_01v8 instances: 256
+Circuit contains 515 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_bitline_inverter'
+Circuit sky130_rom_krom_rom_bitline_inverter contains 512 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 256
+  Class: sky130_fd_pr__pfet_01v8 instances: 256
+Circuit contains 514 nets.
+
+Circuit 1 contains 512 devices, Circuit 2 contains 512 devices.
+Circuit 1 contains 515 nets,    Circuit 2 contains 514 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_bitline_inverter sky130_rom_krom_rom_bitline_inverter
+
+Flattening instances of sky130_rom_krom_rom_bitline_inverter in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_bitline_inverter in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom_rom_column_decode'
+Circuit sky130_rom_krom_rom_column_decode contains 14 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: sky130_rom_krom_rom_row_decode_array instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_rom_krom_rom_column_decode_wordline_buffer instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 36 nets.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom_rom_column_decode'
+Circuit sky130_rom_krom_rom_column_decode contains 14 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: sky130_rom_krom_rom_row_decode_array instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   6
+  Class: sky130_rom_krom_rom_column_decode_wordline_buffer instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 32 nets.
+
+Circuit 1 contains 14 devices, Circuit 2 contains 14 devices.
+Circuit 1 contains 36 nets,    Circuit 2 contains 32 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_rom_krom_rom_column_decode sky130_rom_krom_rom_column_decode
+
+Flattening instances of sky130_rom_krom_rom_column_decode in file sky130_rom_krom.spice
+Flattening instances of sky130_rom_krom_rom_column_decode in file sky130_rom_krom.sp
+
+Contents of circuit 1:  Circuit: 'sky130_rom_krom'
+Circuit sky130_rom_krom contains 2879 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 278
+  Class: sky130_rom_krom_rom_row_decode_array instances:   2
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:  12
+  Class: sky130_rom_krom_rom_column_mux_array instances:   1
+  Class: sky130_rom_krom_rom_column_decode_wordline_buffer instances:   1
+  Class: sky130_rom_krom_rom_base_zero_cell instances: 1055
+  Class: sky130_rom_krom_rom_precharge_array instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 278
+  Class: sky130_rom_krom_rom_output_buffer instances:   1
+  Class: sky130_rom_krom_rom_base_one_cell instances: 1249
+  Class: sky130_rom_krom_rom_control_logic instances:   1
+Circuit contains 1654 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_rom_krom'
+Circuit sky130_rom_krom contains 2879 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 278
+  Class: sky130_rom_krom_rom_row_decode_array instances:   2
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:  12
+  Class: sky130_rom_krom_rom_column_mux_array instances:   1
+  Class: sky130_rom_krom_rom_column_decode_wordline_buffer instances:   1
+  Class: sky130_rom_krom_rom_base_zero_cell instances: 1055
+  Class: sky130_rom_krom_rom_precharge_array instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 278
+  Class: sky130_rom_krom_rom_output_buffer instances:   1
+  Class: sky130_rom_krom_rom_base_one_cell instances: 1249
+  Class: sky130_rom_krom_rom_control_logic instances:   1
+Circuit contains 1639 nets.
+
+Circuit 1 contains 2879 devices, Circuit 2 contains 2879 devices.
+Circuit 1 contains 1654 nets,    Circuit 2 contains 1639 nets. *** MISMATCH ***
+
+
+Final result: 
+Top level cell failed pin matching.
+
+Logging to file "sky130_rom_krom.lvs.report" disabled
+LVS Done.
+Sun Jul 20 03:11:53 AM UTC 2025: Finished (0) LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
