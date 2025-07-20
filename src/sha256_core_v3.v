@@ -22,7 +22,7 @@ module sha256_core_v3 (
     wire [5:0] k_addr;
 
     // Instantiate the ROM module
-    wire tie_hi;
+    (* keep = 1 *) wire tie_hi;
     assign tie_hi = 1'b1;
     
     // Instantiate the ROM module
