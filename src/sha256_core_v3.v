@@ -20,6 +20,10 @@ module sha256_core_v3 (
     // Remove the internal K_ROM array and replace with ROM instance
     wire [31:0] k_value;
     wire [5:0] k_addr;
+
+    // Instantiate the ROM module
+    wire tie_hi;
+    assign tie_hi = 1'b1;
     
     // Instantiate the ROM module
     sky130_rom_krom k_rom_inst (
@@ -28,7 +32,7 @@ module sha256_core_v3 (
         .vssd1(vssd1),
 `endif
         .clk0(clk),
-        .cs0(1'b1),           // Always enabled
+        .cs0(tie_hi),           // Always enabled
         .addr0(k_addr),
         .dout0(k_value)
     );
