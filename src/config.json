@@ -94,7 +94,7 @@
       }
     }
   },
-  "FP_PDN_MACRO_HOOKS": {
+  "PDN_MACRO_CONNECTIONS": {
     "sky130_rom_krom": {
       "top.u_proc.sha_core.k_rom_inst": {
         "vdd_pin": "vccd1",
