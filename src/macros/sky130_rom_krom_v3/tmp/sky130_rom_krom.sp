@@ -1,192 +1,5 @@
 *FIRST LINE IS A COMMENT
 
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=1.68 l=0.15 pd=3.66 ps=3.66 as=0.63u ad=0.63u
-
-.SUBCKT sky130_rom_krom_pinv_dec_4
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 4
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=5.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=1.68u l=0.15u
-.ENDS sky130_rom_krom_pinv_dec_4
-
-.SUBCKT sky130_rom_krom_rom_output_buffer
-+ in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 in_8 in_9 in_10 in_11 in_12
-+ in_13 in_14 in_15 in_16 in_17 in_18 in_19 in_20 in_21 in_22 in_23
-+ in_24 in_25 in_26 in_27 in_28 in_29 in_30 in_31 out_0 out_1 out_2
-+ out_3 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 out_12 out_13
-+ out_14 out_15 out_16 out_17 out_18 out_19 out_20 out_21 out_22 out_23
-+ out_24 out_25 out_26 out_27 out_28 out_29 out_30 out_31 vdd gnd
-* INPUT : in_0 
-* INPUT : in_1 
-* INPUT : in_2 
-* INPUT : in_3 
-* INPUT : in_4 
-* INPUT : in_5 
-* INPUT : in_6 
-* INPUT : in_7 
-* INPUT : in_8 
-* INPUT : in_9 
-* INPUT : in_10 
-* INPUT : in_11 
-* INPUT : in_12 
-* INPUT : in_13 
-* INPUT : in_14 
-* INPUT : in_15 
-* INPUT : in_16 
-* INPUT : in_17 
-* INPUT : in_18 
-* INPUT : in_19 
-* INPUT : in_20 
-* INPUT : in_21 
-* INPUT : in_22 
-* INPUT : in_23 
-* INPUT : in_24 
-* INPUT : in_25 
-* INPUT : in_26 
-* INPUT : in_27 
-* INPUT : in_28 
-* INPUT : in_29 
-* INPUT : in_30 
-* INPUT : in_31 
-* OUTPUT: out_0 
-* OUTPUT: out_1 
-* OUTPUT: out_2 
-* OUTPUT: out_3 
-* OUTPUT: out_4 
-* OUTPUT: out_5 
-* OUTPUT: out_6 
-* OUTPUT: out_7 
-* OUTPUT: out_8 
-* OUTPUT: out_9 
-* OUTPUT: out_10 
-* OUTPUT: out_11 
-* OUTPUT: out_12 
-* OUTPUT: out_13 
-* OUTPUT: out_14 
-* OUTPUT: out_15 
-* OUTPUT: out_16 
-* OUTPUT: out_17 
-* OUTPUT: out_18 
-* OUTPUT: out_19 
-* OUTPUT: out_20 
-* OUTPUT: out_21 
-* OUTPUT: out_22 
-* OUTPUT: out_23 
-* OUTPUT: out_24 
-* OUTPUT: out_25 
-* OUTPUT: out_26 
-* OUTPUT: out_27 
-* OUTPUT: out_28 
-* OUTPUT: out_29 
-* OUTPUT: out_30 
-* OUTPUT: out_31 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 32 Buffer size of: 4
-Xwld0
-+ in_0 out_0 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld1
-+ in_1 out_1 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld2
-+ in_2 out_2 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld3
-+ in_3 out_3 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld4
-+ in_4 out_4 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld5
-+ in_5 out_5 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld6
-+ in_6 out_6 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld7
-+ in_7 out_7 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld8
-+ in_8 out_8 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld9
-+ in_9 out_9 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld10
-+ in_10 out_10 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld11
-+ in_11 out_11 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld12
-+ in_12 out_12 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld13
-+ in_13 out_13 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld14
-+ in_14 out_14 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld15
-+ in_15 out_15 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld16
-+ in_16 out_16 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld17
-+ in_17 out_17 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld18
-+ in_18 out_18 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld19
-+ in_19 out_19 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld20
-+ in_20 out_20 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld21
-+ in_21 out_21 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld22
-+ in_22 out_22 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld23
-+ in_23 out_23 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld24
-+ in_24 out_24 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld25
-+ in_25 out_25 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld26
-+ in_26 out_26 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld27
-+ in_27 out_27 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld28
-+ in_28 out_28 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld29
-+ in_29 out_29 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld30
-+ in_30 out_30 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-Xwld31
-+ in_31 out_31 vdd gnd
-+ sky130_rom_krom_pinv_dec_4
-.ENDS sky130_rom_krom_rom_output_buffer
-
 * spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
 
 .SUBCKT sky130_rom_krom_rom_base_zero_cell
@@ -447,97 +260,6 @@ Xbitcell_array_precharge
 + bl_0_0 bl_0_1 bl_0_2 bl_0_3 bl_0_4 bl_0_5 bl_0_6 bl_0_7 precharge vdd
 + sky130_rom_krom_rom_precharge_array_0
 .ENDS sky130_rom_krom_rom_row_decode_array
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-
-.SUBCKT sky130_rom_krom_pinv_dec_0
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 8
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=3.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_dec_0
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-
-.SUBCKT sky130_rom_krom_pinv_dec_1
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 32
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=7.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_dec_1
-
-.SUBCKT sky130_rom_krom_pbuf_dec
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 32
-Xbuf_inv1
-+ A zb_int vdd gnd
-+ sky130_rom_krom_pinv_dec_0
-Xbuf_inv2
-+ zb_int Z vdd gnd
-+ sky130_rom_krom_pinv_dec_1
-.ENDS sky130_rom_krom_pbuf_dec
-
-.SUBCKT sky130_rom_krom_rom_row_decode_wordline_buffer
-+ in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 out_0 out_1 out_2 out_3 out_4
-+ out_5 out_6 out_7 vdd gnd
-* INPUT : in_0 
-* INPUT : in_1 
-* INPUT : in_2 
-* INPUT : in_3 
-* INPUT : in_4 
-* INPUT : in_5 
-* INPUT : in_6 
-* INPUT : in_7 
-* OUTPUT: out_0 
-* OUTPUT: out_1 
-* OUTPUT: out_2 
-* OUTPUT: out_3 
-* OUTPUT: out_4 
-* OUTPUT: out_5 
-* OUTPUT: out_6 
-* OUTPUT: out_7 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 8 Buffer size of: 32
-Xwld0
-+ in_0 out_0 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld1
-+ in_1 out_1 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld2
-+ in_2 out_2 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld3
-+ in_3 out_3 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld4
-+ in_4 out_4 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld5
-+ in_5 out_5 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld6
-+ in_6 out_6 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-Xwld7
-+ in_7 out_7 vdd gnd
-+ sky130_rom_krom_pbuf_dec
-.ENDS sky130_rom_krom_rom_row_decode_wordline_buffer
 * Copyright 2020 The SkyWater PDK Authors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -627,6 +349,97 @@ XXaddr_buf_2
 + sky130_rom_krom_rom_address_control_buf
 .ENDS sky130_rom_krom_rom_address_control_array
 
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+
+.SUBCKT sky130_rom_krom_pinv_dec_1
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 32
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=7.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_dec_1
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
+
+.SUBCKT sky130_rom_krom_pinv_dec_0
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 8
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=3.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_dec_0
+
+.SUBCKT sky130_rom_krom_pbuf_dec
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 32
+Xbuf_inv1
++ A zb_int vdd gnd
++ sky130_rom_krom_pinv_dec_0
+Xbuf_inv2
++ zb_int Z vdd gnd
++ sky130_rom_krom_pinv_dec_1
+.ENDS sky130_rom_krom_pbuf_dec
+
+.SUBCKT sky130_rom_krom_rom_row_decode_wordline_buffer
++ in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 out_0 out_1 out_2 out_3 out_4
++ out_5 out_6 out_7 vdd gnd
+* INPUT : in_0 
+* INPUT : in_1 
+* INPUT : in_2 
+* INPUT : in_3 
+* INPUT : in_4 
+* INPUT : in_5 
+* INPUT : in_6 
+* INPUT : in_7 
+* OUTPUT: out_0 
+* OUTPUT: out_1 
+* OUTPUT: out_2 
+* OUTPUT: out_3 
+* OUTPUT: out_4 
+* OUTPUT: out_5 
+* OUTPUT: out_6 
+* OUTPUT: out_7 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 8 Buffer size of: 32
+Xwld0
++ in_0 out_0 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld1
++ in_1 out_1 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld2
++ in_2 out_2 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld3
++ in_3 out_3 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld4
++ in_4 out_4 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld5
++ in_5 out_5 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld6
++ in_6 out_6 vdd gnd
++ sky130_rom_krom_pbuf_dec
+Xwld7
++ in_7 out_7 vdd gnd
++ sky130_rom_krom_pbuf_dec
+.ENDS sky130_rom_krom_rom_row_decode_wordline_buffer
+
 .SUBCKT sky130_rom_krom_rom_row_decode
 + A0 A1 A2 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 precharge clk vdd gnd
 * INPUT : A0 
@@ -658,200 +471,1115 @@ Xrom_wordline_driver
 + sky130_rom_krom_rom_row_decode_wordline_buffer
 .ENDS sky130_rom_krom_rom_row_decode
 
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=2.88 l=0.15 pd=6.06 ps=6.06 as=1.08u ad=1.08u
 
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
+.SUBCKT sky130_rom_krom_rom_column_mux
++ bl bl_out sel gnd
+* INOUT : bl 
+* INOUT : bl_out 
+* INOUT : sel 
+* INOUT : gnd 
+Xmux_tx1 bl sel bl_out gnd sky130_fd_pr__nfet_01v8 m=1 w=2.88u l=0.15u
+.ENDS sky130_rom_krom_rom_column_mux
 
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
-
-.SUBCKT sky130_rom_krom_rom_control_nand
-+ A B Z vdd gnd
-* INPUT : A 
-* INPUT : B 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 1
-Xpnand2_pmos1 vdd A Z vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
-Xpnand2_pmos2 Z B vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
-Xpnand2_nmos1 Z B net1 gnd sky130_fd_pr__nfet_01v8 m=1 w=0.74u l=0.15u
-Xpnand2_nmos2 net1 A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.74u l=0.15u
-.ENDS sky130_rom_krom_rom_control_nand
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
-
-.SUBCKT sky130_rom_krom_pinv
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 1
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.36u l=0.15u
-.ENDS sky130_rom_krom_pinv
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=2 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=2 w=1.26 l=0.15 pd=2.82 ps=2.82 as=0.47u ad=0.47u
-
-.SUBCKT sky130_rom_krom_pinv_0
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 2
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=2 w=1.26u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=2 w=0.74u l=0.15u
-.ENDS sky130_rom_krom_pinv_0
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=3 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=3 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
-
-.SUBCKT sky130_rom_krom_pinv_1
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 7
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=3 w=3.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=3 w=3.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_1
-
-.SUBCKT sky130_rom_krom_rom_clock_driver
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* sizes: [1, 1, 2, 7]
-Xbuf_inv1
-+ A Zb1_int vdd gnd
-+ sky130_rom_krom_pinv
-Xbuf_inv2
-+ Zb1_int Zb2_int vdd gnd
-+ sky130_rom_krom_pinv
-Xbuf_inv3
-+ Zb2_int Zb3_int vdd gnd
-+ sky130_rom_krom_pinv_0
-Xbuf_inv4
-+ Zb3_int Z vdd gnd
-+ sky130_rom_krom_pinv_1
-.ENDS sky130_rom_krom_rom_clock_driver
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=7 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=7 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
-
-.SUBCKT sky130_rom_krom_pinv_4
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 30
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=7 w=5.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=7 w=3.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_4
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=2 w=2.0 l=0.15 pd=4.30 ps=4.30 as=0.75u ad=0.75u
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=2 w=1.26 l=0.15 pd=2.82 ps=2.82 as=0.47u ad=0.47u
-
-.SUBCKT sky130_rom_krom_pinv_2
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 3
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=2 w=2.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=2 w=1.26u l=0.15u
-.ENDS sky130_rom_krom_pinv_2
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=20 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=20 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
-
-.SUBCKT sky130_rom_krom_pinv_5
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 91
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=20 w=5.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=20 w=5.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_5
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=4 w=2.0 l=0.15 pd=4.30 ps=4.30 as=0.75u ad=0.75u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=4 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
-
-.SUBCKT sky130_rom_krom_pinv_3
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 10
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=4 w=3.0u l=0.15u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=4 w=2.0u l=0.15u
-.ENDS sky130_rom_krom_pinv_3
-
-.SUBCKT sky130_rom_krom_rom_precharge_driver
-+ A Z vdd gnd
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* sizes: [1, 1, 1, 3, 10, 30, 91]
-Xbuf_inv1
-+ A Zb1_int vdd gnd
-+ sky130_rom_krom_pinv
-Xbuf_inv2
-+ Zb1_int Zb2_int vdd gnd
-+ sky130_rom_krom_pinv
-Xbuf_inv3
-+ Zb2_int Zb3_int vdd gnd
-+ sky130_rom_krom_pinv
-Xbuf_inv4
-+ Zb3_int Zb4_int vdd gnd
-+ sky130_rom_krom_pinv_2
-Xbuf_inv5
-+ Zb4_int Zb5_int vdd gnd
-+ sky130_rom_krom_pinv_3
-Xbuf_inv6
-+ Zb5_int Zb6_int vdd gnd
-+ sky130_rom_krom_pinv_4
-Xbuf_inv7
-+ Zb6_int Z vdd gnd
-+ sky130_rom_krom_pinv_5
-.ENDS sky130_rom_krom_rom_precharge_driver
-
-.SUBCKT sky130_rom_krom_rom_control_logic
-+ clk_in CS prechrg clk_out vdd gnd
-* INPUT : clk_in 
-* INPUT : CS 
-* OUTPUT: prechrg 
-* OUTPUT: clk_out 
-* POWER : vdd 
-* GROUND: gnd 
-Xclk_driver
-+ clk_in clk_out vdd gnd
-+ sky130_rom_krom_rom_clock_driver
-Xcontrol_nand
-+ CS clk_out pre_drive vdd gnd
-+ sky130_rom_krom_rom_control_nand
-Xprecharge_driver
-+ pre_drive prechrg vdd gnd
-+ sky130_rom_krom_rom_precharge_driver
-.ENDS sky130_rom_krom_rom_control_logic
+.SUBCKT sky130_rom_krom_rom_column_mux_array
++ bl_0 bl_1 bl_2 bl_3 bl_4 bl_5 bl_6 bl_7 bl_8 bl_9 bl_10 bl_11 bl_12
++ bl_13 bl_14 bl_15 bl_16 bl_17 bl_18 bl_19 bl_20 bl_21 bl_22 bl_23
++ bl_24 bl_25 bl_26 bl_27 bl_28 bl_29 bl_30 bl_31 bl_32 bl_33 bl_34
++ bl_35 bl_36 bl_37 bl_38 bl_39 bl_40 bl_41 bl_42 bl_43 bl_44 bl_45
++ bl_46 bl_47 bl_48 bl_49 bl_50 bl_51 bl_52 bl_53 bl_54 bl_55 bl_56
++ bl_57 bl_58 bl_59 bl_60 bl_61 bl_62 bl_63 bl_64 bl_65 bl_66 bl_67
++ bl_68 bl_69 bl_70 bl_71 bl_72 bl_73 bl_74 bl_75 bl_76 bl_77 bl_78
++ bl_79 bl_80 bl_81 bl_82 bl_83 bl_84 bl_85 bl_86 bl_87 bl_88 bl_89
++ bl_90 bl_91 bl_92 bl_93 bl_94 bl_95 bl_96 bl_97 bl_98 bl_99 bl_100
++ bl_101 bl_102 bl_103 bl_104 bl_105 bl_106 bl_107 bl_108 bl_109 bl_110
++ bl_111 bl_112 bl_113 bl_114 bl_115 bl_116 bl_117 bl_118 bl_119 bl_120
++ bl_121 bl_122 bl_123 bl_124 bl_125 bl_126 bl_127 bl_128 bl_129 bl_130
++ bl_131 bl_132 bl_133 bl_134 bl_135 bl_136 bl_137 bl_138 bl_139 bl_140
++ bl_141 bl_142 bl_143 bl_144 bl_145 bl_146 bl_147 bl_148 bl_149 bl_150
++ bl_151 bl_152 bl_153 bl_154 bl_155 bl_156 bl_157 bl_158 bl_159 bl_160
++ bl_161 bl_162 bl_163 bl_164 bl_165 bl_166 bl_167 bl_168 bl_169 bl_170
++ bl_171 bl_172 bl_173 bl_174 bl_175 bl_176 bl_177 bl_178 bl_179 bl_180
++ bl_181 bl_182 bl_183 bl_184 bl_185 bl_186 bl_187 bl_188 bl_189 bl_190
++ bl_191 bl_192 bl_193 bl_194 bl_195 bl_196 bl_197 bl_198 bl_199 bl_200
++ bl_201 bl_202 bl_203 bl_204 bl_205 bl_206 bl_207 bl_208 bl_209 bl_210
++ bl_211 bl_212 bl_213 bl_214 bl_215 bl_216 bl_217 bl_218 bl_219 bl_220
++ bl_221 bl_222 bl_223 bl_224 bl_225 bl_226 bl_227 bl_228 bl_229 bl_230
++ bl_231 bl_232 bl_233 bl_234 bl_235 bl_236 bl_237 bl_238 bl_239 bl_240
++ bl_241 bl_242 bl_243 bl_244 bl_245 bl_246 bl_247 bl_248 bl_249 bl_250
++ bl_251 bl_252 bl_253 bl_254 bl_255 sel_0 sel_1 sel_2 sel_3 sel_4 sel_5
++ sel_6 sel_7 bl_out_0 bl_out_1 bl_out_2 bl_out_3 bl_out_4 bl_out_5
++ bl_out_6 bl_out_7 bl_out_8 bl_out_9 bl_out_10 bl_out_11 bl_out_12
++ bl_out_13 bl_out_14 bl_out_15 bl_out_16 bl_out_17 bl_out_18 bl_out_19
++ bl_out_20 bl_out_21 bl_out_22 bl_out_23 bl_out_24 bl_out_25 bl_out_26
++ bl_out_27 bl_out_28 bl_out_29 bl_out_30 bl_out_31 gnd
+* INOUT : bl_0 
+* INOUT : bl_1 
+* INOUT : bl_2 
+* INOUT : bl_3 
+* INOUT : bl_4 
+* INOUT : bl_5 
+* INOUT : bl_6 
+* INOUT : bl_7 
+* INOUT : bl_8 
+* INOUT : bl_9 
+* INOUT : bl_10 
+* INOUT : bl_11 
+* INOUT : bl_12 
+* INOUT : bl_13 
+* INOUT : bl_14 
+* INOUT : bl_15 
+* INOUT : bl_16 
+* INOUT : bl_17 
+* INOUT : bl_18 
+* INOUT : bl_19 
+* INOUT : bl_20 
+* INOUT : bl_21 
+* INOUT : bl_22 
+* INOUT : bl_23 
+* INOUT : bl_24 
+* INOUT : bl_25 
+* INOUT : bl_26 
+* INOUT : bl_27 
+* INOUT : bl_28 
+* INOUT : bl_29 
+* INOUT : bl_30 
+* INOUT : bl_31 
+* INOUT : bl_32 
+* INOUT : bl_33 
+* INOUT : bl_34 
+* INOUT : bl_35 
+* INOUT : bl_36 
+* INOUT : bl_37 
+* INOUT : bl_38 
+* INOUT : bl_39 
+* INOUT : bl_40 
+* INOUT : bl_41 
+* INOUT : bl_42 
+* INOUT : bl_43 
+* INOUT : bl_44 
+* INOUT : bl_45 
+* INOUT : bl_46 
+* INOUT : bl_47 
+* INOUT : bl_48 
+* INOUT : bl_49 
+* INOUT : bl_50 
+* INOUT : bl_51 
+* INOUT : bl_52 
+* INOUT : bl_53 
+* INOUT : bl_54 
+* INOUT : bl_55 
+* INOUT : bl_56 
+* INOUT : bl_57 
+* INOUT : bl_58 
+* INOUT : bl_59 
+* INOUT : bl_60 
+* INOUT : bl_61 
+* INOUT : bl_62 
+* INOUT : bl_63 
+* INOUT : bl_64 
+* INOUT : bl_65 
+* INOUT : bl_66 
+* INOUT : bl_67 
+* INOUT : bl_68 
+* INOUT : bl_69 
+* INOUT : bl_70 
+* INOUT : bl_71 
+* INOUT : bl_72 
+* INOUT : bl_73 
+* INOUT : bl_74 
+* INOUT : bl_75 
+* INOUT : bl_76 
+* INOUT : bl_77 
+* INOUT : bl_78 
+* INOUT : bl_79 
+* INOUT : bl_80 
+* INOUT : bl_81 
+* INOUT : bl_82 
+* INOUT : bl_83 
+* INOUT : bl_84 
+* INOUT : bl_85 
+* INOUT : bl_86 
+* INOUT : bl_87 
+* INOUT : bl_88 
+* INOUT : bl_89 
+* INOUT : bl_90 
+* INOUT : bl_91 
+* INOUT : bl_92 
+* INOUT : bl_93 
+* INOUT : bl_94 
+* INOUT : bl_95 
+* INOUT : bl_96 
+* INOUT : bl_97 
+* INOUT : bl_98 
+* INOUT : bl_99 
+* INOUT : bl_100 
+* INOUT : bl_101 
+* INOUT : bl_102 
+* INOUT : bl_103 
+* INOUT : bl_104 
+* INOUT : bl_105 
+* INOUT : bl_106 
+* INOUT : bl_107 
+* INOUT : bl_108 
+* INOUT : bl_109 
+* INOUT : bl_110 
+* INOUT : bl_111 
+* INOUT : bl_112 
+* INOUT : bl_113 
+* INOUT : bl_114 
+* INOUT : bl_115 
+* INOUT : bl_116 
+* INOUT : bl_117 
+* INOUT : bl_118 
+* INOUT : bl_119 
+* INOUT : bl_120 
+* INOUT : bl_121 
+* INOUT : bl_122 
+* INOUT : bl_123 
+* INOUT : bl_124 
+* INOUT : bl_125 
+* INOUT : bl_126 
+* INOUT : bl_127 
+* INOUT : bl_128 
+* INOUT : bl_129 
+* INOUT : bl_130 
+* INOUT : bl_131 
+* INOUT : bl_132 
+* INOUT : bl_133 
+* INOUT : bl_134 
+* INOUT : bl_135 
+* INOUT : bl_136 
+* INOUT : bl_137 
+* INOUT : bl_138 
+* INOUT : bl_139 
+* INOUT : bl_140 
+* INOUT : bl_141 
+* INOUT : bl_142 
+* INOUT : bl_143 
+* INOUT : bl_144 
+* INOUT : bl_145 
+* INOUT : bl_146 
+* INOUT : bl_147 
+* INOUT : bl_148 
+* INOUT : bl_149 
+* INOUT : bl_150 
+* INOUT : bl_151 
+* INOUT : bl_152 
+* INOUT : bl_153 
+* INOUT : bl_154 
+* INOUT : bl_155 
+* INOUT : bl_156 
+* INOUT : bl_157 
+* INOUT : bl_158 
+* INOUT : bl_159 
+* INOUT : bl_160 
+* INOUT : bl_161 
+* INOUT : bl_162 
+* INOUT : bl_163 
+* INOUT : bl_164 
+* INOUT : bl_165 
+* INOUT : bl_166 
+* INOUT : bl_167 
+* INOUT : bl_168 
+* INOUT : bl_169 
+* INOUT : bl_170 
+* INOUT : bl_171 
+* INOUT : bl_172 
+* INOUT : bl_173 
+* INOUT : bl_174 
+* INOUT : bl_175 
+* INOUT : bl_176 
+* INOUT : bl_177 
+* INOUT : bl_178 
+* INOUT : bl_179 
+* INOUT : bl_180 
+* INOUT : bl_181 
+* INOUT : bl_182 
+* INOUT : bl_183 
+* INOUT : bl_184 
+* INOUT : bl_185 
+* INOUT : bl_186 
+* INOUT : bl_187 
+* INOUT : bl_188 
+* INOUT : bl_189 
+* INOUT : bl_190 
+* INOUT : bl_191 
+* INOUT : bl_192 
+* INOUT : bl_193 
+* INOUT : bl_194 
+* INOUT : bl_195 
+* INOUT : bl_196 
+* INOUT : bl_197 
+* INOUT : bl_198 
+* INOUT : bl_199 
+* INOUT : bl_200 
+* INOUT : bl_201 
+* INOUT : bl_202 
+* INOUT : bl_203 
+* INOUT : bl_204 
+* INOUT : bl_205 
+* INOUT : bl_206 
+* INOUT : bl_207 
+* INOUT : bl_208 
+* INOUT : bl_209 
+* INOUT : bl_210 
+* INOUT : bl_211 
+* INOUT : bl_212 
+* INOUT : bl_213 
+* INOUT : bl_214 
+* INOUT : bl_215 
+* INOUT : bl_216 
+* INOUT : bl_217 
+* INOUT : bl_218 
+* INOUT : bl_219 
+* INOUT : bl_220 
+* INOUT : bl_221 
+* INOUT : bl_222 
+* INOUT : bl_223 
+* INOUT : bl_224 
+* INOUT : bl_225 
+* INOUT : bl_226 
+* INOUT : bl_227 
+* INOUT : bl_228 
+* INOUT : bl_229 
+* INOUT : bl_230 
+* INOUT : bl_231 
+* INOUT : bl_232 
+* INOUT : bl_233 
+* INOUT : bl_234 
+* INOUT : bl_235 
+* INOUT : bl_236 
+* INOUT : bl_237 
+* INOUT : bl_238 
+* INOUT : bl_239 
+* INOUT : bl_240 
+* INOUT : bl_241 
+* INOUT : bl_242 
+* INOUT : bl_243 
+* INOUT : bl_244 
+* INOUT : bl_245 
+* INOUT : bl_246 
+* INOUT : bl_247 
+* INOUT : bl_248 
+* INOUT : bl_249 
+* INOUT : bl_250 
+* INOUT : bl_251 
+* INOUT : bl_252 
+* INOUT : bl_253 
+* INOUT : bl_254 
+* INOUT : bl_255 
+* INOUT : sel_0 
+* INOUT : sel_1 
+* INOUT : sel_2 
+* INOUT : sel_3 
+* INOUT : sel_4 
+* INOUT : sel_5 
+* INOUT : sel_6 
+* INOUT : sel_7 
+* INOUT : bl_out_0 
+* INOUT : bl_out_1 
+* INOUT : bl_out_2 
+* INOUT : bl_out_3 
+* INOUT : bl_out_4 
+* INOUT : bl_out_5 
+* INOUT : bl_out_6 
+* INOUT : bl_out_7 
+* INOUT : bl_out_8 
+* INOUT : bl_out_9 
+* INOUT : bl_out_10 
+* INOUT : bl_out_11 
+* INOUT : bl_out_12 
+* INOUT : bl_out_13 
+* INOUT : bl_out_14 
+* INOUT : bl_out_15 
+* INOUT : bl_out_16 
+* INOUT : bl_out_17 
+* INOUT : bl_out_18 
+* INOUT : bl_out_19 
+* INOUT : bl_out_20 
+* INOUT : bl_out_21 
+* INOUT : bl_out_22 
+* INOUT : bl_out_23 
+* INOUT : bl_out_24 
+* INOUT : bl_out_25 
+* INOUT : bl_out_26 
+* INOUT : bl_out_27 
+* INOUT : bl_out_28 
+* INOUT : bl_out_29 
+* INOUT : bl_out_30 
+* INOUT : bl_out_31 
+* INOUT : gnd 
+* cols: 256 word_size: 32 
+XXMUX0
++ bl_0 bl_out_0 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX1
++ bl_1 bl_out_0 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX2
++ bl_2 bl_out_0 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX3
++ bl_3 bl_out_0 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX4
++ bl_4 bl_out_0 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX5
++ bl_5 bl_out_0 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX6
++ bl_6 bl_out_0 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX7
++ bl_7 bl_out_0 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX8
++ bl_8 bl_out_1 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX9
++ bl_9 bl_out_1 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX10
++ bl_10 bl_out_1 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX11
++ bl_11 bl_out_1 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX12
++ bl_12 bl_out_1 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX13
++ bl_13 bl_out_1 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX14
++ bl_14 bl_out_1 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX15
++ bl_15 bl_out_1 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX16
++ bl_16 bl_out_2 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX17
++ bl_17 bl_out_2 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX18
++ bl_18 bl_out_2 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX19
++ bl_19 bl_out_2 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX20
++ bl_20 bl_out_2 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX21
++ bl_21 bl_out_2 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX22
++ bl_22 bl_out_2 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX23
++ bl_23 bl_out_2 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX24
++ bl_24 bl_out_3 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX25
++ bl_25 bl_out_3 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX26
++ bl_26 bl_out_3 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX27
++ bl_27 bl_out_3 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX28
++ bl_28 bl_out_3 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX29
++ bl_29 bl_out_3 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX30
++ bl_30 bl_out_3 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX31
++ bl_31 bl_out_3 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX32
++ bl_32 bl_out_4 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX33
++ bl_33 bl_out_4 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX34
++ bl_34 bl_out_4 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX35
++ bl_35 bl_out_4 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX36
++ bl_36 bl_out_4 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX37
++ bl_37 bl_out_4 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX38
++ bl_38 bl_out_4 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX39
++ bl_39 bl_out_4 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX40
++ bl_40 bl_out_5 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX41
++ bl_41 bl_out_5 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX42
++ bl_42 bl_out_5 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX43
++ bl_43 bl_out_5 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX44
++ bl_44 bl_out_5 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX45
++ bl_45 bl_out_5 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX46
++ bl_46 bl_out_5 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX47
++ bl_47 bl_out_5 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX48
++ bl_48 bl_out_6 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX49
++ bl_49 bl_out_6 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX50
++ bl_50 bl_out_6 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX51
++ bl_51 bl_out_6 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX52
++ bl_52 bl_out_6 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX53
++ bl_53 bl_out_6 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX54
++ bl_54 bl_out_6 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX55
++ bl_55 bl_out_6 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX56
++ bl_56 bl_out_7 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX57
++ bl_57 bl_out_7 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX58
++ bl_58 bl_out_7 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX59
++ bl_59 bl_out_7 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX60
++ bl_60 bl_out_7 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX61
++ bl_61 bl_out_7 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX62
++ bl_62 bl_out_7 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX63
++ bl_63 bl_out_7 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX64
++ bl_64 bl_out_8 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX65
++ bl_65 bl_out_8 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX66
++ bl_66 bl_out_8 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX67
++ bl_67 bl_out_8 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX68
++ bl_68 bl_out_8 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX69
++ bl_69 bl_out_8 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX70
++ bl_70 bl_out_8 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX71
++ bl_71 bl_out_8 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX72
++ bl_72 bl_out_9 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX73
++ bl_73 bl_out_9 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX74
++ bl_74 bl_out_9 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX75
++ bl_75 bl_out_9 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX76
++ bl_76 bl_out_9 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX77
++ bl_77 bl_out_9 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX78
++ bl_78 bl_out_9 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX79
++ bl_79 bl_out_9 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX80
++ bl_80 bl_out_10 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX81
++ bl_81 bl_out_10 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX82
++ bl_82 bl_out_10 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX83
++ bl_83 bl_out_10 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX84
++ bl_84 bl_out_10 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX85
++ bl_85 bl_out_10 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX86
++ bl_86 bl_out_10 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX87
++ bl_87 bl_out_10 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX88
++ bl_88 bl_out_11 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX89
++ bl_89 bl_out_11 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX90
++ bl_90 bl_out_11 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX91
++ bl_91 bl_out_11 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX92
++ bl_92 bl_out_11 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX93
++ bl_93 bl_out_11 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX94
++ bl_94 bl_out_11 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX95
++ bl_95 bl_out_11 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX96
++ bl_96 bl_out_12 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX97
++ bl_97 bl_out_12 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX98
++ bl_98 bl_out_12 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX99
++ bl_99 bl_out_12 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX100
++ bl_100 bl_out_12 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX101
++ bl_101 bl_out_12 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX102
++ bl_102 bl_out_12 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX103
++ bl_103 bl_out_12 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX104
++ bl_104 bl_out_13 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX105
++ bl_105 bl_out_13 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX106
++ bl_106 bl_out_13 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX107
++ bl_107 bl_out_13 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX108
++ bl_108 bl_out_13 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX109
++ bl_109 bl_out_13 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX110
++ bl_110 bl_out_13 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX111
++ bl_111 bl_out_13 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX112
++ bl_112 bl_out_14 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX113
++ bl_113 bl_out_14 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX114
++ bl_114 bl_out_14 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX115
++ bl_115 bl_out_14 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX116
++ bl_116 bl_out_14 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX117
++ bl_117 bl_out_14 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX118
++ bl_118 bl_out_14 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX119
++ bl_119 bl_out_14 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX120
++ bl_120 bl_out_15 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX121
++ bl_121 bl_out_15 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX122
++ bl_122 bl_out_15 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX123
++ bl_123 bl_out_15 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX124
++ bl_124 bl_out_15 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX125
++ bl_125 bl_out_15 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX126
++ bl_126 bl_out_15 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX127
++ bl_127 bl_out_15 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX128
++ bl_128 bl_out_16 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX129
++ bl_129 bl_out_16 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX130
++ bl_130 bl_out_16 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX131
++ bl_131 bl_out_16 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX132
++ bl_132 bl_out_16 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX133
++ bl_133 bl_out_16 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX134
++ bl_134 bl_out_16 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX135
++ bl_135 bl_out_16 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX136
++ bl_136 bl_out_17 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX137
++ bl_137 bl_out_17 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX138
++ bl_138 bl_out_17 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX139
++ bl_139 bl_out_17 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX140
++ bl_140 bl_out_17 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX141
++ bl_141 bl_out_17 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX142
++ bl_142 bl_out_17 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX143
++ bl_143 bl_out_17 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX144
++ bl_144 bl_out_18 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX145
++ bl_145 bl_out_18 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX146
++ bl_146 bl_out_18 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX147
++ bl_147 bl_out_18 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX148
++ bl_148 bl_out_18 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX149
++ bl_149 bl_out_18 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX150
++ bl_150 bl_out_18 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX151
++ bl_151 bl_out_18 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX152
++ bl_152 bl_out_19 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX153
++ bl_153 bl_out_19 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX154
++ bl_154 bl_out_19 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX155
++ bl_155 bl_out_19 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX156
++ bl_156 bl_out_19 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX157
++ bl_157 bl_out_19 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX158
++ bl_158 bl_out_19 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX159
++ bl_159 bl_out_19 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX160
++ bl_160 bl_out_20 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX161
++ bl_161 bl_out_20 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX162
++ bl_162 bl_out_20 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX163
++ bl_163 bl_out_20 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX164
++ bl_164 bl_out_20 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX165
++ bl_165 bl_out_20 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX166
++ bl_166 bl_out_20 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX167
++ bl_167 bl_out_20 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX168
++ bl_168 bl_out_21 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX169
++ bl_169 bl_out_21 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX170
++ bl_170 bl_out_21 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX171
++ bl_171 bl_out_21 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX172
++ bl_172 bl_out_21 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX173
++ bl_173 bl_out_21 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX174
++ bl_174 bl_out_21 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX175
++ bl_175 bl_out_21 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX176
++ bl_176 bl_out_22 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX177
++ bl_177 bl_out_22 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX178
++ bl_178 bl_out_22 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX179
++ bl_179 bl_out_22 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX180
++ bl_180 bl_out_22 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX181
++ bl_181 bl_out_22 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX182
++ bl_182 bl_out_22 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX183
++ bl_183 bl_out_22 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX184
++ bl_184 bl_out_23 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX185
++ bl_185 bl_out_23 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX186
++ bl_186 bl_out_23 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX187
++ bl_187 bl_out_23 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX188
++ bl_188 bl_out_23 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX189
++ bl_189 bl_out_23 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX190
++ bl_190 bl_out_23 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX191
++ bl_191 bl_out_23 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX192
++ bl_192 bl_out_24 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX193
++ bl_193 bl_out_24 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX194
++ bl_194 bl_out_24 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX195
++ bl_195 bl_out_24 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX196
++ bl_196 bl_out_24 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX197
++ bl_197 bl_out_24 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX198
++ bl_198 bl_out_24 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX199
++ bl_199 bl_out_24 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX200
++ bl_200 bl_out_25 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX201
++ bl_201 bl_out_25 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX202
++ bl_202 bl_out_25 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX203
++ bl_203 bl_out_25 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX204
++ bl_204 bl_out_25 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX205
++ bl_205 bl_out_25 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX206
++ bl_206 bl_out_25 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX207
++ bl_207 bl_out_25 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX208
++ bl_208 bl_out_26 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX209
++ bl_209 bl_out_26 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX210
++ bl_210 bl_out_26 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX211
++ bl_211 bl_out_26 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX212
++ bl_212 bl_out_26 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX213
++ bl_213 bl_out_26 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX214
++ bl_214 bl_out_26 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX215
++ bl_215 bl_out_26 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX216
++ bl_216 bl_out_27 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX217
++ bl_217 bl_out_27 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX218
++ bl_218 bl_out_27 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX219
++ bl_219 bl_out_27 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX220
++ bl_220 bl_out_27 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX221
++ bl_221 bl_out_27 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX222
++ bl_222 bl_out_27 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX223
++ bl_223 bl_out_27 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX224
++ bl_224 bl_out_28 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX225
++ bl_225 bl_out_28 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX226
++ bl_226 bl_out_28 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX227
++ bl_227 bl_out_28 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX228
++ bl_228 bl_out_28 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX229
++ bl_229 bl_out_28 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX230
++ bl_230 bl_out_28 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX231
++ bl_231 bl_out_28 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX232
++ bl_232 bl_out_29 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX233
++ bl_233 bl_out_29 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX234
++ bl_234 bl_out_29 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX235
++ bl_235 bl_out_29 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX236
++ bl_236 bl_out_29 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX237
++ bl_237 bl_out_29 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX238
++ bl_238 bl_out_29 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX239
++ bl_239 bl_out_29 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX240
++ bl_240 bl_out_30 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX241
++ bl_241 bl_out_30 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX242
++ bl_242 bl_out_30 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX243
++ bl_243 bl_out_30 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX244
++ bl_244 bl_out_30 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX245
++ bl_245 bl_out_30 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX246
++ bl_246 bl_out_30 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX247
++ bl_247 bl_out_30 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX248
++ bl_248 bl_out_31 sel_0 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX249
++ bl_249 bl_out_31 sel_1 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX250
++ bl_250 bl_out_31 sel_2 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX251
++ bl_251 bl_out_31 sel_3 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX252
++ bl_252 bl_out_31 sel_4 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX253
++ bl_253 bl_out_31 sel_5 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX254
++ bl_254 bl_out_31 sel_6 gnd
++ sky130_rom_krom_rom_column_mux
+XXMUX255
++ bl_255 bl_out_31 sel_7 gnd
++ sky130_rom_krom_rom_column_mux
+.ENDS sky130_rom_krom_rom_column_mux_array
 
 .SUBCKT sky130_rom_krom_rom_precharge_array
 + pre_bl0_out pre_bl1_out pre_bl2_out pre_bl3_out pre_bl4_out
@@ -9189,6 +9917,205 @@ Xbitcell_array_precharge
 + sky130_rom_krom_rom_precharge_array
 .ENDS sky130_rom_krom_rom_base_array
 
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=3 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=3 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
+
+.SUBCKT sky130_rom_krom_pinv_1
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 7
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=3 w=3.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=3 w=3.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_1
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
+
+.SUBCKT sky130_rom_krom_pinv
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 1
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.36u l=0.15u
+.ENDS sky130_rom_krom_pinv
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=2 w=1.26 l=0.15 pd=2.82 ps=2.82 as=0.47u ad=0.47u
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=2 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
+
+.SUBCKT sky130_rom_krom_pinv_0
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 2
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=2 w=1.26u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=2 w=0.74u l=0.15u
+.ENDS sky130_rom_krom_pinv_0
+
+.SUBCKT sky130_rom_krom_rom_clock_driver
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* sizes: [1, 1, 2, 7]
+Xbuf_inv1
++ A Zb1_int vdd gnd
++ sky130_rom_krom_pinv
+Xbuf_inv2
++ Zb1_int Zb2_int vdd gnd
++ sky130_rom_krom_pinv
+Xbuf_inv3
++ Zb2_int Zb3_int vdd gnd
++ sky130_rom_krom_pinv_0
+Xbuf_inv4
++ Zb3_int Z vdd gnd
++ sky130_rom_krom_pinv_1
+.ENDS sky130_rom_krom_rom_clock_driver
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=20 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=20 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
+
+.SUBCKT sky130_rom_krom_pinv_5
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 91
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=20 w=5.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=20 w=5.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_5
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=4 w=2.0 l=0.15 pd=4.30 ps=4.30 as=0.75u ad=0.75u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=4 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
+
+.SUBCKT sky130_rom_krom_pinv_3
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 10
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=4 w=3.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=4 w=2.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_3
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=2 w=2.0 l=0.15 pd=4.30 ps=4.30 as=0.75u ad=0.75u
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=2 w=1.26 l=0.15 pd=2.82 ps=2.82 as=0.47u ad=0.47u
+
+.SUBCKT sky130_rom_krom_pinv_2
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 3
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=2 w=2.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=2 w=1.26u l=0.15u
+.ENDS sky130_rom_krom_pinv_2
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=7 w=3.0 l=0.15 pd=6.30 ps=6.30 as=1.12u ad=1.12u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=7 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
+
+.SUBCKT sky130_rom_krom_pinv_4
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 30
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=7 w=5.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=7 w=3.0u l=0.15u
+.ENDS sky130_rom_krom_pinv_4
+
+.SUBCKT sky130_rom_krom_rom_precharge_driver
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* sizes: [1, 1, 1, 3, 10, 30, 91]
+Xbuf_inv1
++ A Zb1_int vdd gnd
++ sky130_rom_krom_pinv
+Xbuf_inv2
++ Zb1_int Zb2_int vdd gnd
++ sky130_rom_krom_pinv
+Xbuf_inv3
++ Zb2_int Zb3_int vdd gnd
++ sky130_rom_krom_pinv
+Xbuf_inv4
++ Zb3_int Zb4_int vdd gnd
++ sky130_rom_krom_pinv_2
+Xbuf_inv5
++ Zb4_int Zb5_int vdd gnd
++ sky130_rom_krom_pinv_3
+Xbuf_inv6
++ Zb5_int Zb6_int vdd gnd
++ sky130_rom_krom_pinv_4
+Xbuf_inv7
++ Zb6_int Z vdd gnd
++ sky130_rom_krom_pinv_5
+.ENDS sky130_rom_krom_rom_precharge_driver
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.74 l=0.15 pd=1.78 ps=1.78 as=0.28u ad=0.28u
+
+.SUBCKT sky130_rom_krom_rom_control_nand
++ A B Z vdd gnd
+* INPUT : A 
+* INPUT : B 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 1
+Xpnand2_pmos1 vdd A Z vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
+Xpnand2_pmos2 Z B vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12u l=0.15u
+Xpnand2_nmos1 Z B net1 gnd sky130_fd_pr__nfet_01v8 m=1 w=0.74u l=0.15u
+Xpnand2_nmos2 net1 A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.74u l=0.15u
+.ENDS sky130_rom_krom_rom_control_nand
+
+.SUBCKT sky130_rom_krom_rom_control_logic
++ clk_in CS prechrg clk_out vdd gnd
+* INPUT : clk_in 
+* INPUT : CS 
+* OUTPUT: prechrg 
+* OUTPUT: clk_out 
+* POWER : vdd 
+* GROUND: gnd 
+Xclk_driver
++ clk_in clk_out vdd gnd
++ sky130_rom_krom_rom_clock_driver
+Xcontrol_nand
++ CS clk_out pre_drive vdd gnd
++ sky130_rom_krom_rom_control_nand
+Xprecharge_driver
++ pre_drive prechrg vdd gnd
++ sky130_rom_krom_rom_precharge_driver
+.ENDS sky130_rom_krom_rom_control_logic
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=5.0 l=0.15 pd=10.30 ps=10.30 as=1.88u ad=1.88u
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=1.68 l=0.15 pd=3.66 ps=3.66 as=0.63u ad=0.63u
+
 .SUBCKT sky130_rom_krom_pinv_dec_3
 + A Z vdd gnd
 * INPUT : A 
@@ -10630,1115 +11557,188 @@ Xrom_wordline_driver
 + sky130_rom_krom_rom_column_decode_wordline_buffer
 .ENDS sky130_rom_krom_rom_column_decode
 
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=2.88 l=0.15 pd=6.06 ps=6.06 as=1.08u ad=1.08u
+.SUBCKT sky130_rom_krom_pinv_dec_4
++ A Z vdd gnd
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 4
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=5.0u l=0.15u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=1.68u l=0.15u
+.ENDS sky130_rom_krom_pinv_dec_4
 
-.SUBCKT sky130_rom_krom_rom_column_mux
-+ bl bl_out sel gnd
-* INOUT : bl 
-* INOUT : bl_out 
-* INOUT : sel 
-* INOUT : gnd 
-Xmux_tx1 bl sel bl_out gnd sky130_fd_pr__nfet_01v8 m=1 w=2.88u l=0.15u
-.ENDS sky130_rom_krom_rom_column_mux
-
-.SUBCKT sky130_rom_krom_rom_column_mux_array
-+ bl_0 bl_1 bl_2 bl_3 bl_4 bl_5 bl_6 bl_7 bl_8 bl_9 bl_10 bl_11 bl_12
-+ bl_13 bl_14 bl_15 bl_16 bl_17 bl_18 bl_19 bl_20 bl_21 bl_22 bl_23
-+ bl_24 bl_25 bl_26 bl_27 bl_28 bl_29 bl_30 bl_31 bl_32 bl_33 bl_34
-+ bl_35 bl_36 bl_37 bl_38 bl_39 bl_40 bl_41 bl_42 bl_43 bl_44 bl_45
-+ bl_46 bl_47 bl_48 bl_49 bl_50 bl_51 bl_52 bl_53 bl_54 bl_55 bl_56
-+ bl_57 bl_58 bl_59 bl_60 bl_61 bl_62 bl_63 bl_64 bl_65 bl_66 bl_67
-+ bl_68 bl_69 bl_70 bl_71 bl_72 bl_73 bl_74 bl_75 bl_76 bl_77 bl_78
-+ bl_79 bl_80 bl_81 bl_82 bl_83 bl_84 bl_85 bl_86 bl_87 bl_88 bl_89
-+ bl_90 bl_91 bl_92 bl_93 bl_94 bl_95 bl_96 bl_97 bl_98 bl_99 bl_100
-+ bl_101 bl_102 bl_103 bl_104 bl_105 bl_106 bl_107 bl_108 bl_109 bl_110
-+ bl_111 bl_112 bl_113 bl_114 bl_115 bl_116 bl_117 bl_118 bl_119 bl_120
-+ bl_121 bl_122 bl_123 bl_124 bl_125 bl_126 bl_127 bl_128 bl_129 bl_130
-+ bl_131 bl_132 bl_133 bl_134 bl_135 bl_136 bl_137 bl_138 bl_139 bl_140
-+ bl_141 bl_142 bl_143 bl_144 bl_145 bl_146 bl_147 bl_148 bl_149 bl_150
-+ bl_151 bl_152 bl_153 bl_154 bl_155 bl_156 bl_157 bl_158 bl_159 bl_160
-+ bl_161 bl_162 bl_163 bl_164 bl_165 bl_166 bl_167 bl_168 bl_169 bl_170
-+ bl_171 bl_172 bl_173 bl_174 bl_175 bl_176 bl_177 bl_178 bl_179 bl_180
-+ bl_181 bl_182 bl_183 bl_184 bl_185 bl_186 bl_187 bl_188 bl_189 bl_190
-+ bl_191 bl_192 bl_193 bl_194 bl_195 bl_196 bl_197 bl_198 bl_199 bl_200
-+ bl_201 bl_202 bl_203 bl_204 bl_205 bl_206 bl_207 bl_208 bl_209 bl_210
-+ bl_211 bl_212 bl_213 bl_214 bl_215 bl_216 bl_217 bl_218 bl_219 bl_220
-+ bl_221 bl_222 bl_223 bl_224 bl_225 bl_226 bl_227 bl_228 bl_229 bl_230
-+ bl_231 bl_232 bl_233 bl_234 bl_235 bl_236 bl_237 bl_238 bl_239 bl_240
-+ bl_241 bl_242 bl_243 bl_244 bl_245 bl_246 bl_247 bl_248 bl_249 bl_250
-+ bl_251 bl_252 bl_253 bl_254 bl_255 sel_0 sel_1 sel_2 sel_3 sel_4 sel_5
-+ sel_6 sel_7 bl_out_0 bl_out_1 bl_out_2 bl_out_3 bl_out_4 bl_out_5
-+ bl_out_6 bl_out_7 bl_out_8 bl_out_9 bl_out_10 bl_out_11 bl_out_12
-+ bl_out_13 bl_out_14 bl_out_15 bl_out_16 bl_out_17 bl_out_18 bl_out_19
-+ bl_out_20 bl_out_21 bl_out_22 bl_out_23 bl_out_24 bl_out_25 bl_out_26
-+ bl_out_27 bl_out_28 bl_out_29 bl_out_30 bl_out_31 gnd
-* INOUT : bl_0 
-* INOUT : bl_1 
-* INOUT : bl_2 
-* INOUT : bl_3 
-* INOUT : bl_4 
-* INOUT : bl_5 
-* INOUT : bl_6 
-* INOUT : bl_7 
-* INOUT : bl_8 
-* INOUT : bl_9 
-* INOUT : bl_10 
-* INOUT : bl_11 
-* INOUT : bl_12 
-* INOUT : bl_13 
-* INOUT : bl_14 
-* INOUT : bl_15 
-* INOUT : bl_16 
-* INOUT : bl_17 
-* INOUT : bl_18 
-* INOUT : bl_19 
-* INOUT : bl_20 
-* INOUT : bl_21 
-* INOUT : bl_22 
-* INOUT : bl_23 
-* INOUT : bl_24 
-* INOUT : bl_25 
-* INOUT : bl_26 
-* INOUT : bl_27 
-* INOUT : bl_28 
-* INOUT : bl_29 
-* INOUT : bl_30 
-* INOUT : bl_31 
-* INOUT : bl_32 
-* INOUT : bl_33 
-* INOUT : bl_34 
-* INOUT : bl_35 
-* INOUT : bl_36 
-* INOUT : bl_37 
-* INOUT : bl_38 
-* INOUT : bl_39 
-* INOUT : bl_40 
-* INOUT : bl_41 
-* INOUT : bl_42 
-* INOUT : bl_43 
-* INOUT : bl_44 
-* INOUT : bl_45 
-* INOUT : bl_46 
-* INOUT : bl_47 
-* INOUT : bl_48 
-* INOUT : bl_49 
-* INOUT : bl_50 
-* INOUT : bl_51 
-* INOUT : bl_52 
-* INOUT : bl_53 
-* INOUT : bl_54 
-* INOUT : bl_55 
-* INOUT : bl_56 
-* INOUT : bl_57 
-* INOUT : bl_58 
-* INOUT : bl_59 
-* INOUT : bl_60 
-* INOUT : bl_61 
-* INOUT : bl_62 
-* INOUT : bl_63 
-* INOUT : bl_64 
-* INOUT : bl_65 
-* INOUT : bl_66 
-* INOUT : bl_67 
-* INOUT : bl_68 
-* INOUT : bl_69 
-* INOUT : bl_70 
-* INOUT : bl_71 
-* INOUT : bl_72 
-* INOUT : bl_73 
-* INOUT : bl_74 
-* INOUT : bl_75 
-* INOUT : bl_76 
-* INOUT : bl_77 
-* INOUT : bl_78 
-* INOUT : bl_79 
-* INOUT : bl_80 
-* INOUT : bl_81 
-* INOUT : bl_82 
-* INOUT : bl_83 
-* INOUT : bl_84 
-* INOUT : bl_85 
-* INOUT : bl_86 
-* INOUT : bl_87 
-* INOUT : bl_88 
-* INOUT : bl_89 
-* INOUT : bl_90 
-* INOUT : bl_91 
-* INOUT : bl_92 
-* INOUT : bl_93 
-* INOUT : bl_94 
-* INOUT : bl_95 
-* INOUT : bl_96 
-* INOUT : bl_97 
-* INOUT : bl_98 
-* INOUT : bl_99 
-* INOUT : bl_100 
-* INOUT : bl_101 
-* INOUT : bl_102 
-* INOUT : bl_103 
-* INOUT : bl_104 
-* INOUT : bl_105 
-* INOUT : bl_106 
-* INOUT : bl_107 
-* INOUT : bl_108 
-* INOUT : bl_109 
-* INOUT : bl_110 
-* INOUT : bl_111 
-* INOUT : bl_112 
-* INOUT : bl_113 
-* INOUT : bl_114 
-* INOUT : bl_115 
-* INOUT : bl_116 
-* INOUT : bl_117 
-* INOUT : bl_118 
-* INOUT : bl_119 
-* INOUT : bl_120 
-* INOUT : bl_121 
-* INOUT : bl_122 
-* INOUT : bl_123 
-* INOUT : bl_124 
-* INOUT : bl_125 
-* INOUT : bl_126 
-* INOUT : bl_127 
-* INOUT : bl_128 
-* INOUT : bl_129 
-* INOUT : bl_130 
-* INOUT : bl_131 
-* INOUT : bl_132 
-* INOUT : bl_133 
-* INOUT : bl_134 
-* INOUT : bl_135 
-* INOUT : bl_136 
-* INOUT : bl_137 
-* INOUT : bl_138 
-* INOUT : bl_139 
-* INOUT : bl_140 
-* INOUT : bl_141 
-* INOUT : bl_142 
-* INOUT : bl_143 
-* INOUT : bl_144 
-* INOUT : bl_145 
-* INOUT : bl_146 
-* INOUT : bl_147 
-* INOUT : bl_148 
-* INOUT : bl_149 
-* INOUT : bl_150 
-* INOUT : bl_151 
-* INOUT : bl_152 
-* INOUT : bl_153 
-* INOUT : bl_154 
-* INOUT : bl_155 
-* INOUT : bl_156 
-* INOUT : bl_157 
-* INOUT : bl_158 
-* INOUT : bl_159 
-* INOUT : bl_160 
-* INOUT : bl_161 
-* INOUT : bl_162 
-* INOUT : bl_163 
-* INOUT : bl_164 
-* INOUT : bl_165 
-* INOUT : bl_166 
-* INOUT : bl_167 
-* INOUT : bl_168 
-* INOUT : bl_169 
-* INOUT : bl_170 
-* INOUT : bl_171 
-* INOUT : bl_172 
-* INOUT : bl_173 
-* INOUT : bl_174 
-* INOUT : bl_175 
-* INOUT : bl_176 
-* INOUT : bl_177 
-* INOUT : bl_178 
-* INOUT : bl_179 
-* INOUT : bl_180 
-* INOUT : bl_181 
-* INOUT : bl_182 
-* INOUT : bl_183 
-* INOUT : bl_184 
-* INOUT : bl_185 
-* INOUT : bl_186 
-* INOUT : bl_187 
-* INOUT : bl_188 
-* INOUT : bl_189 
-* INOUT : bl_190 
-* INOUT : bl_191 
-* INOUT : bl_192 
-* INOUT : bl_193 
-* INOUT : bl_194 
-* INOUT : bl_195 
-* INOUT : bl_196 
-* INOUT : bl_197 
-* INOUT : bl_198 
-* INOUT : bl_199 
-* INOUT : bl_200 
-* INOUT : bl_201 
-* INOUT : bl_202 
-* INOUT : bl_203 
-* INOUT : bl_204 
-* INOUT : bl_205 
-* INOUT : bl_206 
-* INOUT : bl_207 
-* INOUT : bl_208 
-* INOUT : bl_209 
-* INOUT : bl_210 
-* INOUT : bl_211 
-* INOUT : bl_212 
-* INOUT : bl_213 
-* INOUT : bl_214 
-* INOUT : bl_215 
-* INOUT : bl_216 
-* INOUT : bl_217 
-* INOUT : bl_218 
-* INOUT : bl_219 
-* INOUT : bl_220 
-* INOUT : bl_221 
-* INOUT : bl_222 
-* INOUT : bl_223 
-* INOUT : bl_224 
-* INOUT : bl_225 
-* INOUT : bl_226 
-* INOUT : bl_227 
-* INOUT : bl_228 
-* INOUT : bl_229 
-* INOUT : bl_230 
-* INOUT : bl_231 
-* INOUT : bl_232 
-* INOUT : bl_233 
-* INOUT : bl_234 
-* INOUT : bl_235 
-* INOUT : bl_236 
-* INOUT : bl_237 
-* INOUT : bl_238 
-* INOUT : bl_239 
-* INOUT : bl_240 
-* INOUT : bl_241 
-* INOUT : bl_242 
-* INOUT : bl_243 
-* INOUT : bl_244 
-* INOUT : bl_245 
-* INOUT : bl_246 
-* INOUT : bl_247 
-* INOUT : bl_248 
-* INOUT : bl_249 
-* INOUT : bl_250 
-* INOUT : bl_251 
-* INOUT : bl_252 
-* INOUT : bl_253 
-* INOUT : bl_254 
-* INOUT : bl_255 
-* INOUT : sel_0 
-* INOUT : sel_1 
-* INOUT : sel_2 
-* INOUT : sel_3 
-* INOUT : sel_4 
-* INOUT : sel_5 
-* INOUT : sel_6 
-* INOUT : sel_7 
-* INOUT : bl_out_0 
-* INOUT : bl_out_1 
-* INOUT : bl_out_2 
-* INOUT : bl_out_3 
-* INOUT : bl_out_4 
-* INOUT : bl_out_5 
-* INOUT : bl_out_6 
-* INOUT : bl_out_7 
-* INOUT : bl_out_8 
-* INOUT : bl_out_9 
-* INOUT : bl_out_10 
-* INOUT : bl_out_11 
-* INOUT : bl_out_12 
-* INOUT : bl_out_13 
-* INOUT : bl_out_14 
-* INOUT : bl_out_15 
-* INOUT : bl_out_16 
-* INOUT : bl_out_17 
-* INOUT : bl_out_18 
-* INOUT : bl_out_19 
-* INOUT : bl_out_20 
-* INOUT : bl_out_21 
-* INOUT : bl_out_22 
-* INOUT : bl_out_23 
-* INOUT : bl_out_24 
-* INOUT : bl_out_25 
-* INOUT : bl_out_26 
-* INOUT : bl_out_27 
-* INOUT : bl_out_28 
-* INOUT : bl_out_29 
-* INOUT : bl_out_30 
-* INOUT : bl_out_31 
-* INOUT : gnd 
-* cols: 256 word_size: 32 
-XXMUX0
-+ bl_0 bl_out_0 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX1
-+ bl_1 bl_out_0 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX2
-+ bl_2 bl_out_0 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX3
-+ bl_3 bl_out_0 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX4
-+ bl_4 bl_out_0 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX5
-+ bl_5 bl_out_0 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX6
-+ bl_6 bl_out_0 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX7
-+ bl_7 bl_out_0 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX8
-+ bl_8 bl_out_1 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX9
-+ bl_9 bl_out_1 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX10
-+ bl_10 bl_out_1 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX11
-+ bl_11 bl_out_1 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX12
-+ bl_12 bl_out_1 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX13
-+ bl_13 bl_out_1 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX14
-+ bl_14 bl_out_1 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX15
-+ bl_15 bl_out_1 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX16
-+ bl_16 bl_out_2 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX17
-+ bl_17 bl_out_2 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX18
-+ bl_18 bl_out_2 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX19
-+ bl_19 bl_out_2 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX20
-+ bl_20 bl_out_2 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX21
-+ bl_21 bl_out_2 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX22
-+ bl_22 bl_out_2 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX23
-+ bl_23 bl_out_2 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX24
-+ bl_24 bl_out_3 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX25
-+ bl_25 bl_out_3 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX26
-+ bl_26 bl_out_3 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX27
-+ bl_27 bl_out_3 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX28
-+ bl_28 bl_out_3 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX29
-+ bl_29 bl_out_3 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX30
-+ bl_30 bl_out_3 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX31
-+ bl_31 bl_out_3 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX32
-+ bl_32 bl_out_4 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX33
-+ bl_33 bl_out_4 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX34
-+ bl_34 bl_out_4 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX35
-+ bl_35 bl_out_4 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX36
-+ bl_36 bl_out_4 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX37
-+ bl_37 bl_out_4 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX38
-+ bl_38 bl_out_4 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX39
-+ bl_39 bl_out_4 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX40
-+ bl_40 bl_out_5 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX41
-+ bl_41 bl_out_5 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX42
-+ bl_42 bl_out_5 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX43
-+ bl_43 bl_out_5 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX44
-+ bl_44 bl_out_5 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX45
-+ bl_45 bl_out_5 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX46
-+ bl_46 bl_out_5 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX47
-+ bl_47 bl_out_5 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX48
-+ bl_48 bl_out_6 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX49
-+ bl_49 bl_out_6 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX50
-+ bl_50 bl_out_6 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX51
-+ bl_51 bl_out_6 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX52
-+ bl_52 bl_out_6 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX53
-+ bl_53 bl_out_6 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX54
-+ bl_54 bl_out_6 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX55
-+ bl_55 bl_out_6 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX56
-+ bl_56 bl_out_7 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX57
-+ bl_57 bl_out_7 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX58
-+ bl_58 bl_out_7 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX59
-+ bl_59 bl_out_7 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX60
-+ bl_60 bl_out_7 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX61
-+ bl_61 bl_out_7 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX62
-+ bl_62 bl_out_7 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX63
-+ bl_63 bl_out_7 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX64
-+ bl_64 bl_out_8 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX65
-+ bl_65 bl_out_8 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX66
-+ bl_66 bl_out_8 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX67
-+ bl_67 bl_out_8 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX68
-+ bl_68 bl_out_8 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX69
-+ bl_69 bl_out_8 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX70
-+ bl_70 bl_out_8 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX71
-+ bl_71 bl_out_8 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX72
-+ bl_72 bl_out_9 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX73
-+ bl_73 bl_out_9 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX74
-+ bl_74 bl_out_9 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX75
-+ bl_75 bl_out_9 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX76
-+ bl_76 bl_out_9 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX77
-+ bl_77 bl_out_9 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX78
-+ bl_78 bl_out_9 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX79
-+ bl_79 bl_out_9 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX80
-+ bl_80 bl_out_10 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX81
-+ bl_81 bl_out_10 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX82
-+ bl_82 bl_out_10 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX83
-+ bl_83 bl_out_10 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX84
-+ bl_84 bl_out_10 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX85
-+ bl_85 bl_out_10 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX86
-+ bl_86 bl_out_10 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX87
-+ bl_87 bl_out_10 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX88
-+ bl_88 bl_out_11 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX89
-+ bl_89 bl_out_11 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX90
-+ bl_90 bl_out_11 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX91
-+ bl_91 bl_out_11 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX92
-+ bl_92 bl_out_11 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX93
-+ bl_93 bl_out_11 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX94
-+ bl_94 bl_out_11 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX95
-+ bl_95 bl_out_11 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX96
-+ bl_96 bl_out_12 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX97
-+ bl_97 bl_out_12 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX98
-+ bl_98 bl_out_12 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX99
-+ bl_99 bl_out_12 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX100
-+ bl_100 bl_out_12 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX101
-+ bl_101 bl_out_12 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX102
-+ bl_102 bl_out_12 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX103
-+ bl_103 bl_out_12 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX104
-+ bl_104 bl_out_13 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX105
-+ bl_105 bl_out_13 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX106
-+ bl_106 bl_out_13 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX107
-+ bl_107 bl_out_13 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX108
-+ bl_108 bl_out_13 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX109
-+ bl_109 bl_out_13 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX110
-+ bl_110 bl_out_13 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX111
-+ bl_111 bl_out_13 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX112
-+ bl_112 bl_out_14 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX113
-+ bl_113 bl_out_14 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX114
-+ bl_114 bl_out_14 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX115
-+ bl_115 bl_out_14 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX116
-+ bl_116 bl_out_14 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX117
-+ bl_117 bl_out_14 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX118
-+ bl_118 bl_out_14 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX119
-+ bl_119 bl_out_14 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX120
-+ bl_120 bl_out_15 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX121
-+ bl_121 bl_out_15 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX122
-+ bl_122 bl_out_15 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX123
-+ bl_123 bl_out_15 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX124
-+ bl_124 bl_out_15 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX125
-+ bl_125 bl_out_15 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX126
-+ bl_126 bl_out_15 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX127
-+ bl_127 bl_out_15 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX128
-+ bl_128 bl_out_16 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX129
-+ bl_129 bl_out_16 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX130
-+ bl_130 bl_out_16 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX131
-+ bl_131 bl_out_16 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX132
-+ bl_132 bl_out_16 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX133
-+ bl_133 bl_out_16 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX134
-+ bl_134 bl_out_16 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX135
-+ bl_135 bl_out_16 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX136
-+ bl_136 bl_out_17 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX137
-+ bl_137 bl_out_17 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX138
-+ bl_138 bl_out_17 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX139
-+ bl_139 bl_out_17 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX140
-+ bl_140 bl_out_17 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX141
-+ bl_141 bl_out_17 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX142
-+ bl_142 bl_out_17 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX143
-+ bl_143 bl_out_17 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX144
-+ bl_144 bl_out_18 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX145
-+ bl_145 bl_out_18 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX146
-+ bl_146 bl_out_18 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX147
-+ bl_147 bl_out_18 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX148
-+ bl_148 bl_out_18 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX149
-+ bl_149 bl_out_18 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX150
-+ bl_150 bl_out_18 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX151
-+ bl_151 bl_out_18 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX152
-+ bl_152 bl_out_19 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX153
-+ bl_153 bl_out_19 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX154
-+ bl_154 bl_out_19 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX155
-+ bl_155 bl_out_19 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX156
-+ bl_156 bl_out_19 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX157
-+ bl_157 bl_out_19 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX158
-+ bl_158 bl_out_19 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX159
-+ bl_159 bl_out_19 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX160
-+ bl_160 bl_out_20 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX161
-+ bl_161 bl_out_20 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX162
-+ bl_162 bl_out_20 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX163
-+ bl_163 bl_out_20 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX164
-+ bl_164 bl_out_20 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX165
-+ bl_165 bl_out_20 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX166
-+ bl_166 bl_out_20 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX167
-+ bl_167 bl_out_20 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX168
-+ bl_168 bl_out_21 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX169
-+ bl_169 bl_out_21 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX170
-+ bl_170 bl_out_21 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX171
-+ bl_171 bl_out_21 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX172
-+ bl_172 bl_out_21 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX173
-+ bl_173 bl_out_21 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX174
-+ bl_174 bl_out_21 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX175
-+ bl_175 bl_out_21 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX176
-+ bl_176 bl_out_22 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX177
-+ bl_177 bl_out_22 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX178
-+ bl_178 bl_out_22 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX179
-+ bl_179 bl_out_22 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX180
-+ bl_180 bl_out_22 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX181
-+ bl_181 bl_out_22 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX182
-+ bl_182 bl_out_22 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX183
-+ bl_183 bl_out_22 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX184
-+ bl_184 bl_out_23 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX185
-+ bl_185 bl_out_23 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX186
-+ bl_186 bl_out_23 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX187
-+ bl_187 bl_out_23 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX188
-+ bl_188 bl_out_23 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX189
-+ bl_189 bl_out_23 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX190
-+ bl_190 bl_out_23 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX191
-+ bl_191 bl_out_23 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX192
-+ bl_192 bl_out_24 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX193
-+ bl_193 bl_out_24 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX194
-+ bl_194 bl_out_24 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX195
-+ bl_195 bl_out_24 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX196
-+ bl_196 bl_out_24 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX197
-+ bl_197 bl_out_24 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX198
-+ bl_198 bl_out_24 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX199
-+ bl_199 bl_out_24 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX200
-+ bl_200 bl_out_25 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX201
-+ bl_201 bl_out_25 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX202
-+ bl_202 bl_out_25 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX203
-+ bl_203 bl_out_25 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX204
-+ bl_204 bl_out_25 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX205
-+ bl_205 bl_out_25 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX206
-+ bl_206 bl_out_25 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX207
-+ bl_207 bl_out_25 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX208
-+ bl_208 bl_out_26 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX209
-+ bl_209 bl_out_26 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX210
-+ bl_210 bl_out_26 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX211
-+ bl_211 bl_out_26 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX212
-+ bl_212 bl_out_26 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX213
-+ bl_213 bl_out_26 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX214
-+ bl_214 bl_out_26 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX215
-+ bl_215 bl_out_26 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX216
-+ bl_216 bl_out_27 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX217
-+ bl_217 bl_out_27 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX218
-+ bl_218 bl_out_27 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX219
-+ bl_219 bl_out_27 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX220
-+ bl_220 bl_out_27 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX221
-+ bl_221 bl_out_27 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX222
-+ bl_222 bl_out_27 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX223
-+ bl_223 bl_out_27 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX224
-+ bl_224 bl_out_28 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX225
-+ bl_225 bl_out_28 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX226
-+ bl_226 bl_out_28 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX227
-+ bl_227 bl_out_28 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX228
-+ bl_228 bl_out_28 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX229
-+ bl_229 bl_out_28 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX230
-+ bl_230 bl_out_28 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX231
-+ bl_231 bl_out_28 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX232
-+ bl_232 bl_out_29 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX233
-+ bl_233 bl_out_29 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX234
-+ bl_234 bl_out_29 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX235
-+ bl_235 bl_out_29 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX236
-+ bl_236 bl_out_29 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX237
-+ bl_237 bl_out_29 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX238
-+ bl_238 bl_out_29 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX239
-+ bl_239 bl_out_29 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX240
-+ bl_240 bl_out_30 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX241
-+ bl_241 bl_out_30 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX242
-+ bl_242 bl_out_30 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX243
-+ bl_243 bl_out_30 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX244
-+ bl_244 bl_out_30 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX245
-+ bl_245 bl_out_30 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX246
-+ bl_246 bl_out_30 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX247
-+ bl_247 bl_out_30 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX248
-+ bl_248 bl_out_31 sel_0 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX249
-+ bl_249 bl_out_31 sel_1 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX250
-+ bl_250 bl_out_31 sel_2 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX251
-+ bl_251 bl_out_31 sel_3 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX252
-+ bl_252 bl_out_31 sel_4 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX253
-+ bl_253 bl_out_31 sel_5 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX254
-+ bl_254 bl_out_31 sel_6 gnd
-+ sky130_rom_krom_rom_column_mux
-XXMUX255
-+ bl_255 bl_out_31 sel_7 gnd
-+ sky130_rom_krom_rom_column_mux
-.ENDS sky130_rom_krom_rom_column_mux_array
+.SUBCKT sky130_rom_krom_rom_output_buffer
++ in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 in_8 in_9 in_10 in_11 in_12
++ in_13 in_14 in_15 in_16 in_17 in_18 in_19 in_20 in_21 in_22 in_23
++ in_24 in_25 in_26 in_27 in_28 in_29 in_30 in_31 out_0 out_1 out_2
++ out_3 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 out_12 out_13
++ out_14 out_15 out_16 out_17 out_18 out_19 out_20 out_21 out_22 out_23
++ out_24 out_25 out_26 out_27 out_28 out_29 out_30 out_31 vdd gnd
+* INPUT : in_0 
+* INPUT : in_1 
+* INPUT : in_2 
+* INPUT : in_3 
+* INPUT : in_4 
+* INPUT : in_5 
+* INPUT : in_6 
+* INPUT : in_7 
+* INPUT : in_8 
+* INPUT : in_9 
+* INPUT : in_10 
+* INPUT : in_11 
+* INPUT : in_12 
+* INPUT : in_13 
+* INPUT : in_14 
+* INPUT : in_15 
+* INPUT : in_16 
+* INPUT : in_17 
+* INPUT : in_18 
+* INPUT : in_19 
+* INPUT : in_20 
+* INPUT : in_21 
+* INPUT : in_22 
+* INPUT : in_23 
+* INPUT : in_24 
+* INPUT : in_25 
+* INPUT : in_26 
+* INPUT : in_27 
+* INPUT : in_28 
+* INPUT : in_29 
+* INPUT : in_30 
+* INPUT : in_31 
+* OUTPUT: out_0 
+* OUTPUT: out_1 
+* OUTPUT: out_2 
+* OUTPUT: out_3 
+* OUTPUT: out_4 
+* OUTPUT: out_5 
+* OUTPUT: out_6 
+* OUTPUT: out_7 
+* OUTPUT: out_8 
+* OUTPUT: out_9 
+* OUTPUT: out_10 
+* OUTPUT: out_11 
+* OUTPUT: out_12 
+* OUTPUT: out_13 
+* OUTPUT: out_14 
+* OUTPUT: out_15 
+* OUTPUT: out_16 
+* OUTPUT: out_17 
+* OUTPUT: out_18 
+* OUTPUT: out_19 
+* OUTPUT: out_20 
+* OUTPUT: out_21 
+* OUTPUT: out_22 
+* OUTPUT: out_23 
+* OUTPUT: out_24 
+* OUTPUT: out_25 
+* OUTPUT: out_26 
+* OUTPUT: out_27 
+* OUTPUT: out_28 
+* OUTPUT: out_29 
+* OUTPUT: out_30 
+* OUTPUT: out_31 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 32 Buffer size of: 4
+Xwld0
++ in_0 out_0 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld1
++ in_1 out_1 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld2
++ in_2 out_2 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld3
++ in_3 out_3 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld4
++ in_4 out_4 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld5
++ in_5 out_5 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld6
++ in_6 out_6 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld7
++ in_7 out_7 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld8
++ in_8 out_8 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld9
++ in_9 out_9 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld10
++ in_10 out_10 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld11
++ in_11 out_11 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld12
++ in_12 out_12 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld13
++ in_13 out_13 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld14
++ in_14 out_14 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld15
++ in_15 out_15 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld16
++ in_16 out_16 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld17
++ in_17 out_17 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld18
++ in_18 out_18 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld19
++ in_19 out_19 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld20
++ in_20 out_20 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld21
++ in_21 out_21 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld22
++ in_22 out_22 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld23
++ in_23 out_23 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld24
++ in_24 out_24 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld25
++ in_25 out_25 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld26
++ in_26 out_26 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld27
++ in_27 out_27 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld28
++ in_28 out_28 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld29
++ in_29 out_29 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld30
++ in_30 out_30 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+Xwld31
++ in_31 out_31 vdd gnd
++ sky130_rom_krom_pinv_dec_4
+.ENDS sky130_rom_krom_rom_output_buffer
 
 .SUBCKT sky130_rom_krom
 + clk0 cs0 addr0[0] addr0[1] addr0[2] addr0[3] addr0[4] addr0[5]

@@ -1,4 +1,4 @@
-timestamp 1581582910
+timestamp 1581585458
 version 8.3
 tech sky130A
 style ngspice(si)
@@ -39,117 +39,117 @@ node "vdd" 437 650.338 12 -160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_60_50#" 3401 811.031 60 50 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63465 4292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "upper right" 3064 3529.78 0 -196 nw 0 0 0 0 1176592 5104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "gnd" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "precharge_r" "a_60_50#" 6.73377
-cap "pre_bl5_out" "a_60_50#" 0.38073
-cap "pre_bl7_out" "a_60_50#" 0.513592
-cap "a_60_50#" "vdd" 18.7911
-cap "pre_bl1_out" "pre_bl2_out" 5.45133
-cap "upper right" "pre_bl1_out" 4.99077
 cap "precharge_r" "pre_bl2_out" 0.266505
-cap "upper right" "pre_bl4_out" 5.19096
-cap "a_60_50#" "pre_bl0_out" 0.514934
-cap "vdd" "pre_bl2_out" 0.496561
-cap "upper right" "precharge_r" 111.395
-cap "a_60_50#" "pre_bl3_out" 0.386469
-cap "upper right" "pre_bl5_out" 5.13526
-cap "upper right" "pre_bl7_out" 6.04265
-cap "upper right" "vdd" 249.687
-cap "a_60_50#" "pre_bl6_out" 0.370315
-cap "pre_bl3_out" "pre_bl2_out" 5.45133
-cap "precharge_r" "pre_bl1_out" 0.266505
-cap "upper right" "pre_bl0_out" 5.83015
-cap "precharge_r" "pre_bl4_out" 0.266505
-cap "pre_bl5_out" "pre_bl4_out" 5.45133
-cap "upper right" "pre_bl3_out" 5.18487
-cap "vdd" "pre_bl1_out" 0.496561
-cap "pre_bl5_out" "precharge_r" 0.266505
-cap "vdd" "pre_bl4_out" 0.496561
-cap "pre_bl7_out" "precharge_r" 0.266505
-cap "precharge_r" "vdd" 209.467
-cap "pre_bl5_out" "vdd" 0.496561
-cap "upper right" "pre_bl6_out" 5.02
-cap "pre_bl7_out" "vdd" 0.0709374
-cap "a_60_50#" "pre_bl2_out" 0.381563
-cap "pre_bl1_out" "pre_bl0_out" 5.45133
+cap "pre_bl4_out" "upper right" 5.19096
 cap "upper right" "a_60_50#" 375.063
-cap "pre_bl4_out" "pre_bl3_out" 5.45133
-cap "precharge_r" "pre_bl0_out" 0.266505
-cap "precharge_r" "pre_bl3_out" 0.266505
-cap "vdd" "pre_bl0_out" 0.496561
-cap "vdd" "pre_bl3_out" 0.496561
+cap "pre_bl4_out" "precharge_r" 0.266505
+cap "precharge_r" "a_60_50#" 6.73377
+cap "upper right" "pre_bl6_out" 5.02
 cap "precharge_r" "pre_bl6_out" 0.266505
-cap "pre_bl5_out" "pre_bl6_out" 5.45133
-cap "upper right" "pre_bl2_out" 5.11724
+cap "pre_bl3_out" "vdd" 0.496561
+cap "pre_bl5_out" "upper right" 5.13526
+cap "pre_bl1_out" "vdd" 0.496561
+cap "pre_bl5_out" "precharge_r" 0.266505
+cap "pre_bl2_out" "vdd" 0.496561
+cap "upper right" "pre_bl7_out" 6.04265
+cap "pre_bl3_out" "pre_bl2_out" 5.45133
+cap "precharge_r" "pre_bl7_out" 0.266505
+cap "pre_bl4_out" "vdd" 0.496561
+cap "pre_bl2_out" "pre_bl1_out" 5.45133
+cap "a_60_50#" "vdd" 18.7911
+cap "pre_bl3_out" "pre_bl4_out" 5.45133
+cap "pre_bl3_out" "a_60_50#" 0.386469
 cap "a_60_50#" "pre_bl1_out" 0.371665
+cap "pre_bl6_out" "vdd" 0.496561
+cap "pre_bl2_out" "a_60_50#" 0.381563
+cap "pre_bl4_out" "a_60_50#" 0.386188
+cap "pre_bl5_out" "vdd" 0.496561
+cap "pre_bl7_out" "vdd" 0.0709374
+cap "a_60_50#" "pre_bl6_out" 0.370315
+cap "pre_bl5_out" "pre_bl4_out" 5.45133
+cap "pre_bl5_out" "a_60_50#" 0.38073
+cap "upper right" "pre_bl0_out" 5.83015
+cap "pre_bl7_out" "a_60_50#" 0.513592
+cap "pre_bl5_out" "pre_bl6_out" 5.45133
+cap "precharge_r" "pre_bl0_out" 0.266505
+cap "upper right" "precharge_r" 111.395
 cap "pre_bl7_out" "pre_bl6_out" 5.45133
-cap "vdd" "pre_bl6_out" 0.496561
-cap "a_60_50#" "pre_bl4_out" 0.386188
-cap "pre_bl4_out" "pre_bl1_out" 0.569317
-cap "pre_bl0_out" "pre_bl1_out" 10.7649
-cap "pre_bl4_out" "upper right" 1.32858
-cap "upper right" "pre_bl0_out" 2.44474
-cap "pre_bl3_out" "gate" 1.18479
-cap "pre_bl3_out" "pre_bl5_out" 0.630671
-cap "pre_bl3_out" "pre_bl2_out" 10.7649
-cap "pre_bl4_out" "pre_bl0_out" 0.485203
-cap "pre_bl6_out" "gate" 0.0943344
-cap "pre_bl5_out" "pre_bl6_out" 5.38245
-cap "pre_bl6_out" "pre_bl2_out" 0.242602
-cap "pre_bl3_out" "pre_bl7_out" 0.242602
-cap "pre_bl1_out" "gate" 1.26624
-cap "pre_bl5_out" "pre_bl1_out" 0.485203
-cap "pre_bl1_out" "pre_bl2_out" 10.7649
-cap "upper right" "gate" -26.6621
-cap "pre_bl5_out" "upper right" 1.22763
-cap "upper right" "pre_bl2_out" 1.2043
-cap "pre_bl0_out" "gate" 1.61373
-cap "pre_bl5_out" "pre_bl0_out" 0.381693
-cap "pre_bl0_out" "pre_bl2_out" 0.630671
-cap "pre_bl4_out" "gate" 1.12035
-cap "pre_bl4_out" "pre_bl5_out" 10.7649
-cap "pre_bl4_out" "pre_bl2_out" 0.630671
-cap "pre_bl7_out" "pre_bl1_out" 0.131461
-cap "pre_bl0_out" "pre_bl7_out" 0.0668212
-cap "pre_bl4_out" "pre_bl7_out" 0.284659
-cap "pre_bl3_out" "pre_bl6_out" 0.284659
-cap "pre_bl5_out" "gate" 1.04335
-cap "gate" "pre_bl2_out" 1.23407
-cap "pre_bl5_out" "pre_bl2_out" 0.569317
-cap "pre_bl3_out" "pre_bl1_out" 0.630671
-cap "pre_bl3_out" "upper right" 1.32062
-cap "pre_bl4_out" "pre_bl3_out" 10.7649
-cap "pre_bl3_out" "pre_bl0_out" 0.569317
-cap "pre_bl6_out" "pre_bl1_out" 0.190846
-cap "pre_bl7_out" "gate" 0.0095964
-cap "pre_bl5_out" "pre_bl7_out" 0.315336
-cap "pre_bl7_out" "pre_bl2_out" 0.190846
-cap "pre_bl6_out" "pre_bl0_out" 0.131461
-cap "pre_bl4_out" "pre_bl6_out" 0.315336
+cap "pre_bl0_out" "vdd" 0.496561
+cap "upper right" "vdd" 249.687
+cap "pre_bl0_out" "pre_bl1_out" 5.45133
+cap "pre_bl3_out" "upper right" 5.18487
+cap "precharge_r" "vdd" 209.467
+cap "upper right" "pre_bl1_out" 4.99077
+cap "pre_bl3_out" "precharge_r" 0.266505
+cap "upper right" "pre_bl2_out" 5.11724
+cap "precharge_r" "pre_bl1_out" 0.266505
+cap "pre_bl0_out" "a_60_50#" 0.514934
 cap "upper right" "pre_bl1_out" 0.98675
-cap "pre_bl7_out" "pre_bl0_out" 0.0668212
+cap "pre_bl2_out" "gate" 1.23407
+cap "upper right" "pre_bl2_out" 1.2043
+cap "pre_bl7_out" "pre_bl4_out" 0.284659
+cap "pre_bl6_out" "pre_bl4_out" 0.315336
+cap "pre_bl6_out" "pre_bl3_out" 0.284659
+cap "pre_bl7_out" "pre_bl3_out" 0.242602
+cap "pre_bl4_out" "pre_bl3_out" 10.7649
+cap "pre_bl5_out" "pre_bl6_out" 5.38245
+cap "pre_bl7_out" "pre_bl5_out" 0.315336
+cap "pre_bl5_out" "pre_bl4_out" 10.7649
+cap "pre_bl5_out" "pre_bl3_out" 0.630671
+cap "pre_bl6_out" "pre_bl1_out" 0.190846
 cap "pre_bl7_out" "pre_bl1_out" 0.131461
-cap "pre_bl6_out" "gate" 1.26862
+cap "pre_bl1_out" "pre_bl4_out" 0.569317
+cap "pre_bl1_out" "pre_bl3_out" 0.630671
+cap "pre_bl2_out" "pre_bl6_out" 0.242602
+cap "pre_bl5_out" "pre_bl1_out" 0.485203
+cap "pre_bl7_out" "pre_bl2_out" 0.190846
+cap "pre_bl2_out" "pre_bl4_out" 0.630671
+cap "pre_bl2_out" "pre_bl3_out" 10.7649
+cap "pre_bl5_out" "pre_bl2_out" 0.569317
+cap "pre_bl2_out" "pre_bl1_out" 10.7649
+cap "pre_bl0_out" "gate" 1.61373
+cap "upper right" "pre_bl0_out" 2.44474
+cap "upper right" "gate" -26.6621
+cap "pre_bl6_out" "pre_bl0_out" 0.131461
+cap "pre_bl7_out" "pre_bl0_out" 0.0668212
+cap "pre_bl0_out" "pre_bl4_out" 0.485203
+cap "pre_bl0_out" "pre_bl3_out" 0.569317
+cap "pre_bl6_out" "gate" 0.0943344
+cap "pre_bl5_out" "pre_bl0_out" 0.381693
+cap "pre_bl7_out" "gate" 0.0095964
+cap "gate" "pre_bl4_out" 1.12035
+cap "upper right" "pre_bl4_out" 1.32858
+cap "gate" "pre_bl3_out" 1.18479
+cap "upper right" "pre_bl3_out" 1.32062
+cap "pre_bl1_out" "pre_bl0_out" 10.7649
+cap "pre_bl5_out" "gate" 1.04335
+cap "pre_bl5_out" "upper right" 1.22763
+cap "pre_bl2_out" "pre_bl0_out" 0.630671
+cap "pre_bl1_out" "gate" 1.26624
+cap "pre_bl3_out" "pre_bl6_out" 0.284659
+cap "pre_bl3_out" "pre_bl7_out" 0.242602
+cap "pre_bl2_out" "pre_bl6_out" 0.242602
+cap "pre_bl6_out" "pre_bl5_out" 5.38245
 cap "upper right" "gate" 35.0083
 cap "pre_bl7_out" "pre_bl5_out" 0.315336
-cap "pre_bl0_out" "gate" 0.0185105
-cap "pre_bl1_out" "gate" 0.103344
-cap "pre_bl6_out" "upper right" 1.02386
+cap "pre_bl4_out" "pre_bl6_out" 0.315336
 cap "pre_bl7_out" "pre_bl2_out" 0.190846
-cap "pre_bl0_out" "pre_bl6_out" 0.131461
-cap "gate" "pre_bl5_out" 0.370688
-cap "pre_bl7_out" "pre_bl4_out" 0.284659
-cap "pre_bl1_out" "pre_bl6_out" 0.190846
-cap "pre_bl7_out" "pre_bl3_out" 0.242602
-cap "pre_bl2_out" "gate" 0.184046
-cap "pre_bl6_out" "pre_bl5_out" 5.38245
-cap "pre_bl4_out" "gate" 0.320444
+cap "pre_bl4_out" "pre_bl7_out" 0.284659
+cap "pre_bl6_out" "pre_bl0_out" 0.131461
+cap "pre_bl7_out" "pre_bl0_out" 0.0668212
+cap "pre_bl6_out" "pre_bl1_out" 0.190846
+cap "pre_bl6_out" "gate" 1.26862
+cap "pre_bl7_out" "pre_bl1_out" 0.131461
 cap "pre_bl7_out" "gate" 1.6149
 cap "pre_bl3_out" "gate" 0.25739
-cap "pre_bl2_out" "pre_bl6_out" 0.242602
-cap "pre_bl6_out" "pre_bl4_out" 0.315336
-cap "pre_bl7_out" "pre_bl6_out" 10.7649
-cap "pre_bl6_out" "pre_bl3_out" 0.284659
+cap "pre_bl6_out" "upper right" 1.02386
+cap "gate" "pre_bl5_out" 0.370688
+cap "pre_bl2_out" "gate" 0.184046
+cap "pre_bl4_out" "gate" 0.320444
 cap "pre_bl7_out" "upper right" 2.18491
+cap "pre_bl0_out" "gate" 0.0185105
+cap "pre_bl1_out" "gate" 0.103344
+cap "pre_bl7_out" "pre_bl6_out" 10.7649
 merge "sky130_rom_krom_precharge_cell_0/vdd" "sky130_rom_krom_precharge_cell_1/vdd" -2548.74 0 0 0 0 -674816 -9792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9248 -1088 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_rom_krom_precharge_cell_1/vdd" "sky130_rom_krom_precharge_cell_2/vdd"
 merge "sky130_rom_krom_precharge_cell_2/vdd" "sky130_rom_krom_precharge_cell_3/vdd"

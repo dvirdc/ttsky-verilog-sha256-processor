@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1216 -1310 6970 1559
 << locali >>
@@ -15,11 +15,11 @@ rect 1696 0 1724 204
 rect 3294 0 3322 204
 rect 4942 0 4970 204
 use sky130_rom_krom_pinv_dec_0  sky130_rom_krom_pinv_dec_0_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 0
 box 44 -50 2464 299
 use sky130_rom_krom_pinv_dec_1  sky130_rom_krom_pinv_dec_1_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 2446 0 1 0
 box 44 -50 3264 299
 << labels >>

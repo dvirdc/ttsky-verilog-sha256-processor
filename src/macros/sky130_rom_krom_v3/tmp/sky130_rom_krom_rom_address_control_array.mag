@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1308 -1216 2579 4388
 << locali >>
@@ -24,15 +24,15 @@ rect 737 3098 765 3126
 rect 1005 3098 1033 3126
 rect 1145 3098 1173 3126
 use sky130_rom_krom_rom_address_control_buf  sky130_rom_krom_rom_address_control_buf_0
-timestamp 1581582910
+timestamp 1581585458
 transform -1 0 1224 0 1 0
 box -95 44 456 3128
 use sky130_rom_krom_rom_address_control_buf  sky130_rom_krom_rom_address_control_buf_1
-timestamp 1581582910
+timestamp 1581585458
 transform -1 0 816 0 1 0
 box -95 44 456 3128
 use sky130_rom_krom_rom_address_control_buf  sky130_rom_krom_rom_address_control_buf_2
-timestamp 1581582910
+timestamp 1581585458
 transform -1 0 408 0 1 0
 box -95 44 456 3128
 << labels >>
@@ -40,9 +40,9 @@ rlabel metal1 s 0 2160 1224 2188 4 clk
 port 3 nsew
 rlabel metal1 s 0 2833 28 2861 4 vdd
 port 5 nsew
-rlabel metal1 s 0 1881 28 1909 4 vdd
-port 5 nsew
 rlabel metal1 s 0 844 28 872 4 vdd
+port 5 nsew
+rlabel metal1 s 0 1881 28 1909 4 vdd
 port 5 nsew
 rlabel metal1 s 1224 1456 1252 1484 4 gnd
 port 7 nsew

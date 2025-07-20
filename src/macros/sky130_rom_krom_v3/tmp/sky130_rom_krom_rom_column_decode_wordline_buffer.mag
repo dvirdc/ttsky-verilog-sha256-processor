@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1216 -1310 2472 3091
 << nwell >>
@@ -58,35 +58,35 @@ rect 835 17 841 51
 rect 875 17 881 51
 rect 835 5 881 17
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1532
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_1
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1328
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_2
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1124
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_3
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 920
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_4
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 716
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_5
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 512
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_6
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 308
 box 44 -50 1212 299
 use sky130_rom_krom_pinv_dec_2  sky130_rom_krom_pinv_dec_2_7
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 104
 box 44 -50 1212 299
 << labels >>
@@ -126,9 +126,9 @@ rlabel metal1 s 222 6 250 34 4 gnd
 port 19 nsew
 rlabel metal1 s 222 1722 250 1750 4 gnd
 port 19 nsew
-rlabel metal1 s 844 6 872 34 4 vdd
-port 21 nsew
 rlabel metal1 s 844 1722 872 1750 4 vdd
+port 21 nsew
+rlabel metal1 s 844 6 872 34 4 vdd
 port 21 nsew
 << properties >>
 string FIXED_BBOX 774 -50 942 0

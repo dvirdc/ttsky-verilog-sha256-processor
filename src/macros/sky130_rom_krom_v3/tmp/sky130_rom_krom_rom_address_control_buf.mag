@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1355 -1216 1716 4388
 << nwell >>
@@ -110,7 +110,7 @@ timestamp 1479568902
 transform 0 -1 316 1 0 1222
 box 10 -140 954 398
 use sky130_rom_krom_inv_array_mod  sky130_rom_krom_inv_array_mod_0
-timestamp 1581582910
+timestamp 1581585458
 transform 0 -1 316 1 0 0
 box 44 0 1212 411
 << labels >>
@@ -122,9 +122,9 @@ rlabel metal2 s 51 3098 79 3126 4 Abar_out
 port 7 nsew
 rlabel locali s 181 77 181 77 4 A_in
 port 8 nsew
-rlabel metal1 s -1 2822 226 2872 4 vdd
-port 10 nsew
 rlabel metal1 s 0 844 316 872 4 vdd
+port 10 nsew
+rlabel metal1 s -1 2822 226 2872 4 vdd
 port 10 nsew
 rlabel metal1 s -1 1870 226 1920 4 vdd
 port 10 nsew

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1296 -1289 7004 6546
 << locali >>
@@ -72,15 +72,15 @@ rect 915 -17 924 17
 rect 872 -26 924 -17
 rect 875 -29 921 -26
 use sky130_rom_krom_rom_clock_driver  sky130_rom_krom_rom_clock_driver_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 0
 box -36 -17 1832 2686
 use sky130_rom_krom_rom_control_nand  sky130_rom_krom_rom_control_nand_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1796 0 1 0
 box -36 -17 414 2686
 use sky130_rom_krom_rom_precharge_driver  sky130_rom_krom_rom_precharge_driver_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 -1 5257
 box -36 -17 5744 2686
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1216 -1310 6970 3091
 << nwell >>
@@ -86,35 +86,35 @@ rect 4933 17 4939 51
 rect 4973 17 4979 51
 rect 4933 5 4979 17
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1532
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_1
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1328
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_2
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1124
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_3
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 920
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_4
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 716
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_5
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 512
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_6
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 308
 box 44 -50 5710 299
 use sky130_rom_krom_pbuf_dec  sky130_rom_krom_pbuf_dec_7
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 104
 box 44 -50 5710 299
 << labels >>
@@ -152,19 +152,19 @@ rlabel locali s 5675 1616 5675 1616 4 out_7
 port 17 nsew
 rlabel metal1 s 448 6 476 34 4 gnd
 port 19 nsew
-rlabel metal1 s 3294 1722 3322 1750 4 gnd
-port 19 nsew
 rlabel metal1 s 448 1722 476 1750 4 gnd
+port 19 nsew
+rlabel metal1 s 3294 1722 3322 1750 4 gnd
 port 19 nsew
 rlabel metal1 s 3294 6 3322 34 4 gnd
 port 19 nsew
-rlabel metal1 s 4942 1722 4970 1750 4 vdd
+rlabel metal1 s 1696 1722 1724 1750 4 vdd
 port 21 nsew
 rlabel metal1 s 4942 6 4970 34 4 vdd
 port 21 nsew
-rlabel metal1 s 1696 1722 1724 1750 4 vdd
-port 21 nsew
 rlabel metal1 s 1696 6 1724 34 4 vdd
+port 21 nsew
+rlabel metal1 s 4942 1722 4970 1750 4 vdd
 port 21 nsew
 << properties >>
 string FIXED_BBOX 4872 -50 5040 0

@@ -5,7 +5,7 @@ power_grid = ("m1", "via1", "m2")                 # << pins will now stop on m1
 
 # 2. Keep pins where they are (don’t escape them to the boundary on M3/M4)
 perimeter_pins  = False 
-
+route_supplies = False
 word_size = 4
 words_per_row = 8 
 check_lvsdrc = True

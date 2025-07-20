@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1266 -1344 3325 3572
 << poly >>
@@ -661,287 +661,287 @@ rect 1764 992 1830 997
 rect 31 978 91 992
 rect 1767 978 1827 992
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_0
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_1
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_2
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_3
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_4
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_5
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_6
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_7
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 2097
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_8
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_9
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_10
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_11
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_12
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_13
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_14
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_15
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_16
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_17
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_18
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_19
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_20
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_21
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_22
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_23
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_24
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_25
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_26
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_27
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_28
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_29
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_30
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_one_cell  sky130_rom_krom_rom_base_one_cell_31
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_0
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_1
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_2
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_3
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 1893
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_4
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_5
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_6
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_7
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 1689
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_8
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_9
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_10
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_11
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 1485
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_12
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_13
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_14
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_15
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 1281
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_16
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 716 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_17
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 512 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_18
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 308 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_19
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 104 0 1 1077
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_20
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1532 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_21
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1328 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_22
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 1124 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_base_zero_cell  sky130_rom_krom_rom_base_zero_cell_23
-timestamp 1581582907
+timestamp 1581585455
 transform 1 0 920 0 1 873
 box 0 -51 204 204
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 1893
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_1
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1893
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_2
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 1689
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_3
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1689
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_4
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 1485
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_5
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1485
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_6
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 1281
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_7
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1281
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_8
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 1077
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_9
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 1077
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_10
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 873
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_1  sky130_rom_krom_rom_poly_tap_1_11
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 873
 box -6 17 128 203
 use sky130_rom_krom_rom_poly_tap_2  sky130_rom_krom_rom_poly_tap_2_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 1736 0 1 2097
 box 0 17 66 83
 use sky130_rom_krom_rom_poly_tap_2  sky130_rom_krom_rom_poly_tap_2_1
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 2097
 box 0 17 66 83
 use sky130_rom_krom_rom_precharge_array_0  sky130_rom_krom_rom_precharge_array_0_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 0 0 1 128
 box 0 -212 1948 408
 << labels >>
@@ -977,13 +977,13 @@ rlabel metal1 s 1660 -14 1688 14 4 bl_0_7
 port 31 nsew
 rlabel metal1 s 2037 368 2065 396 4 precharge_r
 port 33 nsew
-rlabel metal3 s 1767 978 1827 1038 4 gnd
-port 35 nsew
-rlabel metal3 s 31 2244 91 2304 4 gnd
+rlabel metal3 s 1767 2244 1827 2304 4 gnd
 port 35 nsew
 rlabel metal3 s 31 978 91 1038 4 gnd
 port 35 nsew
-rlabel metal3 s 1767 2244 1827 2304 4 gnd
+rlabel metal3 s 31 2244 91 2304 4 gnd
+port 35 nsew
+rlabel metal3 s 1767 978 1827 1038 4 gnd
 port 35 nsew
 rlabel metal2 s 12 -32 40 32 4 vdd
 port 37 nsew

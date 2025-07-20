@@ -1,4 +1,4 @@
-Sun Jul 20 03:11:08 AM UTC 2025: Starting GDS to MAG using Magic /workspaces/OpenRAM/miniconda/bin/magic
+Sun Jul 20 03:53:36 AM UTC 2025: Starting GDS to MAG using Magic /workspaces/OpenRAM/miniconda/bin/magic
 
 Magic 8.3 revision 363 - Compiled on Tue 11 Apr 2023 03:01:40 PM PDT.
 Starting magic under Tcl interpreter
@@ -336,10 +336,6 @@ Writing 'sky130_rom_krom_nmos_m2_w0_740_sli_dli_da_p'
 Writing 'sky130_rom_krom_precharge_cell'
 Writing 'sky130_rom_krom_rom_base_zero_cell'
 Annotating port orders from sky130_rom_krom.sp
-Annotating cell sky130_rom_krom_pinv_dec_4
-Cell sky130_rom_krom_pinv_dec_4 port order was modified.
-Annotating cell sky130_rom_krom_rom_output_buffer
-Cell sky130_rom_krom_rom_output_buffer port order was modified.
 Annotating cell sky130_rom_krom_rom_base_zero_cell
 Annotating cell sky130_rom_krom_precharge_cell
 Cell sky130_rom_krom_precharge_cell port order was modified.
@@ -348,14 +344,6 @@ Cell sky130_rom_krom_rom_precharge_array_0 port order was modified.
 Annotating cell sky130_rom_krom_rom_base_one_cell
 Annotating cell sky130_rom_krom_rom_row_decode_array
 Cell sky130_rom_krom_rom_row_decode_array port order was modified.
-Annotating cell sky130_rom_krom_pinv_dec_0
-Cell sky130_rom_krom_pinv_dec_0 port order was modified.
-Annotating cell sky130_rom_krom_pinv_dec_1
-Cell sky130_rom_krom_pinv_dec_1 port order was modified.
-Annotating cell sky130_rom_krom_pbuf_dec
-Cell sky130_rom_krom_pbuf_dec port order was modified.
-Annotating cell sky130_rom_krom_rom_row_decode_wordline_buffer
-Cell sky130_rom_krom_rom_row_decode_wordline_buffer port order was modified.
 Annotating cell sky130_fd_bd_sram__openram_sp_nand2_dec
 Cell sky130_fd_bd_sram__openram_sp_nand2_dec port order was modified.
 Annotating cell sky130_rom_krom_inv_array_mod
@@ -364,34 +352,46 @@ Annotating cell sky130_rom_krom_rom_address_control_buf
 Cell sky130_rom_krom_rom_address_control_buf port order was modified.
 Annotating cell sky130_rom_krom_rom_address_control_array
 Cell sky130_rom_krom_rom_address_control_array port order was modified.
+Annotating cell sky130_rom_krom_pinv_dec_1
+Cell sky130_rom_krom_pinv_dec_1 port order was modified.
+Annotating cell sky130_rom_krom_pinv_dec_0
+Cell sky130_rom_krom_pinv_dec_0 port order was modified.
+Annotating cell sky130_rom_krom_pbuf_dec
+Cell sky130_rom_krom_pbuf_dec port order was modified.
+Annotating cell sky130_rom_krom_rom_row_decode_wordline_buffer
+Cell sky130_rom_krom_rom_row_decode_wordline_buffer port order was modified.
 Annotating cell sky130_rom_krom_rom_row_decode
 Cell sky130_rom_krom_rom_row_decode port order was modified.
-Annotating cell sky130_rom_krom_rom_control_nand
-Cell sky130_rom_krom_rom_control_nand port order was modified.
-Annotating cell sky130_rom_krom_pinv
-Cell sky130_rom_krom_pinv port order was modified.
-Annotating cell sky130_rom_krom_pinv_0
-Cell sky130_rom_krom_pinv_0 port order was modified.
-Annotating cell sky130_rom_krom_pinv_1
-Cell sky130_rom_krom_pinv_1 port order was modified.
-Annotating cell sky130_rom_krom_rom_clock_driver
-Cell sky130_rom_krom_rom_clock_driver port order was modified.
-Annotating cell sky130_rom_krom_pinv_4
-Cell sky130_rom_krom_pinv_4 port order was modified.
-Annotating cell sky130_rom_krom_pinv_2
-Cell sky130_rom_krom_pinv_2 port order was modified.
-Annotating cell sky130_rom_krom_pinv_5
-Cell sky130_rom_krom_pinv_5 port order was modified.
-Annotating cell sky130_rom_krom_pinv_3
-Cell sky130_rom_krom_pinv_3 port order was modified.
-Annotating cell sky130_rom_krom_rom_precharge_driver
-Cell sky130_rom_krom_rom_precharge_driver port order was modified.
-Annotating cell sky130_rom_krom_rom_control_logic
-Cell sky130_rom_krom_rom_control_logic port order was modified.
+Annotating cell sky130_rom_krom_rom_column_mux
+Cell sky130_rom_krom_rom_column_mux port order was modified.
+Annotating cell sky130_rom_krom_rom_column_mux_array
+Cell sky130_rom_krom_rom_column_mux_array port order was modified.
 Annotating cell sky130_rom_krom_rom_precharge_array
 Cell sky130_rom_krom_rom_precharge_array port order was modified.
 Annotating cell sky130_rom_krom_rom_base_array
 Cell sky130_rom_krom_rom_base_array port order was modified.
+Annotating cell sky130_rom_krom_pinv_1
+Cell sky130_rom_krom_pinv_1 port order was modified.
+Annotating cell sky130_rom_krom_pinv
+Cell sky130_rom_krom_pinv port order was modified.
+Annotating cell sky130_rom_krom_pinv_0
+Cell sky130_rom_krom_pinv_0 port order was modified.
+Annotating cell sky130_rom_krom_rom_clock_driver
+Cell sky130_rom_krom_rom_clock_driver port order was modified.
+Annotating cell sky130_rom_krom_pinv_5
+Cell sky130_rom_krom_pinv_5 port order was modified.
+Annotating cell sky130_rom_krom_pinv_3
+Cell sky130_rom_krom_pinv_3 port order was modified.
+Annotating cell sky130_rom_krom_pinv_2
+Cell sky130_rom_krom_pinv_2 port order was modified.
+Annotating cell sky130_rom_krom_pinv_4
+Cell sky130_rom_krom_pinv_4 port order was modified.
+Annotating cell sky130_rom_krom_rom_precharge_driver
+Cell sky130_rom_krom_rom_precharge_driver port order was modified.
+Annotating cell sky130_rom_krom_rom_control_nand
+Cell sky130_rom_krom_rom_control_nand port order was modified.
+Annotating cell sky130_rom_krom_rom_control_logic
+Cell sky130_rom_krom_rom_control_logic port order was modified.
 Annotating cell sky130_rom_krom_pinv_dec_3
 Cell sky130_rom_krom_pinv_dec_3 port order was modified.
 Annotating cell sky130_rom_krom_rom_bitline_inverter
@@ -402,10 +402,10 @@ Annotating cell sky130_rom_krom_rom_column_decode_wordline_buffer
 Cell sky130_rom_krom_rom_column_decode_wordline_buffer port order was modified.
 Annotating cell sky130_rom_krom_rom_column_decode
 Cell sky130_rom_krom_rom_column_decode port order was modified.
-Annotating cell sky130_rom_krom_rom_column_mux
-Cell sky130_rom_krom_rom_column_mux port order was modified.
-Annotating cell sky130_rom_krom_rom_column_mux_array
-Cell sky130_rom_krom_rom_column_mux_array port order was modified.
+Annotating cell sky130_rom_krom_pinv_dec_4
+Cell sky130_rom_krom_pinv_dec_4 port order was modified.
+Annotating cell sky130_rom_krom_rom_output_buffer
+Cell sky130_rom_krom_rom_output_buffer port order was modified.
 Annotating cell sky130_rom_krom
 Cell sky130_rom_krom port order was modified.
 The following types are not handled by extraction and will be treated as non-electrical types:
@@ -503,4 +503,4 @@ exttospice finished.
 device missing 1 terminal;
  connecting remainder to node D
 Finished ext2spice
-Sun Jul 20 03:11:50 AM UTC 2025: Finished (0) GDS to MAG using Magic /workspaces/OpenRAM/miniconda/bin/magic
+Sun Jul 20 03:54:17 AM UTC 2025: Finished (0) GDS to MAG using Magic /workspaces/OpenRAM/miniconda/bin/magic

@@ -1,0 +1,2468 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_precharge_cell  |Circuit 2: sky130_rom_krom_precharge_cell  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__pfet_01v8:precharge_pmos vs. sky130_fd_pr__pfet_01v8:precharge_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 4.2e-07   circuit2: 0.42   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_precharge_cell  |Circuit 2: sky130_rom_krom_precharge_cell  
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+bitline                                    |bitline                                    
+gate                                       |gate                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_precharge_cell and sky130_rom_krom_precharge_cell are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_inv_array_mod   |Circuit 2: sky130_rom_krom_inv_array_mod   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_inv_array_mod   |Circuit 2: sky130_rom_krom_inv_array_mod   
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_inv_array_mod and sky130_rom_krom_inv_array_mod are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_bd_sram__openram_sp_n |Circuit 2: sky130_fd_bd_sram__openram_sp_n 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:1003 vs. sky130_fd_pr__nfet_01v8:1003:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:1000 vs. sky130_fd_pr__nfet_01v8:1000:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:1001 vs. sky130_fd_pr__pfet_01v8:1001:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.12e-06   circuit2: 1.12   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:1002 vs. sky130_fd_pr__pfet_01v8:1002:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.12e-06   circuit2: 1.12   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_fd_bd_sram__openram_sp_n |Circuit 2: sky130_fd_bd_sram__openram_sp_n 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Z                                          |Z                                          
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_bd_sram__openram_sp_nand2_dec and sky130_fd_bd_sram__openram_sp_nand2_dec are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_dec_0      |Circuit 2: sky130_rom_krom_pinv_dec_0      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7e-06   circuit2: 7   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_dec_0      |Circuit 2: sky130_rom_krom_pinv_dec_0      
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_dec_0 and sky130_rom_krom_pinv_dec_0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_dec_1      |Circuit 2: sky130_rom_krom_pinv_dec_1      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7e-06   circuit2: 7   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7e-06   circuit2: 7   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_dec_1      |Circuit 2: sky130_rom_krom_pinv_dec_1      
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_dec_1 and sky130_rom_krom_pinv_dec_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_base_one_ce |Circuit 2: sky130_rom_krom_rom_base_one_ce 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:sky130_rom_krom_rom_base_one_cell_nmos vs. sky130_fd_pr__nfet_01v8:sky130_rom_krom_rom_base_one_cell_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3.6e-07   circuit2: 0.36   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_base_one_ce |Circuit 2: sky130_rom_krom_rom_base_one_ce 
+-------------------------------------------|-------------------------------------------
+wl                                         |wl                                         
+bl_l                                       |bl_l                                       
+bl_h                                       |bl_h                                       
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_base_one_cell and sky130_rom_krom_rom_base_one_cell are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_base_zero_c |Circuit 2: sky130_rom_krom_rom_base_zero_c 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:sky130_rom_krom_rom_base_zero_cell_nmos vs. sky130_fd_pr__nfet_01v8:sky130_rom_krom_rom_base_zero_cell_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3.6e-07   circuit2: 0.36   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_base_zero_c |Circuit 2: sky130_rom_krom_rom_base_zero_c 
+-------------------------------------------|-------------------------------------------
+wl                                         |wl                                         
+gnd                                        |gnd                                        
+bl                                         |bl                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_base_zero_cell and sky130_rom_krom_rom_base_zero_cell are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_precharge_a |Circuit 2: sky130_rom_krom_rom_precharge_a 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_precharge_cell (8)         |sky130_rom_krom_precharge_cell (8)         
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_precharge_a |Circuit 2: sky130_rom_krom_rom_precharge_a 
+-------------------------------------------|-------------------------------------------
+pre_bl7_out                                |pre_bl7_out                                
+pre_bl6_out                                |pre_bl6_out                                
+pre_bl5_out                                |pre_bl5_out                                
+pre_bl4_out                                |pre_bl4_out                                
+pre_bl3_out                                |pre_bl3_out                                
+pre_bl2_out                                |pre_bl2_out                                
+pre_bl1_out                                |pre_bl1_out                                
+pre_bl0_out                                |pre_bl0_out                                
+vdd                                        |vdd                                        
+gate                                       |gate                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_precharge_array_0 and sky130_rom_krom_rom_precharge_array_0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_address_con |Circuit 2: sky130_rom_krom_rom_address_con 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_inv_array_mod (1)          |sky130_rom_krom_inv_array_mod (1)          
+sky130_fd_bd_sram__openram_sp_nand2_dec (2 |sky130_fd_bd_sram__openram_sp_nand2_dec (2 
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_address_con |Circuit 2: sky130_rom_krom_rom_address_con 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+clk                                        |clk                                        
+A_out                                      |A_out                                      
+A_in                                       |A_in                                       
+Abar_out                                   |Abar_out                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_address_control_buf and sky130_rom_krom_rom_address_control_buf are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pbuf_dec        |Circuit 2: sky130_rom_krom_pbuf_dec        
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv_dec_0 (1)             |sky130_rom_krom_pinv_dec_0 (1)             
+sky130_rom_krom_pinv_dec_1 (1)             |sky130_rom_krom_pinv_dec_1 (1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pbuf_dec        |Circuit 2: sky130_rom_krom_pbuf_dec        
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+A                                          |A                                          
+Z                                          |Z                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pbuf_dec and sky130_rom_krom_pbuf_dec are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv            |Circuit 2: sky130_rom_krom_pinv            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3.6e-07   circuit2: 0.36   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.12e-06   circuit2: 1.12   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv            |Circuit 2: sky130_rom_krom_pinv            
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv and sky130_rom_krom_pinv are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_0          |Circuit 2: sky130_rom_krom_pinv_0          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (2->1)             
+sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (2->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.26e-06   circuit2: 1.26   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_0          |Circuit 2: sky130_rom_krom_pinv_0          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_0 and sky130_rom_krom_pinv_0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_1          |Circuit 2: sky130_rom_krom_pinv_1          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3->1)             |sky130_fd_pr__pfet_01v8 (3->1)             
+sky130_fd_pr__nfet_01v8 (3->1)             |sky130_fd_pr__nfet_01v8 (3->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_1          |Circuit 2: sky130_rom_krom_pinv_1          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_1 and sky130_rom_krom_pinv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_2          |Circuit 2: sky130_rom_krom_pinv_2          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (2->1)             
+sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (2->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.26e-06   circuit2: 1.26   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 2e-06   circuit2: 2   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_2          |Circuit 2: sky130_rom_krom_pinv_2          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_2 and sky130_rom_krom_pinv_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_3          |Circuit 2: sky130_rom_krom_pinv_3          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (4->1)             |sky130_fd_pr__pfet_01v8 (4->1)             
+sky130_fd_pr__nfet_01v8 (4->1)             |sky130_fd_pr__nfet_01v8 (4->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 2e-06   circuit2: 2   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_3          |Circuit 2: sky130_rom_krom_pinv_3          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_3 and sky130_rom_krom_pinv_3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_4          |Circuit 2: sky130_rom_krom_pinv_4          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (7->1)             |sky130_fd_pr__pfet_01v8 (7->1)             
+sky130_fd_pr__nfet_01v8 (7->1)             |sky130_fd_pr__nfet_01v8 (7->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 5e-06   circuit2: 5   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_4          |Circuit 2: sky130_rom_krom_pinv_4          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_4 and sky130_rom_krom_pinv_4 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_5          |Circuit 2: sky130_rom_krom_pinv_5          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (20->1)            |sky130_fd_pr__pfet_01v8 (20->1)            
+sky130_fd_pr__nfet_01v8 (20->1)            |sky130_fd_pr__nfet_01v8 (20->1)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 5e-06   circuit2: 5   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 5e-06   circuit2: 5   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_5          |Circuit 2: sky130_rom_krom_pinv_5          
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_5 and sky130_rom_krom_pinv_5 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_dec_2      |Circuit 2: sky130_rom_krom_pinv_dec_2      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 3e-06   circuit2: 3   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_dec_2      |Circuit 2: sky130_rom_krom_pinv_dec_2      
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_dec_2 and sky130_rom_krom_pinv_dec_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_precharge_a |Circuit 2: sky130_rom_krom_rom_precharge_a 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_precharge_cell (256)       |sky130_rom_krom_precharge_cell (256)       
+Number of devices: 256                     |Number of devices: 256                     
+Number of nets: 258                        |Number of nets: 258                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_precharge_a |Circuit 2: sky130_rom_krom_rom_precharge_a 
+-------------------------------------------|-------------------------------------------
+pre_bl255_out                              |pre_bl255_out                              
+pre_bl254_out                              |pre_bl254_out                              
+pre_bl253_out                              |pre_bl253_out                              
+pre_bl252_out                              |pre_bl252_out                              
+pre_bl251_out                              |pre_bl251_out                              
+pre_bl250_out                              |pre_bl250_out                              
+pre_bl249_out                              |pre_bl249_out                              
+pre_bl248_out                              |pre_bl248_out                              
+pre_bl247_out                              |pre_bl247_out                              
+pre_bl246_out                              |pre_bl246_out                              
+pre_bl245_out                              |pre_bl245_out                              
+pre_bl244_out                              |pre_bl244_out                              
+pre_bl243_out                              |pre_bl243_out                              
+pre_bl242_out                              |pre_bl242_out                              
+pre_bl241_out                              |pre_bl241_out                              
+pre_bl240_out                              |pre_bl240_out                              
+pre_bl239_out                              |pre_bl239_out                              
+pre_bl238_out                              |pre_bl238_out                              
+pre_bl237_out                              |pre_bl237_out                              
+pre_bl236_out                              |pre_bl236_out                              
+pre_bl235_out                              |pre_bl235_out                              
+pre_bl234_out                              |pre_bl234_out                              
+pre_bl233_out                              |pre_bl233_out                              
+pre_bl232_out                              |pre_bl232_out                              
+pre_bl231_out                              |pre_bl231_out                              
+pre_bl230_out                              |pre_bl230_out                              
+pre_bl229_out                              |pre_bl229_out                              
+pre_bl228_out                              |pre_bl228_out                              
+pre_bl227_out                              |pre_bl227_out                              
+pre_bl226_out                              |pre_bl226_out                              
+pre_bl225_out                              |pre_bl225_out                              
+pre_bl224_out                              |pre_bl224_out                              
+pre_bl223_out                              |pre_bl223_out                              
+pre_bl222_out                              |pre_bl222_out                              
+pre_bl221_out                              |pre_bl221_out                              
+pre_bl220_out                              |pre_bl220_out                              
+pre_bl219_out                              |pre_bl219_out                              
+pre_bl218_out                              |pre_bl218_out                              
+pre_bl217_out                              |pre_bl217_out                              
+pre_bl216_out                              |pre_bl216_out                              
+pre_bl215_out                              |pre_bl215_out                              
+pre_bl214_out                              |pre_bl214_out                              
+pre_bl213_out                              |pre_bl213_out                              
+pre_bl212_out                              |pre_bl212_out                              
+pre_bl211_out                              |pre_bl211_out                              
+pre_bl210_out                              |pre_bl210_out                              
+pre_bl209_out                              |pre_bl209_out                              
+pre_bl208_out                              |pre_bl208_out                              
+pre_bl207_out                              |pre_bl207_out                              
+pre_bl206_out                              |pre_bl206_out                              
+pre_bl205_out                              |pre_bl205_out                              
+pre_bl204_out                              |pre_bl204_out                              
+pre_bl203_out                              |pre_bl203_out                              
+pre_bl202_out                              |pre_bl202_out                              
+pre_bl201_out                              |pre_bl201_out                              
+pre_bl200_out                              |pre_bl200_out                              
+pre_bl199_out                              |pre_bl199_out                              
+pre_bl198_out                              |pre_bl198_out                              
+pre_bl197_out                              |pre_bl197_out                              
+pre_bl196_out                              |pre_bl196_out                              
+pre_bl195_out                              |pre_bl195_out                              
+pre_bl194_out                              |pre_bl194_out                              
+pre_bl193_out                              |pre_bl193_out                              
+pre_bl192_out                              |pre_bl192_out                              
+pre_bl191_out                              |pre_bl191_out                              
+pre_bl190_out                              |pre_bl190_out                              
+pre_bl189_out                              |pre_bl189_out                              
+pre_bl188_out                              |pre_bl188_out                              
+pre_bl187_out                              |pre_bl187_out                              
+pre_bl186_out                              |pre_bl186_out                              
+pre_bl185_out                              |pre_bl185_out                              
+pre_bl184_out                              |pre_bl184_out                              
+pre_bl183_out                              |pre_bl183_out                              
+pre_bl182_out                              |pre_bl182_out                              
+pre_bl181_out                              |pre_bl181_out                              
+pre_bl180_out                              |pre_bl180_out                              
+pre_bl179_out                              |pre_bl179_out                              
+pre_bl178_out                              |pre_bl178_out                              
+pre_bl177_out                              |pre_bl177_out                              
+pre_bl176_out                              |pre_bl176_out                              
+pre_bl175_out                              |pre_bl175_out                              
+pre_bl174_out                              |pre_bl174_out                              
+pre_bl173_out                              |pre_bl173_out                              
+pre_bl172_out                              |pre_bl172_out                              
+pre_bl171_out                              |pre_bl171_out                              
+pre_bl170_out                              |pre_bl170_out                              
+pre_bl169_out                              |pre_bl169_out                              
+pre_bl168_out                              |pre_bl168_out                              
+pre_bl167_out                              |pre_bl167_out                              
+pre_bl166_out                              |pre_bl166_out                              
+pre_bl165_out                              |pre_bl165_out                              
+pre_bl164_out                              |pre_bl164_out                              
+pre_bl163_out                              |pre_bl163_out                              
+pre_bl162_out                              |pre_bl162_out                              
+pre_bl161_out                              |pre_bl161_out                              
+pre_bl160_out                              |pre_bl160_out                              
+pre_bl159_out                              |pre_bl159_out                              
+pre_bl158_out                              |pre_bl158_out                              
+pre_bl157_out                              |pre_bl157_out                              
+pre_bl156_out                              |pre_bl156_out                              
+pre_bl155_out                              |pre_bl155_out                              
+pre_bl154_out                              |pre_bl154_out                              
+pre_bl153_out                              |pre_bl153_out                              
+pre_bl152_out                              |pre_bl152_out                              
+pre_bl151_out                              |pre_bl151_out                              
+pre_bl150_out                              |pre_bl150_out                              
+pre_bl149_out                              |pre_bl149_out                              
+pre_bl148_out                              |pre_bl148_out                              
+pre_bl147_out                              |pre_bl147_out                              
+pre_bl146_out                              |pre_bl146_out                              
+pre_bl145_out                              |pre_bl145_out                              
+pre_bl144_out                              |pre_bl144_out                              
+pre_bl143_out                              |pre_bl143_out                              
+pre_bl142_out                              |pre_bl142_out                              
+pre_bl141_out                              |pre_bl141_out                              
+pre_bl140_out                              |pre_bl140_out                              
+pre_bl139_out                              |pre_bl139_out                              
+pre_bl138_out                              |pre_bl138_out                              
+pre_bl137_out                              |pre_bl137_out                              
+pre_bl136_out                              |pre_bl136_out                              
+pre_bl135_out                              |pre_bl135_out                              
+pre_bl134_out                              |pre_bl134_out                              
+pre_bl133_out                              |pre_bl133_out                              
+pre_bl132_out                              |pre_bl132_out                              
+pre_bl131_out                              |pre_bl131_out                              
+pre_bl130_out                              |pre_bl130_out                              
+pre_bl129_out                              |pre_bl129_out                              
+pre_bl128_out                              |pre_bl128_out                              
+pre_bl127_out                              |pre_bl127_out                              
+pre_bl126_out                              |pre_bl126_out                              
+pre_bl125_out                              |pre_bl125_out                              
+pre_bl124_out                              |pre_bl124_out                              
+pre_bl123_out                              |pre_bl123_out                              
+pre_bl122_out                              |pre_bl122_out                              
+pre_bl121_out                              |pre_bl121_out                              
+pre_bl120_out                              |pre_bl120_out                              
+pre_bl119_out                              |pre_bl119_out                              
+pre_bl118_out                              |pre_bl118_out                              
+pre_bl117_out                              |pre_bl117_out                              
+pre_bl116_out                              |pre_bl116_out                              
+pre_bl115_out                              |pre_bl115_out                              
+pre_bl114_out                              |pre_bl114_out                              
+pre_bl113_out                              |pre_bl113_out                              
+pre_bl112_out                              |pre_bl112_out                              
+pre_bl111_out                              |pre_bl111_out                              
+pre_bl110_out                              |pre_bl110_out                              
+pre_bl109_out                              |pre_bl109_out                              
+pre_bl108_out                              |pre_bl108_out                              
+pre_bl107_out                              |pre_bl107_out                              
+pre_bl106_out                              |pre_bl106_out                              
+pre_bl105_out                              |pre_bl105_out                              
+pre_bl104_out                              |pre_bl104_out                              
+pre_bl103_out                              |pre_bl103_out                              
+pre_bl102_out                              |pre_bl102_out                              
+pre_bl101_out                              |pre_bl101_out                              
+pre_bl100_out                              |pre_bl100_out                              
+pre_bl99_out                               |pre_bl99_out                               
+pre_bl98_out                               |pre_bl98_out                               
+pre_bl97_out                               |pre_bl97_out                               
+pre_bl96_out                               |pre_bl96_out                               
+pre_bl95_out                               |pre_bl95_out                               
+pre_bl94_out                               |pre_bl94_out                               
+pre_bl93_out                               |pre_bl93_out                               
+pre_bl92_out                               |pre_bl92_out                               
+pre_bl91_out                               |pre_bl91_out                               
+pre_bl90_out                               |pre_bl90_out                               
+pre_bl89_out                               |pre_bl89_out                               
+pre_bl88_out                               |pre_bl88_out                               
+pre_bl87_out                               |pre_bl87_out                               
+pre_bl86_out                               |pre_bl86_out                               
+pre_bl85_out                               |pre_bl85_out                               
+pre_bl84_out                               |pre_bl84_out                               
+pre_bl83_out                               |pre_bl83_out                               
+pre_bl82_out                               |pre_bl82_out                               
+pre_bl81_out                               |pre_bl81_out                               
+pre_bl80_out                               |pre_bl80_out                               
+pre_bl79_out                               |pre_bl79_out                               
+pre_bl78_out                               |pre_bl78_out                               
+pre_bl77_out                               |pre_bl77_out                               
+pre_bl76_out                               |pre_bl76_out                               
+pre_bl75_out                               |pre_bl75_out                               
+pre_bl74_out                               |pre_bl74_out                               
+pre_bl73_out                               |pre_bl73_out                               
+pre_bl72_out                               |pre_bl72_out                               
+pre_bl71_out                               |pre_bl71_out                               
+pre_bl70_out                               |pre_bl70_out                               
+pre_bl69_out                               |pre_bl69_out                               
+pre_bl68_out                               |pre_bl68_out                               
+pre_bl67_out                               |pre_bl67_out                               
+pre_bl66_out                               |pre_bl66_out                               
+pre_bl65_out                               |pre_bl65_out                               
+pre_bl64_out                               |pre_bl64_out                               
+pre_bl63_out                               |pre_bl63_out                               
+pre_bl62_out                               |pre_bl62_out                               
+pre_bl61_out                               |pre_bl61_out                               
+pre_bl60_out                               |pre_bl60_out                               
+pre_bl59_out                               |pre_bl59_out                               
+pre_bl58_out                               |pre_bl58_out                               
+pre_bl57_out                               |pre_bl57_out                               
+pre_bl56_out                               |pre_bl56_out                               
+pre_bl55_out                               |pre_bl55_out                               
+pre_bl54_out                               |pre_bl54_out                               
+pre_bl53_out                               |pre_bl53_out                               
+pre_bl52_out                               |pre_bl52_out                               
+pre_bl51_out                               |pre_bl51_out                               
+pre_bl50_out                               |pre_bl50_out                               
+pre_bl49_out                               |pre_bl49_out                               
+pre_bl48_out                               |pre_bl48_out                               
+pre_bl47_out                               |pre_bl47_out                               
+pre_bl46_out                               |pre_bl46_out                               
+pre_bl45_out                               |pre_bl45_out                               
+pre_bl44_out                               |pre_bl44_out                               
+pre_bl43_out                               |pre_bl43_out                               
+pre_bl42_out                               |pre_bl42_out                               
+pre_bl41_out                               |pre_bl41_out                               
+pre_bl40_out                               |pre_bl40_out                               
+pre_bl39_out                               |pre_bl39_out                               
+pre_bl38_out                               |pre_bl38_out                               
+pre_bl37_out                               |pre_bl37_out                               
+pre_bl36_out                               |pre_bl36_out                               
+pre_bl35_out                               |pre_bl35_out                               
+pre_bl34_out                               |pre_bl34_out                               
+pre_bl33_out                               |pre_bl33_out                               
+pre_bl32_out                               |pre_bl32_out                               
+pre_bl31_out                               |pre_bl31_out                               
+pre_bl30_out                               |pre_bl30_out                               
+pre_bl29_out                               |pre_bl29_out                               
+pre_bl28_out                               |pre_bl28_out                               
+pre_bl27_out                               |pre_bl27_out                               
+pre_bl26_out                               |pre_bl26_out                               
+pre_bl25_out                               |pre_bl25_out                               
+pre_bl24_out                               |pre_bl24_out                               
+pre_bl23_out                               |pre_bl23_out                               
+pre_bl22_out                               |pre_bl22_out                               
+pre_bl21_out                               |pre_bl21_out                               
+pre_bl20_out                               |pre_bl20_out                               
+pre_bl19_out                               |pre_bl19_out                               
+pre_bl18_out                               |pre_bl18_out                               
+pre_bl17_out                               |pre_bl17_out                               
+pre_bl16_out                               |pre_bl16_out                               
+pre_bl15_out                               |pre_bl15_out                               
+pre_bl14_out                               |pre_bl14_out                               
+pre_bl13_out                               |pre_bl13_out                               
+pre_bl12_out                               |pre_bl12_out                               
+pre_bl11_out                               |pre_bl11_out                               
+pre_bl10_out                               |pre_bl10_out                               
+pre_bl9_out                                |pre_bl9_out                                
+pre_bl8_out                                |pre_bl8_out                                
+pre_bl7_out                                |pre_bl7_out                                
+pre_bl6_out                                |pre_bl6_out                                
+pre_bl5_out                                |pre_bl5_out                                
+pre_bl4_out                                |pre_bl4_out                                
+pre_bl3_out                                |pre_bl3_out                                
+pre_bl2_out                                |pre_bl2_out                                
+pre_bl1_out                                |pre_bl1_out                                
+pre_bl0_out                                |pre_bl0_out                                
+vdd                                        |vdd                                        
+gate                                       |gate                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_precharge_array and sky130_rom_krom_rom_precharge_array are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_row_decode_ |Circuit 2: sky130_rom_krom_rom_row_decode_ 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_base_one_cell (32)     |sky130_rom_krom_rom_base_one_cell (32)     
+sky130_rom_krom_rom_base_zero_cell (24)    |sky130_rom_krom_rom_base_zero_cell (24)    
+sky130_rom_krom_rom_precharge_array_0 (1)  |sky130_rom_krom_rom_precharge_array_0 (1)  
+Number of devices: 57                      |Number of devices: 57                      
+Number of nets: 41                         |Number of nets: 41                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_row_decode_ |Circuit 2: sky130_rom_krom_rom_row_decode_ 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+precharge                                  |precharge                                  
+gnd                                        |gnd                                        
+wl_0_0                                     |wl_0_0                                     
+wl_0_1                                     |wl_0_1                                     
+wl_0_2                                     |wl_0_2                                     
+wl_0_3                                     |wl_0_3                                     
+wl_0_4                                     |wl_0_4                                     
+wl_0_5                                     |wl_0_5                                     
+bl_0_0                                     |bl_0_0                                     
+bl_0_1                                     |bl_0_1                                     
+bl_0_2                                     |bl_0_2                                     
+bl_0_3                                     |bl_0_3                                     
+bl_0_4                                     |bl_0_4                                     
+bl_0_5                                     |bl_0_5                                     
+bl_0_6                                     |bl_0_6                                     
+bl_0_7                                     |bl_0_7                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_row_decode_array and sky130_rom_krom_rom_row_decode_array are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_address_con |Circuit 2: sky130_rom_krom_rom_address_con 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_address_control_buf (3 |sky130_rom_krom_rom_address_control_buf (3 
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_address_con |Circuit 2: sky130_rom_krom_rom_address_con 
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+A2_in                                      |A2_in                                      
+A1_in                                      |A1_in                                      
+A0_in                                      |A0_in                                      
+A2_out                                     |A2_out                                     
+A1_out                                     |A1_out                                     
+A0_out                                     |A0_out                                     
+Abar2_out                                  |Abar2_out                                  
+Abar1_out                                  |Abar1_out                                  
+Abar0_out                                  |Abar0_out                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_address_control_array and sky130_rom_krom_rom_address_control_array are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_row_decode_ |Circuit 2: sky130_rom_krom_rom_row_decode_ 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pbuf_dec (8)               |sky130_rom_krom_pbuf_dec (8)               
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_row_decode_ |Circuit 2: sky130_rom_krom_rom_row_decode_ 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+in_7                                       |in_7                                       
+in_6                                       |in_6                                       
+in_5                                       |in_5                                       
+in_4                                       |in_4                                       
+in_3                                       |in_3                                       
+in_2                                       |in_2                                       
+in_1                                       |in_1                                       
+in_0                                       |in_0                                       
+out_7                                      |out_7                                      
+out_6                                      |out_6                                      
+out_5                                      |out_5                                      
+out_4                                      |out_4                                      
+out_3                                      |out_3                                      
+out_2                                      |out_2                                      
+out_1                                      |out_1                                      
+out_0                                      |out_0                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_row_decode_wordline_buffer and sky130_rom_krom_rom_row_decode_wordline_buffer are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_clock_drive |Circuit 2: sky130_rom_krom_rom_clock_drive 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv (2)                   |sky130_rom_krom_pinv (2)                   
+sky130_rom_krom_pinv_0 (1)                 |sky130_rom_krom_pinv_0 (1)                 
+sky130_rom_krom_pinv_1 (1)                 |sky130_rom_krom_pinv_1 (1)                 
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_clock_drive |Circuit 2: sky130_rom_krom_rom_clock_drive 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+A                                          |A                                          
+Z                                          |Z                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_clock_driver and sky130_rom_krom_rom_clock_driver are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_control_nan |Circuit 2: sky130_rom_krom_rom_control_nan 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pnand2_nmos2 vs. sky130_fd_pr__nfet_01v8:pnand2_nmos2:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:pnand2_nmos1 vs. sky130_fd_pr__nfet_01v8:pnand2_nmos1:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 7.4e-07   circuit2: 0.74   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pnand2_pmos1 vs. sky130_fd_pr__pfet_01v8:pnand2_pmos1:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.12e-06   circuit2: 1.12   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pnand2_pmos2 vs. sky130_fd_pr__pfet_01v8:pnand2_pmos2:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.12e-06   circuit2: 1.12   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_control_nan |Circuit 2: sky130_rom_krom_rom_control_nan 
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+gnd                                        |gnd                                        
+B                                          |B                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_control_nand and sky130_rom_krom_rom_control_nand are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_precharge_d |Circuit 2: sky130_rom_krom_rom_precharge_d 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv (3)                   |sky130_rom_krom_pinv (3)                   
+sky130_rom_krom_pinv_2 (1)                 |sky130_rom_krom_pinv_2 (1)                 
+sky130_rom_krom_pinv_3 (1)                 |sky130_rom_krom_pinv_3 (1)                 
+sky130_rom_krom_pinv_4 (1)                 |sky130_rom_krom_pinv_4 (1)                 
+sky130_rom_krom_pinv_5 (1)                 |sky130_rom_krom_pinv_5 (1)                 
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_precharge_d |Circuit 2: sky130_rom_krom_rom_precharge_d 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+A                                          |A                                          
+Z                                          |Z                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_precharge_driver and sky130_rom_krom_rom_precharge_driver are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_column_mux  |Circuit 2: sky130_rom_krom_rom_column_mux  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:mux_tx1 vs. sky130_fd_pr__nfet_01v8:mux_tx1:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 2.88e-06   circuit2: 2.88   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_column_mux  |Circuit 2: sky130_rom_krom_rom_column_mux  
+-------------------------------------------|-------------------------------------------
+sel                                        |sel                                        
+bl_out                                     |bl_out                                     
+bl                                         |bl                                         
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_column_mux and sky130_rom_krom_rom_column_mux are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_column_deco |Circuit 2: sky130_rom_krom_rom_column_deco 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv_dec_2 (8)             |sky130_rom_krom_pinv_dec_2 (8)             
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_column_deco |Circuit 2: sky130_rom_krom_rom_column_deco 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+in_7                                       |in_7                                       
+in_6                                       |in_6                                       
+in_5                                       |in_5                                       
+in_4                                       |in_4                                       
+in_3                                       |in_3                                       
+in_2                                       |in_2                                       
+in_1                                       |in_1                                       
+in_0                                       |in_0                                       
+out_7                                      |out_7                                      
+out_6                                      |out_6                                      
+out_5                                      |out_5                                      
+out_4                                      |out_4                                      
+out_3                                      |out_3                                      
+out_2                                      |out_2                                      
+out_1                                      |out_1                                      
+out_0                                      |out_0                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_column_decode_wordline_buffer and sky130_rom_krom_rom_column_decode_wordline_buffer are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_dec_3      |Circuit 2: sky130_rom_krom_pinv_dec_3      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.68e-06   circuit2: 1.68   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 5e-06   circuit2: 5   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_dec_3      |Circuit 2: sky130_rom_krom_pinv_dec_3      
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_dec_3 and sky130_rom_krom_pinv_dec_3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_pinv_dec_4      |Circuit 2: sky130_rom_krom_pinv_dec_4      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:pinv_nmos vs. sky130_fd_pr__nfet_01v8:pinv_nmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 1.68e-06   circuit2: 1.68   (delta=200%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:pinv_pmos vs. sky130_fd_pr__pfet_01v8:pinv_pmos:
+ l circuit1: 1.5e-07   circuit2: 0.15   (delta=200%, cutoff=1%)
+ w circuit1: 5e-06   circuit2: 5   (delta=200%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_pinv_dec_4      |Circuit 2: sky130_rom_krom_pinv_dec_4      
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+A                                          |A                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_pinv_dec_4 and sky130_rom_krom_pinv_dec_4 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_base_array  |Circuit 2: sky130_rom_krom_rom_base_array  
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_base_zero_cell (1055)  |sky130_rom_krom_rom_base_zero_cell (1055)  
+sky130_rom_krom_rom_base_one_cell (1249)   |sky130_rom_krom_rom_base_one_cell (1249)   
+sky130_rom_krom_rom_precharge_array (1)    |sky130_rom_krom_rom_precharge_array (1)    
+Number of devices: 2305                    |Number of devices: 2305                    
+Number of nets: 1260                       |Number of nets: 1260                       
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_base_array  |Circuit 2: sky130_rom_krom_rom_base_array  
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+precharge                                  |precharge                                  
+bl_0_115                                   |bl_0_115                                   
+bl_0_141                                   |bl_0_141                                   
+bl_0_72                                    |bl_0_72                                    
+bl_0_73                                    |bl_0_73                                    
+bl_0_22                                    |bl_0_22                                    
+bl_0_158                                   |bl_0_158                                   
+bl_0_208                                   |bl_0_208                                   
+bl_0_10                                    |bl_0_10                                    
+bl_0_21                                    |bl_0_21                                    
+bl_0_56                                    |bl_0_56                                    
+bl_0_98                                    |bl_0_98                                    
+bl_0_106                                   |bl_0_106                                   
+bl_0_145                                   |bl_0_145                                   
+bl_0_165                                   |bl_0_165                                   
+bl_0_181                                   |bl_0_181                                   
+bl_0_219                                   |bl_0_219                                   
+bl_0_232                                   |bl_0_232                                   
+bl_0_4                                     |bl_0_4                                     
+bl_0_45                                    |bl_0_45                                    
+bl_0_51                                    |bl_0_51                                    
+bl_0_75                                    |bl_0_75                                    
+bl_0_80                                    |bl_0_80                                    
+bl_0_114                                   |bl_0_114                                   
+bl_0_129                                   |bl_0_129                                   
+bl_0_142                                   |bl_0_142                                   
+bl_0_152                                   |bl_0_152                                   
+bl_0_196                                   |bl_0_196                                   
+bl_0_201                                   |bl_0_201                                   
+bl_0_209                                   |bl_0_209                                   
+bl_0_225                                   |bl_0_225                                   
+bl_0_240                                   |bl_0_240                                   
+bl_0_2                                     |bl_0_2                                     
+bl_0_3                                     |bl_0_3                                     
+bl_0_6                                     |bl_0_6                                     
+bl_0_7                                     |bl_0_7                                     
+bl_0_8                                     |bl_0_8                                     
+bl_0_9                                     |bl_0_9                                     
+bl_0_11                                    |bl_0_11                                    
+bl_0_13                                    |bl_0_13                                    
+bl_0_17                                    |bl_0_17                                    
+bl_0_18                                    |bl_0_18                                    
+bl_0_19                                    |bl_0_19                                    
+bl_0_20                                    |bl_0_20                                    
+bl_0_23                                    |bl_0_23                                    
+bl_0_25                                    |bl_0_25                                    
+bl_0_26                                    |bl_0_26                                    
+bl_0_28                                    |bl_0_28                                    
+bl_0_29                                    |bl_0_29                                    
+bl_0_30                                    |bl_0_30                                    
+bl_0_35                                    |bl_0_35                                    
+bl_0_36                                    |bl_0_36                                    
+bl_0_37                                    |bl_0_37                                    
+bl_0_39                                    |bl_0_39                                    
+bl_0_42                                    |bl_0_42                                    
+bl_0_48                                    |bl_0_48                                    
+bl_0_54                                    |bl_0_54                                    
+bl_0_55                                    |bl_0_55                                    
+bl_0_57                                    |bl_0_57                                    
+bl_0_58                                    |bl_0_58                                    
+bl_0_59                                    |bl_0_59                                    
+bl_0_60                                    |bl_0_60                                    
+bl_0_61                                    |bl_0_61                                    
+bl_0_63                                    |bl_0_63                                    
+bl_0_64                                    |bl_0_64                                    
+bl_0_66                                    |bl_0_66                                    
+bl_0_67                                    |bl_0_67                                    
+bl_0_69                                    |bl_0_69                                    
+bl_0_74                                    |bl_0_74                                    
+bl_0_76                                    |bl_0_76                                    
+bl_0_77                                    |bl_0_77                                    
+bl_0_81                                    |bl_0_81                                    
+bl_0_83                                    |bl_0_83                                    
+bl_0_85                                    |bl_0_85                                    
+bl_0_86                                    |bl_0_86                                    
+bl_0_89                                    |bl_0_89                                    
+bl_0_91                                    |bl_0_91                                    
+bl_0_92                                    |bl_0_92                                    
+bl_0_93                                    |bl_0_93                                    
+bl_0_94                                    |bl_0_94                                    
+bl_0_95                                    |bl_0_95                                    
+bl_0_96                                    |bl_0_96                                    
+bl_0_102                                   |bl_0_102                                   
+bl_0_103                                   |bl_0_103                                   
+bl_0_105                                   |bl_0_105                                   
+bl_0_107                                   |bl_0_107                                   
+bl_0_108                                   |bl_0_108                                   
+bl_0_110                                   |bl_0_110                                   
+bl_0_111                                   |bl_0_111                                   
+bl_0_112                                   |bl_0_112                                   
+bl_0_113                                   |bl_0_113                                   
+bl_0_116                                   |bl_0_116                                   
+bl_0_118                                   |bl_0_118                                   
+bl_0_121                                   |bl_0_121                                   
+bl_0_123                                   |bl_0_123                                   
+bl_0_125                                   |bl_0_125                                   
+bl_0_126                                   |bl_0_126                                   
+bl_0_130                                   |bl_0_130                                   
+bl_0_131                                   |bl_0_131                                   
+bl_0_132                                   |bl_0_132                                   
+bl_0_134                                   |bl_0_134                                   
+bl_0_137                                   |bl_0_137                                   
+bl_0_138                                   |bl_0_138                                   
+bl_0_139                                   |bl_0_139                                   
+bl_0_140                                   |bl_0_140                                   
+bl_0_143                                   |bl_0_143                                   
+bl_0_144                                   |bl_0_144                                   
+bl_0_146                                   |bl_0_146                                   
+bl_0_154                                   |bl_0_154                                   
+bl_0_155                                   |bl_0_155                                   
+bl_0_157                                   |bl_0_157                                   
+bl_0_159                                   |bl_0_159                                   
+bl_0_160                                   |bl_0_160                                   
+bl_0_162                                   |bl_0_162                                   
+bl_0_163                                   |bl_0_163                                   
+bl_0_167                                   |bl_0_167                                   
+bl_0_168                                   |bl_0_168                                   
+bl_0_169                                   |bl_0_169                                   
+bl_0_175                                   |bl_0_175                                   
+bl_0_176                                   |bl_0_176                                   
+bl_0_178                                   |bl_0_178                                   
+bl_0_179                                   |bl_0_179                                   
+bl_0_180                                   |bl_0_180                                   
+bl_0_182                                   |bl_0_182                                   
+bl_0_183                                   |bl_0_183                                   
+bl_0_184                                   |bl_0_184                                   
+bl_0_186                                   |bl_0_186                                   
+bl_0_187                                   |bl_0_187                                   
+bl_0_189                                   |bl_0_189                                   
+bl_0_192                                   |bl_0_192                                   
+bl_0_193                                   |bl_0_193                                   
+bl_0_194                                   |bl_0_194                                   
+bl_0_195                                   |bl_0_195                                   
+bl_0_197                                   |bl_0_197                                   
+bl_0_198                                   |bl_0_198                                   
+bl_0_199                                   |bl_0_199                                   
+bl_0_202                                   |bl_0_202                                   
+bl_0_204                                   |bl_0_204                                   
+bl_0_205                                   |bl_0_205                                   
+bl_0_207                                   |bl_0_207                                   
+bl_0_211                                   |bl_0_211                                   
+bl_0_213                                   |bl_0_213                                   
+bl_0_214                                   |bl_0_214                                   
+bl_0_216                                   |bl_0_216                                   
+bl_0_217                                   |bl_0_217                                   
+bl_0_220                                   |bl_0_220                                   
+bl_0_221                                   |bl_0_221                                   
+bl_0_223                                   |bl_0_223                                   
+bl_0_224                                   |bl_0_224                                   
+bl_0_226                                   |bl_0_226                                   
+bl_0_228                                   |bl_0_228                                   
+bl_0_234                                   |bl_0_234                                   
+bl_0_235                                   |bl_0_235                                   
+bl_0_238                                   |bl_0_238                                   
+bl_0_239                                   |bl_0_239                                   
+bl_0_242                                   |bl_0_242                                   
+bl_0_244                                   |bl_0_244                                   
+bl_0_249                                   |bl_0_249                                   
+bl_0_250                                   |bl_0_250                                   
+bl_0_251                                   |bl_0_251                                   
+bl_0_252                                   |bl_0_252                                   
+bl_0_253                                   |bl_0_253                                   
+bl_0_255                                   |bl_0_255                                   
+bl_0_1                                     |bl_0_1                                     
+bl_0_14                                    |bl_0_14                                    
+bl_0_16                                    |bl_0_16                                    
+bl_0_31                                    |bl_0_31                                    
+bl_0_33                                    |bl_0_33                                    
+bl_0_34                                    |bl_0_34                                    
+bl_0_40                                    |bl_0_40                                    
+bl_0_41                                    |bl_0_41                                    
+bl_0_44                                    |bl_0_44                                    
+bl_0_46                                    |bl_0_46                                    
+bl_0_47                                    |bl_0_47                                    
+bl_0_50                                    |bl_0_50                                    
+bl_0_53                                    |bl_0_53                                    
+bl_0_79                                    |bl_0_79                                    
+bl_0_87                                    |bl_0_87                                    
+bl_0_88                                    |bl_0_88                                    
+bl_0_97                                    |bl_0_97                                    
+bl_0_124                                   |bl_0_124                                   
+bl_0_136                                   |bl_0_136                                   
+bl_0_148                                   |bl_0_148                                   
+bl_0_150                                   |bl_0_150                                   
+bl_0_166                                   |bl_0_166                                   
+bl_0_173                                   |bl_0_173                                   
+bl_0_190                                   |bl_0_190                                   
+bl_0_200                                   |bl_0_200                                   
+bl_0_206                                   |bl_0_206                                   
+bl_0_222                                   |bl_0_222                                   
+bl_0_227                                   |bl_0_227                                   
+bl_0_230                                   |bl_0_230                                   
+bl_0_231                                   |bl_0_231                                   
+bl_0_233                                   |bl_0_233                                   
+bl_0_241                                   |bl_0_241                                   
+bl_0_247                                   |bl_0_247                                   
+bl_0_248                                   |bl_0_248                                   
+gnd                                        |gnd                                        
+wl_0_0                                     |wl_0_0                                     
+wl_0_1                                     |wl_0_1                                     
+wl_0_2                                     |wl_0_2                                     
+wl_0_3                                     |wl_0_3                                     
+wl_0_4                                     |wl_0_4                                     
+wl_0_5                                     |wl_0_5                                     
+wl_0_6                                     |wl_0_6                                     
+wl_0_7                                     |wl_0_7                                     
+bl_0_0                                     |bl_0_0                                     
+bl_0_5                                     |bl_0_5                                     
+bl_0_12                                    |bl_0_12                                    
+bl_0_15                                    |bl_0_15                                    
+bl_0_24                                    |bl_0_24                                    
+bl_0_27                                    |bl_0_27                                    
+bl_0_32                                    |bl_0_32                                    
+bl_0_38                                    |bl_0_38                                    
+bl_0_43                                    |bl_0_43                                    
+bl_0_49                                    |bl_0_49                                    
+bl_0_52                                    |bl_0_52                                    
+bl_0_62                                    |bl_0_62                                    
+bl_0_65                                    |bl_0_65                                    
+bl_0_68                                    |bl_0_68                                    
+bl_0_70                                    |bl_0_70                                    
+bl_0_71                                    |bl_0_71                                    
+bl_0_78                                    |bl_0_78                                    
+bl_0_82                                    |bl_0_82                                    
+bl_0_84                                    |bl_0_84                                    
+bl_0_90                                    |bl_0_90                                    
+bl_0_99                                    |bl_0_99                                    
+bl_0_100                                   |bl_0_100                                   
+bl_0_101                                   |bl_0_101                                   
+bl_0_104                                   |bl_0_104                                   
+bl_0_109                                   |bl_0_109                                   
+bl_0_117                                   |bl_0_117                                   
+bl_0_119                                   |bl_0_119                                   
+bl_0_120                                   |bl_0_120                                   
+bl_0_122                                   |bl_0_122                                   
+bl_0_127                                   |bl_0_127                                   
+bl_0_128                                   |bl_0_128                                   
+bl_0_133                                   |bl_0_133                                   
+bl_0_135                                   |bl_0_135                                   
+bl_0_147                                   |bl_0_147                                   
+bl_0_149                                   |bl_0_149                                   
+bl_0_151                                   |bl_0_151                                   
+bl_0_153                                   |bl_0_153                                   
+bl_0_156                                   |bl_0_156                                   
+bl_0_161                                   |bl_0_161                                   
+bl_0_164                                   |bl_0_164                                   
+bl_0_170                                   |bl_0_170                                   
+bl_0_171                                   |bl_0_171                                   
+bl_0_172                                   |bl_0_172                                   
+bl_0_174                                   |bl_0_174                                   
+bl_0_177                                   |bl_0_177                                   
+bl_0_185                                   |bl_0_185                                   
+bl_0_188                                   |bl_0_188                                   
+bl_0_191                                   |bl_0_191                                   
+bl_0_203                                   |bl_0_203                                   
+bl_0_210                                   |bl_0_210                                   
+bl_0_212                                   |bl_0_212                                   
+bl_0_215                                   |bl_0_215                                   
+bl_0_218                                   |bl_0_218                                   
+bl_0_229                                   |bl_0_229                                   
+bl_0_236                                   |bl_0_236                                   
+bl_0_237                                   |bl_0_237                                   
+bl_0_243                                   |bl_0_243                                   
+bl_0_245                                   |bl_0_245                                   
+bl_0_246                                   |bl_0_246                                   
+bl_0_254                                   |bl_0_254                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_base_array and sky130_rom_krom_rom_base_array are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_row_decode  |Circuit 2: sky130_rom_krom_rom_row_decode  
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_row_decode_array (1)   |sky130_rom_krom_rom_row_decode_array (1)   
+sky130_rom_krom_rom_address_control_array  |sky130_rom_krom_rom_address_control_array  
+sky130_rom_krom_rom_row_decode_wordline_bu |sky130_rom_krom_rom_row_decode_wordline_bu 
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_row_decode  |Circuit 2: sky130_rom_krom_rom_row_decode  
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+precharge                                  |precharge                                  
+A0                                         |A0                                         
+A1                                         |A1                                         
+A2                                         |A2                                         
+clk                                        |clk                                        
+wl_0                                       |wl_0                                       
+wl_1                                       |wl_1                                       
+wl_2                                       |wl_2                                       
+wl_3                                       |wl_3                                       
+wl_4                                       |wl_4                                       
+wl_5                                       |wl_5                                       
+wl_6                                       |wl_6                                       
+wl_7                                       |wl_7                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_row_decode and sky130_rom_krom_rom_row_decode are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_control_log |Circuit 2: sky130_rom_krom_rom_control_log 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_clock_driver (1)       |sky130_rom_krom_rom_clock_driver (1)       
+sky130_rom_krom_rom_control_nand (1)       |sky130_rom_krom_rom_control_nand (1)       
+sky130_rom_krom_rom_precharge_driver (1)   |sky130_rom_krom_rom_precharge_driver (1)   
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_control_log |Circuit 2: sky130_rom_krom_rom_control_log 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+clk_out                                    |clk_out                                    
+clk_in                                     |clk_in                                     
+CS                                         |CS                                         
+prechrg                                    |prechrg                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_control_logic and sky130_rom_krom_rom_control_logic are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_column_mux_ |Circuit 2: sky130_rom_krom_rom_column_mux_ 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_column_mux (256)       |sky130_rom_krom_rom_column_mux (256)       
+Number of devices: 256                     |Number of devices: 256                     
+Number of nets: 297                        |Number of nets: 297                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_column_mux_ |Circuit 2: sky130_rom_krom_rom_column_mux_ 
+-------------------------------------------|-------------------------------------------
+gnd                                        |gnd                                        
+sel_0                                      |sel_0                                      
+sel_1                                      |sel_1                                      
+sel_2                                      |sel_2                                      
+sel_3                                      |sel_3                                      
+sel_4                                      |sel_4                                      
+sel_5                                      |sel_5                                      
+sel_6                                      |sel_6                                      
+sel_7                                      |sel_7                                      
+bl_out_0                                   |bl_out_0                                   
+bl_out_1                                   |bl_out_1                                   
+bl_out_2                                   |bl_out_2                                   
+bl_out_3                                   |bl_out_3                                   
+bl_out_4                                   |bl_out_4                                   
+bl_out_5                                   |bl_out_5                                   
+bl_out_6                                   |bl_out_6                                   
+bl_out_7                                   |bl_out_7                                   
+bl_out_8                                   |bl_out_8                                   
+bl_out_9                                   |bl_out_9                                   
+bl_out_10                                  |bl_out_10                                  
+bl_out_11                                  |bl_out_11                                  
+bl_out_12                                  |bl_out_12                                  
+bl_out_13                                  |bl_out_13                                  
+bl_out_14                                  |bl_out_14                                  
+bl_out_15                                  |bl_out_15                                  
+bl_out_16                                  |bl_out_16                                  
+bl_out_17                                  |bl_out_17                                  
+bl_out_18                                  |bl_out_18                                  
+bl_out_19                                  |bl_out_19                                  
+bl_out_20                                  |bl_out_20                                  
+bl_out_21                                  |bl_out_21                                  
+bl_out_22                                  |bl_out_22                                  
+bl_out_23                                  |bl_out_23                                  
+bl_out_24                                  |bl_out_24                                  
+bl_out_25                                  |bl_out_25                                  
+bl_out_26                                  |bl_out_26                                  
+bl_out_27                                  |bl_out_27                                  
+bl_out_28                                  |bl_out_28                                  
+bl_out_29                                  |bl_out_29                                  
+bl_out_30                                  |bl_out_30                                  
+bl_out_31                                  |bl_out_31                                  
+bl_0                                       |bl_0                                       
+bl_1                                       |bl_1                                       
+bl_2                                       |bl_2                                       
+bl_3                                       |bl_3                                       
+bl_4                                       |bl_4                                       
+bl_5                                       |bl_5                                       
+bl_6                                       |bl_6                                       
+bl_7                                       |bl_7                                       
+bl_8                                       |bl_8                                       
+bl_9                                       |bl_9                                       
+bl_10                                      |bl_10                                      
+bl_11                                      |bl_11                                      
+bl_12                                      |bl_12                                      
+bl_13                                      |bl_13                                      
+bl_14                                      |bl_14                                      
+bl_15                                      |bl_15                                      
+bl_16                                      |bl_16                                      
+bl_17                                      |bl_17                                      
+bl_18                                      |bl_18                                      
+bl_19                                      |bl_19                                      
+bl_20                                      |bl_20                                      
+bl_21                                      |bl_21                                      
+bl_22                                      |bl_22                                      
+bl_23                                      |bl_23                                      
+bl_24                                      |bl_24                                      
+bl_25                                      |bl_25                                      
+bl_26                                      |bl_26                                      
+bl_27                                      |bl_27                                      
+bl_28                                      |bl_28                                      
+bl_29                                      |bl_29                                      
+bl_30                                      |bl_30                                      
+bl_31                                      |bl_31                                      
+bl_32                                      |bl_32                                      
+bl_33                                      |bl_33                                      
+bl_34                                      |bl_34                                      
+bl_35                                      |bl_35                                      
+bl_36                                      |bl_36                                      
+bl_37                                      |bl_37                                      
+bl_38                                      |bl_38                                      
+bl_39                                      |bl_39                                      
+bl_40                                      |bl_40                                      
+bl_41                                      |bl_41                                      
+bl_42                                      |bl_42                                      
+bl_43                                      |bl_43                                      
+bl_44                                      |bl_44                                      
+bl_45                                      |bl_45                                      
+bl_46                                      |bl_46                                      
+bl_47                                      |bl_47                                      
+bl_48                                      |bl_48                                      
+bl_49                                      |bl_49                                      
+bl_50                                      |bl_50                                      
+bl_51                                      |bl_51                                      
+bl_52                                      |bl_52                                      
+bl_53                                      |bl_53                                      
+bl_54                                      |bl_54                                      
+bl_55                                      |bl_55                                      
+bl_56                                      |bl_56                                      
+bl_57                                      |bl_57                                      
+bl_58                                      |bl_58                                      
+bl_59                                      |bl_59                                      
+bl_60                                      |bl_60                                      
+bl_61                                      |bl_61                                      
+bl_62                                      |bl_62                                      
+bl_63                                      |bl_63                                      
+bl_64                                      |bl_64                                      
+bl_65                                      |bl_65                                      
+bl_66                                      |bl_66                                      
+bl_67                                      |bl_67                                      
+bl_68                                      |bl_68                                      
+bl_69                                      |bl_69                                      
+bl_70                                      |bl_70                                      
+bl_71                                      |bl_71                                      
+bl_72                                      |bl_72                                      
+bl_73                                      |bl_73                                      
+bl_74                                      |bl_74                                      
+bl_75                                      |bl_75                                      
+bl_76                                      |bl_76                                      
+bl_77                                      |bl_77                                      
+bl_78                                      |bl_78                                      
+bl_79                                      |bl_79                                      
+bl_80                                      |bl_80                                      
+bl_81                                      |bl_81                                      
+bl_82                                      |bl_82                                      
+bl_83                                      |bl_83                                      
+bl_84                                      |bl_84                                      
+bl_85                                      |bl_85                                      
+bl_86                                      |bl_86                                      
+bl_87                                      |bl_87                                      
+bl_88                                      |bl_88                                      
+bl_89                                      |bl_89                                      
+bl_90                                      |bl_90                                      
+bl_91                                      |bl_91                                      
+bl_92                                      |bl_92                                      
+bl_93                                      |bl_93                                      
+bl_94                                      |bl_94                                      
+bl_95                                      |bl_95                                      
+bl_96                                      |bl_96                                      
+bl_97                                      |bl_97                                      
+bl_98                                      |bl_98                                      
+bl_99                                      |bl_99                                      
+bl_100                                     |bl_100                                     
+bl_101                                     |bl_101                                     
+bl_102                                     |bl_102                                     
+bl_103                                     |bl_103                                     
+bl_104                                     |bl_104                                     
+bl_105                                     |bl_105                                     
+bl_106                                     |bl_106                                     
+bl_107                                     |bl_107                                     
+bl_108                                     |bl_108                                     
+bl_109                                     |bl_109                                     
+bl_110                                     |bl_110                                     
+bl_111                                     |bl_111                                     
+bl_112                                     |bl_112                                     
+bl_113                                     |bl_113                                     
+bl_114                                     |bl_114                                     
+bl_115                                     |bl_115                                     
+bl_116                                     |bl_116                                     
+bl_117                                     |bl_117                                     
+bl_118                                     |bl_118                                     
+bl_119                                     |bl_119                                     
+bl_120                                     |bl_120                                     
+bl_121                                     |bl_121                                     
+bl_122                                     |bl_122                                     
+bl_123                                     |bl_123                                     
+bl_124                                     |bl_124                                     
+bl_125                                     |bl_125                                     
+bl_126                                     |bl_126                                     
+bl_127                                     |bl_127                                     
+bl_128                                     |bl_128                                     
+bl_129                                     |bl_129                                     
+bl_130                                     |bl_130                                     
+bl_131                                     |bl_131                                     
+bl_132                                     |bl_132                                     
+bl_133                                     |bl_133                                     
+bl_134                                     |bl_134                                     
+bl_135                                     |bl_135                                     
+bl_136                                     |bl_136                                     
+bl_137                                     |bl_137                                     
+bl_138                                     |bl_138                                     
+bl_139                                     |bl_139                                     
+bl_140                                     |bl_140                                     
+bl_141                                     |bl_141                                     
+bl_142                                     |bl_142                                     
+bl_143                                     |bl_143                                     
+bl_144                                     |bl_144                                     
+bl_145                                     |bl_145                                     
+bl_146                                     |bl_146                                     
+bl_147                                     |bl_147                                     
+bl_148                                     |bl_148                                     
+bl_149                                     |bl_149                                     
+bl_150                                     |bl_150                                     
+bl_151                                     |bl_151                                     
+bl_152                                     |bl_152                                     
+bl_153                                     |bl_153                                     
+bl_154                                     |bl_154                                     
+bl_155                                     |bl_155                                     
+bl_156                                     |bl_156                                     
+bl_157                                     |bl_157                                     
+bl_158                                     |bl_158                                     
+bl_159                                     |bl_159                                     
+bl_160                                     |bl_160                                     
+bl_161                                     |bl_161                                     
+bl_162                                     |bl_162                                     
+bl_163                                     |bl_163                                     
+bl_164                                     |bl_164                                     
+bl_165                                     |bl_165                                     
+bl_166                                     |bl_166                                     
+bl_167                                     |bl_167                                     
+bl_168                                     |bl_168                                     
+bl_169                                     |bl_169                                     
+bl_170                                     |bl_170                                     
+bl_171                                     |bl_171                                     
+bl_172                                     |bl_172                                     
+bl_173                                     |bl_173                                     
+bl_174                                     |bl_174                                     
+bl_175                                     |bl_175                                     
+bl_176                                     |bl_176                                     
+bl_177                                     |bl_177                                     
+bl_178                                     |bl_178                                     
+bl_179                                     |bl_179                                     
+bl_180                                     |bl_180                                     
+bl_181                                     |bl_181                                     
+bl_182                                     |bl_182                                     
+bl_183                                     |bl_183                                     
+bl_184                                     |bl_184                                     
+bl_185                                     |bl_185                                     
+bl_186                                     |bl_186                                     
+bl_187                                     |bl_187                                     
+bl_188                                     |bl_188                                     
+bl_189                                     |bl_189                                     
+bl_190                                     |bl_190                                     
+bl_191                                     |bl_191                                     
+bl_192                                     |bl_192                                     
+bl_193                                     |bl_193                                     
+bl_194                                     |bl_194                                     
+bl_195                                     |bl_195                                     
+bl_196                                     |bl_196                                     
+bl_197                                     |bl_197                                     
+bl_198                                     |bl_198                                     
+bl_199                                     |bl_199                                     
+bl_200                                     |bl_200                                     
+bl_201                                     |bl_201                                     
+bl_202                                     |bl_202                                     
+bl_203                                     |bl_203                                     
+bl_204                                     |bl_204                                     
+bl_205                                     |bl_205                                     
+bl_206                                     |bl_206                                     
+bl_207                                     |bl_207                                     
+bl_208                                     |bl_208                                     
+bl_209                                     |bl_209                                     
+bl_210                                     |bl_210                                     
+bl_211                                     |bl_211                                     
+bl_212                                     |bl_212                                     
+bl_213                                     |bl_213                                     
+bl_214                                     |bl_214                                     
+bl_215                                     |bl_215                                     
+bl_216                                     |bl_216                                     
+bl_217                                     |bl_217                                     
+bl_218                                     |bl_218                                     
+bl_219                                     |bl_219                                     
+bl_220                                     |bl_220                                     
+bl_221                                     |bl_221                                     
+bl_222                                     |bl_222                                     
+bl_223                                     |bl_223                                     
+bl_224                                     |bl_224                                     
+bl_225                                     |bl_225                                     
+bl_226                                     |bl_226                                     
+bl_227                                     |bl_227                                     
+bl_228                                     |bl_228                                     
+bl_229                                     |bl_229                                     
+bl_230                                     |bl_230                                     
+bl_231                                     |bl_231                                     
+bl_232                                     |bl_232                                     
+bl_233                                     |bl_233                                     
+bl_234                                     |bl_234                                     
+bl_235                                     |bl_235                                     
+bl_236                                     |bl_236                                     
+bl_237                                     |bl_237                                     
+bl_238                                     |bl_238                                     
+bl_239                                     |bl_239                                     
+bl_240                                     |bl_240                                     
+bl_241                                     |bl_241                                     
+bl_242                                     |bl_242                                     
+bl_243                                     |bl_243                                     
+bl_244                                     |bl_244                                     
+bl_245                                     |bl_245                                     
+bl_246                                     |bl_246                                     
+bl_247                                     |bl_247                                     
+bl_248                                     |bl_248                                     
+bl_249                                     |bl_249                                     
+bl_250                                     |bl_250                                     
+bl_251                                     |bl_251                                     
+bl_252                                     |bl_252                                     
+bl_253                                     |bl_253                                     
+bl_254                                     |bl_254                                     
+bl_255                                     |bl_255                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_column_mux_array and sky130_rom_krom_rom_column_mux_array are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_column_deco |Circuit 2: sky130_rom_krom_rom_column_deco 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_row_decode_array (1)   |sky130_rom_krom_rom_row_decode_array (1)   
+sky130_rom_krom_rom_address_control_array  |sky130_rom_krom_rom_address_control_array  
+sky130_rom_krom_rom_column_decode_wordline |sky130_rom_krom_rom_column_decode_wordline 
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_column_deco |Circuit 2: sky130_rom_krom_rom_column_deco 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+precharge                                  |precharge                                  
+A0                                         |A0                                         
+A1                                         |A1                                         
+A2                                         |A2                                         
+clk                                        |clk                                        
+wl_0                                       |wl_0                                       
+wl_1                                       |wl_1                                       
+wl_2                                       |wl_2                                       
+wl_3                                       |wl_3                                       
+wl_4                                       |wl_4                                       
+wl_5                                       |wl_5                                       
+wl_6                                       |wl_6                                       
+wl_7                                       |wl_7                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_column_decode and sky130_rom_krom_rom_column_decode are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_bitline_inv |Circuit 2: sky130_rom_krom_rom_bitline_inv 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv_dec_3 (256)           |sky130_rom_krom_pinv_dec_3 (256)           
+Number of devices: 256                     |Number of devices: 256                     
+Number of nets: 514                        |Number of nets: 514                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_bitline_inv |Circuit 2: sky130_rom_krom_rom_bitline_inv 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+in_255                                     |in_255                                     
+in_254                                     |in_254                                     
+in_253                                     |in_253                                     
+in_252                                     |in_252                                     
+in_251                                     |in_251                                     
+in_250                                     |in_250                                     
+in_249                                     |in_249                                     
+in_248                                     |in_248                                     
+in_247                                     |in_247                                     
+in_246                                     |in_246                                     
+in_245                                     |in_245                                     
+in_244                                     |in_244                                     
+in_243                                     |in_243                                     
+in_242                                     |in_242                                     
+in_241                                     |in_241                                     
+in_240                                     |in_240                                     
+in_239                                     |in_239                                     
+in_238                                     |in_238                                     
+in_237                                     |in_237                                     
+in_236                                     |in_236                                     
+in_235                                     |in_235                                     
+in_234                                     |in_234                                     
+in_233                                     |in_233                                     
+in_232                                     |in_232                                     
+in_231                                     |in_231                                     
+in_230                                     |in_230                                     
+in_229                                     |in_229                                     
+in_228                                     |in_228                                     
+in_227                                     |in_227                                     
+in_226                                     |in_226                                     
+in_225                                     |in_225                                     
+in_224                                     |in_224                                     
+in_223                                     |in_223                                     
+in_222                                     |in_222                                     
+in_221                                     |in_221                                     
+in_220                                     |in_220                                     
+in_219                                     |in_219                                     
+in_218                                     |in_218                                     
+in_217                                     |in_217                                     
+in_216                                     |in_216                                     
+in_215                                     |in_215                                     
+in_214                                     |in_214                                     
+in_213                                     |in_213                                     
+in_212                                     |in_212                                     
+in_211                                     |in_211                                     
+in_210                                     |in_210                                     
+in_209                                     |in_209                                     
+in_208                                     |in_208                                     
+in_207                                     |in_207                                     
+in_206                                     |in_206                                     
+in_205                                     |in_205                                     
+in_204                                     |in_204                                     
+in_203                                     |in_203                                     
+in_202                                     |in_202                                     
+in_201                                     |in_201                                     
+in_200                                     |in_200                                     
+in_199                                     |in_199                                     
+in_198                                     |in_198                                     
+in_197                                     |in_197                                     
+in_196                                     |in_196                                     
+in_195                                     |in_195                                     
+in_194                                     |in_194                                     
+in_193                                     |in_193                                     
+in_192                                     |in_192                                     
+in_191                                     |in_191                                     
+in_190                                     |in_190                                     
+in_189                                     |in_189                                     
+in_188                                     |in_188                                     
+in_187                                     |in_187                                     
+in_186                                     |in_186                                     
+in_185                                     |in_185                                     
+in_184                                     |in_184                                     
+in_183                                     |in_183                                     
+in_182                                     |in_182                                     
+in_181                                     |in_181                                     
+in_180                                     |in_180                                     
+in_179                                     |in_179                                     
+in_178                                     |in_178                                     
+in_177                                     |in_177                                     
+in_176                                     |in_176                                     
+in_175                                     |in_175                                     
+in_174                                     |in_174                                     
+in_173                                     |in_173                                     
+in_172                                     |in_172                                     
+in_171                                     |in_171                                     
+in_170                                     |in_170                                     
+in_169                                     |in_169                                     
+in_168                                     |in_168                                     
+in_167                                     |in_167                                     
+in_166                                     |in_166                                     
+in_165                                     |in_165                                     
+in_164                                     |in_164                                     
+in_163                                     |in_163                                     
+in_162                                     |in_162                                     
+in_161                                     |in_161                                     
+in_160                                     |in_160                                     
+in_159                                     |in_159                                     
+in_158                                     |in_158                                     
+in_157                                     |in_157                                     
+in_156                                     |in_156                                     
+in_155                                     |in_155                                     
+in_154                                     |in_154                                     
+in_153                                     |in_153                                     
+in_152                                     |in_152                                     
+in_151                                     |in_151                                     
+in_150                                     |in_150                                     
+in_149                                     |in_149                                     
+in_148                                     |in_148                                     
+in_147                                     |in_147                                     
+in_146                                     |in_146                                     
+in_145                                     |in_145                                     
+in_144                                     |in_144                                     
+in_143                                     |in_143                                     
+in_142                                     |in_142                                     
+in_141                                     |in_141                                     
+in_140                                     |in_140                                     
+in_139                                     |in_139                                     
+in_138                                     |in_138                                     
+in_137                                     |in_137                                     
+in_136                                     |in_136                                     
+in_135                                     |in_135                                     
+in_134                                     |in_134                                     
+in_133                                     |in_133                                     
+in_132                                     |in_132                                     
+in_131                                     |in_131                                     
+in_130                                     |in_130                                     
+in_129                                     |in_129                                     
+in_128                                     |in_128                                     
+in_127                                     |in_127                                     
+in_126                                     |in_126                                     
+in_125                                     |in_125                                     
+in_124                                     |in_124                                     
+in_123                                     |in_123                                     
+in_122                                     |in_122                                     
+in_121                                     |in_121                                     
+in_120                                     |in_120                                     
+in_119                                     |in_119                                     
+in_118                                     |in_118                                     
+in_117                                     |in_117                                     
+in_116                                     |in_116                                     
+in_115                                     |in_115                                     
+in_114                                     |in_114                                     
+in_113                                     |in_113                                     
+in_112                                     |in_112                                     
+in_111                                     |in_111                                     
+in_110                                     |in_110                                     
+in_109                                     |in_109                                     
+in_108                                     |in_108                                     
+in_107                                     |in_107                                     
+in_106                                     |in_106                                     
+in_105                                     |in_105                                     
+in_104                                     |in_104                                     
+in_103                                     |in_103                                     
+in_102                                     |in_102                                     
+in_101                                     |in_101                                     
+in_100                                     |in_100                                     
+in_99                                      |in_99                                      
+in_98                                      |in_98                                      
+in_97                                      |in_97                                      
+in_96                                      |in_96                                      
+in_95                                      |in_95                                      
+in_94                                      |in_94                                      
+in_93                                      |in_93                                      
+in_92                                      |in_92                                      
+in_91                                      |in_91                                      
+in_90                                      |in_90                                      
+in_89                                      |in_89                                      
+in_88                                      |in_88                                      
+in_87                                      |in_87                                      
+in_86                                      |in_86                                      
+in_85                                      |in_85                                      
+in_84                                      |in_84                                      
+in_83                                      |in_83                                      
+in_82                                      |in_82                                      
+in_81                                      |in_81                                      
+in_80                                      |in_80                                      
+in_79                                      |in_79                                      
+in_78                                      |in_78                                      
+in_77                                      |in_77                                      
+in_76                                      |in_76                                      
+in_75                                      |in_75                                      
+in_74                                      |in_74                                      
+in_73                                      |in_73                                      
+in_72                                      |in_72                                      
+in_71                                      |in_71                                      
+in_70                                      |in_70                                      
+in_69                                      |in_69                                      
+in_68                                      |in_68                                      
+in_67                                      |in_67                                      
+in_66                                      |in_66                                      
+in_65                                      |in_65                                      
+in_64                                      |in_64                                      
+in_63                                      |in_63                                      
+in_62                                      |in_62                                      
+in_61                                      |in_61                                      
+in_60                                      |in_60                                      
+in_59                                      |in_59                                      
+in_58                                      |in_58                                      
+in_57                                      |in_57                                      
+in_56                                      |in_56                                      
+in_55                                      |in_55                                      
+in_54                                      |in_54                                      
+in_53                                      |in_53                                      
+in_52                                      |in_52                                      
+in_51                                      |in_51                                      
+in_50                                      |in_50                                      
+in_49                                      |in_49                                      
+in_48                                      |in_48                                      
+in_47                                      |in_47                                      
+in_46                                      |in_46                                      
+in_45                                      |in_45                                      
+in_44                                      |in_44                                      
+in_43                                      |in_43                                      
+in_42                                      |in_42                                      
+in_41                                      |in_41                                      
+in_40                                      |in_40                                      
+in_39                                      |in_39                                      
+in_38                                      |in_38                                      
+in_37                                      |in_37                                      
+in_36                                      |in_36                                      
+in_35                                      |in_35                                      
+in_34                                      |in_34                                      
+in_33                                      |in_33                                      
+in_32                                      |in_32                                      
+in_31                                      |in_31                                      
+in_30                                      |in_30                                      
+in_29                                      |in_29                                      
+in_28                                      |in_28                                      
+in_27                                      |in_27                                      
+in_26                                      |in_26                                      
+in_25                                      |in_25                                      
+in_24                                      |in_24                                      
+in_23                                      |in_23                                      
+in_22                                      |in_22                                      
+in_21                                      |in_21                                      
+in_20                                      |in_20                                      
+in_19                                      |in_19                                      
+in_18                                      |in_18                                      
+in_17                                      |in_17                                      
+in_16                                      |in_16                                      
+in_15                                      |in_15                                      
+in_14                                      |in_14                                      
+in_13                                      |in_13                                      
+in_12                                      |in_12                                      
+in_11                                      |in_11                                      
+in_10                                      |in_10                                      
+in_9                                       |in_9                                       
+in_8                                       |in_8                                       
+in_7                                       |in_7                                       
+in_6                                       |in_6                                       
+in_5                                       |in_5                                       
+in_4                                       |in_4                                       
+in_3                                       |in_3                                       
+in_2                                       |in_2                                       
+in_1                                       |in_1                                       
+in_0                                       |in_0                                       
+out_255                                    |out_255                                    
+out_254                                    |out_254                                    
+out_253                                    |out_253                                    
+out_252                                    |out_252                                    
+out_251                                    |out_251                                    
+out_250                                    |out_250                                    
+out_249                                    |out_249                                    
+out_248                                    |out_248                                    
+out_247                                    |out_247                                    
+out_246                                    |out_246                                    
+out_245                                    |out_245                                    
+out_244                                    |out_244                                    
+out_243                                    |out_243                                    
+out_242                                    |out_242                                    
+out_241                                    |out_241                                    
+out_240                                    |out_240                                    
+out_239                                    |out_239                                    
+out_238                                    |out_238                                    
+out_237                                    |out_237                                    
+out_236                                    |out_236                                    
+out_235                                    |out_235                                    
+out_234                                    |out_234                                    
+out_233                                    |out_233                                    
+out_232                                    |out_232                                    
+out_231                                    |out_231                                    
+out_230                                    |out_230                                    
+out_229                                    |out_229                                    
+out_228                                    |out_228                                    
+out_227                                    |out_227                                    
+out_226                                    |out_226                                    
+out_225                                    |out_225                                    
+out_224                                    |out_224                                    
+out_223                                    |out_223                                    
+out_222                                    |out_222                                    
+out_221                                    |out_221                                    
+out_220                                    |out_220                                    
+out_219                                    |out_219                                    
+out_218                                    |out_218                                    
+out_217                                    |out_217                                    
+out_216                                    |out_216                                    
+out_215                                    |out_215                                    
+out_214                                    |out_214                                    
+out_213                                    |out_213                                    
+out_212                                    |out_212                                    
+out_211                                    |out_211                                    
+out_210                                    |out_210                                    
+out_209                                    |out_209                                    
+out_208                                    |out_208                                    
+out_207                                    |out_207                                    
+out_206                                    |out_206                                    
+out_205                                    |out_205                                    
+out_204                                    |out_204                                    
+out_203                                    |out_203                                    
+out_202                                    |out_202                                    
+out_201                                    |out_201                                    
+out_200                                    |out_200                                    
+out_199                                    |out_199                                    
+out_198                                    |out_198                                    
+out_197                                    |out_197                                    
+out_196                                    |out_196                                    
+out_195                                    |out_195                                    
+out_194                                    |out_194                                    
+out_193                                    |out_193                                    
+out_192                                    |out_192                                    
+out_191                                    |out_191                                    
+out_190                                    |out_190                                    
+out_189                                    |out_189                                    
+out_188                                    |out_188                                    
+out_187                                    |out_187                                    
+out_186                                    |out_186                                    
+out_185                                    |out_185                                    
+out_184                                    |out_184                                    
+out_183                                    |out_183                                    
+out_182                                    |out_182                                    
+out_181                                    |out_181                                    
+out_180                                    |out_180                                    
+out_179                                    |out_179                                    
+out_178                                    |out_178                                    
+out_177                                    |out_177                                    
+out_176                                    |out_176                                    
+out_175                                    |out_175                                    
+out_174                                    |out_174                                    
+out_173                                    |out_173                                    
+out_172                                    |out_172                                    
+out_171                                    |out_171                                    
+out_170                                    |out_170                                    
+out_169                                    |out_169                                    
+out_168                                    |out_168                                    
+out_167                                    |out_167                                    
+out_166                                    |out_166                                    
+out_165                                    |out_165                                    
+out_164                                    |out_164                                    
+out_163                                    |out_163                                    
+out_162                                    |out_162                                    
+out_161                                    |out_161                                    
+out_160                                    |out_160                                    
+out_159                                    |out_159                                    
+out_158                                    |out_158                                    
+out_157                                    |out_157                                    
+out_156                                    |out_156                                    
+out_155                                    |out_155                                    
+out_154                                    |out_154                                    
+out_153                                    |out_153                                    
+out_152                                    |out_152                                    
+out_151                                    |out_151                                    
+out_150                                    |out_150                                    
+out_149                                    |out_149                                    
+out_148                                    |out_148                                    
+out_147                                    |out_147                                    
+out_146                                    |out_146                                    
+out_145                                    |out_145                                    
+out_144                                    |out_144                                    
+out_143                                    |out_143                                    
+out_142                                    |out_142                                    
+out_141                                    |out_141                                    
+out_140                                    |out_140                                    
+out_139                                    |out_139                                    
+out_138                                    |out_138                                    
+out_137                                    |out_137                                    
+out_136                                    |out_136                                    
+out_135                                    |out_135                                    
+out_134                                    |out_134                                    
+out_133                                    |out_133                                    
+out_132                                    |out_132                                    
+out_131                                    |out_131                                    
+out_130                                    |out_130                                    
+out_129                                    |out_129                                    
+out_128                                    |out_128                                    
+out_127                                    |out_127                                    
+out_126                                    |out_126                                    
+out_125                                    |out_125                                    
+out_124                                    |out_124                                    
+out_123                                    |out_123                                    
+out_122                                    |out_122                                    
+out_121                                    |out_121                                    
+out_120                                    |out_120                                    
+out_119                                    |out_119                                    
+out_118                                    |out_118                                    
+out_117                                    |out_117                                    
+out_116                                    |out_116                                    
+out_115                                    |out_115                                    
+out_114                                    |out_114                                    
+out_113                                    |out_113                                    
+out_112                                    |out_112                                    
+out_111                                    |out_111                                    
+out_110                                    |out_110                                    
+out_109                                    |out_109                                    
+out_108                                    |out_108                                    
+out_107                                    |out_107                                    
+out_106                                    |out_106                                    
+out_105                                    |out_105                                    
+out_104                                    |out_104                                    
+out_103                                    |out_103                                    
+out_102                                    |out_102                                    
+out_101                                    |out_101                                    
+out_100                                    |out_100                                    
+out_99                                     |out_99                                     
+out_98                                     |out_98                                     
+out_97                                     |out_97                                     
+out_96                                     |out_96                                     
+out_95                                     |out_95                                     
+out_94                                     |out_94                                     
+out_93                                     |out_93                                     
+out_92                                     |out_92                                     
+out_91                                     |out_91                                     
+out_90                                     |out_90                                     
+out_89                                     |out_89                                     
+out_88                                     |out_88                                     
+out_87                                     |out_87                                     
+out_86                                     |out_86                                     
+out_85                                     |out_85                                     
+out_84                                     |out_84                                     
+out_83                                     |out_83                                     
+out_82                                     |out_82                                     
+out_81                                     |out_81                                     
+out_80                                     |out_80                                     
+out_79                                     |out_79                                     
+out_78                                     |out_78                                     
+out_77                                     |out_77                                     
+out_76                                     |out_76                                     
+out_75                                     |out_75                                     
+out_74                                     |out_74                                     
+out_73                                     |out_73                                     
+out_72                                     |out_72                                     
+out_71                                     |out_71                                     
+out_70                                     |out_70                                     
+out_69                                     |out_69                                     
+out_68                                     |out_68                                     
+out_67                                     |out_67                                     
+out_66                                     |out_66                                     
+out_65                                     |out_65                                     
+out_64                                     |out_64                                     
+out_63                                     |out_63                                     
+out_62                                     |out_62                                     
+out_61                                     |out_61                                     
+out_60                                     |out_60                                     
+out_59                                     |out_59                                     
+out_58                                     |out_58                                     
+out_57                                     |out_57                                     
+out_56                                     |out_56                                     
+out_55                                     |out_55                                     
+out_54                                     |out_54                                     
+out_53                                     |out_53                                     
+out_52                                     |out_52                                     
+out_51                                     |out_51                                     
+out_50                                     |out_50                                     
+out_49                                     |out_49                                     
+out_48                                     |out_48                                     
+out_47                                     |out_47                                     
+out_46                                     |out_46                                     
+out_45                                     |out_45                                     
+out_44                                     |out_44                                     
+out_43                                     |out_43                                     
+out_42                                     |out_42                                     
+out_41                                     |out_41                                     
+out_40                                     |out_40                                     
+out_39                                     |out_39                                     
+out_38                                     |out_38                                     
+out_37                                     |out_37                                     
+out_36                                     |out_36                                     
+out_35                                     |out_35                                     
+out_34                                     |out_34                                     
+out_33                                     |out_33                                     
+out_32                                     |out_32                                     
+out_31                                     |out_31                                     
+out_30                                     |out_30                                     
+out_29                                     |out_29                                     
+out_28                                     |out_28                                     
+out_27                                     |out_27                                     
+out_26                                     |out_26                                     
+out_25                                     |out_25                                     
+out_24                                     |out_24                                     
+out_23                                     |out_23                                     
+out_22                                     |out_22                                     
+out_21                                     |out_21                                     
+out_20                                     |out_20                                     
+out_19                                     |out_19                                     
+out_18                                     |out_18                                     
+out_17                                     |out_17                                     
+out_16                                     |out_16                                     
+out_15                                     |out_15                                     
+out_14                                     |out_14                                     
+out_13                                     |out_13                                     
+out_12                                     |out_12                                     
+out_11                                     |out_11                                     
+out_10                                     |out_10                                     
+out_9                                      |out_9                                      
+out_8                                      |out_8                                      
+out_7                                      |out_7                                      
+out_6                                      |out_6                                      
+out_5                                      |out_5                                      
+out_4                                      |out_4                                      
+out_3                                      |out_3                                      
+out_2                                      |out_2                                      
+out_1                                      |out_1                                      
+out_0                                      |out_0                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_bitline_inverter and sky130_rom_krom_rom_bitline_inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom_rom_output_buff |Circuit 2: sky130_rom_krom_rom_output_buff 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_pinv_dec_4 (32)            |sky130_rom_krom_pinv_dec_4 (32)            
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 66                         |Number of nets: 66                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom_rom_output_buff |Circuit 2: sky130_rom_krom_rom_output_buff 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+in_31                                      |in_31                                      
+in_30                                      |in_30                                      
+in_29                                      |in_29                                      
+in_28                                      |in_28                                      
+in_27                                      |in_27                                      
+in_26                                      |in_26                                      
+in_25                                      |in_25                                      
+in_24                                      |in_24                                      
+in_23                                      |in_23                                      
+in_22                                      |in_22                                      
+in_21                                      |in_21                                      
+in_20                                      |in_20                                      
+in_19                                      |in_19                                      
+in_18                                      |in_18                                      
+in_17                                      |in_17                                      
+in_16                                      |in_16                                      
+in_15                                      |in_15                                      
+in_14                                      |in_14                                      
+in_13                                      |in_13                                      
+in_12                                      |in_12                                      
+in_11                                      |in_11                                      
+in_10                                      |in_10                                      
+in_9                                       |in_9                                       
+in_8                                       |in_8                                       
+in_7                                       |in_7                                       
+in_6                                       |in_6                                       
+in_5                                       |in_5                                       
+in_4                                       |in_4                                       
+in_3                                       |in_3                                       
+in_2                                       |in_2                                       
+in_1                                       |in_1                                       
+in_0                                       |in_0                                       
+out_31                                     |out_31                                     
+out_30                                     |out_30                                     
+out_29                                     |out_29                                     
+out_28                                     |out_28                                     
+out_27                                     |out_27                                     
+out_26                                     |out_26                                     
+out_25                                     |out_25                                     
+out_24                                     |out_24                                     
+out_23                                     |out_23                                     
+out_22                                     |out_22                                     
+out_21                                     |out_21                                     
+out_20                                     |out_20                                     
+out_19                                     |out_19                                     
+out_18                                     |out_18                                     
+out_17                                     |out_17                                     
+out_16                                     |out_16                                     
+out_15                                     |out_15                                     
+out_14                                     |out_14                                     
+out_13                                     |out_13                                     
+out_12                                     |out_12                                     
+out_11                                     |out_11                                     
+out_10                                     |out_10                                     
+out_9                                      |out_9                                      
+out_8                                      |out_8                                      
+out_7                                      |out_7                                      
+out_6                                      |out_6                                      
+out_5                                      |out_5                                      
+out_4                                      |out_4                                      
+out_3                                      |out_3                                      
+out_2                                      |out_2                                      
+out_1                                      |out_1                                      
+out_0                                      |out_0                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom_rom_output_buffer and sky130_rom_krom_rom_output_buffer are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_rom_krom                 |Circuit 2: sky130_rom_krom                 
+-------------------------------------------|-------------------------------------------
+sky130_rom_krom_rom_base_array (1)         |sky130_rom_krom_rom_base_array (1)         
+sky130_rom_krom_rom_row_decode (1)         |sky130_rom_krom_rom_row_decode (1)         
+sky130_rom_krom_rom_control_logic (1)      |sky130_rom_krom_rom_control_logic (1)      
+sky130_rom_krom_rom_column_mux_array (1)   |sky130_rom_krom_rom_column_mux_array (1)   
+sky130_rom_krom_rom_column_decode (1)      |sky130_rom_krom_rom_column_decode (1)      
+sky130_rom_krom_rom_bitline_inverter (1)   |sky130_rom_krom_rom_bitline_inverter (1)   
+sky130_rom_krom_rom_output_buffer (1)      |sky130_rom_krom_rom_output_buffer (1)      
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 604                        |Number of nets: 604                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_rom_krom                 |Circuit 2: sky130_rom_krom                 
+-------------------------------------------|-------------------------------------------
+addr0[3]                                   |addr0[3]                                   
+addr0[4]                                   |addr0[4]                                   
+addr0[5]                                   |addr0[5]                                   
+clk0                                       |clk0                                       
+cs0                                        |cs0                                        
+addr0[0]                                   |addr0[0]                                   
+addr0[1]                                   |addr0[1]                                   
+addr0[2]                                   |addr0[2]                                   
+dout0[0]                                   |dout0[0]                                   
+dout0[1]                                   |dout0[1]                                   
+dout0[2]                                   |dout0[2]                                   
+dout0[3]                                   |dout0[3]                                   
+dout0[4]                                   |dout0[4]                                   
+dout0[5]                                   |dout0[5]                                   
+dout0[6]                                   |dout0[6]                                   
+dout0[7]                                   |dout0[7]                                   
+dout0[8]                                   |dout0[8]                                   
+dout0[9]                                   |dout0[9]                                   
+dout0[10]                                  |dout0[10]                                  
+dout0[11]                                  |dout0[11]                                  
+dout0[12]                                  |dout0[12]                                  
+dout0[13]                                  |dout0[13]                                  
+dout0[14]                                  |dout0[14]                                  
+dout0[15]                                  |dout0[15]                                  
+dout0[16]                                  |dout0[16]                                  
+dout0[17]                                  |dout0[17]                                  
+dout0[18]                                  |dout0[18]                                  
+dout0[19]                                  |dout0[19]                                  
+dout0[20]                                  |dout0[20]                                  
+dout0[21]                                  |dout0[21]                                  
+dout0[22]                                  |dout0[22]                                  
+dout0[23]                                  |dout0[23]                                  
+dout0[24]                                  |dout0[24]                                  
+dout0[25]                                  |dout0[25]                                  
+dout0[26]                                  |dout0[26]                                  
+dout0[27]                                  |dout0[27]                                  
+dout0[28]                                  |dout0[28]                                  
+dout0[29]                                  |dout0[29]                                  
+dout0[30]                                  |dout0[30]                                  
+dout0[31]                                  |dout0[31]                                  
+vssd1                                      |vssd1                                      
+vccd1                                      |vccd1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_rom_krom and sky130_rom_krom are equivalent.
+
+Final result: Circuits match uniquely.
+.
+
+The following cells had property errors:
+ sky130_rom_krom_precharge_cell
+ sky130_rom_krom_inv_array_mod
+ sky130_fd_bd_sram__openram_sp_nand2_dec
+ sky130_rom_krom_pinv_dec_0
+ sky130_rom_krom_pinv_dec_1
+ sky130_rom_krom_rom_base_one_cell
+ sky130_rom_krom_rom_base_zero_cell
+ sky130_rom_krom_pinv
+ sky130_rom_krom_pinv_0
+ sky130_rom_krom_pinv_1
+ sky130_rom_krom_pinv_2
+ sky130_rom_krom_pinv_3
+ sky130_rom_krom_pinv_4
+ sky130_rom_krom_pinv_5
+ sky130_rom_krom_pinv_dec_2
+ sky130_rom_krom_rom_control_nand
+ sky130_rom_krom_rom_column_mux
+ sky130_rom_krom_pinv_dec_3
+ sky130_rom_krom_pinv_dec_4

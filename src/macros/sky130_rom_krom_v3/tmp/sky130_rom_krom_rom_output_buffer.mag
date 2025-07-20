@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585459
 << checkpaint >>
 rect -1216 -1310 3060 11211
 << nwell >>
@@ -974,131 +974,131 @@ rect 1223 17 1229 51
 rect 1263 17 1269 51
 rect 1223 5 1269 17
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_0
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 9652
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_1
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 9344
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_2
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 9036
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_3
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 8728
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_4
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 8420
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_5
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 8112
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_6
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 7804
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_7
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 7496
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_8
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 7188
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_9
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 6880
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_10
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 6572
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_11
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 6264
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_12
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 5956
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_13
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 5648
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_14
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 5340
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_15
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 5032
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_16
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 4724
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_17
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 4416
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_18
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 4108
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_19
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 3800
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_20
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 3492
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_21
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 3184
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_22
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 2876
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_23
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 2568
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_24
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 2260
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_25
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 1952
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_26
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 1644
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_27
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 1336
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_28
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 1028
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_29
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 720
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_30
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 412
 box 44 -50 1800 299
 use sky130_rom_krom_pinv_dec_4  sky130_rom_krom_pinv_dec_4_31
-timestamp 1581582910
+timestamp 1581585459
 transform 1 0 0 0 1 104
 box 44 -50 1800 299
 << labels >>
@@ -1230,13 +1230,13 @@ rlabel locali s 77 9736 77 9736 4 in_31
 port 64 nsew
 rlabel locali s 1765 9736 1765 9736 4 out_31
 port 65 nsew
-rlabel metal1 s 316 6 344 34 4 gnd
-port 67 nsew
 rlabel metal1 s 316 9842 344 9870 4 gnd
 port 67 nsew
-rlabel metal1 s 1232 6 1260 34 4 vdd
-port 69 nsew
+rlabel metal1 s 316 6 344 34 4 gnd
+port 67 nsew
 rlabel metal1 s 1232 9842 1260 9870 4 vdd
+port 69 nsew
+rlabel metal1 s 1232 6 1260 34 4 vdd
 port 69 nsew
 << properties >>
 string FIXED_BBOX 1162 -50 1330 0

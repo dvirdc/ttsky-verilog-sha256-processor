@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1581582910
+timestamp 1581585458
 << checkpaint >>
 rect -1299 -1216 9271 6517
 << locali >>
@@ -188,15 +188,15 @@ rect 1235 4959 1295 5019
 rect -31 3223 29 3283
 rect 1235 3223 1295 3283
 use sky130_rom_krom_rom_address_control_array  sky130_rom_krom_rom_address_control_array_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 127 0 1 0
 box -48 44 1319 3128
 use sky130_rom_krom_rom_row_decode_array  sky130_rom_krom_rom_row_decode_array_0
-timestamp 1581582910
+timestamp 1581585458
 transform 0 -1 2273 1 0 3192
 box -6 -84 2065 2312
 use sky130_rom_krom_rom_row_decode_wordline_buffer  sky130_rom_krom_rom_row_decode_wordline_buffer_0
-timestamp 1581582910
+timestamp 1581585458
 transform 1 0 2301 0 1 3250
 box 44 -50 5710 1831
 << labels >>
@@ -228,9 +228,13 @@ rlabel locali s 762 77 762 77 4 A1
 port 17 nsew
 rlabel locali s 1170 77 1170 77 4 A2
 port 18 nsew
+rlabel metal1 s 7243 3256 7271 3284 4 vdd
+port 20 nsew
 rlabel metal1 s 3997 3256 4025 3284 4 vdd
 port 20 nsew
-rlabel metal1 s 7243 4972 7271 5000 4 vdd
+rlabel metal2 s 2241 3204 2305 3232 4 vdd
+port 20 nsew
+rlabel metal1 s 127 844 155 872 4 vdd
 port 20 nsew
 rlabel metal1 s 127 2833 155 2861 4 vdd
 port 20 nsew
@@ -238,33 +242,29 @@ rlabel metal1 s 127 1881 155 1909 4 vdd
 port 20 nsew
 rlabel metal1 s 3997 4972 4025 5000 4 vdd
 port 20 nsew
-rlabel metal2 s 2241 3204 2305 3232 4 vdd
+rlabel metal1 s 7243 4972 7271 5000 4 vdd
 port 20 nsew
-rlabel metal1 s 7243 3256 7271 3284 4 vdd
-port 20 nsew
-rlabel metal1 s 127 844 155 872 4 vdd
-port 20 nsew
-rlabel metal3 s -31 3223 29 3283 4 gnd
+rlabel metal3 s -31 4959 29 5019 4 gnd
 port 22 nsew
-rlabel metal1 s 2749 3256 2777 3284 4 gnd
+rlabel metal1 s 5595 3256 5623 3284 4 gnd
+port 22 nsew
+rlabel metal1 s 1351 222 1379 250 4 gnd
 port 22 nsew
 rlabel metal3 s 1235 4959 1295 5019 4 gnd
 port 22 nsew
 rlabel metal1 s 5595 4972 5623 5000 4 gnd
 port 22 nsew
-rlabel metal1 s 2749 4972 2777 5000 4 gnd
-port 22 nsew
-rlabel metal1 s 1351 222 1379 250 4 gnd
-port 22 nsew
-rlabel metal3 s -31 4959 29 5019 4 gnd
-port 22 nsew
-rlabel metal1 s 1351 1456 1379 1484 4 gnd
+rlabel metal1 s 2749 3256 2777 3284 4 gnd
 port 22 nsew
 rlabel metal3 s 1235 3223 1295 3283 4 gnd
 port 22 nsew
-rlabel metal1 s 5595 3256 5623 3284 4 gnd
-port 22 nsew
 rlabel metal1 s 1351 2408 1379 2436 4 gnd
+port 22 nsew
+rlabel metal1 s 2749 4972 2777 5000 4 gnd
+port 22 nsew
+rlabel metal3 s -31 3223 29 3283 4 gnd
+port 22 nsew
+rlabel metal1 s 1351 1456 1379 1484 4 gnd
 port 22 nsew
 << properties >>
 string FIXED_BBOX -31 0 7993 5257

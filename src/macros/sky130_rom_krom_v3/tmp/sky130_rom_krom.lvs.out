@@ -1,4 +1,4 @@
-Sun Jul 20 03:11:52 AM UTC 2025: Starting LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
+Sun Jul 20 03:54:18 AM UTC 2025: Starting LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
 Netgen 1.5.253 compiled on Thu 18 May 2023 01:41:22 PM PDT
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
@@ -9,9 +9,9 @@ Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8
 Creating placeholder cell definition.
 Reading netlist file sky130_rom_krom.sp
-Call to undefined subcircuit sky130_fd_pr__pfet_01v8
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
 Creating placeholder cell definition.
 
 Reading setup file setup.tcl
@@ -811,4 +811,4 @@ Top level cell failed pin matching.
 
 Logging to file "sky130_rom_krom.lvs.report" disabled
 LVS Done.
-Sun Jul 20 03:11:53 AM UTC 2025: Finished (0) LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
+Sun Jul 20 03:54:19 AM UTC 2025: Finished (0) LVS using Netgen /workspaces/OpenRAM/miniconda/bin/netgen
