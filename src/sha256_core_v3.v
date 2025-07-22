@@ -74,7 +74,7 @@ module sha256_core_v3 (
     // ─────────────────────────────────────────────────────────────
     // 4. Main State Machine
     // ─────────────────────────────────────────────────────────────
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             state <= IDLE;
             ready <= 1'b0;

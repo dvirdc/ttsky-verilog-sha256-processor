@@ -5,7 +5,7 @@ module sha256_k_constants (
     output reg  [31:0] k
 );
 
-    always @(*) begin
+    always_comb begin
         case (idx)
             7'd0:  k = 32'h428a2f98; 7'd1:  k = 32'h71374491;
             7'd2:  k = 32'hb5c0fbcf; 7'd3:  k = 32'he9b5dba5;
