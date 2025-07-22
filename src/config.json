@@ -13,15 +13,11 @@
 
   "//": "PL_TARGET_DENSITY_PCT - You can increase this if Global Placement fails with error GPL-0302.",
   "//": "Users have reported that values up to 80 worked well for them.",
-  "PL_TARGET_DENSITY_PCT": 70,
+  "PL_TARGET_DENSITY_PCT": 80,
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
   "CLOCK_PERIOD": 20,
-
-  "//": "Instructs the filler insertion step to connect constant signals to the power grid using tie cells.",
-  "FILL_INSERTION": "FASTROUTE",
-  "FP_PDN_TIE_MODE": "constant",
 
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
@@ -75,31 +71,5 @@
   "MAGIC_DEF_LABELS": 0,
 
   "//": "Only export pin area in LEF (without any connected nets)",
-  "MAGIC_WRITE_LEF_PINONLY": 1,
-
-  "EXTRA_LEFS"      : ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.lef"],
-  "EXTRA_GDS" : ["dir::macros/sky130_rom_krom_v2/sky130_rom_krom.gds"],
-
-  "VERILOG_DEFINE": ["USE_POWER_PINS"],
-
-  "MACROS": {
-    "sky130_rom_krom": {
-      "lef": ["dir::macros/sky130_rom_krom_v3/sky130_rom_krom.lef"],
-      "gds": ["dir::macros/sky130_rom_krom_v3/sky130_rom_krom.gds"],
-      "instances": {
-        "top.u_proc.sha_core.k_rom_inst": {
-          "location": [ 100, 100 ],
-          "orientation": "R0"
-        }
-      }
-    }
-  },
-  "PDN_MACRO_CONNECTIONS": {
-    "sky130_rom_krom": {
-      "top.u_proc.sha_core.k_rom_inst": {
-        "vdd_pin": "vccd1",
-        "vss_pin": "vssd1"
-      }
-    }
-  }
+  "MAGIC_WRITE_LEF_PINONLY": 1
 }
