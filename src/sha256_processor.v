@@ -36,7 +36,7 @@ module sha256_processor (
     // Previous value of core_ready to detect rising edge (completion)
     reg          core_ready_prev;
 
-    sha256_core_v2 sha_core (
+    sha256_core_v3 sha_core (
         .clk(clk),
         .rst(rst),
         .start(core_start),
