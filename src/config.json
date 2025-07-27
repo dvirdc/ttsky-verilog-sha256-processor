@@ -13,7 +13,9 @@
 
   "//": "PL_TARGET_DENSITY_PCT - You can increase this if Global Placement fails with error GPL-0302.",
   "//": "Users have reported that values up to 80 worked well for them.",
-  "PL_TARGET_DENSITY_PCT": 78,
+  "PL_TARGET_DENSITY_PCT": 92,
+  "PL_RANDOM_GLB_PLACEMENT": 1,
+  "RUN_HEURISTIC_DENSITY": 1,
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
@@ -71,11 +73,6 @@
   "MAGIC_DEF_LABELS": 0,
 
   "//": "Only export pin area in LEF (without any connected nets)",
-  "MAGIC_WRITE_LEF_PINONLY": 1,
-
-  "//": "Custom things I added",
-  "FP_CORE_UTIL": 38,
-  "PL_RANDOM_GLB_PLACEMENT": 1,
-  "SYNTH_MAX_FANOUT": 8
+  "MAGIC_WRITE_LEF_PINONLY": 1
 
 }
