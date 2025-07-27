@@ -56,7 +56,7 @@ module sha256_processor (
 
     integer i;
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             state <= IDLE;
             byte_index <= 0;

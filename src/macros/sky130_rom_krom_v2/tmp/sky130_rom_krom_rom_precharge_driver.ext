@@ -1,0 +1,238 @@
+timestamp 1581479693
+version 8.3
+tech sky130A
+style ngspice(si)
+scale 1000 1 0.5
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_rom_krom_pinv_5 sky130_rom_krom_pinv_5_0 1 0 3288 0 1 0
+use sky130_rom_krom_pinv_4 sky130_rom_krom_pinv_4_0 1 0 2272 0 1 0
+use sky130_rom_krom_pinv_3 sky130_rom_krom_pinv_3_0 1 0 1580 0 1 0
+use sky130_rom_krom_pinv_2 sky130_rom_krom_pinv_2_0 1 0 1104 0 1 0
+use sky130_rom_krom_pinv sky130_rom_krom_pinv_0 1 0 736 0 1 0
+use sky130_rom_krom_pinv sky130_rom_krom_pinv_1 1 0 368 0 1 0
+use sky130_rom_krom_pinv sky130_rom_krom_pinv_2 1 0 0 0 1 0
+port "gnd" 4 2854 0 2854 0 li
+port "Z" 2 4460 1315 4460 1315 li
+port "A" 1 81 1277 81 1277 li
+port "vdd" 3 2854 2628 2854 2628 li
+node "gnd" 2149 2393.21 2854 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194072 11484 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1871_1198#" 194 129.561 1871 1198 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17510 1098 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1287_1248#" 141 79.8486 1287 1248 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12716 816 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_932_1260#" 95 49.8053 932 1260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8602 574 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_564_1260#" 95 50.0031 564 1260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8602 574 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_196_1260#" 95 50.163 196 1260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8602 574 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 13 6.90111 4460 1315 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2777_1215#" 254 130.488 2777 1215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22950 1418 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 25 22.6879 81 1277 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 2149 1161.28 2854 2628 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194072 11484 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n36_1261#" 3853 24709.5 -36 1261 nw 0 0 0 0 8236500 14410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "gnd" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_n36_1261#" "A" 12.8831
+cap "li_196_1260#" "vdd" 7.19498
+cap "li_196_1260#" "gnd" 7.61389
+cap "w_n36_1261#" "li_564_1260#" 57.3826
+cap "li_1871_1198#" "w_n36_1261#" 93.0958
+cap "vdd" "A" 0.978555
+cap "vdd" "w_n36_1261#" 1298.03
+cap "w_n36_1261#" "li_932_1260#" 59.6903
+cap "w_n36_1261#" "li_2777_1215#" 162.334
+cap "gnd" "A" 1.03625
+cap "Z" "w_n36_1261#" 20.2656
+cap "gnd" "w_n36_1261#" 66.8118
+cap "vdd" "li_564_1260#" 7.19498
+cap "li_932_1260#" "li_564_1260#" 6.06294
+cap "li_1871_1198#" "vdd" 9.06591
+cap "li_1871_1198#" "li_2777_1215#" 1.89407
+cap "li_1287_1248#" "A" 0.251438
+cap "gnd" "li_564_1260#" 7.61389
+cap "li_1871_1198#" "gnd" 15.2494
+cap "w_n36_1261#" "li_1287_1248#" 82.997
+cap "vdd" "li_932_1260#" 7.19498
+cap "vdd" "li_2777_1215#" 17.3252
+cap "li_932_1260#" "li_2777_1215#" 0.188889
+cap "Z" "vdd" 0.995027
+cap "Z" "li_2777_1215#" 0.786751
+cap "li_196_1260#" "A" 6.88095
+cap "gnd" "li_932_1260#" 7.61389
+cap "gnd" "li_2777_1215#" 11.9309
+cap "li_196_1260#" "w_n36_1261#" 57.1079
+cap "Z" "gnd" 0.993506
+cap "li_1871_1198#" "li_1287_1248#" 1.82143
+cap "vdd" "li_1287_1248#" 10.542
+cap "li_196_1260#" "li_564_1260#" 6.06294
+cap "li_1287_1248#" "li_2777_1215#" 0.378934
+cap "li_1287_1248#" "li_932_1260#" 4.31538
+cap "gnd" "li_1287_1248#" 11.3626
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_4_0/Z" 2.40661
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_4_0/A" 30.5268
+cap "gnd" "sky130_rom_krom_pinv_2_0/A" 12.8259
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_4_0/A" 0.57037
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_2_0/A" 126.94
+cap "gnd" "sky130_rom_krom_pinv_3_0/A" 9.17481
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_3_0/A" 8.07602
+cap "gnd" "A" -0.38407
+cap "gnd" "sky130_rom_krom_pinv_1/A" 0.161455
+cap "A" "sky130_rom_krom_pinv_0/A" 4.99074
+cap "sky130_rom_krom_pinv_2_0/A" "vdd" -3.00755
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_0/A" 134.603
+cap "sky130_rom_krom_pinv_3_0/A" "vdd" -5.99645
+cap "sky130_rom_krom_pinv_1/A" "vdd" -6.9197
+cap "A" "vdd" -11.1628
+cap "gnd" "sky130_rom_krom_pinv_4_0/Z" 0.186455
+cap "gnd" "sky130_rom_krom_pinv_4_0/A" 1.234
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_4_0/Z" 0.00453763
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_2_0/A" 87.3413
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_4_0/A" 2.69138
+cap "A" "sky130_rom_krom_pinv_2_0/A" 3.87173
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_2_0/A" 8.04969
+cap "gnd" "sky130_rom_krom_pinv_0/A" 3.95221
+cap "A" "sky130_rom_krom_pinv_3_0/A" 1.84309
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_3_0/A" 4.3913
+cap "sky130_rom_krom_pinv_1/A" "A" 51.7916
+cap "gnd" "vdd" -16.1714
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_4_0/Z" 0.854869
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_4_0/A" 5.94696
+cap "sky130_rom_krom_pinv_0/A" "vdd" -4.21118
+cap "gnd" "sky130_rom_krom_pinv_5_0/A" 8.06514
+cap "sky130_rom_krom_pinv_4_0/A" "gnd" 28.6738
+cap "gnd" "sky130_rom_krom_pinv_3_0/A" 19.701
+cap "gnd" "sky130_rom_krom_pinv_1/A" 0.51155
+cap "vdd" "gnd" -15.0776
+cap "sky130_rom_krom_pinv_5_0/A" "sky130_rom_krom_pinv_3_0/A" 7.49022
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_3_0/A" 43.6267
+cap "sky130_rom_krom_pinv_2_0/A" "gnd" 3.41151
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_5_0/A" 38.3684
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_3_0/A" 0.358788
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_1/A" 1.06145
+cap "vdd" "sky130_rom_krom_pinv_5_0/A" 5.29538
+cap "sky130_rom_krom_pinv_4_0/A" "vdd" 5.55354
+cap "vdd" "sky130_rom_krom_pinv_3_0/A" 5.18374
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_3_0/A" 17.3662
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_5_0/A" 0.562884
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_4_0/A" 4.74492
+cap "A" "gnd" 0.113968
+cap "gnd" "sky130_rom_krom_pinv_0/A" 1.15598
+cap "sky130_rom_krom_pinv_5_0/Z" "gnd" 2.21449
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_0/A" 1.13545
+cap "A" "sky130_rom_krom_pinv_3_0/A" 0.014733
+cap "sky130_rom_krom_pinv_5_0/A" "sky130_rom_krom_pinv_0/A" 0.00799152
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_0/A" 2.54809
+cap "sky130_rom_krom_pinv_5_0/Z" "sky130_rom_krom_pinv_5_0/A" 0.532452
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_5_0/Z" 0.232408
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_4_0/A" 0.000564922
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_5_0/A" -0.0920088
+cap "sky130_rom_krom_pinv_4_0/A" "Z" 2.6432
+cap "gnd" "sky130_rom_krom_pinv_4_0/A" 18.5533
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_5_0/A" 27.3167
+cap "vdd" "Z" 0.0627778
+cap "gnd" "vdd" -16.0921
+cap "vdd" "sky130_rom_krom_pinv_5_0/A" -42.7166
+cap "gnd" "sky130_rom_krom_pinv_3_0/A" 1.62784
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_5_0/A" 0.111404
+cap "gnd" "Z" 9.3482
+cap "vdd" "sky130_rom_krom_pinv_4_0/A" 0.0590693
+cap "sky130_rom_krom_pinv_5_0/A" "Z" 26.413
+cap "gnd" "sky130_rom_krom_pinv_5_0/A" 62.6403
+cap "Z" "gnd" -0.922212
+cap "sky130_rom_krom_pinv_5_0/A" "Z" -0.289992
+cap "Z" "vdd" -18.1869
+cap "sky130_rom_krom_pinv_5_0/A" "gnd" 1.47672
+cap "vdd" "gnd" -16.341
+cap "sky130_rom_krom_pinv_5_0/A" "vdd" 0.184277
+cap "Z" "sky130_rom_krom_pinv_4_0/A" 0.340137
+cap "sky130_rom_krom_pinv_4_0/A" "gnd" 1.00238
+cap "sky130_rom_krom_pinv_5_0/vdd" "sky130_rom_krom_pinv_5_0/gnd" -1.76109
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_2_0/A" 6.77479
+cap "sky130_rom_krom_pinv_1/A" "vdd" 44.6352
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_0/A" 117.006
+cap "sky130_rom_krom_pinv_4_0/Z" "vdd" 0.289527
+cap "sky130_rom_krom_pinv_4_0/Z" "sky130_rom_krom_pinv_2_0/A" 1.00288
+cap "A" "sky130_rom_krom_pinv_2_0/A" 2.86935
+cap "A" "vdd" 20.444
+cap "A" "sky130_rom_krom_pinv_0/A" 3.6397
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_4_0/A" 28.9944
+cap "sky130_rom_krom_pinv_4_0/Z" "sky130_rom_krom_pinv_0/A" 0.00453763
+cap "sky130_rom_krom_pinv_1/A" "A" 44.4503
+cap "vdd" "sky130_rom_krom_pinv_4_0/A" 2.02348
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_4_0/A" 5.12924
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_4_0/A" 3.19072
+cap "sky130_rom_krom_pinv_3_0/A" "vdd" 29.4804
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_2_0/A" 76.7807
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_0/A" 7.46062
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_4_0/A" 0.486649
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_3_0/A" 3.7613
+cap "sky130_rom_krom_pinv_4_0/Z" "sky130_rom_krom_pinv_3_0/A" 4.2628
+cap "A" "sky130_rom_krom_pinv_3_0/A" 1.63309
+cap "vdd" "sky130_rom_krom_pinv_2_0/A" 119.864
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_0/A" 109.763
+cap "vdd" "sky130_rom_krom_pinv_0/A" 94.5309
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_3_0/A" 19.6021
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_1/A" 0.832953
+cap "vdd" "sky130_rom_krom_pinv_0/A" 2.08112
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_5_0/A" 35.9585
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_4_0/A" 1.96292
+cap "vdd" "sky130_rom_krom_pinv_4_0/A" 103.259
+cap "sky130_rom_krom_pinv_2_0/A" "sky130_rom_krom_pinv_5_0/A" 0.373793
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_2_0/A" 12.0658
+cap "sky130_rom_krom_pinv_5_0/Z" "sky130_rom_krom_pinv_3_0/A" 0.00230716
+cap "sky130_rom_krom_pinv_5_0/Z" "sky130_rom_krom_pinv_5_0/A" 0.532452
+cap "A" "vdd" 0.16408
+cap "sky130_rom_krom_pinv_3_0/A" "sky130_rom_krom_pinv_5_0/A" 5.77576
+cap "sky130_rom_krom_pinv_1/A" "sky130_rom_krom_pinv_3_0/A" 0.0882326
+cap "vdd" "gnd" 0.00169527
+cap "vdd" "sky130_rom_krom_pinv_2_0/A" 5.86246
+cap "sky130_rom_krom_pinv_5_0/Z" "vdd" 3.65558
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_5_0/A" 0.00799152
+cap "sky130_rom_krom_pinv_0/A" "sky130_rom_krom_pinv_3_0/A" 0.461176
+cap "vdd" "sky130_rom_krom_pinv_5_0/A" 32.402
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_2_0/A" 3.65221
+cap "vdd" "sky130_rom_krom_pinv_3_0/A" 134.177
+cap "vdd" "sky130_rom_krom_pinv_1/A" 0.852413
+cap "sky130_rom_krom_pinv_5_0/Z" "sky130_rom_krom_pinv_4_0/A" 0.186551
+cap "sky130_rom_krom_pinv_5_0/A" "gnd" -0.32923
+cap "gnd" "vdd" -0.46443
+cap "sky130_rom_krom_pinv_5_0/A" "sky130_rom_krom_pinv_4_0/A" 1.131
+cap "sky130_rom_krom_pinv_4_0/A" "vdd" 21.7321
+cap "sky130_rom_krom_pinv_5_0/A" "sky130_rom_krom_pinv_3_0/A" 0.300871
+cap "vdd" "sky130_rom_krom_pinv_3_0/A" 2.11106
+cap "sky130_rom_krom_pinv_4_0/A" "Z" 1.83175
+cap "Z" "sky130_rom_krom_pinv_3_0/A" 0.0498161
+cap "sky130_rom_krom_pinv_5_0/A" "vdd" 52.1228
+cap "sky130_rom_krom_pinv_5_0/A" "Z" 24.2676
+cap "Z" "vdd" 10.8126
+cap "sky130_rom_krom_pinv_4_0/A" "sky130_rom_krom_pinv_3_0/A" 0.000564922
+cap "gnd" "vdd" 0.00132135
+cap "sky130_rom_krom_pinv_4_0/A" "vdd" 1.00238
+cap "sky130_rom_krom_pinv_4_0/A" "Z" 1.37168
+cap "sky130_rom_krom_pinv_5_0/A" "vdd" 2.14198
+cap "sky130_rom_krom_pinv_5_0/A" "Z" 1.81971
+cap "vdd" "Z" -11.2
+merge "sky130_rom_krom_pinv_2/A" "A" -469.981 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_5_0/gnd" "sky130_rom_krom_pinv_2/gnd" -3009.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -194072 -11892 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_2/gnd" "sky130_rom_krom_pinv_1/gnd"
+merge "sky130_rom_krom_pinv_1/gnd" "sky130_rom_krom_pinv_0/gnd"
+merge "sky130_rom_krom_pinv_0/gnd" "sky130_rom_krom_pinv_2_0/gnd"
+merge "sky130_rom_krom_pinv_2_0/gnd" "sky130_rom_krom_pinv_3_0/gnd"
+merge "sky130_rom_krom_pinv_3_0/gnd" "sky130_rom_krom_pinv_4_0/gnd"
+merge "sky130_rom_krom_pinv_4_0/gnd" "gnd"
+merge "sky130_rom_krom_pinv_1/Z" "sky130_rom_krom_pinv_0/A" -1552.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -204 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_0/A" "li_564_1260#"
+merge "sky130_rom_krom_pinv_3_0/Z" "sky130_rom_krom_pinv_4_0/A" -689.346 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2006 -304 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_4_0/A" "li_1871_1198#"
+merge "sky130_rom_krom_pinv_5_0/vdd" "sky130_rom_krom_pinv_2/vdd" -28488.3 0 0 0 0 -8845888 -32360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -189384 -11950 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_2/vdd" "sky130_rom_krom_pinv_1/vdd"
+merge "sky130_rom_krom_pinv_1/vdd" "sky130_rom_krom_pinv_0/vdd"
+merge "sky130_rom_krom_pinv_0/vdd" "sky130_rom_krom_pinv_2_0/vdd"
+merge "sky130_rom_krom_pinv_2_0/vdd" "sky130_rom_krom_pinv_3_0/vdd"
+merge "sky130_rom_krom_pinv_3_0/vdd" "sky130_rom_krom_pinv_4_0/vdd"
+merge "sky130_rom_krom_pinv_4_0/vdd" "vdd"
+merge "vdd" "w_n36_1261#"
+merge "sky130_rom_krom_pinv_5_0/A" "sky130_rom_krom_pinv_4_0/Z" -462.347 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2856 -404 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_4_0/Z" "li_2777_1215#"
+merge "sky130_rom_krom_pinv_2_0/Z" "sky130_rom_krom_pinv_3_0/A" -1085.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1530 -238 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_3_0/A" "li_1287_1248#"
+merge "sky130_rom_krom_pinv_5_0/Z" "Z" -25.7849 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_2/Z" "sky130_rom_krom_pinv_1/A" -1255.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -204 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_1/A" "li_196_1260#"
+merge "sky130_rom_krom_pinv_0/Z" "sky130_rom_krom_pinv_2_0/A" -1414.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -204 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pinv_2_0/A" "li_932_1260#"

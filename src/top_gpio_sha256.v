@@ -43,7 +43,7 @@ module top_gpio_sha256 (
     reg [1:0]   state = IDLE;
     reg [4:0]   byte_cntr;     // 0-31 during digest dump
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             state       <= IDLE;
             busy        <= 1'b0;

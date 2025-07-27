@@ -1,0 +1,1031 @@
+timestamp 1581585458
+version 8.3
+tech sky130A
+style ngspice(si)
+scale 1000 1 0.5
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_0 1 0 0 0 1 1532
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_1 1 0 0 0 1 1328
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_2 1 0 0 0 1 1124
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_3 1 0 0 0 1 920
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_4 1 0 0 0 1 716
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_5 1 0 0 0 1 512
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_6 1 0 0 0 1 308
+use sky130_rom_krom_pbuf_dec sky130_rom_krom_pbuf_dec_7 1 0 0 0 1 104
+port "out_0" 9 5675 188 5675 188 li
+port "in_0" 1 77 188 77 188 li
+port "out_1" 10 5675 392 5675 392 li
+port "in_1" 2 77 392 77 392 li
+port "out_2" 11 5675 596 5675 596 li
+port "in_2" 3 77 596 77 596 li
+port "out_3" 12 5675 800 5675 800 li
+port "in_3" 4 77 800 77 800 li
+port "out_4" 13 5675 1004 5675 1004 li
+port "in_4" 5 77 1004 77 1004 li
+port "out_5" 14 5675 1208 5675 1208 li
+port "in_5" 6 77 1208 77 1208 li
+port "out_6" 15 5675 1412 5675 1412 li
+port "in_6" 7 77 1412 77 1412 li
+port "out_7" 16 5675 1616 5675 1616 li
+port "in_7" 8 77 1616 77 1616 li
+port "vdd_uq0" 20 4942 6 4970 34 m1
+port "vdd_uq0" 19 4942 1722 4970 1750 m1
+port "vdd" 17 1696 6 1724 34 m1
+port "vdd" 17 1696 1722 1724 1750 m1
+port "gnd_uq0" 22 3294 1722 3322 1750 m1
+port "gnd_uq0" 21 3294 6 3322 34 m1
+port "gnd" 18 448 1722 476 1750 m1
+port "gnd" 18 448 6 476 34 m1
+node "out_0" 25 37.2225 5675 188 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_0" 25 37.6976 77 188 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_1" 25 31.2314 5675 392 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_1" 25 31.7133 77 392 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_2" 25 31.2314 5675 596 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_2" 25 31.7133 77 596 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_3" 25 31.2314 5675 800 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_3" 25 31.7133 77 800 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_4" 25 31.2314 5675 1004 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_4" 25 31.7133 77 1004 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_5" 25 31.2314 5675 1208 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_5" 25 31.7133 77 1208 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_6" 25 31.2314 5675 1412 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_6" 25 31.7133 77 1412 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "out_7" 25 37.2225 5675 1616 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278 202 0 0 0 0 0 0 0 0 0 0 0 0
+node "in_7" 25 37.6976 77 1616 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq0" 1179 872.343 4942 1722 m1 0 0 0 0 28224 672 0 0 4100 264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 49904 3582 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1179 961.547 1696 1722 m1 0 0 0 0 28224 672 0 0 4100 264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2244 200 49904 3582 0 0 0 0 0 0 0 0 0 0
+substrate "gnd_uq0" 0 0 3294 6 m1 0 0 0 0 0 0 0 0 0 0 8200 528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 400 99808 7164 0 0 0 0 0 0 0 0 0 0
+equiv "gnd_uq0" "gnd"
+cap "out_0" "vdd_uq0" 0.758815
+cap "out_4" "out_5" 5.25455
+cap "in_3" "in_2" 5.22289
+cap "in_6" "in_7" 5.22289
+cap "out_2" "out_1" 5.25455
+cap "in_0" "in_1" 5.22289
+cap "in_3" "in_4" 5.22289
+cap "out_3" "vdd_uq0" 0.758815
+cap "out_0" "out_1" 5.25455
+cap "out_5" "vdd_uq0" 0.758815
+cap "in_5" "in_4" 5.22289
+cap "out_2" "out_3" 5.25455
+cap "out_7" "vdd_uq0" 0.758815
+cap "out_2" "vdd_uq0" 0.758815
+cap "out_6" "vdd_uq0" 0.758815
+cap "in_5" "in_6" 5.22289
+cap "out_5" "out_6" 5.25455
+cap "out_4" "out_3" 5.25455
+cap "out_7" "out_6" 5.25455
+cap "out_4" "vdd_uq0" 0.758815
+cap "in_1" "in_2" 5.22289
+cap "vdd_uq0" "out_1" 0.758815
+cap "in_6" "in_1" 0.0648451
+cap "in_2" "in_4" 0.21373
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 2.94771
+cap "vdd" "gnd" -17.5861
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.38333
+cap "in_1" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.22413
+cap "in_0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.599328
+cap "in_6" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.411297
+cap "in_0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.844155
+cap "in_2" "in_5" 0.193056
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 2.25015
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.29039
+cap "vdd" "in_4" -0.755174
+cap "in_0" "in_3" 0.193056
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "gnd" 23.151
+cap "vdd" "in_5" -0.875688
+cap "in_0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.34409
+cap "in_6" "in_0" 0.0447656
+cap "in_1" "in_2" 35.4642
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.14587
+cap "in_1" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.34409
+cap "in_0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.05524
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.29039
+cap "gnd" "in_7" 0.240546
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 0.955541
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 2.65193
+cap "vdd" "in_1" -1.29936
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.46975
+cap "in_7" "in_4" 0.0965282
+cap "vdd" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 2.99718
+cap "in_3" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.13096
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "in_0" "in_2" 0.21373
+cap "in_7" "in_5" 0.106865
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_1" -0.11647
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.871994
+cap "in_3" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.22413
+cap "in_0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.22413
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.34409
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 2.25015
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.3206
+cap "vdd" "in_0" -0.374183
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 2.65193
+cap "in_6" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.21127
+cap "in_1" "in_7" 0.0447656
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 2.94771
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.38333
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.16934
+cap "in_6" "in_3" 0.0965282
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 1.41031
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.41031
+cap "in_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.836869
+cap "in_2" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.104682
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.11866
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 2.94771
+cap "in_2" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.05524
+cap "in_6" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.12996
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.22413
+cap "in_0" "in_7" 0.0228965
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 2.65193
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 2.94771
+cap "gnd" "in_4" -0.769242
+cap "in_3" "in_2" 35.4642
+cap "gnd" "in_5" -0.799886
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_3" -0.11647
+cap "vdd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 5.99122
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_2" -0.11647
+cap "vdd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 14.6123
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.590472
+cap "in_6" "in_2" 0.0823323
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "in_6" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.00347
+cap "vdd" "in_3" -0.787486
+cap "in_5" "in_4" 35.4642
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.34409
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.7584
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 2.25015
+cap "in_1" "gnd" -0.765371
+cap "vdd" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 12.4973
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.29039
+cap "gnd" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 20.674
+cap "vdd" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 15.5599
+cap "in_1" "in_4" 0.193056
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 1.12996
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 0.955541
+cap "in_6" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.636812
+cap "in_1" "in_5" 0.164665
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.41031
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 2.65193
+cap "in_3" "in_7" 0.0823323
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 0.727012
+cap "gnd" "in_0" -0.794809
+cap "vdd" "in_2" -0.971331
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.636812
+cap "vdd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 14.8409
+cap "in_0" "in_4" 0.164665
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 1.00347
+cap "in_0" "in_5" 0.12969
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.38333
+cap "in_1" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 1.38333
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 2.94771
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 8.66531
+cap "gnd" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.636284
+cap "in_7" "in_2" 0.0648451
+cap "in_1" "in_0" 35.4642
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.836869
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.746627
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 0.152003
+cap "gnd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 23.0364
+cap "gnd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 23.8227
+cap "in_5" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.166968
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.34409
+cap "gnd" "in_3" -0.75294
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.41031
+cap "gnd" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 23.673
+cap "in_5" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.41031
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.411297
+cap "in_6" "gnd" 0.298056
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_5" -0.11647
+cap "in_3" "in_4" 35.4642
+cap "gnd" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 24.0158
+cap "in_3" "in_5" 0.21373
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.29039
+cap "in_1" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0742198
+cap "in_6" "in_4" 0.106865
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.285345
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.14587
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_4" -0.11647
+cap "in_1" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.844155
+cap "in_6" "in_5" 17.7321
+cap "in_1" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.05524
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.19636
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.38333
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.7584
+cap "in_1" "in_3" 0.21373
+cap "gnd" "in_2" -0.751632
+cap "gnd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 23.9652
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.14587
+cap "in_0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.04079
+cap "in_1" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.41031
+cap "in_0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.07321
+cap "in_3" "in_2" 2.3908
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 49.995
+cap "in_5" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.13153
+cap "in_7" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.989935
+cap "in_0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.00427638
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.741211
+cap "in_4" "vdd" -0.226015
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.628222
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 0.636284
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 23.1822
+cap "in_4" "in_5" 2.3908
+cap "in_5" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0175047
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 0.637679
+cap "in_3" "vdd" -0.225271
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.17831
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_1" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.650725
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 2.43508
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 3.15945
+cap "in_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.82558
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 1.19493
+cap "in_1" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.23631
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.925197
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 3.11319
+cap "in_1" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.740201
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 3.72146
+cap "in_1" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.925197
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 51.375
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 145.376
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 4.1347
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.21297
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.989935
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 1.00486
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.82304
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_7" "vdd" 0.240546
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_1" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.17831
+cap "in_3" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.13153
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 3.66684
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.405749
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 4.1347
+cap "gnd" "vdd" -38.5052
+cap "in_4" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.13153
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.21439
+cap "in_1" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.00778111
+cap "in_2" "vdd" -0.312481
+cap "in_4" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.17831
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 4.1347
+cap "in_1" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 1.21297
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.65963
+cap "in_4" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.23631
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 2.04482
+cap "in_3" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.21297
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 2.47113
+cap "in_3" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.07321
+cap "in_3" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.17831
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 3.72146
+cap "in_0" "vdd" -0.0681421
+cap "in_4" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.21297
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 1.11471
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.55719
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 3.72146
+cap "in_5" "vdd" -0.314684
+cap "in_3" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.650725
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.405749
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 4.1347
+cap "in_1" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.07321
+cap "in_4" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0159358
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 4.0739
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_4" 0.838022
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.398789
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_3" "in_4" 2.3908
+cap "in_3" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0137297
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 1.00486
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.21297
+cap "in_7" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.628222
+cap "in_7" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.11471
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_1" "in_2" 2.3908
+cap "in_2" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.650725
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 1.23631
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 0.925197
+cap "in_4" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.650725
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.07321
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.83774
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 3.15945
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 37.1186
+cap "in_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.82558
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 0.838022
+cap "in_3" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.23631
+cap "in_6" "vdd" 0.298056
+cap "in_0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.17831
+cap "in_1" "in_0" 2.3908
+cap "in_5" "in_6" 1.1954
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.525613
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.167056
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.740201
+cap "in_1" "vdd" -0.48416
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 45.1482
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.23631
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 31.8024
+cap "in_5" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.00486
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 49.2045
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.23631
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 0.650725
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 0.0109748
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 1.13153
+cap "out_4" "out_0" 2.1459
+cap "vdd_uq0" "gnd_uq0" 2.17694
+cap "out_2" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" -0.110298
+cap "vdd_uq0" "out_0" 0.591887
+cap "out_1" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.60696
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "out_2" "out_3" 119.276
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 1.16658
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_3" -0.110298
+cap "out_5" "out_7" 1.4016
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.07699
+cap "out_1" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.910569
+cap "out_6" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.28089
+cap "out_6" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.804467
+cap "out_7" "out_4" 1.25937
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.95643
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.31822
+cap "out_1" "out_3" 2.81114
+cap "vdd" "out_6" 3.36103e-18
+cap "out_5" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.15449
+cap "out_4" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.07699
+cap "out_0" "gnd_uq0" 24.7724
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.22966
+cap "out_2" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.34401
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 0.57115
+cap "out_6" "out_2" 2.1459
+cap "out_5" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" -0.110298
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "out_6" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.16658
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "out_4" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.31822
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" -0.68109
+cap "out_5" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.16658
+cap "out_4" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.28089
+cap "out_7" "gnd_uq0" 0.636284
+cap "out_5" "out_3" 2.81114
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.240546
+cap "out_7" "out_0" 0.272114
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" -0.75548
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.161402
+cap "out_4" "out_3" 119.276
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.09194
+cap "out_6" "out_1" 1.67694
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_1" -0.110298
+cap "vdd_uq0" "out_3" 1.28543
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.28089
+cap "vdd" "out_1" 5.63785e-18
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.31822
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.298056
+cap "out_0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.392017
+cap "out_2" "out_1" 119.276
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.106943
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.34401
+cap "out_0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.692796
+cap "out_5" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.34401
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.22966
+cap "out_5" "out_6" 119.276
+cap "out_5" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.00562
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_4" -0.110298
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.155197
+cap "out_4" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.16658
+cap "out_6" "out_4" 2.81114
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.587358
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 1.22966
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" -1.01061
+cap "out_6" "vdd_uq0" 0.680954
+cap "gnd_uq0" "out_3" 29.7811
+cap "out_0" "out_3" 2.52907
+cap "out_5" "vdd" 5.63785e-18
+cap "out_7" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.158889
+cap "out_7" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0996172
+cap "out_5" "out_2" 2.52907
+cap "out_7" "out_3" 1.06679
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.804467
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.797638
+cap "out_2" "out_4" 2.81114
+cap "out_5" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.28089
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.00562
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.34401
+cap "out_2" "vdd_uq0" 1.1516
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.291031
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.612489
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 10.8506
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.137587
+cap "out_6" "gnd_uq0" 27.1048
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.141458
+cap "out_5" "out_1" 2.1459
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.910569
+cap "out_6" "out_0" 1.14094
+cap "out_0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.31822
+cap "out_4" "out_1" 2.52907
+cap "out_3" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.95643
+cap "vdd_uq0" "out_1" 0.93284
+cap "vdd" "gnd_uq0" -14.4893
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 1.22966
+cap "out_7" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.144648
+cap "out_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0706285
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 1.34401
+cap "out_2" "gnd_uq0" 29.1347
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.11202
+cap "out_2" "out_0" 2.81114
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.153889
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.711037
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 1.09194
+cap "out_5" "out_4" 119.276
+cap "out_5" "vdd_uq0" 1.27787
+cap "out_4" "vdd_uq0" 1.32817
+cap "gnd_uq0" "out_1" 28.0324
+cap "out_0" "out_1" 119.276
+cap "out_7" "out_2" 0.831562
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.60696
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0388163
+cap "out_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.124623
+cap "out_6" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.34401
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "out_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.00562
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 1.31822
+cap "out_6" "out_3" 2.52907
+cap "out_7" "out_1" 0.563094
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 1.28089
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.392017
+cap "out_2" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.797638
+cap "vdd" "out_3" 5.63785e-18
+cap "out_5" "gnd_uq0" 29.6219
+cap "out_5" "out_0" 1.67694
+cap "out_2" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.09194
+cap "out_4" "gnd_uq0" 29.9456
+cap "out_6" "out_5" 177.614
+cap "out_3" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.40716
+cap "out_3" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.03737
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00197371
+cap "out_6" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.65773
+cap "out_3" "out_7" 2.08092
+cap "out_1" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.892998
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.59229
+cap "out_1" "out_7" 1.09839
+cap "out_0" "out_2" 5.48051
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "out_0" "out_5" 3.26929
+cap "out_3" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.65773
+cap "gnd_uq0" "vdd_uq0" 4.996e-15
+cap "out_2" "out_5" 4.93059
+cap "out_4" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.58453
+cap "out_0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.17928
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.551724
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.73932
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.59229
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00506528
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.73932
+cap "out_4" "out_7" 2.45657
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" 0.0267926
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.03737
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00807911
+cap "out_3" "vdd_uq0" 61.2953
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 0.739492
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "out_1" "vdd_uq0" 43.1892
+cap "out_3" "out_6" 4.93059
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.50986
+cap "out_6" "out_1" 3.26929
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" -0.0627305
+cap "out_4" "vdd_uq0" 63.2808
+cap "out_0" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 1.07913
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.08973
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.240546
+cap "out_3" "out_0" 4.93059
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.65773
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00633678
+cap "out_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.30164
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.04138
+cap "out_6" "out_4" 5.48051
+cap "out_3" "out_2" 177.614
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 1.73932
+cap "out_3" "out_5" 5.48051
+cap "out_0" "out_1" 177.614
+cap "out_3" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.70688
+cap "out_1" "out_2" 177.614
+cap "out_1" "out_5" 4.18357
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.41405
+cap "out_0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.59229
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00359128
+cap "out_0" "out_4" 4.18357
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.03737
+cap "out_0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.897363
+cap "out_0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.237465
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.50986
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.298056
+cap "out_4" "out_2" 5.48051
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.0231837
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.41405
+cap "out_4" "out_5" 177.614
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.892998
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.03737
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.58453
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.03737
+cap "vdd_uq0" "out_7" 0.636284
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "out_6" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.50986
+cap "out_3" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 1.50986
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.149365
+cap "out_0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.57676
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.73932
+cap "out_2" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.17354
+cap "out_0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.41405
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 1.04138
+cap "out_3" "out_1" 5.48051
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.69856
+cap "out_0" "out_7" 0.530797
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.70688
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.65773
+cap "out_2" "out_7" 1.62208
+cap "out_7" "out_5" 2.73402
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.30164
+cap "out_3" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.73932
+cap "out_6" "vdd_uq0" 35.9942
+cap "out_3" "out_4" 177.614
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00735496
+cap "out_3" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.59229
+cap "out_0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 1.70688
+cap "out_3" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.17354
+cap "out_1" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.70688
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 1.73932
+cap "out_1" "out_4" 4.93059
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 1.30164
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 1.17928
+cap "out_1" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.57676
+cap "out_0" "vdd_uq0" 24.4944
+cap "out_4" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.65773
+cap "vdd_uq0" "out_2" 54.4637
+cap "vdd_uq0" "out_5" 60.2995
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 1.70688
+cap "out_0" "out_6" 2.22432
+cap "out_4" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.40716
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.0323051
+cap "out_6" "out_2" 4.18357
+cap "out_1" "vdd_uq0" 0.969539
+cap "out_6" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.0909222
+cap "out_2" "out_0" 0.0481999
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0909222
+cap "out_3" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.081204
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 9.15675
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0409025
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0572711
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0210002
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.180162
+cap "out_6" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.0864317
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.0322859
+cap "out_4" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0909222
+cap "out_2" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0909222
+cap "out_2" "out_5" 0.0433635
+cap "out_3" "out_2" 2.4577
+cap "out_7" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.0370176
+cap "out_1" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.068078
+cap "out_4" "out_0" 0.0367935
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.421627
+cap "out_6" "out_2" 0.0367935
+cap "out_4" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0864317
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.00638999
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.068078
+cap "out_7" "out_2" 0.0142701
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "out_1" "out_2" 2.4577
+cap "out_4" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0784858
+cap "out_4" "out_5" 2.4577
+cap "out_3" "out_4" 2.4577
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.363602
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.1954
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0864317
+cap "out_3" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 9.15675
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0360947
+cap "out_3" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0271865
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0761634
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0864317
+cap "out_6" "out_4" 0.0481999
+cap "out_0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.081204
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "out_6" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0784858
+cap "out_2" "vdd_uq0" 1.2529
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "out_0" "out_5" 0.0287527
+cap "out_4" "out_7" 0.0216114
+cap "out_3" "out_0" 0.0433635
+cap "out_4" "out_1" 0.0433635
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0784858
+cap "out_3" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0909222
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0139744
+cap "out_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0316528
+cap "out_1" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0761634
+cap "out_6" "out_0" 0.0195624
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.068078
+cap "out_5" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0674023
+cap "out_3" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0864317
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0271865
+cap "out_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0674023
+cap "out_3" "out_5" 0.0481999
+cap "out_7" "out_0" 0.00466963
+cap "out_4" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0674023
+cap "out_1" "out_0" 2.4577
+cap "out_7" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0250226
+cap "out_1" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.081204
+cap "out_6" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0536243
+cap "out_4" "vdd_uq0" 1.51887
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0761634
+cap "out_6" "out_5" 5.08498
+cap "out_3" "out_6" 0.0433635
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.37916
+cap "out_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0173921
+cap "out_1" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 9.15675
+cap "out_7" "out_5" 0.0240522
+cap "out_3" "out_7" 0.0183066
+cap "out_1" "out_5" 0.0367935
+cap "out_3" "out_1" 0.0481999
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 9.29148
+cap "out_4" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.081204
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.0360947
+cap "vdd_uq0" "out_0" 1.09807
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.467678
+cap "out_6" "out_1" 0.0287527
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "out_4" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 9.15675
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0536243
+cap "out_3" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0784858
+cap "out_1" "out_7" 0.00966299
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" -0.625618
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0139744
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0441747
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "vdd_uq0" "out_5" 1.48933
+cap "out_3" "vdd_uq0" 1.43892
+cap "out_6" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0377025
+cap "out_4" "out_2" 0.0481999
+cap "out_6" "vdd_uq0" 0.761367
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0572711
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 9.15675
+cap "out_3" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.0761634
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.00906638
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0210002
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.081204
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0909222
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0384604
+cap "out_3" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0322859
+cap "gnd" "in_5" 0.113948
+cap "in_6" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.1424
+cap "in_2" "in_7" 0.0648451
+cap "in_2" "in_6" 0.0823323
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.160435
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 125.345
+cap "gnd" "in_0" 0.0289476
+cap "gnd" "in_3" 0.0898879
+cap "in_6" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.172056
+cap "vdd" "in_7" 0.866347
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.301154
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.605892
+cap "gnd" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 22.0316
+cap "in_5" "in_7" 0.106865
+cap "in_6" "vdd" -1.14421
+cap "in_6" "in_5" 17.7321
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.886409
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.33134
+cap "in_0" "in_7" 0.0228965
+cap "in_3" "in_7" 0.0823323
+cap "gnd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.657211
+cap "in_6" "in_0" 0.0447656
+cap "in_7" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" -0.863097
+cap "in_1" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.525108
+cap "in_3" "in_6" 0.0965282
+cap "gnd" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0596248
+cap "gnd" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.117799
+cap "in_6" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.41031
+cap "in_4" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.07213
+cap "gnd" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.171264
+cap "gnd" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.255791
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 1.38333
+cap "in_6" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" -0.11647
+cap "in_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0581226
+cap "gnd" "in_7" -1.01936
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.13149
+cap "gnd" "in_1" 0.0515981
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.0237212
+cap "in_6" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0581226
+cap "in_6" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0902005
+cap "gnd" "in_6" -1.02236
+cap "in_2" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.739472
+cap "gnd" "in_4" 0.103996
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.0902005
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.1424
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.47796
+cap "vdd" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 5.17738
+cap "in_6" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.118672
+cap "in_6" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.160435
+cap "in_7" "in_1" 0.0447656
+cap "in_6" "in_7" 35.4642
+cap "in_5" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.17712
+cap "gnd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.217883
+cap "in_6" "in_1" 0.0648451
+cap "in_4" "in_7" 0.0965282
+cap "gnd" "in_2" 0.0721859
+cap "gnd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.283473
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 6.0606
+cap "in_6" "in_4" 0.106865
+cap "in_0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.289752
+cap "in_3" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.924275
+cap "gnd" "vdd" -5.24258
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.118672
+cap "in_3" "vdd" 0.0898879
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 1.25674
+cap "in_0" "vdd" 0.0289476
+cap "in_2" "vdd" 0.0721859
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 6.28144
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 1.60226
+cap "vdd" "in_6" -0.666447
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.0124415
+cap "in_7" "vdd" 0.304604
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.014929
+cap "in_4" "vdd" 0.103996
+cap "vdd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 12.1022
+cap "in_7" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0094565
+cap "in_1" "vdd" 0.0515981
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0462629
+cap "in_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0124415
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_0" 0.285737
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_3" 0.911467
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 1.23631
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_2" 0.729226
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0546244
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_7" -0.090486
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 0.0596248
+cap "in_4" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.05727
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 151.657
+cap "in_1" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.517832
+cap "in_7" "in_6" 2.3908
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 0.117799
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 0.255791
+cap "vdd" "in_5" 0.113948
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.650725
+cap "vdd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.283473
+cap "in_7" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.21297
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.430809
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.860985
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.0060935
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "in_5" 1.16081
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 0.171264
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 1.88372
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.0094565
+cap "in_7" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0024869
+cap "vdd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.217883
+cap "in_5" "in_6" 1.1954
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 2.08988
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0243997
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.0168198
+cap "in_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0060935
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "in_6" 0.0180382
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "in_7" 0.014929
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0360519
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "vdd" 28.7269
+cap "gnd" "vdd" -11.9286
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0608022
+cap "in_7" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.0168198
+cap "out_7" "out_1" 0.577844
+cap "out_7" "out_4" 1.26971
+cap "gnd_uq0" "out_1" 0.117799
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.0721859
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.11293
+cap "out_7" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.704849
+cap "gnd_uq0" "out_3" 0.217883
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0858359
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.152672
+cap "out_7" "out_3" 1.07911
+cap "out_0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0225734
+cap "out_0" "gnd_uq0" 0.0596248
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.13551
+cap "out_0" "out_7" 0.287213
+cap "vdd" "gnd_uq0" -4.46879
+cap "vdd" "out_6" 4.38018e-17
+cap "vdd" "out_7" 5.63785e-18
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.113948
+cap "out_2" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.0858359
+cap "out_7" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.12201
+cap "out_0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0553102
+cap "out_2" "gnd_uq0" 0.171264
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.103996
+cap "out_2" "out_7" 0.845374
+cap "out_7" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 1.02193
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0898879
+cap "out_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.880999
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 10.8506
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" 0.0289476
+cap "out_7" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.276185
+cap "out_2" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.11293
+cap "gnd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0515981
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" 0.673825
+cap "out_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.500522
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" -0.112526
+cap "vdd_uq0" "gnd_uq0" 0.680419
+cap "out_6" "vdd_uq0" 0.455872
+cap "out_7" "vdd_uq0" 0.706551
+cap "out_5" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 0.152672
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 1.31822
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_7" -0.821334
+cap "out_5" "gnd_uq0" 0.283473
+cap "out_6" "gnd_uq0" 2.01776
+cap "out_7" "gnd_uq0" 26.3384
+cap "out_5" "out_7" 1.40954
+cap "out_7" "out_6" 119.276
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" 21.7011
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.88994
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0553102
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.13551
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "gnd_uq0" -0.115532
+cap "out_4" "gnd_uq0" 0.255791
+cap "out_5" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.163731
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_6" -0.110298
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.34401
+cap "out_3" "out_7" 2.10265
+cap "vdd_uq0" "out_2" 0.171264
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" 0.0779194
+cap "out_1" "out_7" 1.12593
+cap "out_4" "out_7" 2.47402
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.50251
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.00776299
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 1.10345
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.00574221
+cap "vdd_uq0" "out_5" 0.283473
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" -0.371876
+cap "out_2" "out_7" 1.64721
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" 0.0289476
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.0515981
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" 0.0898879
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_7" -0.0195144
+cap "vdd_uq0" "gnd_uq0" -1.77636e-15
+cap "vdd_uq0" "out_7" 31.9178
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 1.70688
+cap "vdd_uq0" "out_6" 16.8259
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.00832531
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" 0.0721859
+cap "out_7" "out_5" 2.74649
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.73932
+cap "out_7" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" 0.735901
+cap "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.2953
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 1.03737
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.406066
+cap "out_6" "out_7" 177.614
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.03632
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.113948
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0011478
+cap "vdd_uq0" "out_0" 0.0596248
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 0.551724
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.00574221
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.00689033
+cap "vdd_uq0" "out_3" 0.217883
+cap "vdd_uq0" "out_4" 0.255791
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.00281238
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.00281238
+cap "vdd_uq0" "out_1" 0.117799
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 1.64965
+cap "out_0" "out_7" 0.559634
+cap "vdd_uq0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" 0.103996
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.00689033
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.00776299
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.00436454
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.00436454
+cap "out_7" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/A" 0.0357495
+cap "out_7" "out_6" 2.4577
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 9.15675
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_4" 0.0357921
+cap "out_5" "out_6" -2.62727
+cap "vdd_uq0" "out_6" 0.591017
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 2.3908
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 9.25075
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0400687
+cap "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0203104
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_1" 0.0153379
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" 0.41713
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.00688811
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.0300847
+cap "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0414682
+cap "out_4" "out_7" 0.0217521
+cap "out_4" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0400687
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0231745
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0909222
+cap "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0112071
+cap "out_7" "out_5" 0.0241477
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_5" 0.0427435
+cap "out_1" "out_7" 0.0098994
+cap "out_1" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" 0.0231745
+cap "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/A" "out_6" 0.081204
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "vdd_uq0" -0.550915
+cap "out_7" "out_0" 0.00492042
+cap "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0286017
+cap "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" "out_7" 0.0455292
+cap "out_7" "vdd_uq0" 2.96297
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_0" 0.0153379
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/A" 1.1954
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_3" 0.0357921
+cap "out_7" "out_3" 0.0184869
+cap "out_7" "out_2" 0.0144826
+cap "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/A" "out_2" 0.0300847
+merge "sky130_rom_krom_pbuf_dec_6/A" "in_1" -222.276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_7/vdd_uq0" -5446.92 0 0 0 0 -1494472 -23606 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45696 -3712 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/vdd_uq0" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/w_1756_n45#" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_6/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_6/vdd_uq0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_5/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_5/vdd_uq0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_4/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_4/vdd_uq0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_3/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_3/vdd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_2/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_2/vdd_uq0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_1/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_1/vdd_uq0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/vdd" "sky130_rom_krom_pbuf_dec_0/vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_0/vdd_uq0" "vdd_uq0"
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_7/gnd_uq0" -1932.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -91392 -7424 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/gnd_uq0" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_6/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_6/gnd_uq0" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_5/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_5/gnd_uq0" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_4/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_4/gnd_uq0" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_3/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_3/gnd_uq0" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_2/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_2/gnd_uq0" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_1/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_1/gnd_uq0" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_1_0/gnd" "sky130_rom_krom_pbuf_dec_0/gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_0/gnd_uq0" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_7/gnd"
+merge "sky130_rom_krom_pbuf_dec_7/gnd" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_6/gnd"
+merge "sky130_rom_krom_pbuf_dec_6/gnd" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_5/gnd"
+merge "sky130_rom_krom_pbuf_dec_5/gnd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_4/gnd"
+merge "sky130_rom_krom_pbuf_dec_4/gnd" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_3/gnd"
+merge "sky130_rom_krom_pbuf_dec_3/gnd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_2/gnd"
+merge "sky130_rom_krom_pbuf_dec_2/gnd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_1/gnd"
+merge "sky130_rom_krom_pbuf_dec_1/gnd" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/gnd" "sky130_rom_krom_pbuf_dec_0/gnd"
+merge "sky130_rom_krom_pbuf_dec_0/gnd" "gnd"
+merge "gnd" "gnd_uq0"
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_7/vdd" -5424.91 0 0 0 0 -1494472 -23606 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45696 -3712 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/vdd" "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_7/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/w_956_n45#"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/w_956_n45#" "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_6/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_6/vdd"
+merge "sky130_rom_krom_pbuf_dec_6/vdd" "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_5/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_5/vdd"
+merge "sky130_rom_krom_pbuf_dec_5/vdd" "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_4/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_4/vdd"
+merge "sky130_rom_krom_pbuf_dec_4/vdd" "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_3/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_3/vdd"
+merge "sky130_rom_krom_pbuf_dec_3/vdd" "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_2/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_2/vdd"
+merge "sky130_rom_krom_pbuf_dec_2/vdd" "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_1/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_1/vdd"
+merge "sky130_rom_krom_pbuf_dec_1/vdd" "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_0/sky130_rom_krom_pinv_dec_0_0/vdd" "sky130_rom_krom_pbuf_dec_0/vdd"
+merge "sky130_rom_krom_pbuf_dec_0/vdd" "vdd"
+merge "sky130_rom_krom_pbuf_dec_4/A" "in_3" -223.084 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/Z" "out_0" -477.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_2/A" "in_5" -222.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_5/Z" "out_2" -474.759 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_6/Z" "out_1" -458.564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_0/A" "in_7" -134.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_4/Z" "out_3" -484.354 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_3/Z" "out_4" -486.832 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_2/Z" "out_5" -482.053 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_1/Z" "out_6" -470.258 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_0/Z" "out_7" -487.514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -578 -102 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_7/A" "in_0" -133.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_5/A" "in_2" -222.795 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_3/A" "in_4" -223.132 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_pbuf_dec_1/A" "in_6" -222.506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 0 0 0 0 0 0 0 0 0 0

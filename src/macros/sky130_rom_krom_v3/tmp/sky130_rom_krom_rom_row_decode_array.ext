@@ -1,0 +1,1507 @@
+timestamp 1581585458
+version 8.3
+tech sky130A
+style ngspice(si)
+scale 1000 1 0.5
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_rom_krom_rom_precharge_array_0 sky130_rom_krom_rom_precharge_array_0_0 1 0 0 0 1 128
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_18 1 0 308 0 1 1077
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_19 1 0 104 0 1 1077
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_30 1 0 308 0 1 873
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_31 1 0 104 0 1 873
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_11 1 0 0 0 1 873
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_17 1 0 512 0 1 1077
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_29 1 0 512 0 1 873
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_27 1 0 920 0 1 1077
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_16 1 0 716 0 1 1077
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_23 1 0 920 0 1 873
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_28 1 0 716 0 1 873
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_26 1 0 1124 0 1 1077
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_22 1 0 1124 0 1 873
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_24 1 0 1532 0 1 1077
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_25 1 0 1328 0 1 1077
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_20 1 0 1532 0 1 873
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_21 1 0 1328 0 1 873
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_10 1 0 1736 0 1 873
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_9 1 0 0 0 1 1077
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_8 1 0 1736 0 1 1077
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_23 1 0 104 0 1 1281
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_7 1 0 0 0 1 1281
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_22 1 0 308 0 1 1281
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_15 1 0 512 0 1 1281
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_14 1 0 716 0 1 1281
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_21 1 0 920 0 1 1281
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_20 1 0 1124 0 1 1281
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_13 1 0 1328 0 1 1281
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_12 1 0 1532 0 1 1281
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_6 1 0 1736 0 1 1281
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_15 1 0 104 0 1 1689
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_11 1 0 104 0 1 1485
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_5 1 0 0 0 1 1485
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_7 1 0 308 0 1 1689
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_10 1 0 308 0 1 1485
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_14 1 0 512 0 1 1689
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_19 1 0 512 0 1 1485
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_6 1 0 716 0 1 1689
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_18 1 0 716 0 1 1485
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_13 1 0 920 0 1 1689
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_9 1 0 920 0 1 1485
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_5 1 0 1124 0 1 1689
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_8 1 0 1124 0 1 1485
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_12 1 0 1328 0 1 1689
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_17 1 0 1328 0 1 1485
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_4 1 0 1532 0 1 1689
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_16 1 0 1532 0 1 1485
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_4 1 0 1736 0 1 1485
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_3 1 0 0 0 1 1689
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_2 1 0 1736 0 1 1689
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_11 1 0 308 0 1 1893
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_3 1 0 104 0 1 1893
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_1 1 0 0 0 1 1893
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_2 1 0 512 0 1 1893
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_1 1 0 920 0 1 1893
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_10 1 0 716 0 1 1893
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_9 1 0 1124 0 1 1893
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_8 1 0 1532 0 1 1893
+use sky130_rom_krom_rom_base_zero_cell sky130_rom_krom_rom_base_zero_cell_0 1 0 1328 0 1 1893
+use sky130_rom_krom_rom_poly_tap_1 sky130_rom_krom_rom_poly_tap_1_0 1 0 1736 0 1 1893
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_6 1 0 308 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_7 1 0 104 0 1 2097
+use sky130_rom_krom_rom_poly_tap_2 sky130_rom_krom_rom_poly_tap_2_1 1 0 0 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_5 1 0 512 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_3 1 0 920 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_4 1 0 716 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_2 1 0 1124 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_0 1 0 1532 0 1 2097
+use sky130_rom_krom_rom_base_one_cell sky130_rom_krom_rom_base_one_cell_1 1 0 1328 0 1 2097
+use sky130_rom_krom_rom_poly_tap_2 sky130_rom_krom_rom_poly_tap_2_0 1 0 1736 0 1 2097
+port "vdd" 16 12 -32 40 32 m2
+port "precharge" 15 61 368 89 396 m2
+port "bl_0_7" 8 1660 -14 1688 14 m1
+port "bl_0_6" 7 1456 -14 1484 14 m1
+port "bl_0_5" 6 1252 -14 1280 14 m1
+port "bl_0_4" 5 1048 -14 1076 14 m1
+port "bl_0_3" 4 844 -14 872 14 m1
+port "bl_0_2" 3 640 -14 668 14 m1
+port "bl_0_1" 2 436 -14 464 14 m1
+port "bl_0_0" 1 232 -14 260 14 m1
+port "gnd" 17 1767 978 1827 1038 m3
+port "gnd" 17 31 2244 91 2304 m3
+port "gnd" 17 31 978 91 1038 m3
+port "gnd" 17 1767 2244 1827 2304 m3
+port "wl_0_0" 9 19 909 47 937 m2
+port "wl_0_1" 10 19 1113 47 1141 m2
+port "wl_0_2" 11 19 1317 47 1345 m2
+port "wl_0_3" 12 19 1521 47 1549 m2
+port "wl_0_4" 13 19 1725 47 1753 m2
+port "wl_0_5" 14 19 1929 47 1957 m2
+port "precharge_r" 52 2037 368 2065 396 m1
+node "vdd" 0 31.9136 12 -32 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1792 184 0 0 0 0 0 0 0 0
+node "precharge" 0 17.1579 61 368 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784 112 0 0 0 0 0 0 0 0
+node "bl_0_7" 4 168.026 1660 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_6" 4 88.28 1456 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_5" 4 88.28 1252 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_4" 4 88.28 1048 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_3" 4 88.28 844 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_2" 4 88.28 640 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_1" 4 88.28 436 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "bl_0_0" 4 237.269 232 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24836 1830 0 0 0 0 0 0 0 0 0 0
+node "gnd" 682 2382.61 1767 2244 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26928 2400 93408 6536 58016 3640 165144 5728 0 0 0 0 0 0
+node "wl_0_0" 2969 1149.32 19 909 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "wl_0_1" 2969 590.316 19 1113 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "wl_0_2" 2969 590.307 19 1317 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "wl_0_3" 2969 591.146 19 1521 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "wl_0_4" 2969 592.731 19 1725 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "wl_0_5" 2969 594.792 19 1929 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 8084 520 54504 3800 0 0 0 0 0 0 0 0
+node "precharge_r" 2979 1637.33 2037 368 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58812 3808 0 0 4488 400 71224 5030 54504 3800 0 0 0 0 0 0 0 0
+substrate "gnd" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "wl_0_0" "vdd" 3.36251
+cap "wl_0_0" "precharge" 2.62326
+cap "bl_0_4" "wl_0_1" 1.68746
+cap "bl_0_2" "wl_0_4" 0.762702
+cap "gnd" "bl_0_0" 1.28601
+cap "bl_0_1" "wl_0_3" 1.10703
+cap "wl_0_2" "bl_0_6" 1.42574
+cap "vdd" "wl_0_3" 0.102047
+cap "wl_0_3" "precharge" 0.0614916
+cap "bl_0_1" "bl_0_0" 172.69
+cap "wl_0_0" "bl_0_2" 5.53325
+cap "wl_0_5" "wl_0_1" 5.35993
+cap "vdd" "bl_0_0" 0.713729
+cap "gnd" "wl_0_2" 261.411
+cap "precharge" "bl_0_0" 0.438225
+cap "bl_0_2" "wl_0_3" 1.10703
+cap "bl_0_5" "precharge_r" 0.227505
+cap "bl_0_1" "wl_0_2" 1.42574
+cap "bl_0_4" "bl_0_5" 172.69
+cap "wl_0_2" "vdd" 0.312391
+cap "wl_0_2" "precharge" 0.0854034
+cap "wl_0_1" "bl_0_6" 1.68746
+cap "bl_0_5" "wl_0_5" 0.464177
+cap "gnd" "wl_0_1" 259.669
+cap "bl_0_2" "wl_0_2" 1.42574
+cap "bl_0_3" "wl_0_4" 0.762702
+cap "wl_0_1" "bl_0_1" 1.68746
+cap "wl_0_1" "vdd" 0.510247
+cap "wl_0_1" "precharge" 0.105901
+cap "bl_0_4" "precharge_r" 0.227505
+cap "bl_0_7" "wl_0_4" 0.762702
+cap "bl_0_5" "bl_0_6" 172.69
+cap "wl_0_0" "bl_0_3" 5.53325
+cap "wl_0_0" "wl_0_4" 5.35993
+cap "gnd" "bl_0_5" 1.28601
+cap "wl_0_0" "bl_0_7" 5.53325
+cap "bl_0_2" "wl_0_1" 1.68746
+cap "wl_0_5" "precharge_r" 568.062
+cap "bl_0_3" "wl_0_3" 1.10703
+cap "bl_0_4" "wl_0_5" 0.464177
+cap "wl_0_3" "wl_0_4" 554.121
+cap "bl_0_5" "vdd" 0.170979
+cap "bl_0_7" "wl_0_3" 1.10703
+cap "bl_0_5" "precharge" 0.116966
+cap "bl_0_0" "wl_0_4" 0.762702
+cap "precharge_r" "bl_0_6" 0.227505
+cap "wl_0_2" "bl_0_3" 1.42574
+cap "wl_0_0" "wl_0_3" 6.30735
+cap "wl_0_2" "wl_0_4" 7.00263
+cap "wl_0_0" "bl_0_0" 5.53325
+cap "bl_0_7" "wl_0_2" 1.42574
+cap "gnd" "precharge_r" 315.64
+cap "gnd" "bl_0_4" 1.28601
+cap "wl_0_5" "bl_0_6" 0.464177
+cap "wl_0_3" "bl_0_0" 1.10703
+cap "bl_0_1" "precharge_r" 0.227505
+cap "wl_0_0" "wl_0_2" 7.00263
+cap "bl_0_4" "vdd" 0.256001
+cap "bl_0_4" "precharge" 0.167403
+cap "gnd" "wl_0_5" 261.925
+cap "wl_0_1" "bl_0_3" 1.68746
+cap "wl_0_2" "wl_0_3" 554.121
+cap "wl_0_1" "wl_0_4" 6.30735
+cap "wl_0_5" "bl_0_1" 0.464177
+cap "bl_0_7" "wl_0_1" 1.68746
+cap "bl_0_2" "precharge_r" 0.227505
+cap "wl_0_2" "bl_0_0" 1.42574
+cap "wl_0_5" "precharge" 0.00734753
+cap "gnd" "bl_0_6" 1.28601
+cap "wl_0_0" "wl_0_1" 554.121
+cap "bl_0_2" "wl_0_5" 0.464177
+cap "vdd" "bl_0_6" 0.0791225
+cap "wl_0_1" "wl_0_3" 7.00263
+cap "precharge" "bl_0_6" 0.0618535
+cap "bl_0_5" "wl_0_4" 0.762702
+cap "gnd" "bl_0_1" 1.28601
+cap "wl_0_1" "bl_0_0" 1.68746
+cap "gnd" "vdd" 0.670905
+cap "gnd" "precharge" 2.62768
+cap "wl_0_0" "bl_0_5" 5.53325
+cap "bl_0_1" "vdd" 0.43823
+cap "wl_0_1" "wl_0_2" 554.121
+cap "bl_0_1" "precharge" 0.271901
+cap "gnd" "bl_0_2" 1.28601
+cap "bl_0_5" "wl_0_3" 1.10703
+cap "bl_0_3" "precharge_r" 0.227505
+cap "bl_0_4" "bl_0_3" 172.69
+cap "precharge_r" "wl_0_4" 20.9441
+cap "bl_0_2" "bl_0_1" 172.69
+cap "bl_0_2" "vdd" 0.392352
+cap "bl_0_7" "precharge_r" 59.9504
+cap "bl_0_4" "wl_0_4" 0.762702
+cap "bl_0_2" "precharge" 0.24645
+cap "wl_0_5" "bl_0_3" 0.464177
+cap "bl_0_5" "wl_0_2" 1.42574
+cap "wl_0_0" "precharge_r" 16.8096
+cap "wl_0_0" "bl_0_4" 5.53325
+cap "wl_0_5" "wl_0_4" 554.121
+cap "wl_0_5" "bl_0_7" 0.464177
+cap "wl_0_3" "precharge_r" 20.2488
+cap "bl_0_4" "wl_0_3" 1.10703
+cap "wl_0_0" "wl_0_5" 4.19823
+cap "precharge_r" "bl_0_0" 0.227505
+cap "bl_0_6" "wl_0_4" 0.762702
+cap "bl_0_7" "bl_0_6" 172.69
+cap "bl_0_5" "wl_0_1" 1.68746
+cap "wl_0_5" "wl_0_3" 7.00263
+cap "gnd" "bl_0_3" 1.28601
+cap "wl_0_2" "precharge_r" 19.3012
+cap "bl_0_4" "wl_0_2" 1.42574
+cap "gnd" "wl_0_4" 262.562
+cap "gnd" "bl_0_7" 1.28601
+cap "wl_0_5" "bl_0_0" 0.464177
+cap "wl_0_0" "bl_0_6" 5.53325
+cap "vdd" "bl_0_3" 0.330788
+cap "bl_0_3" "precharge" 0.211147
+cap "bl_0_1" "wl_0_4" 0.762702
+cap "wl_0_3" "bl_0_6" 1.10703
+cap "precharge" "wl_0_4" 0.0351216
+cap "wl_0_5" "wl_0_2" 6.30735
+cap "gnd" "wl_0_0" 119.861
+cap "bl_0_7" "precharge" 0.00426821
+cap "bl_0_2" "bl_0_3" 172.69
+cap "wl_0_0" "bl_0_1" 5.53325
+cap "gnd" "wl_0_3" 262.388
+cap "wl_0_1" "precharge_r" 18.1393
+cap "bl_0_1" "bl_0_0" -4.96687
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "sky130_rom_krom_rom_base_one_cell_20/D" 1.42242
+cap "bl_0_2" "wl_0_0" 1.5909
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_5" 0.106909
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "vdd" 0.058891
+cap "bl_0_2" "sky130_rom_krom_rom_base_one_cell_14/S" 2.59829
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_26/D" 1.10979
+cap "bl_0_6" "bl_0_0" 0.138545
+cap "bl_0_7" "wl_0_0" 0.235097
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_20/D" 0.503489
+cap "wl_0_3" "bl_0_0" 0.563106
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_10/D" 1.01755
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "vdd" 11.4782
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.371774
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "bl_0_3" 16.0226
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_16/S" 6.81726
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_5" 0.320394
+cap "bl_0_4" "bl_0_0" 0.618128
+cap "wl_0_2" "bl_0_0" 0.722154
+cap "gnd" "wl_0_0" -0.743815
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_0" 5.20114
+cap "bl_0_5" "wl_0_0" 7.43297
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_0" 1.07861
+cap "bl_0_4" "sky130_rom_krom_rom_base_one_cell_21/D" 8.49862
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_4" 0.349309
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_27/D" 1.22965
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_zero_cell_18/S" 2.4884
+cap "bl_0_1" "bl_0_2" -4.96687
+cap "wl_0_1" "wl_0_0" -38.2776
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_10/D" 0.00921527
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_14/S" 0.832014
+cap "bl_0_3" "sky130_rom_krom_rom_base_one_cell_10/D" 1.20218
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_0" 0.437256
+cap "bl_0_2" "bl_0_6" 0.256206
+cap "bl_0_1" "bl_0_7" 0.138545
+cap "precharge" "bl_0_3" 12.8044
+cap "vdd" "bl_0_0" 95.1348
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_21/D" 0.503324
+cap "wl_0_4" "bl_0_3" 0.382032
+cap "wl_0_3" "bl_0_2" 0.56343
+cap "bl_0_0" "wl_0_5" 0.243907
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "bl_0_0" 2.96114
+cap "precharge" "wl_0_4" 1.35839
+cap "wl_0_2" "bl_0_2" 0.721668
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_18/S" 5.54224
+cap "bl_0_2" "bl_0_4" 0.805625
+cap "bl_0_1" "bl_0_5" 0.534233
+cap "bl_0_1" "gnd" -0.0118951
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "bl_0_0" 6.051
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_4" 0.88732
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_22/D" 2.8647
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "bl_0_6" 0.2559
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "sky130_rom_krom_rom_base_one_cell_21/D" 0.915695
+cap "bl_0_6" "gnd" 1.11626
+cap "bl_0_6" "bl_0_5" 25.4482
+cap "bl_0_7" "bl_0_4" 0.881828
+cap "bl_0_1" "wl_0_1" 1.13651
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "gnd" 0.130111
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.129796
+cap "wl_0_3" "bl_0_5" 0.743061
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_19/S" 1.13197
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_22/D" 9.62828
+cap "bl_0_6" "wl_0_1" 0.135095
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_19/S" 3.22473
+cap "bl_0_2" "vdd" 85.5141
+cap "wl_0_2" "bl_0_5" 0.883095
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "bl_0_4" 1.02947
+cap "wl_0_2" "gnd" 1.9434
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_1" 0.00164372
+cap "bl_0_4" "bl_0_5" 50.8962
+cap "bl_0_4" "gnd" 4.14485
+cap "wl_0_3" "wl_0_1" 0.684129
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_0" 4.60989
+cap "bl_0_2" "wl_0_5" 0.243907
+cap "bl_0_7" "vdd" 0.370913
+cap "wl_0_2" "wl_0_1" -18.3025
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_26/D" 0.726243
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "bl_0_5" 10.0119
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "gnd" 3.58915
+cap "wl_0_1" "bl_0_4" 2.87722
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_1" 0.594381
+cap "wl_0_0" "sky130_rom_krom_rom_base_one_cell_10/D" 0.437256
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_1" 2.07786
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "vdd" 12.3933
+cap "vdd" "bl_0_5" 87.89
+cap "vdd" "gnd" 13.5092
+cap "precharge" "wl_0_0" 148.642
+cap "bl_0_3" "wl_0_0" 1.4826
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_26/D" 0.405862
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_15/D" 6.39497
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_5" 0.911568
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_14/S" 0.912225
+cap "bl_0_5" "wl_0_5" 0.440377
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_13/D" 1.38233
+cap "wl_0_1" "vdd" 48.503
+cap "wl_0_4" "wl_0_0" 0.527878
+cap "bl_0_2" "sky130_rom_krom_rom_base_zero_cell_17/S" 15.5312
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_0" 3.69817
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_23/D" 7.76335
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_1" 1.38233
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "gnd" 4.751
+cap "wl_0_1" "wl_0_5" 0.527878
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_27/D" 0.923393
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_0" 2.28537
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_25/D" 0.183485
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "wl_0_1" 1.81404
+cap "bl_0_6" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.643033
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.371774
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.617463
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_1" 2.21163
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.390123
+cap "bl_0_5" "sky130_rom_krom_rom_base_one_cell_20/D" 10.0038
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_26/D" 22.6132
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_1" 1.63078
+cap "bl_0_1" "bl_0_3" 0.666426
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "bl_0_4" 45.5089
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "bl_0_5" 1.10979
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "gnd" 12.4297
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_16/S" 1.33633
+cap "precharge" "bl_0_1" 12.4656
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_zero_cell_17/S" 2.54993
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_14/D" 2.4855
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_20/D" 2.61281
+cap "bl_0_6" "bl_0_3" 0.300769
+cap "bl_0_2" "bl_0_0" 0.666426
+cap "bl_0_1" "wl_0_4" 0.382032
+cap "precharge" "bl_0_6" 0.461973
+cap "bl_0_1" "sky130_rom_krom_rom_base_zero_cell_18/S" 12.0501
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_26/D" 1.39041
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_1" 10.3399
+cap "wl_0_3" "bl_0_3" 0.56343
+cap "bl_0_7" "bl_0_0" 0.0701496
+cap "wl_0_3" "precharge" 2.48553
+cap "bl_0_1" "sky130_rom_krom_rom_base_one_cell_22/D" 7.82774
+cap "bl_0_6" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.371774
+cap "bl_0_4" "bl_0_3" -4.81917
+cap "wl_0_2" "bl_0_3" 0.721668
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_27/D" 0.585721
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.2559
+cap "wl_0_2" "precharge" 4.01117
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_11/D" 0.00921527
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "vdd" 12.7736
+cap "precharge" "bl_0_4" 15.5456
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.957386
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_5" 0.295165
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "wl_0_0" 0.727744
+cap "bl_0_5" "bl_0_0" 0.419686
+cap "gnd" "bl_0_0" -0.0118951
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "bl_0_0" 12.5528
+cap "wl_0_4" "bl_0_4" 0.704083
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "bl_0_4" 1.20877
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_26/D" 2.49015
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_18/S" 1.72463
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_11/D" 2.52585
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_27/D" 45.4587
+cap "wl_0_4" "sky130_rom_krom_rom_base_one_cell_26/D" 0.12157
+cap "wl_0_1" "bl_0_0" 1.13651
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_13/D" 0.422245
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_21/D" 1.81404
+cap "vdd" "bl_0_3" 86.8727
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.494963
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_26/D" 0.923393
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_zero_cell_6/S" 2.74241
+cap "precharge" "vdd" -50.5101
+cap "bl_0_3" "wl_0_5" 0.243956
+cap "bl_0_2" "bl_0_7" 0.201401
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_15/D" 0.422245
+cap "precharge" "wl_0_5" 0.292643
+cap "wl_0_4" "vdd" 0.00194808
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "vdd" 10.9984
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_23/D" 2.40435
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_zero_cell_16/S" 103.487
+cap "bl_0_1" "wl_0_0" 1.66883
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_5" 0.782055
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_27/D" 2.48363
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "vdd" 0.503489
+cap "bl_0_2" "bl_0_5" 0.627422
+cap "bl_0_2" "sky130_rom_krom_rom_base_one_cell_14/D" 2.96114
+cap "bl_0_2" "gnd" -0.0118951
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "bl_0_3" 4.37502
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_4" 0.121742
+cap "bl_0_6" "wl_0_0" 0.70401
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_6/S" 1.37258
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "bl_0_7" 0.129796
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_27/D" 1.08363
+cap "bl_0_7" "gnd" 0.103445
+cap "bl_0_7" "bl_0_5" 0.977235
+cap "bl_0_2" "wl_0_1" 1.13651
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_20/D" 2.8647
+cap "wl_0_3" "wl_0_0" 0.618166
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_17/S" 6.70687
+cap "wl_0_2" "wl_0_0" 1.4758
+cap "bl_0_7" "wl_0_1" 0.00161629
+cap "bl_0_4" "wl_0_0" 18.8552
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_0" 0.437256
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "bl_0_5" 0.743548
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "gnd" 33.3558
+cap "bl_0_5" "gnd" 3.12782
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_4" 0.368928
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_zero_cell_18/S" 101.186
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_0" 1.75708
+cap "wl_0_1" "gnd" 7.37973
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_1" 22.7585
+cap "wl_0_1" "bl_0_5" 2.55654
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_1" 1.38233
+cap "bl_0_1" "bl_0_6" 0.201401
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "bl_0_5" 1.91473
+cap "wl_0_0" "sky130_rom_krom_rom_base_one_cell_13/D" 1.07861
+cap "vdd" "wl_0_0" 160.59
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_0" 1.07861
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_14/S" 0.058726
+cap "wl_0_3" "bl_0_1" 0.563106
+cap "bl_0_3" "bl_0_0" 0.601259
+cap "wl_0_0" "wl_0_5" 0.41603
+cap "precharge" "bl_0_0" 26.7842
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_1" 0.594381
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_21/D" 2.40435
+cap "wl_0_2" "bl_0_1" 0.722154
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "wl_0_0" 1.63078
+cap "bl_0_1" "bl_0_4" 0.726396
+cap "bl_0_1" "sky130_rom_krom_rom_base_one_cell_11/D" 1.20218
+cap "wl_0_4" "bl_0_0" 0.382182
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_0" 1.75708
+cap "bl_0_6" "bl_0_4" 0.977235
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_0" 1.38233
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "gnd" 1.42646
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_24/D" 0.00198307
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.2559
+cap "wl_0_3" "bl_0_4" 0.898351
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.547494
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_0" 2.28537
+cap "bl_0_1" "vdd" 82.8701
+cap "wl_0_2" "bl_0_4" 1.05768
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_26/D" 0.585721
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_1" 0.135176
+cap "bl_0_2" "bl_0_3" -4.96687
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_26/D" 0.13137
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_0" 4.53128
+cap "bl_0_1" "wl_0_5" 0.243956
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "bl_0_5" 1.32769
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "gnd" 11.1062
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_14/S" 1.48727
+cap "precharge" "bl_0_2" 12.7375
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_zero_cell_16/S" 2.24575
+cap "bl_0_6" "vdd" 0.383915
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_26/D" 0.424343
+cap "bl_0_7" "bl_0_3" 0.256206
+cap "bl_0_2" "wl_0_4" 0.382182
+cap "precharge" "bl_0_7" 0.246447
+cap "wl_0_3" "vdd" 1.07007
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_1" 18.6361
+cap "bl_0_4" "sky130_rom_krom_rom_base_one_cell_13/D" 5.0795
+cap "wl_0_2" "vdd" 9.79223
+cap "vdd" "bl_0_4" 91.0124
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.2559
+cap "bl_0_5" "bl_0_3" 0.695529
+cap "bl_0_3" "gnd" -0.0118951
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_27/D" 0.528733
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "precharge" 5.76311
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_14/D" 0.422245
+cap "bl_0_4" "wl_0_5" 0.5393
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_27/D" 0.13137
+cap "precharge" "gnd" 18.6236
+cap "precharge" "bl_0_5" 14.994
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_10/D" 0.594381
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "vdd" 7.14745
+cap "wl_0_0" "bl_0_0" 2.98491
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "wl_0_0" 1.63078
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_4" 1.04293
+cap "wl_0_4" "bl_0_5" 0.573996
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "bl_0_5" 0.945571
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_5" 0.10706
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "bl_0_4" 10.6156
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_27/D" 0.570102
+cap "precharge" "wl_0_1" 6.93812
+cap "wl_0_1" "bl_0_3" 1.13651
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_zero_cell_18/S" 101.089
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "gnd" 13.8459
+cap "bl_0_6" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.472785
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_9/D" 0.00921527
+cap "wl_0_4" "wl_0_1" 0.618622
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "sky130_rom_krom_rom_base_one_cell_26/D" 45.2263
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_zero_cell_16/S" 1.14198
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.389079
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_1" 9.25929
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.402439
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_1" 2.61281
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "vdd" 0.503324
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "bl_0_4" 1.33974
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "sky130_rom_krom_rom_base_one_cell_13/D" 0.908793
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_17/S" 2.33831
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "vdd" 7.14745
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_12/S" 0.832014
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_4/S" 6.70458
+cap "vdd" "bl_0_5" 0.183411
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "bl_0_7" 0.371774
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "bl_0_6" 0.554896
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_27/D" 0.658782
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_24/D" 6.49869
+cap "gnd" "vdd" 13.8868
+cap "bl_0_2" "precharge" 0.644971
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_19/S" 0.252396
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.409065
+cap "bl_0_4" "precharge" 1.72759
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_25/D" 1.09837
+cap "wl_0_1" "wl_0_4" 0.690343
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "precharge" 4.81186
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "precharge" 0.00921527
+cap "vdd" "wl_0_0" 48.6717
+cap "vdd" "bl_0_3" 0.148655
+cap "bl_0_6" "sky130_rom_krom_rom_base_one_cell_12/S" 3.3142
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.2559
+cap "bl_0_7" "precharge" 32.3264
+cap "bl_0_7" "wl_0_2" 1.05701
+cap "bl_0_6" "sky130_rom_krom_rom_base_zero_cell_19/S" 0.2559
+cap "wl_0_0" "bl_0_0" 0.0696383
+cap "bl_0_1" "vdd" 0.0903644
+cap "bl_0_6" "wl_0_4" 0.574296
+cap "wl_0_1" "vdd" 17.9425
+cap "gnd" "bl_0_4" 3.95204
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_24/D" 47.6244
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_25/D" 7.17922
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_25/D" 0.090687
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.832198
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "precharge" 0.682556
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_2" 0.63461
+cap "wl_0_3" "precharge" 1.48573
+cap "bl_0_2" "wl_0_0" 0.340554
+cap "bl_0_4" "wl_0_0" 1.66091
+cap "bl_0_7" "bl_0_5" 0.977045
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_0" 2.6681
+cap "bl_0_7" "sky130_rom_krom_rom_base_one_cell_24/D" 15.3549
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_4/S" 1.37258
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_0" 0.437256
+cap "bl_0_7" "gnd" 29.784
+cap "bl_0_6" "vdd" 85.0658
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "precharge" 0.397034
+cap "bl_0_7" "wl_0_5" 0.539472
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_2" 0.43308
+cap "wl_0_1" "bl_0_4" 0.658731
+cap "bl_0_6" "bl_0_0" 0.149817
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_25/D" 3.59343
+cap "bl_0_7" "wl_0_0" 33.6079
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_24/D" 0.298934
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.614824
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "vdd" 0.058726
+cap "bl_0_7" "bl_0_3" 0.278026
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "gnd" 5.71506
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_8/D" 0.594381
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_25/D" 0.801515
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "precharge" 0.030224
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.209279
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 2.0685
+cap "wl_0_4" "vdd" 0.000649359
+cap "bl_0_1" "bl_0_7" 0.149817
+cap "bl_0_2" "bl_0_6" 0.278026
+cap "wl_0_3" "wl_0_0" 0.6908
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_25/D" 1.02768
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.371774
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "gnd" 5.58105
+cap "wl_0_1" "bl_0_7" 6.17564
+cap "wl_0_2" "precharge" 2.49437
+cap "bl_0_6" "bl_0_4" 0.977045
+cap "bl_0_6" "sky130_rom_krom_rom_base_one_cell_25/D" 14.2004
+cap "wl_0_0" "sky130_rom_krom_rom_base_zero_cell_4/S" 1.38233
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_0" 0.340626
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "bl_0_7" 0.472785
+cap "wl_0_1" "wl_0_3" 0.764879
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_1" 0.749525
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.464776
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "sky130_rom_krom_rom_base_one_cell_25/D" 0.677541
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.2559
+cap "bl_0_6" "bl_0_7" 50.8962
+cap "gnd" "sky130_rom_krom_rom_base_zero_cell_18/S" 3.31306
+cap "bl_0_5" "precharge" 2.07436
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_24/D" 9.40257
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.2812
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "precharge" 11.6521
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_4/S" 1.63078
+cap "gnd" "precharge" 26.5409
+cap "gnd" "wl_0_2" 1.37006
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_17/S" 1.14876
+cap "wl_0_5" "precharge" 0.169442
+cap "vdd" "bl_0_0" 0.0551693
+cap "wl_0_4" "sky130_rom_krom_rom_base_one_cell_25/D" 0.103504
+cap "bl_0_6" "wl_0_3" 0.743558
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_0" 0.209358
+cap "wl_0_2" "wl_0_0" 1.56359
+cap "wl_0_0" "precharge" 49.7458
+cap "bl_0_3" "precharge" 0.93464
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_19/S" 0.129796
+cap "bl_0_2" "vdd" 0.121947
+cap "bl_0_7" "wl_0_4" 0.703783
+cap "vdd" "bl_0_4" 0.169419
+cap "gnd" "bl_0_5" 4.52176
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "bl_0_6" 0.472785
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.714865
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_25/D" 7.62726
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_24/D" 31.3248
+cap "bl_0_1" "precharge" 0.331118
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_24/D" 0.246128
+cap "wl_0_1" "wl_0_2" -4.96805
+cap "wl_0_1" "precharge" 3.98092
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "precharge" 0.422245
+cap "bl_0_5" "wl_0_0" 1.88555
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_0" 2.6681
+cap "gnd" "wl_0_0" -3.38683
+cap "bl_0_7" "vdd" 76.0129
+cap "wl_0_5" "wl_0_0" 0.463557
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "precharge" 0.754237
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_2" 0.582451
+cap "bl_0_6" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.371774
+cap "bl_0_6" "wl_0_2" 0.882422
+cap "bl_0_6" "precharge" 16.3442
+cap "wl_0_1" "bl_0_5" 0.749488
+cap "bl_0_7" "bl_0_0" 0.0753606
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_24/D" 6.49684
+cap "bl_0_3" "wl_0_0" 0.458215
+cap "wl_0_3" "vdd" 0.214885
+cap "wl_0_1" "gnd" 4.04987
+cap "wl_0_1" "wl_0_5" 0.588718
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "precharge" 0.912225
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "precharge" 0.540644
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_27/D" 0.557557
+cap "bl_0_1" "wl_0_0" 0.209279
+cap "vdd" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.0319523
+cap "bl_0_2" "bl_0_7" 0.218285
+cap "wl_0_1" "wl_0_0" -11.6257
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.472785
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "gnd" 7.602
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_0" 1.07861
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_19/S" 0.0696383
+cap "bl_0_7" "bl_0_4" 0.881549
+cap "bl_0_6" "bl_0_5" 25.4481
+cap "bl_0_6" "gnd" 5.88756
+cap "wl_0_4" "precharge" 0.793521
+cap "bl_0_7" "sky130_rom_krom_rom_base_one_cell_8/D" 2.18783
+cap "bl_0_6" "wl_0_5" 0.440205
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_0" 0.458277
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_1" 1.38233
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_25/D" 0.112033
+cap "bl_0_6" "wl_0_0" 4.2774
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "sky130_rom_krom_rom_base_one_cell_25/D" 22.7106
+cap "bl_0_6" "bl_0_3" 0.326653
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.554896
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_27/D" 4.9943
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.129796
+cap "vdd" "precharge" 0.79768
+cap "gnd" "sky130_rom_krom_rom_base_zero_cell_19/S" 0.952772
+cap "vdd" "wl_0_2" 7.1224
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_16/S" 2.83472
+cap "wl_0_4" "sky130_rom_krom_rom_base_one_cell_24/D" 0.277917
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "wl_0_0" 0.727744
+cap "bl_0_1" "bl_0_6" 0.218285
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.520577
+cap "bl_0_7" "wl_0_3" 0.898848
+cap "wl_0_1" "bl_0_6" 3.08531
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "bl_0_6" 4.42418
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_0" 0.0697202
+cap "bl_0_0" "precharge" 0.0901018
+cap "wl_0_4" "wl_0_0" 0.588718
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.554896
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_27/D" 0.832503
+cap "vdd" "gnd" 1.665
+cap "bl_0_2" "sky130_rom_krom_rom_base_one_cell_14/S" 0.435665
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_23/D" 1.13197
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_11/D" 3.31412
+cap "wl_0_4" "gnd" -0.80878
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_21/D" 3.7088
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_25/D" 22.6912
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.520577
+cap "wl_0_5" "bl_0_3" 0.120002
+cap "wl_0_0" "sky130_rom_krom_rom_base_one_cell_23/D" 1.04293
+cap "bl_0_0" "wl_0_4" 0.160724
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_3" 1.81404
+cap "bl_0_2" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.978571
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_14/S" 1.13909
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_23/D" 2.94601
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_10/D" 0.450608
+cap "bl_0_5" "gnd" 0.777055
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_25/D" 0.135095
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_21/D" 45.4212
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.2812
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_23/D" 0.129796
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "gnd" 2.9146
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.614824
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "wl_0_3" 1.67918
+cap "bl_0_3" "precharge" 0.0913516
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_zero_cell_17/S" 1.10979
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "wl_0_3" 0.953756
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_15/D" 0.863382
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_4" 0.14187
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_14/S" 45.2918
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_21/D" 6.24821
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_23/D" 3.17655
+cap "bl_0_1" "sky130_rom_krom_rom_base_one_cell_22/D" 3.11185
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_4" 5.11738
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_13/D" 1.16839
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_10/D" 1.7849
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_14/D" 0.137724
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_3" 3.577
+cap "wl_0_1" "gnd" -4.81268
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_4" 2.80759
+cap "wl_0_4" "bl_0_4" 0.948672
+cap "vdd" "wl_0_2" 12.8556
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_zero_cell_16/S" 1.29237
+cap "wl_0_2" "wl_0_4" 1.36981
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_15/D" 6.39497
+cap "wl_0_0" "gnd" -2.58879
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.445749
+cap "wl_0_5" "gnd" -2.01027
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "gnd" 0.263932
+cap "wl_0_2" "bl_0_5" 1.45151
+cap "wl_0_5" "bl_0_0" 0.120002
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.129796
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "gnd" 7.41477
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_19/S" 1.92478
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_4" 0.832014
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_15/D" 0.911568
+cap "precharge" "gnd" 8.90647
+cap "bl_0_2" "wl_0_4" 0.160724
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.472785
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_23/D" 1.98672
+cap "precharge" "bl_0_0" 0.0913516
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_0" 0.744298
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "gnd" 10.8249
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "vdd" 1.46958
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_14/D" 0.181326
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_15/D" 25.4243
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_5" 0.658315
+cap "bl_0_3" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.553183
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_14/S" 1.82685
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_15/D" 0.136187
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_4" 13.6418
+cap "wl_0_1" "wl_0_2" -0.00215382
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_23/D" 1.10979
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_12/D" 22.6132
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_0" 0.143361
+cap "vdd" "wl_0_3" 19.1861
+cap "wl_0_5" "bl_0_4" 0.761359
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.2559
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.745622
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "precharge" 0.164102
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_14/D" 13.597
+cap "wl_0_4" "wl_0_3" -38.2781
+cap "wl_0_2" "wl_0_0" -0.00101495
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "bl_0_5" 3.51038
+cap "vdd" "sky130_rom_krom_rom_base_zero_cell_6/S" 0.422271
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_14/D" 0.391153
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "gnd" 1.69561
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_15/D" 5.32431
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_24/D" 0.13382
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_23/D" 101.153
+cap "wl_0_5" "wl_0_2" 1.23775
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_4" 13.6264
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_14/D" 1.11293
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_11/D" 0.354469
+cap "precharge" "bl_0_4" 0.560479
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "sky130_rom_krom_rom_base_one_cell_15/D" 45.2918
+cap "bl_0_1" "gnd" -0.438913
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "precharge" 3.67656
+cap "bl_0_5" "wl_0_3" 1.11675
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "gnd" 14.6074
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_3" 1.81404
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_2" 0.834804
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "gnd" 16.5485
+cap "wl_0_2" "precharge" 2.02872
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_5" 0.727744
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "sky130_rom_krom_rom_base_one_cell_14/D" 45.2918
+cap "bl_0_2" "wl_0_5" 0.120002
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_1" 0.500485
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "gnd" 11.1963
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "wl_0_4" 1.63078
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_11/D" 0.834804
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "gnd" 1.40768
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_26/D" 0.405862
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "precharge" 0.594381
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_0" 0.441963
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_5" 0.00164372
+cap "wl_0_1" "wl_0_3" 0.684159
+cap "bl_0_2" "precharge" 0.0913516
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_14/S" 0.319537
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_10/D" 0.0204056
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "gnd" 29.8148
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_5" 3.62436
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 4.13113
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_6/S" 0.212257
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_13/D" 4.05762
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "wl_0_4" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_15/D" 1.99048
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "wl_0_4" 1.70866
+cap "wl_0_0" "wl_0_3" 0.619123
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_27/D" 0.937932
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_8/D" 0.585721
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "precharge" 0.00235095
+cap "wl_0_5" "wl_0_3" 1.3688
+cap "vdd" "sky130_rom_krom_rom_base_zero_cell_17/S" 1.48867
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "bl_0_4" 2.00228
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "precharge" 3.34008
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_0" 0.1816
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_9/D" 3.26133
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "wl_0_3" 0.00164372
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_24/D" 0.23261
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_4" 2.74437
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "bl_0_4" 1.14688
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_14/D" 8.11525
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_6/S" 2.68483
+cap "bl_0_1" "wl_0_2" 0.469481
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_zero_cell_6/S" 0.995242
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_3" 0.953584
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_13/D" 1.84336
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_11/D" 0.24416
+cap "precharge" "wl_0_3" 2.3614
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_21/D" 2.60699
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "precharge" 2.12468
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_22/D" 0.391153
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_15/D" 45.3558
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_3" 0.953584
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_16/S" 13.5809
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_14/S" 0.12157
+cap "bl_0_3" "gnd" -0.438913
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_18/S" 1.38233
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_14/D" 45.3572
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_10/D" 0.0879747
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "gnd" 40.1478
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.659232
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "wl_0_0" 0.10706
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_2" 4.83855
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.298747
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_14/S" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "wl_0_0" 0.0656142
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_3" 0.903023
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_18/S" 1.07861
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_21/D" 101.155
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_14/S" 0.354469
+cap "bl_0_0" "sky130_rom_krom_rom_base_one_cell_23/D" 2.9663
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_13/D" 0.584196
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_10/D" 1.58601
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_24/D" 0.00161629
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_13/D" 45.3572
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_0" 0.27809
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_17/S" 2.40694
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "wl_0_3" 13.4474
+cap "bl_0_1" "wl_0_3" 0.213707
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_zero_cell_16/S" 1.29237
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "precharge" 0.996056
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "wl_0_3" 2.04875
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_10/D" 1.17144
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "sky130_rom_krom_rom_base_zero_cell_18/S" 0.746695
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "precharge" 2.45479
+cap "vdd" "wl_0_4" 8.55689
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_21/D" 45.3892
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "sky130_rom_krom_rom_base_one_cell_23/D" 15.5762
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_13/D" 45.3572
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_12/S" 22.7566
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_3" 3.48382
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "precharge" 2.12499
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "sky130_rom_krom_rom_base_one_cell_11/D" 1.17144
+cap "wl_0_4" "bl_0_5" 0.948672
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_zero_cell_16/S" 3.68426
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_22/D" 3.07599
+cap "wl_0_2" "bl_0_3" 0.469481
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "wl_0_4" 1.63078
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "wl_0_3" 0.135176
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_23/D" 5.14953
+cap "bl_0_0" "gnd" -0.438913
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_12/S" 0.584196
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_3" 15.6056
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_25/D" 0.614824
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_zero_cell_6/S" 8.20707
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "gnd" 2.90078
+cap "wl_0_1" "wl_0_4" 0.61821
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "gnd" 41.034
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_one_cell_21/D" 1.26326
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_25/D" 2.06869
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.371774
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "sky130_rom_krom_rom_base_one_cell_13/D" 45.2918
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "bl_0_0" 1.43882
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "gnd" 20.1302
+cap "wl_0_5" "vdd" 2.28212
+cap "wl_0_0" "wl_0_4" 0.528321
+cap "bl_0_4" "gnd" 0.777055
+cap "wl_0_5" "wl_0_4" -38.2776
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_21/D" 1.29237
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_23/D" 1.52378
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "sky130_rom_krom_rom_base_zero_cell_16/S" 1.726
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "wl_0_4" 0.234279
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_25/D" 0.409065
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_zero_cell_18/S" 8.48677
+cap "wl_0_2" "gnd" -0.383119
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_one_cell_12/S" 0.450608
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "vdd" 0.0204056
+cap "vdd" "precharge" 0.00542359
+cap "bl_0_3" "wl_0_3" 0.213707
+cap "wl_0_5" "bl_0_5" 0.761359
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_4" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.538095
+cap "precharge" "wl_0_4" 1.92501
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "wl_0_3" 22.7585
+cap "wl_0_2" "bl_0_0" 0.469481
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_zero_cell_16/S" 53.4651
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_14/S" 45.3892
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "bl_0_3" 0.688828
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_19/S" 1.38233
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_23/D" 1.13909
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_11/D" 0.0204056
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "gnd" 1.69561
+cap "precharge" "bl_0_5" 0.560479
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "bl_0_5" 0.498628
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_14/D" 0.995242
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_4" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "sky130_rom_krom_rom_base_one_cell_15/D" 8.11525
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_zero_cell_17/S" 45.4199
+cap "bl_0_2" "gnd" -0.438913
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "precharge" 1.07861
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_15/D" 2.67372
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "gnd" 0.128663
+cap "wl_0_1" "wl_0_5" 0.527548
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "gnd" 19.2021
+cap "wl_0_2" "bl_0_4" 1.45151
+cap "sky130_rom_krom_rom_base_one_cell_27/D" "wl_0_4" 0.832014
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_14/D" 1.84304
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "sky130_rom_krom_rom_base_one_cell_25/D" 0.2559
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_1" 0.0880981
+cap "wl_0_5" "wl_0_0" 0.416399
+cap "wl_0_1" "precharge" 0.415795
+cap "wl_0_3" "gnd" 0.33763
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_21/D" 0.909231
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_13/D" 0.137724
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "bl_0_3" 0.163518
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "wl_0_5" 0.00161629
+cap "bl_0_1" "wl_0_4" 0.160724
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_one_cell_23/D" 1.20054
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "gnd" 17.2871
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "wl_0_4" 2.58877
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "wl_0_4" 2.5887
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_0" 0.0655233
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_11/D" 0.0879747
+cap "precharge" "wl_0_0" 0.28783
+cap "bl_0_0" "wl_0_3" 0.213707
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.136187
+cap "wl_0_5" "precharge" -38.0824
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_5" 1.33644
+cap "vdd" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.53776
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_12/D" 22.6786
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.782306
+cap "bl_0_2" "sky130_rom_krom_rom_base_one_cell_14/D" 0.424131
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_2" 0.937932
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_4" 2.74418
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_23/D" 1.29118
+cap "bl_0_2" "wl_0_2" 0.469481
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_0" 0.0656142
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_14/D" 0.391153
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_3" 2.94601
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "precharge" 2.16879
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_11/D" 1.74601
+cap "wl_0_4" "sky130_rom_krom_rom_base_one_cell_12/S" 0.14179
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_14/D" 1.16839
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_22/D" 4.85148
+cap "sky130_rom_krom_rom_base_zero_cell_18/S" "gnd" 2.9146
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_25/D" 1.47432
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_zero_cell_6/S" 0.584196
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_15/D" 1.16839
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_4" 20.3419
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_11/D" 0.901216
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_2" 3.66266
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_3" 2.04911
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "precharge" 2.63112
+cap "bl_0_4" "wl_0_3" 1.11675
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_21/D" 0.235062
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "gnd" 9.03229
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_27/D" 0.727744
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_14/D" 45.3572
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_13/D" 0.1816
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "gnd" 9.55692
+cap "wl_0_2" "wl_0_3" -38.2776
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_2" 2.04875
+cap "bl_0_1" "wl_0_5" 0.120002
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.111846
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "wl_0_0" 0.212257
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_21/D" 2.04875
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_26/D" 1.8917
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "wl_0_0" 0.143146
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "gnd" 12.015
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_27/D" 0.594381
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_13/D" 13.1479
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_21/D" 0.554896
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_13/D" 0.584196
+cap "sky130_rom_krom_rom_base_one_cell_26/D" "wl_0_3" 0.903023
+cap "bl_0_1" "precharge" 0.0913516
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_0" 0.103504
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_16/S" 2.40711
+cap "bl_0_2" "wl_0_3" 0.213707
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "precharge" 1.97908
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_23/D" 5.0426
+cap "wl_0_1" "sky130_rom_krom_rom_base_one_cell_22/D" 1.20336
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_13/D" 45.2918
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_10/D" 0.528733
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "sky130_rom_krom_rom_base_one_cell_15/D" 1.11293
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "precharge" 3.45651
+cap "bl_0_3" "wl_0_4" 0.160724
+cap "wl_0_4" "sky130_rom_krom_rom_base_one_cell_23/D" 5.11737
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_18/S" 1.92478
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_0" 1.09197
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_one_cell_14/D" 1.7849
+cap "bl_0_1" "sky130_rom_krom_rom_base_one_cell_11/D" 0.163518
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_3" 14.1146
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_25/D" 0.500618
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "precharge" 2.04001
+cap "sky130_rom_krom_rom_base_one_cell_10/D" "sky130_rom_krom_rom_base_one_cell_14/D" 45.2918
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_11/D" 1.11293
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_22/D" 4.04629
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_14/S" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_zero_cell_6/S" 8.14435
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "sky130_rom_krom_rom_base_one_cell_22/D" 0.575136
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_10/D" 0.834653
+cap "sky130_rom_krom_rom_base_zero_cell_19/S" "sky130_rom_krom_rom_base_one_cell_23/D" 7.81286
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_14/D" 3.60396
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "precharge" 3.58961
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_3" 2.68489
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_27/D" 0.869208
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_17/S" 15.7205
+cap "wl_0_1" "sky130_rom_krom_rom_base_zero_cell_4/S" 1.04293
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "gnd" 5.71506
+cap "bl_0_6" "sky130_rom_krom_rom_base_one_cell_12/D" 1.68117
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_5" 2.42742
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_21/D" 0.677541
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_8/D" 1.62882
+cap "wl_0_2" "bl_0_7" 1.45151
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_0" 0.277917
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "precharge" 0.377119
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_22/D" 0.2559
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "vdd" 0.53776
+cap "wl_0_2" "wl_0_5" 1.38027
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.24416
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_4" 1.75708
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_8/D" 0.528733
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_12/D" 22.6786
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_5" 0.232795
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_21/D" 0.557608
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_20/D" 4.35369
+cap "wl_0_2" "vdd" 3.33335
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "precharge" 9.77645
+cap "wl_0_3" "wl_0_4" -11.6251
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "gnd" 21.6153
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_1" 0.298934
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_4" 1.88555
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "gnd" 1.78776
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "wl_0_4" 0.557608
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "gnd" 8.39679
+cap "gnd" "sky130_rom_krom_rom_base_zero_cell_4/S" 69.3463
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_25/D" 3.53748
+cap "wl_0_5" "wl_0_0" 0.463317
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_8/D" 1.43511
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_10/D" 0.48176
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_22/D" 0.220191
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_12/S" 1.03439
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.12409
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_11/D" 0.391153
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_14/S" 0.374848
+cap "precharge" "bl_0_7" 0.560479
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.371774
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_20/D" 22.7106
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_4" 2.66828
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.585721
+cap "wl_0_3" "wl_0_2" -11.6257
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_14/D" 0.822007
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 45.336
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_12/D" 0.584196
+cap "wl_0_5" "precharge" -11.4659
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_21/D" 1.08129
+cap "vdd" "sky130_rom_krom_rom_base_one_cell_12/S" 2.13861
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "gnd" 4.26814
+cap "wl_0_2" "wl_0_4" 1.52826
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "wl_0_4" 0.340554
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_2" 0.634647
+cap "wl_0_5" "wl_0_1" 0.589157
+cap "vdd" "precharge" 0.00504463
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "wl_0_4" 0.0697202
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "gnd" 1.05766
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "gnd" 36.2283
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.995242
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_0" 0.448691
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_10/D" 0.450608
+cap "bl_0_6" "wl_0_5" 0.761359
+cap "wl_0_3" "wl_0_0" 0.689928
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_2" 12.8496
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_22/D" 0.679895
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_12/S" 2.55065
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "precharge" 13.1053
+cap "wl_0_0" "wl_0_4" 0.588383
+cap "wl_0_3" "precharge" 1.88146
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_1" 0.58994
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "wl_0_4" 0.637334
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_12/S" 22.6132
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "wl_0_5" 0.666983
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "wl_0_4" 1.74115
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.136187
+cap "gnd" "bl_0_7" 0.783368
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "precharge" 2.04767
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 13.5077
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_14/D" 6.16378
+cap "wl_0_3" "wl_0_1" 0.764906
+cap "precharge" "wl_0_4" 1.82691
+cap "wl_0_5" "gnd" 5.99109
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "gnd" 10.2941
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "precharge" 1.77585
+cap "wl_0_1" "wl_0_4" 0.69084
+cap "vdd" "gnd" 2.03163
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_0" 0.103332
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_22/D" 0.409065
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_14/D" 0.995242
+cap "wl_0_3" "bl_0_6" 1.11675
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_12/S" 8.54427
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_5" 20.1753
+cap "wl_0_2" "wl_0_0" -0.00101495
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_17/S" 0.374776
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_24/D" 0.472785
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "precharge" 2.97269
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_22/D" 0.209358
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_one_cell_12/S" 0.450608
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_12/S" 1.75708
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "wl_0_5" 0.22027
+cap "bl_0_6" "wl_0_4" 0.948672
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "vdd" 0.175903
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_23/D" 0.129796
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "sky130_rom_krom_rom_base_one_cell_8/D" 0.585721
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "precharge" 0.198517
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "wl_0_1" 0.112033
+cap "bl_0_7" "sky130_rom_krom_rom_base_zero_cell_4/S" 5.67308
+cap "wl_0_2" "precharge" 1.45479
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.391153
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_5" 0.481698
+cap "wl_0_5" "sky130_rom_krom_rom_base_zero_cell_4/S" 6.70369
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "gnd" 34.889
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "precharge" 0.0881089
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.584196
+cap "wl_0_2" "wl_0_1" -7.10543e-15
+cap "wl_0_3" "gnd" 5.91167
+cap "vdd" "sky130_rom_krom_rom_base_zero_cell_4/S" 2.39307
+cap "bl_0_6" "sky130_rom_krom_rom_base_one_cell_25/D" 1.04831
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "gnd" 17.8448
+cap "gnd" "wl_0_4" 6.0852
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "gnd" 10.2941
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_8/D" 45.2706
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "sky130_rom_krom_rom_base_one_cell_25/D" 0.520577
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "wl_0_0" 0.707364
+cap "bl_0_6" "wl_0_2" 1.45151
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_12/D" 2.22369
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_one_cell_12/S" 0.354469
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_11/D" 0.24416
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "bl_0_7" 2.06912
+cap "precharge" "wl_0_0" 0.319728
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "wl_0_2" 0.590994
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_5" 2.42759
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_10/D" 0.948302
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "precharge" 0.045336
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_21/D" 0.554896
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_12/D" 22.6786
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 9.61272
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_4" 3.02696
+cap "precharge" "sky130_rom_krom_rom_base_one_cell_12/S" 2.04612
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_one_cell_12/D" 4.05762
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_6/S" 0.504073
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "gnd" 12.3133
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "vdd" 1.36896
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_4/S" 6.73797
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "wl_0_1" 0.796805
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "gnd" 2.9906
+cap "wl_0_2" "gnd" 4.10382
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 4.05762
+cap "precharge" "wl_0_1" 0.46392
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "wl_0_4" 1.36987
+cap "sky130_rom_krom_rom_base_zero_cell_4/S" "wl_0_4" 40.8014
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "gnd" 1.05766
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.584196
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_12/D" 8.36182
+cap "bl_0_6" "sky130_rom_krom_rom_base_one_cell_12/S" 4.34375
+cap "wl_0_3" "sky130_rom_krom_rom_base_zero_cell_16/S" 0.504011
+cap "wl_0_5" "bl_0_7" 0.761359
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "sky130_rom_krom_rom_base_one_cell_8/D" 7.48608
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_12/D" 1.99833
+cap "wl_0_5" "sky130_rom_krom_rom_base_one_cell_14/D" 1.05917
+cap "bl_0_6" "precharge" 0.560479
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_15/D" 0.538095
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_23/D" 0.240091
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_24/D" 6.43903
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "precharge" 0.198517
+cap "wl_0_5" "vdd" 0.955709
+cap "gnd" "wl_0_0" 0.492111
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "sky130_rom_krom_rom_base_one_cell_24/D" 0.614824
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_4" 2.6681
+cap "sky130_rom_krom_rom_base_one_cell_14/S" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.391153
+cap "wl_0_2" "sky130_rom_krom_rom_base_zero_cell_4/S" 2.94601
+cap "gnd" "sky130_rom_krom_rom_base_one_cell_10/D" 4.07388
+cap "sky130_rom_krom_rom_base_one_cell_23/D" "wl_0_4" 0.0696383
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "gnd" 5.58097
+cap "sky130_rom_krom_rom_base_one_cell_15/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.136187
+cap "sky130_rom_krom_rom_base_one_cell_9/D" "precharge" 1.47273
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "gnd" 9.6333
+cap "precharge" "gnd" 26.8024
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "sky130_rom_krom_rom_base_one_cell_25/D" 2.06869
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "sky130_rom_krom_rom_base_one_cell_14/D" 0.354469
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "bl_0_7" 2.56454
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_10/D" 0.584196
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_0" 0.242241
+cap "gnd" "wl_0_1" 0.744624
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_22/D" 0.391153
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "wl_0_5" 5.41791
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_23/D" 0.2812
+cap "wl_0_3" "bl_0_7" 1.11675
+cap "sky130_rom_krom_rom_base_one_cell_25/D" "sky130_rom_krom_rom_base_one_cell_24/D" 53.4651
+cap "sky130_rom_krom_rom_base_zero_cell_16/S" "wl_0_2" 0.787422
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "sky130_rom_krom_rom_base_one_cell_12/S" 2.38857
+cap "wl_0_3" "wl_0_5" 1.52928
+cap "sky130_rom_krom_rom_base_one_cell_8/D" "vdd" 0.168031
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "precharge" 5.61602
+cap "wl_0_3" "sky130_rom_krom_rom_base_one_cell_21/D" 1.77199
+cap "wl_0_2" "sky130_rom_krom_rom_base_one_cell_23/D" 0.0697202
+cap "wl_0_0" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.911568
+cap "bl_0_7" "wl_0_4" 0.948672
+cap "sky130_rom_krom_rom_base_one_cell_24/D" "wl_0_2" 28.7502
+cap "sky130_rom_krom_rom_base_one_cell_22/D" "sky130_rom_krom_rom_base_zero_cell_4/S" 0.538095
+cap "wl_0_5" "wl_0_4" -11.6257
+cap "sky130_rom_krom_rom_base_one_cell_20/D" "wl_0_5" 0.666946
+cap "sky130_rom_krom_rom_base_one_cell_14/D" "wl_0_4" 0.340626
+cap "wl_0_3" "vdd" 7.71769
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "sky130_rom_krom_rom_base_one_cell_12/S" 0.528733
+cap "sky130_rom_krom_rom_base_one_cell_12/D" "wl_0_1" 0.311387
+cap "sky130_rom_krom_rom_base_one_cell_11/D" "precharge" 0.276885
+cap "bl_0_6" "gnd" 0.777055
+cap "sky130_rom_krom_rom_base_one_cell_12/S" "sky130_rom_krom_rom_base_zero_cell_4/S" 45.2918
+cap "sky130_rom_krom_rom_base_one_cell_13/D" "wl_0_5" 1.71787
+cap "sky130_rom_krom_rom_base_one_cell_21/D" "wl_0_4" 0.557557
+cap "sky130_rom_krom_rom_base_zero_cell_17/S" "gnd" 3.13303
+cap "sky130_rom_krom_rom_base_zero_cell_6/S" "precharge" 0.754237
+cap "precharge" "sky130_rom_krom_rom_base_zero_cell_4/S" 18.3222
+cap "vdd" "wl_0_4" 3.5057
+merge "sky130_rom_krom_rom_poly_tap_2_0/gnd" "sky130_rom_krom_rom_base_one_cell_1/gnd" -1737.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26928 -2400 -12544 -1344 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_1/gnd" "sky130_rom_krom_rom_base_one_cell_1/D"
+merge "sky130_rom_krom_rom_base_one_cell_1/D" "sky130_rom_krom_rom_base_one_cell_0/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_0/gnd" "sky130_rom_krom_rom_base_one_cell_0/D"
+merge "sky130_rom_krom_rom_base_one_cell_0/D" "sky130_rom_krom_rom_base_one_cell_2/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_2/gnd" "sky130_rom_krom_rom_base_one_cell_2/D"
+merge "sky130_rom_krom_rom_base_one_cell_2/D" "sky130_rom_krom_rom_base_one_cell_4/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_4/gnd" "sky130_rom_krom_rom_base_one_cell_4/D"
+merge "sky130_rom_krom_rom_base_one_cell_4/D" "sky130_rom_krom_rom_base_one_cell_3/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_3/gnd" "sky130_rom_krom_rom_base_one_cell_3/D"
+merge "sky130_rom_krom_rom_base_one_cell_3/D" "sky130_rom_krom_rom_base_one_cell_5/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_5/gnd" "sky130_rom_krom_rom_base_one_cell_5/D"
+merge "sky130_rom_krom_rom_base_one_cell_5/D" "sky130_rom_krom_rom_poly_tap_2_1/gnd"
+merge "sky130_rom_krom_rom_poly_tap_2_1/gnd" "sky130_rom_krom_rom_base_one_cell_7/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_7/gnd" "sky130_rom_krom_rom_base_one_cell_7/D"
+merge "sky130_rom_krom_rom_base_one_cell_7/D" "sky130_rom_krom_rom_base_one_cell_6/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_6/gnd" "sky130_rom_krom_rom_base_one_cell_6/D"
+merge "sky130_rom_krom_rom_base_one_cell_6/D" "sky130_rom_krom_rom_poly_tap_1_0/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_0/active_tap" "sky130_rom_krom_rom_base_zero_cell_0/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_0/gnd" "sky130_rom_krom_rom_base_one_cell_8/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_8/gnd" "sky130_rom_krom_rom_base_one_cell_9/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_9/gnd" "sky130_rom_krom_rom_base_one_cell_10/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_10/gnd" "sky130_rom_krom_rom_base_zero_cell_1/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_1/gnd" "sky130_rom_krom_rom_base_zero_cell_2/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_2/gnd" "sky130_rom_krom_rom_poly_tap_1_1/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_1/active_tap" "sky130_rom_krom_rom_base_zero_cell_3/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_3/gnd" "sky130_rom_krom_rom_base_one_cell_11/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_11/gnd" "sky130_rom_krom_rom_poly_tap_1_2/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_2/active_tap" "sky130_rom_krom_rom_poly_tap_1_3/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_3/active_tap" "sky130_rom_krom_rom_poly_tap_1_4/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_4/active_tap" "sky130_rom_krom_rom_base_one_cell_16/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_16/gnd" "sky130_rom_krom_rom_base_zero_cell_4/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_4/gnd" "sky130_rom_krom_rom_base_one_cell_17/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_17/gnd" "sky130_rom_krom_rom_base_one_cell_12/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_12/gnd" "sky130_rom_krom_rom_base_zero_cell_8/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_8/gnd" "sky130_rom_krom_rom_base_zero_cell_5/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_5/gnd" "sky130_rom_krom_rom_base_zero_cell_9/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_9/gnd" "sky130_rom_krom_rom_base_one_cell_13/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_13/gnd" "sky130_rom_krom_rom_base_one_cell_18/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_18/gnd" "sky130_rom_krom_rom_base_zero_cell_6/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_6/gnd" "sky130_rom_krom_rom_base_one_cell_19/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_19/gnd" "sky130_rom_krom_rom_base_one_cell_14/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_14/gnd" "sky130_rom_krom_rom_base_zero_cell_10/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_10/gnd" "sky130_rom_krom_rom_base_zero_cell_7/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_7/gnd" "sky130_rom_krom_rom_poly_tap_1_5/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_5/active_tap" "sky130_rom_krom_rom_base_zero_cell_11/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_11/gnd" "sky130_rom_krom_rom_base_one_cell_15/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_15/gnd" "sky130_rom_krom_rom_poly_tap_1_6/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_6/active_tap" "sky130_rom_krom_rom_base_zero_cell_12/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_12/gnd" "sky130_rom_krom_rom_base_zero_cell_13/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_13/gnd" "sky130_rom_krom_rom_base_one_cell_20/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_20/gnd" "sky130_rom_krom_rom_base_one_cell_21/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_21/gnd" "sky130_rom_krom_rom_base_zero_cell_14/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_14/gnd" "sky130_rom_krom_rom_base_zero_cell_15/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_15/gnd" "sky130_rom_krom_rom_base_one_cell_22/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_22/gnd" "sky130_rom_krom_rom_poly_tap_1_7/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_7/active_tap" "sky130_rom_krom_rom_base_one_cell_23/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_23/gnd" "sky130_rom_krom_rom_poly_tap_1_8/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_8/active_tap" "sky130_rom_krom_rom_poly_tap_1_9/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_9/active_tap" "sky130_rom_krom_rom_poly_tap_1_10/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_10/active_tap" "sky130_rom_krom_rom_base_zero_cell_21/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_21/gnd" "sky130_rom_krom_rom_base_zero_cell_20/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_20/gnd" "sky130_rom_krom_rom_base_one_cell_25/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_25/gnd" "sky130_rom_krom_rom_base_one_cell_24/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_24/gnd" "sky130_rom_krom_rom_base_zero_cell_22/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_22/gnd" "sky130_rom_krom_rom_base_one_cell_26/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_26/gnd" "sky130_rom_krom_rom_base_one_cell_28/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_28/gnd" "sky130_rom_krom_rom_base_zero_cell_23/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_23/gnd" "sky130_rom_krom_rom_base_zero_cell_16/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_16/gnd" "sky130_rom_krom_rom_base_one_cell_27/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_27/gnd" "sky130_rom_krom_rom_base_one_cell_29/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_29/gnd" "sky130_rom_krom_rom_base_zero_cell_17/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_17/gnd" "sky130_rom_krom_rom_poly_tap_1_11/active_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_11/active_tap" "sky130_rom_krom_rom_base_one_cell_31/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_31/gnd" "sky130_rom_krom_rom_base_one_cell_30/gnd"
+merge "sky130_rom_krom_rom_base_one_cell_30/gnd" "sky130_rom_krom_rom_base_zero_cell_19/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_19/gnd" "sky130_rom_krom_rom_base_zero_cell_18/gnd"
+merge "sky130_rom_krom_rom_base_zero_cell_18/gnd" "sky130_rom_krom_rom_precharge_array_0_0/gnd"
+merge "sky130_rom_krom_rom_precharge_array_0_0/gnd" "gnd"
+merge "sky130_rom_krom_rom_poly_tap_1_6/poly_tap" "sky130_rom_krom_rom_base_zero_cell_12/G" -1922.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -5904 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_12/G" "sky130_rom_krom_rom_base_zero_cell_13/G"
+merge "sky130_rom_krom_rom_base_zero_cell_13/G" "sky130_rom_krom_rom_base_one_cell_20/G"
+merge "sky130_rom_krom_rom_base_one_cell_20/G" "sky130_rom_krom_rom_base_one_cell_21/G"
+merge "sky130_rom_krom_rom_base_one_cell_21/G" "sky130_rom_krom_rom_base_zero_cell_14/G"
+merge "sky130_rom_krom_rom_base_zero_cell_14/G" "sky130_rom_krom_rom_base_zero_cell_15/G"
+merge "sky130_rom_krom_rom_base_zero_cell_15/G" "sky130_rom_krom_rom_base_one_cell_22/G"
+merge "sky130_rom_krom_rom_base_one_cell_22/G" "sky130_rom_krom_rom_poly_tap_1_7/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_7/poly_tap" "sky130_rom_krom_rom_base_one_cell_23/G"
+merge "sky130_rom_krom_rom_base_one_cell_23/G" "wl_0_2"
+merge "sky130_rom_krom_rom_poly_tap_1_8/poly_tap" "sky130_rom_krom_rom_poly_tap_1_9/poly_tap" -1367.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_poly_tap_1_9/poly_tap" "sky130_rom_krom_rom_base_one_cell_25/G"
+merge "sky130_rom_krom_rom_base_one_cell_25/G" "sky130_rom_krom_rom_base_one_cell_24/G"
+merge "sky130_rom_krom_rom_base_one_cell_24/G" "sky130_rom_krom_rom_base_one_cell_26/G"
+merge "sky130_rom_krom_rom_base_one_cell_26/G" "sky130_rom_krom_rom_base_zero_cell_16/G"
+merge "sky130_rom_krom_rom_base_zero_cell_16/G" "sky130_rom_krom_rom_base_one_cell_27/G"
+merge "sky130_rom_krom_rom_base_one_cell_27/G" "sky130_rom_krom_rom_base_zero_cell_17/G"
+merge "sky130_rom_krom_rom_base_zero_cell_17/G" "sky130_rom_krom_rom_base_zero_cell_19/G"
+merge "sky130_rom_krom_rom_base_zero_cell_19/G" "sky130_rom_krom_rom_base_zero_cell_18/G"
+merge "sky130_rom_krom_rom_base_zero_cell_18/G" "wl_0_1"
+merge "sky130_rom_krom_rom_base_one_cell_9/S" "sky130_rom_krom_rom_base_zero_cell_8/S" -451.019 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -474 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_8/S" "sky130_rom_krom_rom_base_zero_cell_5/S"
+merge "sky130_rom_krom_rom_base_zero_cell_5/S" "sky130_rom_krom_rom_base_one_cell_20/D"
+merge "sky130_rom_krom_rom_poly_tap_1_4/poly_tap" "sky130_rom_krom_rom_base_one_cell_16/G" -1337.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_16/G" "sky130_rom_krom_rom_base_one_cell_17/G"
+merge "sky130_rom_krom_rom_base_one_cell_17/G" "sky130_rom_krom_rom_base_zero_cell_8/G"
+merge "sky130_rom_krom_rom_base_zero_cell_8/G" "sky130_rom_krom_rom_base_zero_cell_9/G"
+merge "sky130_rom_krom_rom_base_zero_cell_9/G" "sky130_rom_krom_rom_base_one_cell_18/G"
+merge "sky130_rom_krom_rom_base_one_cell_18/G" "sky130_rom_krom_rom_base_one_cell_19/G"
+merge "sky130_rom_krom_rom_base_one_cell_19/G" "sky130_rom_krom_rom_base_zero_cell_10/G"
+merge "sky130_rom_krom_rom_base_zero_cell_10/G" "sky130_rom_krom_rom_poly_tap_1_5/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_5/poly_tap" "sky130_rom_krom_rom_base_zero_cell_11/G"
+merge "sky130_rom_krom_rom_base_zero_cell_11/G" "wl_0_3"
+merge "sky130_rom_krom_rom_base_one_cell_3/S" "sky130_rom_krom_rom_base_zero_cell_1/S" -285.735 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_1/S" "sky130_rom_krom_rom_base_one_cell_13/D"
+merge "sky130_rom_krom_rom_poly_tap_1_2/poly_tap" "sky130_rom_krom_rom_poly_tap_1_3/poly_tap" -1322.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_poly_tap_1_3/poly_tap" "sky130_rom_krom_rom_base_zero_cell_4/G"
+merge "sky130_rom_krom_rom_base_zero_cell_4/G" "sky130_rom_krom_rom_base_one_cell_12/G"
+merge "sky130_rom_krom_rom_base_one_cell_12/G" "sky130_rom_krom_rom_base_zero_cell_5/G"
+merge "sky130_rom_krom_rom_base_zero_cell_5/G" "sky130_rom_krom_rom_base_one_cell_13/G"
+merge "sky130_rom_krom_rom_base_one_cell_13/G" "sky130_rom_krom_rom_base_zero_cell_6/G"
+merge "sky130_rom_krom_rom_base_zero_cell_6/G" "sky130_rom_krom_rom_base_one_cell_14/G"
+merge "sky130_rom_krom_rom_base_one_cell_14/G" "sky130_rom_krom_rom_base_zero_cell_7/G"
+merge "sky130_rom_krom_rom_base_zero_cell_7/G" "sky130_rom_krom_rom_base_one_cell_15/G"
+merge "sky130_rom_krom_rom_base_one_cell_15/G" "wl_0_4"
+merge "sky130_rom_krom_rom_base_one_cell_16/S" "sky130_rom_krom_rom_base_zero_cell_12/S" -265.052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_12/S" "sky130_rom_krom_rom_base_one_cell_24/D"
+merge "sky130_rom_krom_rom_poly_tap_1_10/poly_tap" "sky130_rom_krom_rom_base_zero_cell_21/G" -1848.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_21/G" "sky130_rom_krom_rom_base_zero_cell_20/G"
+merge "sky130_rom_krom_rom_base_zero_cell_20/G" "sky130_rom_krom_rom_base_zero_cell_22/G"
+merge "sky130_rom_krom_rom_base_zero_cell_22/G" "sky130_rom_krom_rom_base_one_cell_28/G"
+merge "sky130_rom_krom_rom_base_one_cell_28/G" "sky130_rom_krom_rom_base_zero_cell_23/G"
+merge "sky130_rom_krom_rom_base_zero_cell_23/G" "sky130_rom_krom_rom_base_one_cell_29/G"
+merge "sky130_rom_krom_rom_base_one_cell_29/G" "sky130_rom_krom_rom_poly_tap_1_11/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_11/poly_tap" "sky130_rom_krom_rom_base_one_cell_31/G"
+merge "sky130_rom_krom_rom_base_one_cell_31/G" "sky130_rom_krom_rom_base_one_cell_30/G"
+merge "sky130_rom_krom_rom_base_one_cell_30/G" "wl_0_0"
+merge "sky130_rom_krom_rom_poly_tap_2_0/poly_tap" "sky130_rom_krom_rom_base_one_cell_1/G" -1909.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -7552 -584 -7440 -576 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_1/G" "sky130_rom_krom_rom_base_one_cell_0/G"
+merge "sky130_rom_krom_rom_base_one_cell_0/G" "sky130_rom_krom_rom_base_one_cell_2/G"
+merge "sky130_rom_krom_rom_base_one_cell_2/G" "sky130_rom_krom_rom_base_one_cell_4/G"
+merge "sky130_rom_krom_rom_base_one_cell_4/G" "sky130_rom_krom_rom_base_one_cell_3/G"
+merge "sky130_rom_krom_rom_base_one_cell_3/G" "sky130_rom_krom_rom_base_one_cell_5/G"
+merge "sky130_rom_krom_rom_base_one_cell_5/G" "sky130_rom_krom_rom_poly_tap_2_1/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_2_1/poly_tap" "sky130_rom_krom_rom_base_one_cell_7/G"
+merge "sky130_rom_krom_rom_base_one_cell_7/G" "sky130_rom_krom_rom_base_one_cell_6/G"
+merge "sky130_rom_krom_rom_base_one_cell_6/G" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_rom_poly_tap_3_1/poly_tap"
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_rom_poly_tap_3_1/poly_tap" "sky130_rom_krom_rom_precharge_array_0_0/gate"
+merge "sky130_rom_krom_rom_precharge_array_0_0/gate" "precharge"
+merge "precharge" "precharge_r"
+merge "sky130_rom_krom_rom_base_one_cell_30/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_6/D" -115.86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1932 -250 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_6/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl1_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl1_out" "bl_0_1"
+merge "sky130_rom_krom_rom_base_one_cell_28/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_4/D" -120.082 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1932 -250 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_4/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl3_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl3_out" "bl_0_3"
+merge "sky130_rom_krom_rom_base_one_cell_10/S" "sky130_rom_krom_rom_base_one_cell_18/D" -296.036 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_18/D" "sky130_rom_krom_rom_base_zero_cell_6/S"
+merge "sky130_rom_krom_rom_base_one_cell_8/S" "sky130_rom_krom_rom_base_one_cell_16/D" -259.085 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_16/D" "sky130_rom_krom_rom_base_zero_cell_4/S"
+merge "sky130_rom_krom_rom_base_one_cell_31/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_7/D" -144.097 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1932 -250 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_7/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl0_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl0_out" "bl_0_0"
+merge "sky130_rom_krom_rom_base_one_cell_7/S" "sky130_rom_krom_rom_base_zero_cell_3/S" -233.103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_3/S" "sky130_rom_krom_rom_base_one_cell_15/D"
+merge "sky130_rom_krom_rom_base_one_cell_19/S" "sky130_rom_krom_rom_base_zero_cell_15/S" -451.683 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -474 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_15/S" "sky130_rom_krom_rom_base_one_cell_29/D"
+merge "sky130_rom_krom_rom_base_one_cell_29/D" "sky130_rom_krom_rom_base_zero_cell_17/S"
+merge "sky130_rom_krom_rom_poly_tap_1_0/poly_tap" "sky130_rom_krom_rom_base_zero_cell_0/G" -1310.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57672 -4272 0 0 -4488 -400 -6656 -464 -6656 -464 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_0/G" "sky130_rom_krom_rom_base_one_cell_8/G"
+merge "sky130_rom_krom_rom_base_one_cell_8/G" "sky130_rom_krom_rom_base_one_cell_9/G"
+merge "sky130_rom_krom_rom_base_one_cell_9/G" "sky130_rom_krom_rom_base_one_cell_10/G"
+merge "sky130_rom_krom_rom_base_one_cell_10/G" "sky130_rom_krom_rom_base_zero_cell_1/G"
+merge "sky130_rom_krom_rom_base_zero_cell_1/G" "sky130_rom_krom_rom_base_zero_cell_2/G"
+merge "sky130_rom_krom_rom_base_zero_cell_2/G" "sky130_rom_krom_rom_poly_tap_1_1/poly_tap"
+merge "sky130_rom_krom_rom_poly_tap_1_1/poly_tap" "sky130_rom_krom_rom_base_zero_cell_3/G"
+merge "sky130_rom_krom_rom_base_zero_cell_3/G" "sky130_rom_krom_rom_base_one_cell_11/G"
+merge "sky130_rom_krom_rom_base_one_cell_11/G" "wl_0_5"
+merge "sky130_rom_krom_rom_base_one_cell_11/S" "sky130_rom_krom_rom_base_zero_cell_10/S" -448.757 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -474 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_10/S" "sky130_rom_krom_rom_base_zero_cell_7/S"
+merge "sky130_rom_krom_rom_base_zero_cell_7/S" "sky130_rom_krom_rom_base_one_cell_22/D"
+merge "sky130_rom_krom_rom_base_one_cell_6/S" "sky130_rom_krom_rom_base_one_cell_11/D" -129.046 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_0/S" "sky130_rom_krom_rom_base_one_cell_8/D" -114.857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_22/S" "sky130_rom_krom_rom_base_one_cell_26/S" -276.615 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3220 -408 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_26/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_2/D"
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_2/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl5_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl5_out" "bl_0_5"
+merge "sky130_rom_krom_rom_base_one_cell_5/S" "sky130_rom_krom_rom_base_zero_cell_2/S" -285.369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_2/S" "sky130_rom_krom_rom_base_one_cell_14/D"
+merge "sky130_rom_krom_rom_base_one_cell_21/S" "sky130_rom_krom_rom_base_one_cell_27/D" -138.435 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_23/S" "sky130_rom_krom_rom_base_one_cell_31/D" -243.296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_31/D" "sky130_rom_krom_rom_base_zero_cell_19/S"
+merge "sky130_rom_krom_rom_base_zero_cell_20/S" "sky130_rom_krom_rom_base_one_cell_24/S" -275.533 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3220 -408 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_24/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_0/D"
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_0/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl7_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl7_out" "bl_0_7"
+merge "sky130_rom_krom_rom_base_one_cell_1/S" "sky130_rom_krom_rom_base_zero_cell_0/S" -283.249 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_0/S" "sky130_rom_krom_rom_base_one_cell_12/D"
+merge "sky130_rom_krom_rom_base_zero_cell_21/S" "sky130_rom_krom_rom_base_one_cell_25/S" -273.402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3220 -408 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_25/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_1/D"
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_1/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl6_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl6_out" "bl_0_6"
+merge "sky130_rom_krom_rom_base_one_cell_17/S" "sky130_rom_krom_rom_base_zero_cell_13/S" -291.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_13/S" "sky130_rom_krom_rom_base_one_cell_25/D"
+merge "sky130_rom_krom_rom_base_one_cell_22/S" "sky130_rom_krom_rom_base_one_cell_30/D" -293.823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_30/D" "sky130_rom_krom_rom_base_zero_cell_18/S"
+merge "sky130_rom_krom_rom_base_zero_cell_9/S" "sky130_rom_krom_rom_base_one_cell_13/S" -296.924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_13/S" "sky130_rom_krom_rom_base_one_cell_21/D"
+merge "sky130_rom_krom_rom_base_zero_cell_11/S" "sky130_rom_krom_rom_base_one_cell_15/S" -239.766 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2576 -316 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_15/S" "sky130_rom_krom_rom_base_one_cell_23/D"
+merge "sky130_rom_krom_rom_precharge_array_0_0/vdd" "sky130_rom_krom_rom_precharge_array_0_0/upper right" -71.7497 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1792 -184 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_precharge_array_0_0/upper right" "vdd"
+merge "sky130_rom_krom_rom_base_one_cell_20/S" "sky130_rom_krom_rom_base_one_cell_26/D" -138.296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_29/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_5/D" -118.646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1932 -250 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_5/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl2_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl2_out" "bl_0_2"
+merge "sky130_rom_krom_rom_base_zero_cell_23/S" "sky130_rom_krom_rom_base_one_cell_27/S" -274.985 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3220 -408 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_27/S" "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_3/D"
+merge "sky130_rom_krom_rom_precharge_array_0_0/sky130_rom_krom_precharge_cell_3/D" "sky130_rom_krom_rom_precharge_array_0_0/pre_bl4_out"
+merge "sky130_rom_krom_rom_precharge_array_0_0/pre_bl4_out" "bl_0_4"
+merge "sky130_rom_krom_rom_base_one_cell_2/S" "sky130_rom_krom_rom_base_one_cell_9/D" -129.308 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_18/S" "sky130_rom_krom_rom_base_zero_cell_14/S" -450.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -474 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_zero_cell_14/S" "sky130_rom_krom_rom_base_one_cell_28/D"
+merge "sky130_rom_krom_rom_base_one_cell_28/D" "sky130_rom_krom_rom_base_zero_cell_16/S"
+merge "sky130_rom_krom_rom_base_one_cell_4/S" "sky130_rom_krom_rom_base_one_cell_10/D" -129.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_19/D" "sky130_rom_krom_rom_base_one_cell_14/S" -139.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0
+merge "sky130_rom_krom_rom_base_one_cell_17/D" "sky130_rom_krom_rom_base_one_cell_12/S" -138.087 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -158 0 0 0 0 0 0 0 0 0 0

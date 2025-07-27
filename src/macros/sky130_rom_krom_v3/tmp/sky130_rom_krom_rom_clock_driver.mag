@@ -1,0 +1,45 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1581585458
+<< checkpaint >>
+rect -1296 -1277 3092 3946
+<< nwell >>
+rect -36 1261 1832 2686
+<< locali >>
+rect 0 2611 1796 2645
+rect 64 1244 98 1310
+rect 196 1260 449 1294
+rect 547 1272 817 1306
+rect 919 1298 1293 1332
+rect 1501 1298 1535 1332
+rect 919 1289 953 1298
+rect 0 -17 1796 17
+use sky130_rom_krom_pinv  sky130_rom_krom_pinv_0
+timestamp 1581585458
+transform 1 0 368 0 1 0
+box -36 -17 404 2686
+use sky130_rom_krom_pinv_0  sky130_rom_krom_pinv_0_0
+timestamp 1581585458
+transform 1 0 736 0 1 0
+box -36 -17 512 2686
+use sky130_rom_krom_pinv  sky130_rom_krom_pinv_1
+timestamp 1581585458
+transform 1 0 0 0 1 0
+box -36 -17 404 2686
+use sky130_rom_krom_pinv_1  sky130_rom_krom_pinv_1_0
+timestamp 1581585458
+transform 1 0 1212 0 1 0
+box -36 -17 620 2686
+<< labels >>
+rlabel locali s 1518 1315 1518 1315 4 Z
+port 1 nsew
+rlabel locali s 81 1277 81 1277 4 A
+port 2 nsew
+rlabel locali s 898 0 898 0 4 gnd
+port 3 nsew
+rlabel locali s 898 2628 898 2628 4 vdd
+port 4 nsew
+<< properties >>
+string FIXED_BBOX 0 0 1796 2628
+<< end >>

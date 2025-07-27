@@ -8,7 +8,7 @@ project:
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "3x4"          # Valid values: 1x1, 1x2, 2x2, 3x2, 3x4, 4x2, 6x2 or 8x2
+  tiles: "6x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 3x4, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_sha256_processor_dvirdc"
@@ -19,13 +19,9 @@ project:
   source_files:
     - "tt_um_sha256_processor_dvirdc.v"
     - "top_gpio_sha256.v"
-    # - "top_uart_sha256_v2.v"
-    # - "top_uart_sha256.v"
     - "sha256_processor.v"
-    - "sha256_core_v2.v"
-    # - "sha256_core.v"
-    # - "uart_rx_core.v"
-    # - "uart_tx_core.v"
+    - "sha256_core_v3.v"
+    - "sha256_k_constants.v"
 
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.

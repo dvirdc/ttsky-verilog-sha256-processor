@@ -1,0 +1,77 @@
+[2025-07-18 22:30:24.569651] [openram.globals/init_openram]: Initializing OpenRAM...
+[2025-07-18 22:30:24.570057] [openram.globals/setup_paths]: OpenRAM source code found in /workspaces/OpenRAM/compiler
+[2025-07-18 22:30:24.570300] [openram.globals/setup_paths]: Temporary files saved in /workspaces/OpenRAM/macros/sky130_rom_krom/tmp/
+[2025-07-18 22:30:24.570578] [openram.globals/read_config]: Configuration file is /workspaces/OpenRAM/macros/rom_configs/sky130_rom_krom.py
+[2025-07-18 22:30:24.571758] [openram.globals/read_config]: Output saved in /workspaces/OpenRAM/macros/sky130_rom_krom/
+[2025-07-18 22:30:24.572023] [openram.globals/install_conda]: Creating conda setup...
+[2025-07-18 22:30:24.575302] [openram.globals/import_tech]: Tech directory found in /workspaces/OpenRAM/technology:/workspaces/OpenRAM/miniconda/lib/python3.8/site-packages/openram/technology
+[2025-07-18 22:30:24.575709] [openram.globals/import_tech]: Adding technology path: /workspaces/OpenRAM/technology
+[2025-07-18 22:30:24.575987] [openram.globals/import_tech]: Adding technology path: /workspaces/OpenRAM/miniconda/lib/python3.8/site-packages/openram/technology
+[2025-07-18 22:30:24.741540] [openram.globals/purge_temp]: Purging temp directory: /workspaces/OpenRAM/macros/sky130_rom_krom/tmp/
+[2025-07-18 22:30:27.534356] [openram.globals/setup_bitcell]: Using bitcell: bitcell_1port
+[2025-07-18 22:30:34.288205] [openram.characterizer/<module>]: Initializing characterizer...
+[2025-07-18 22:30:34.307769] [openram.characterizer/<module>]: Analytical model enabled.
+[2025-07-18 22:30:34.348793] [openram.verify/<module>]: Initializing verify...
+[2025-07-18 22:30:34.359329] [openram.verify/<module>]: Finding DRC/LVS/PEX tools.
+[2025-07-18 22:30:34.371414] [openram.globals/get_tool]: Using DRC: /workspaces/OpenRAM/miniconda/bin/magic
+[2025-07-18 22:30:34.381959] [openram.globals/get_tool]: Using LVS: /workspaces/OpenRAM/miniconda/bin/netgen
+[2025-07-18 22:30:34.392509] [openram.globals/get_tool]: Using PEX: /workspaces/OpenRAM/miniconda/bin/magic
+[2025-07-18 22:30:34.393568] |==============================================================================|
+[2025-07-18 22:30:34.393644] |=========                      OpenRAM v1.2.49                       =========|
+[2025-07-18 22:30:34.393704] |=========                                                            =========|
+[2025-07-18 22:30:34.393760] |=========               VLSI Design and Automation Lab               =========|
+[2025-07-18 22:30:34.393820] |=========        Computer Science and Engineering Department         =========|
+[2025-07-18 22:30:34.393884] |=========            University of California Santa Cruz             =========|
+[2025-07-18 22:30:34.393944] |=========                                                            =========|
+[2025-07-18 22:30:34.394028] |=========          Usage help: openram-user-group@ucsc.edu           =========|
+[2025-07-18 22:30:34.394098] |=========        Development help: openram-dev-group@ucsc.edu        =========|
+[2025-07-18 22:30:34.394159] |=========                See LICENSE for license info                =========|
+[2025-07-18 22:30:34.394220] |==============================================================================|
+[2025-07-18 22:30:34.394294] ** Start: 07/18/2025 22:30:34
+[2025-07-18 22:30:34.394363] Output files are: 
+[2025-07-18 22:30:34.394424] /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.sp
+[2025-07-18 22:30:34.394484] /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.v
+[2025-07-18 22:30:34.394552] /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.lef
+[2025-07-18 22:30:34.394613] /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.gds
+[2025-07-18 22:30:34.464461] [openram.rom_config/compute_sizes]: Read rom data file: length 256.0 bytes, 64 words, set number of cols to 256, rows to 8, with 8 words per row
+[2025-07-18 22:30:34.464673] create rom of word size 4 with 64 num of words
+[2025-07-18 22:30:34.474897] [openram.modules.bitcell_base_array/__init__]: Creating sky130_rom_krom_rom_base_array 8 x 256
+[2025-07-18 22:30:37.022217] [openram.modules.rom_wordline_driver_array/__init__]: Creating sky130_rom_krom_rom_row_decode_wordline_buffer
+[2025-07-18 22:30:37.023818] [openram.modules.pbuf_dec/__init__]: creating pbuf_dec with size of 32
+[2025-07-18 22:30:37.044285] [openram.modules.bitcell_base_array/__init__]: Creating sky130_rom_krom_rom_row_decode_array 6 x 8
+[2025-07-18 22:30:37.088392] [openram.modules.rom_column_mux_array/__init__]: Creating sky130_rom_krom_rom_column_mux_array
+[2025-07-18 22:30:37.483334] [openram.modules.rom_wordline_driver_array/__init__]: Creating sky130_rom_krom_rom_column_decode_wordline_buffer
+[2025-07-18 22:30:37.501367] [openram.modules.pdriver/__init__]: creating pdriver rom_clock_driver
+[2025-07-18 22:30:37.523108] [openram.modules.pdriver/__init__]: creating pdriver rom_precharge_driver
+[2025-07-18 22:30:37.559092] [openram.modules.rom_wordline_driver_array/__init__]: Creating sky130_rom_krom_rom_bitline_inverter
+[2025-07-18 22:30:37.715093] [openram.modules.rom_wordline_driver_array/__init__]: Creating sky130_rom_krom_rom_output_buffer
+[2025-07-18 22:30:37.756499] ** Submodules: 3.3 seconds
+[2025-07-18 22:30:37.757354] ** Placement: 0.0 seconds
+[2025-07-18 22:30:41.367842] [openram.base.hierarchy_layout/get_bbox]: Size: 302.89 x 61.28 with perimeter margin 0
+[2025-07-18 22:30:41.411159] [openram.router.router_tech/__init__]: Minimum track width: 0.680
+[2025-07-18 22:30:41.411550] [openram.router.router_tech/__init__]: Minimum track space: 0.300
+[2025-07-18 22:30:41.411878] [openram.router.router_tech/__init__]: Minimum track wire width: 0.380
+[2025-07-18 22:30:41.412214] [openram.router.supply_router/route]: Running router for vdd and gnd...
+[2025-07-18 22:30:48.464972] ** Routing: 10.7 seconds
+[2025-07-18 22:31:18.833691] [openram.verify.run_script/run_script]: Still running /workspaces/OpenRAM/macros/sky130_rom_krom/tmp/run_ext.sh (30 seconds)
+[2025-07-18 22:31:33.863692] [openram.verify.magic/run_drc]: DRC Errors sky130_rom_krom	0
+[2025-07-18 22:31:34.915056] [openram.verify.magic/run_lvs]: sky130_rom_krom	LVS matches
+[2025-07-18 22:31:34.915302] ** Verification: 46.5 seconds
+[2025-07-18 22:31:34.915402] ** ROM creation: 60.5 seconds
+[2025-07-18 22:31:34.915518] SP: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.sp
+[2025-07-18 22:31:34.962545] ** Spice writing: 0.0 seconds
+[2025-07-18 22:31:34.962702] GDS: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.gds
+[2025-07-18 22:31:35.092781] ** GDS: 0.1 seconds
+[2025-07-18 22:31:35.092896] LEF: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.lef
+[2025-07-18 22:31:35.104354] ** LEF: 0.0 seconds
+[2025-07-18 22:31:35.104439] LVS: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.lvs.sp
+[2025-07-18 22:31:35.179678] ** LVS writing: 0.1 seconds
+[2025-07-18 22:31:35.180152] Config: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.py
+[2025-07-18 22:31:35.180250] ** Config: 0.0 seconds
+[2025-07-18 22:31:35.180333] Verilog: Writing to /workspaces/OpenRAM/macros/sky130_rom_krom/sky130_rom_krom.v
+[2025-07-18 22:31:35.180594] ** Verilog: 0.0 seconds
+[2025-07-18 22:31:35.180953] [openram.globals/cleanup_paths]: Preserving temp directory: /workspaces/OpenRAM/macros/sky130_rom_krom/tmp/
+[2025-07-18 22:31:35.181286] [openram.verify.magic/print_drc_stats]: DRC runs: 1
+[2025-07-18 22:31:35.181579] [openram.verify.magic/print_lvs_stats]: LVS runs: 1
+[2025-07-18 22:31:35.181864] [openram.verify.magic/print_pex_stats]: PEX runs: 0
+[2025-07-18 22:31:35.181958] ** End: 60.8 seconds

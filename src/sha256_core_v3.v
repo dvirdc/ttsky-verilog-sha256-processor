@@ -13,25 +13,16 @@ module sha256_core_v3 (
     output reg    ready
 );
 
-     // Remove the internal K_ROM array and replace with ROM instance
+    // Round counter
+    reg  [6:0] t;                      // 0-63
+
+    // K constant lookup module instance
     wire [31:0] k_value;
-    wire [5:0] k_addr;
-    
-    // Instantiate the ROM module
-    sky130_rom_krom k_rom_inst (
-        .clk0(clk),
-        .cs0(1'b1),           // Always enabled
-        .addr0(k_addr),
-        .dout0(k_value)
+
+    sha256_k_constants k_lut (
+        .idx(t),
+        .k  (k_value)
     );
-    // Modified state machine to handle ROM timing
-    reg [6:0] t;
-    reg [6:0] t_next;  // Next address for ROM
-    
-    // Address logic - need to read ahead for timing
-    assign k_addr = (state == IDLE && start) ? 6'b0 : 
-                    (state == COMP && t < 63) ? t_next[5:0] : 6'b0;
-    
 
     localparam H0_INIT = 32'h6a09e667, H1_INIT = 32'hbb67ae85, H2_INIT = 32'h3c6ef372, H3_INIT = 32'ha54ff53a,
                H4_INIT = 32'h510e527f, H5_INIT = 32'h9b05688c, H6_INIT = 32'h1f83d9ab, H7_INIT = 32'h5be0cd19;
@@ -83,12 +74,12 @@ module sha256_core_v3 (
     // ─────────────────────────────────────────────────────────────
     // 4. Main State Machine
     // ─────────────────────────────────────────────────────────────
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             state <= IDLE;
             ready <= 1'b0;
             t <= 7'b0;
-            t_next <= 7'b1;
+            // (t_next removed – no longer needed)
             a <= 0; b <= 0; c <= 0; d <= 0;
             e <= 0; f <= 0; g <= 0; h <= 0;
             
@@ -130,7 +121,7 @@ module sha256_core_v3 (
                         w[14] <= block_in[511 - 32*14 -: 32];
                         w[15] <= block_in[511 - 32*15 -: 32];
                         t <= 7'b0;
-                        t_next <= 7'b1;
+                        // (k_addr logic removed – replaced by combinational case table)
                         state <= COMP;
                     end
                 end
@@ -154,7 +145,7 @@ module sha256_core_v3 (
                         end
                         
                         t <= t + 1;
-                        t_next <= t + 2;
+                        // (k_addr logic removed – replaced by combinational case table)
                     end else begin
                         // 64 rounds are complete. Add the results to the hash state registers.
                         h0 <= h0 + a;

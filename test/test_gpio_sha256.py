@@ -121,7 +121,7 @@ async def single_block_hello(dut):
 
     message = b"hello tiny tapeout!"
     await push_message(dut, message)
-    pdb.set_trace()
+    
     # wait for the core to be done
     # await wait_idle(dut)
     got = await read_digest(dut)
