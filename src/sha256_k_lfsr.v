@@ -180,11 +180,8 @@ module sha256_k_lfsr #(
     endgenerate
 
     //--------------------------------------------------------------------
-    //  Output register
+    //  Make output combinational (no extra latency)
     //--------------------------------------------------------------------
-    always_ff @(posedge clk) begin
-        if (!rst_n) k_out <= 32'h0;
-        else if (en) k_out <= k_next;
-    end
+    assign k_out = k_next;
 
 endmodule

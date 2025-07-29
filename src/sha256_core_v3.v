@@ -32,7 +32,8 @@ module sha256_core_v3 (
     sha256_k_lfsr k_gen (
         .clk   (clk),
         .rst_n (~rst),
-        .en    (state == COMP),   // pulse high once per round (same as W-schedule)
+        // Enable LFSR only for the 64 compression rounds (t = 0..63)
+        .en    (state == COMP && t < 64),
         .k_out (Kround)
     );
     wire [31:0] k_value = Kround;

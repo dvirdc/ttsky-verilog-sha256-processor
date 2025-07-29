@@ -9,7 +9,8 @@ PROJECT_SOURCES = tt_um_sha256_processor_dvirdc.v \
                   top_gpio_sha256.v \
                   sha256_processor.v \
                   sha256_core_v3.v \
-                  sky130_rom_krom.v
+                  sha256_k_lfsr.v \
+                  sha256_k_constants.v
 
 ifneq ($(GATES),yes)
 
