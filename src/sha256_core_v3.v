@@ -16,13 +16,26 @@ module sha256_core_v3 (
     // Round counter
     reg  [6:0] t;                      // 0-63
 
+    // State machine
+    reg [1:0] state;
+    localparam IDLE = 2'd0, COMP = 2'd1, DONE = 2'd2;
+    
     // K constant lookup module instance
-    wire [31:0] k_value;
+    // wire [31:0] k_value;
 
-    sha256_k_constants k_lut (
-        .idx(t),
-        .k  (k_value)
+    // sha256_k_constants k_lut (
+    //     .idx(t),
+    //     .k  (k_value)
+    // );
+
+    wire [31:0] Kround;
+    sha256_k_lfsr k_gen (
+        .clk   (clk),
+        .rst_n (~rst),
+        .en    (state == COMP),   // pulse high once per round (same as W-schedule)
+        .k_out (Kround)
     );
+    wire [31:0] k_value = Kround;
 
     localparam H0_INIT = 32'h6a09e667, H1_INIT = 32'hbb67ae85, H2_INIT = 32'h3c6ef372, H3_INIT = 32'ha54ff53a,
                H4_INIT = 32'h510e527f, H5_INIT = 32'h9b05688c, H6_INIT = 32'h1f83d9ab, H7_INIT = 32'h5be0cd19;
@@ -34,10 +47,6 @@ module sha256_core_v3 (
     reg [31:0] h0, h1, h2, h3, h4, h5, h6, h7;
     reg [31:0] w[0:15]; // Optimized: 16-word circular buffer for message schedule
     
-
-    // State machine
-    reg [1:0] state;
-    localparam IDLE = 2'd0, COMP = 2'd1, DONE = 2'd2;
 
     // Corrected, portable syntax for circular buffer indexing
     wire [3:0] w_idx_m2   = t - 7'd2;
