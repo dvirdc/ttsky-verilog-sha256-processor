@@ -106,6 +106,25 @@ async def read_digest(dut, n_bytes=32):
 
     return bytes(digest)
 
+# --------------------------------------------------------------------------- #
+#  SHA-256 padding helper                                                     #
+# --------------------------------------------------------------------------- #
+def sha256_pad(msg: bytes) -> bytes:
+    """
+    Perform the message-padding step defined in FIPS 180-4 §5.1.1 so the output
+    length is a multiple of 64 bytes (512 bits). The resulting byte-stream can
+    be fed directly to a compression-only SHA-256 hardware core.
+    """
+    msg_len = len(msg)
+    # Append the mandatory 0x80 byte marker.
+    padded = msg + b"\x80"
+    # Pad with zero bytes until length ≡ 56 (mod 64).
+    pad_len = (56 - (msg_len + 1) % 64) % 64
+    padded += b"\x00" * pad_len
+    # Append the original length in bits as a big-endian 64-bit integer.
+    padded += (msg_len * 8).to_bytes(8, "big")
+    return padded
+
 
 # ════════════════════════════════════════════════════════════════════════════ #
 #  Tests                                                                       #
@@ -120,7 +139,8 @@ async def single_block_hello(dut):
     await tb_reset(dut, 20)
 
     message = b"hello tiny tapeout!"
-    await push_message(dut, message)
+    padded_msg = sha256_pad(message)
+    await push_message(dut, padded_msg)
     
     # wait for the core to be done
     # await wait_idle(dut)

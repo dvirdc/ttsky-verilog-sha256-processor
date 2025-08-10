@@ -24,8 +24,9 @@ module sha256_processor (
     reg         block_ready;
 
     // FSM
-    reg [2:0] state;
-    localparam IDLE=0, LOAD=1, PAD=2, HASH=3, DONE=4;
+    // Only four states are needed once padding is handled externally
+    reg [1:0] state;
+    localparam IDLE = 0, LOAD = 1, HASH = 2, DONE = 3;
 
     // SHA-256 Core
     wire [255:0] core_hash_out;
@@ -49,10 +50,8 @@ module sha256_processor (
     assign hash_out = core_hash_out;
     assign done = (state == DONE);
 
-    reg [63:0] total_bits;
+    // Tracks when the last byte of the overall message has been seen
     reg        seen_last;
-    reg        need_length_block;
-    reg [5:0]  pad_index;
 
     integer i;
 
@@ -66,10 +65,7 @@ module sha256_processor (
             core_first_run <= 0;
             core_busy <= 0;
             core_ready_prev <= 0;
-            total_bits <= 0;
             seen_last <= 0;
-            need_length_block <= 0;
-            pad_index <= 0;
         end else begin
             case (state)
                 IDLE: begin
@@ -77,71 +73,26 @@ module sha256_processor (
                         core_first_run <= 1;
                         state <= LOAD;
                         byte_index <= 0;
-                        total_bits <= 0;
                         seen_last <= 0;
-                        need_length_block <= 0;
-                        pad_index <= 0;
                     end
                 end
 
                 LOAD: begin
                     if (data_valid && byte_index < BLOCK_SIZE) begin
-                        // block_buffer[511 - byte_index*8 -: 8] <= data_in; // this works on verilator but not on icarus
-                        // byte_index <= byte_index + 1;
-                        // total_bits <= total_bits + 8;
-                        
-                        if (data_last) begin
+                        // Store incoming byte into the correct position (big-endian)
+                        block_buffer[511 - byte_index*8 -: 8] <= data_in;
+
+                        // Track whether this is the final byte of the entire message
+                        if (data_last)
                             seen_last <= 1;
-                            if (byte_index + 1 == BLOCK_SIZE) begin
-                                // Block is exactly full after this byte, need another block for padding
-                                byte_index <= byte_index + 1;
-                                block_ready <= 1;
-                                state <= HASH;
-                                need_length_block <= 1;
-                            end else begin
-                                // byte_index <= byte_index + 1; // Point to position for 0x80
-                                state <= PAD;
-                            end
-                        end else begin
-                            block_buffer[511 - byte_index*8 -: 8] <= data_in;
-                            total_bits <= total_bits + 8;
-                            byte_index <= byte_index + 1;
-                            if (byte_index + 1 == BLOCK_SIZE) begin
-                                // Block is full with data, need to hash it
-                                block_ready <= 1;
-                                state <= HASH;
-                            end
-                        end
-                    end else if (seen_last) begin
-                        // No more data coming, go to padding
-                        state <= PAD;
-                    end
-                end
 
-                PAD: begin
-                    if (pad_index == 0) begin
-                        // First cycle: insert 0x80 at current byte position
-                        block_buffer[511 - (byte_index * 8) -: 8] <= 8'h80;
-                        pad_index <= byte_index + 1;
+                        byte_index <= byte_index + 1;
 
-                        if (byte_index < 56) begin
-                            need_length_block <= 0;
-                        end else begin
-                            need_length_block <= 1;
+                        // When we have accumulated a full 64-byte block, trigger hashing
+                        if (byte_index + 1 == BLOCK_SIZE) begin
+                            block_ready <= 1;
+                            state <= HASH;
                         end
-                    end else if ((pad_index < 56) || (need_length_block && pad_index < 64)) begin
-                        block_buffer[511 - (pad_index * 8) -: 8] <= 8'h00;
-                        pad_index <= pad_index + 1;
-                    end else begin
-                        if (!need_length_block) begin
-                            // Write 64-bit big-endian message length into last 8 bytes
-                            // for (i = 0; i < 8; i = i + 1)
-                            //     block_buffer[63 - i*8 -: 8] <= total_bits[63 - i*8 -: 8];
-                            block_buffer[63:0] <= total_bits; // replacing the for loop with a direct assignment
-                        end
-                        block_ready <= 1;
-                        state <= HASH;
-                        pad_index <= 0;
                     end
                 end
 
@@ -160,29 +111,14 @@ module sha256_processor (
                     if (core_ready && !core_ready_prev) begin
                         core_busy <= 0;           // Core is no longer busy
 
-                        if (seen_last && need_length_block) begin
-                            /*
-                            // Prepare second padding block
-                            block_buffer <= 512'b0;
-                            // Add 0x80 at the beginning if message filled previous block exactly
-                            block_buffer[511:504] <= 8'h80;
-
-                            // Write 64-bit big-endian total_bits at end
-                            
-                            for (i = 0; i < 8; i = i + 1)
-                                block_buffer[63 - i*8 -: 8] <= total_bits[63 - i*8 -: 8];
-                            */
-                            // Prepare second padding block with 0x80, padding, and length
-                            block_buffer <= {8'h80, 440'd0, total_bits}; // replacing the for loop with a direct assignment
-
-                            block_ready <= 1;
-                            need_length_block <= 0;
-                        end else if (seen_last && !need_length_block) begin
-                            state <= DONE;
+                        if (seen_last) begin
+                            state <= DONE;        // All data processed
                         end else begin
-                            byte_index <= 0;
+                            byte_index <= 0;      // Prepare to load the next block
                             state <= LOAD;
                         end
+                        // Clear last indicator so future blocks are treated normally
+                        seen_last <= 0;
                     end
 
                     // Update previous-ready tracker each cycle

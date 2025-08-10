@@ -26,9 +26,9 @@ module sha256_processor_tb(
     // Use external clock directly
     assign clk = ext_clk;
 
-    // Reduced test size for faster Verilator simulation
-    // Send the 4-byte string "TEST" instead of 64 'a' characters
-    localparam FILE_SIZE = 4;
+    // With padding handled externally, we feed a full 512-bit (64-byte) pre-padded block.
+    // The message is the ASCII string "TEST" (4 bytes) with SHA-256 padding applied.
+    localparam FILE_SIZE = 64;
 
     // Instantiate the DUT
     sha256_processor uut (
@@ -85,13 +85,15 @@ module sha256_processor_tb(
         // Feed data using proper clock synchronization
         for (i = 0; i < FILE_SIZE; i = i + 1) begin
             @(negedge clk);
-            // Provide the appropriate byte for each position in "TEST"
+            // Build the padded block for the message "TEST" (4 bytes)
             case (i)
-                0: data_in = 8'h54; // 'T'
-                1: data_in = 8'h45; // 'E'
-                2: data_in = 8'h53; // 'S'
-                3: data_in = 8'h54; // 'T'
-                default: data_in = 8'h00;
+                0:  data_in = 8'h54; // 'T'
+                1:  data_in = 8'h45; // 'E'
+                2:  data_in = 8'h53; // 'S'
+                3:  data_in = 8'h54; // 'T'
+                4:  data_in = 8'h80; // padding start 0x80
+                63: data_in = 8'h20; // message length 32 bits -> 0x00000020 (big-endian in last byte)
+                default: data_in = 8'h00; // remaining padding zeros
             endcase
             data_valid = 1;
             data_last = (i == FILE_SIZE - 1);

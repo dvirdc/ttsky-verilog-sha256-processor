@@ -1,0 +1,24 @@
+# ----- configure your liberty (sky130_fd_sc_hd, TT corner) -----
+set LIB $env(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -lib $LIB
+
+# ----- read all your RTL -----
+read_verilog -sv src/*.v
+
+# Sanity: list modules and assert top exists
+log "=== Module list ==="
+ls
+select -assert-count 1 t:tt_um_sha256_processor_dvirdc
+
+# ----- elaborate RTL to generic netlist -----
+hierarchy -check -top tt_um_sha256_processor_dvirdc
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+
+# ----- map flops and comb to sky130_fd_sc_hd -----
+dfflibmap -liberty $LIB
+abc -liberty $LIB
+
+# Clean up & show area for the intended top
+opt -fast; clean
+stat -liberty $LIB -top tt_um_sha256_processor_dvirdc
