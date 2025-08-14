@@ -13,7 +13,7 @@
 
   "//": "PL_TARGET_DENSITY_PCT - You can increase this if Global Placement fails with error GPL-0302.",
   "//": "Users have reported that values up to 80 worked well for them.",
-  "PL_TARGET_DENSITY_PCT": 80,
+  "PL_TARGET_DENSITY_PCT": 84,
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 80ns == 12.5MHz.",
@@ -47,8 +47,8 @@
   "//": "Reduce wasted space",
   "TOP_MARGIN_MULT": 1,
   "BOTTOM_MARGIN_MULT": 1,
-  "LEFT_MARGIN_MULT": 6,
-  "RIGHT_MARGIN_MULT": 6,
+  "LEFT_MARGIN_MULT": 2,
+  "RIGHT_MARGIN_MULT": 2,
 
   "//": "Absolute die size",
   "FP_SIZING": "absolute",
@@ -72,7 +72,8 @@
 
   "//": "Only export pin area in LEF (without any connected nets)",
   "MAGIC_WRITE_LEF_PINONLY": 1,
-  "SYNTH_STRATEGY": "AREA 2",
-  "SYNTH_ADDER_TYPE": "YOSYS",
-  "SYNTH_NO_FLAT": 0
+
+  "RUN_ANTENNA_REPAIR": 1,
+  "PNR_SDC_FILE": "./src/constraints/pnr.sdc",
+  "SIGNOFF_SDC_FILE": "./src/constraints/pnr.sdc"
 }
