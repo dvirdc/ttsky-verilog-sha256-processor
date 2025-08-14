@@ -42,12 +42,12 @@ module sha256_core_v3 (
     sha256_k_rom_soft KROM (.addr(t[5:0]), .data(k_value));
 
     // register K ROM output once
-    reg [31:0] k_q; 
-    always @(posedge clk) k_q <= k_value;
+    // reg [31:0] k_q; 
+    // always @(posedge clk) k_q <= k_value;
 
     // register W[t] output similarly
-    reg [31:0] w_q; 
-    always @(posedge clk) w_q <= w_t;
+    // reg [31:0] w_q; 
+    // always @(posedge clk) w_q <= w_t;
 
     localparam H0_INIT = 32'h6a09e667, H1_INIT = 32'hbb67ae85, H2_INIT = 32'h3c6ef372, H3_INIT = 32'ha54ff53a,
                H4_INIT = 32'h510e527f, H5_INIT = 32'h9b05688c, H6_INIT = 32'h1f83d9ab, H7_INIT = 32'h5be0cd19;
@@ -76,7 +76,7 @@ module sha256_core_v3 (
     wire [31:0] S1 = (ror(e,6) ^ ror(e,11) ^ ror(e,25));
     wire [31:0] ch = (e & f) ^ ((~e) & g);
 
-    wire [31:0] T1 = h + S1 + ch + k_q + w_q;
+    wire [31:0] T1 = h + S1 + ch + k_value + w_t;
 
     wire [31:0] S0 = (ror(a,2) ^ ror(a,13) ^ ror(a,22));
     wire [31:0] maj = (a & b) ^ (a & c) ^ (b & c);

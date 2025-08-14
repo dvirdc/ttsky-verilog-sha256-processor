@@ -11,7 +11,8 @@ module top_gpio_sha256 (
     input              last,           // uio_in[1]
     output reg         busy,           // uio_out[2]
     output reg  [7:0]  dout,           // uo_out[7:0]
-    output reg         dvalid         // uio_out[3]
+    output reg         dvalid,
+    output              ready
     
 );
 
@@ -21,6 +22,9 @@ module top_gpio_sha256 (
     reg start_core;
     reg data_valid;
     reg data_last;
+    reg [7:0] data_byte;   // one-cycle delayed DIN to align with data_valid
+    
+    wire proc_in_ready;   // handshake from processor
 
     wire [255:0] hash;
     wire         proc_done;
@@ -29,12 +33,16 @@ module top_gpio_sha256 (
         .clk(clk),
         .rst(rst),
         .start(start_core),
-        .data_in(din),
+        .data_in(data_byte),
         .data_valid(data_valid),
         .data_last(data_last),
         .hash_out(hash),
-        .done(proc_done)
+        .done(proc_done),
+        .in_ready(proc_in_ready)
     );
+
+    // Export to top level
+    assign ready = proc_in_ready;
 
     //----------------------------------------------------------
     // 2.  FSM: IDLE → FEED → WAIT → DUMP → IDLE
@@ -51,6 +59,7 @@ module top_gpio_sha256 (
             start_core  <= 1'b0;
             data_valid  <= 1'b0;
             data_last   <= 1'b0;
+            data_byte   <= 8'h00;
             dout        <= 8'h00;
             byte_cntr   <= 5'd0;
         end else begin
@@ -63,19 +72,21 @@ module top_gpio_sha256 (
             case (state)
             IDLE: begin
                 busy <= 1'b0;
-                if (valid) begin             // first byte arrives
+                if (valid && proc_in_ready) begin  // first byte accepted when core ready
                     start_core <= 1'b1;
                     data_valid <= 1'b1;
                     data_last  <= last;
+                    data_byte  <= din;
                     busy       <= 1'b1;
                     state      <= (last) ? WAIT : FEED;
                 end
             end
 
             FEED: begin
-                if (valid) begin
+                if (valid && proc_in_ready) begin
                     data_valid <= 1'b1;
                     data_last  <= last;
+                    data_byte  <= din;
                     if (last) state <= WAIT;
                 end
             end

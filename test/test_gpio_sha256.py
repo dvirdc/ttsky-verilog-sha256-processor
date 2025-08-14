@@ -36,6 +36,7 @@ VALID_BIT  = 0
 LAST_BIT   = 1
 DVALID_BIT = 2
 BUSY_BIT   = 3
+READY_BIT = 4
 # -----------------------------------------------------------------------------
 
 
@@ -74,22 +75,22 @@ async def push_message(dut, payload: bytes):
       4. drops VALID/LAST back to 0 on the next edge.
     """
     await wait_idle(dut)
-    strobe = (1 << VALID_BIT)
-    dut.uio_in.value = strobe
-    await RisingEdge(dut.clk)
-    await RisingEdge(dut.clk)
     for i, byte in enumerate(payload):
-        # Build the uio_in strobe vector
-        
+        # Wait until the DUT is ready to accept the next byte
+        while not ((int(dut.uio_out.value) >> READY_BIT) & 1):
+            await RisingEdge(dut.clk)
+
+        # Build the strobe vector for this byte
+        strobe = (1 << VALID_BIT)
         if i == len(payload) - 1:
             strobe |= (1 << LAST_BIT)
-        dut.uio_in.value = strobe
-        dut.ui_in.value = byte
-        # dut._log.info(f"uio_in: {dut.uio_in.value}")
 
-        await RisingEdge(dut.clk)      # one full clock of VALID/LAST high
-        dut.uio_in.value = 0           # de-assert
-    # ui_in can stay at its last value; it is ignored once VALID is low.
+        # Drive inputs
+        dut.ui_in.value  = byte
+        dut.uio_in.value = strobe
+
+        await RisingEdge(dut.clk)      # VALID/LAST asserted for one clock
+        dut.uio_in.value = 0           # de-assert after the pulse
 
 
 async def read_digest(dut, n_bytes=32):
@@ -140,13 +141,14 @@ async def single_block_hello(dut):
 
     message = b"hello tiny tapeout!"
     padded_msg = sha256_pad(message)
+    exp = hashlib.sha256(message).digest()
+    print(f"exp={exp.hex()}")
     await push_message(dut, padded_msg)
     
     # wait for the core to be done
     # await wait_idle(dut)
     got = await read_digest(dut)
-    exp = hashlib.sha256(message).digest()
-
+    
     assert got == exp, (
         f"Digest mismatch on short message:\n"
         f"exp={exp.hex()}\n"

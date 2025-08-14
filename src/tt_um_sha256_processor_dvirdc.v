@@ -13,15 +13,17 @@ module tt_um_sha256_processor_dvirdc (
 
     wire  busy;
     wire  dvalid;
+    wire  ready;
 
     assign uio_out = {
-        4'b0000, 
-        busy, 
-        dvalid, 
-        2'b00
+        3'b000,         // bits 7..5 unused
+        ready,          // bit 4 – processor input-ready flag
+        busy,           // bit 3
+        dvalid,         // bit 2
+        2'b00           // bits 1..0 unused
     };
     
-    assign uio_oe = 8'b0000_1100; // pins 2 and 3 are outputs
+    assign uio_oe = 8'b0001_1100; // bits 4,3,2 are outputs
 
     wire internal_rst = ~rst_n;
 
@@ -33,7 +35,8 @@ module tt_um_sha256_processor_dvirdc (
         .last(uio_in[1]),
         .busy(busy),
         .dout(uo_out),
-        .dvalid(dvalid)
+        .dvalid(dvalid),
+        .ready(ready)
     );
 
 endmodule

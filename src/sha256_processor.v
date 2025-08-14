@@ -12,7 +12,8 @@ module sha256_processor (
     input         data_valid,
     input         data_last,
     output [255:0] hash_out,
-    output        done
+    output        done,
+    output        in_ready        // HIGH when processor can accept a byte
 );
 
     // Constants
@@ -48,7 +49,8 @@ module sha256_processor (
     );
 
     assign hash_out = core_hash_out;
-    assign done = (state == DONE);
+    assign done     = (state == DONE);
+    assign in_ready = (state == LOAD) || (state == IDLE);
 
     // Tracks when the last byte of the overall message has been seen
     reg        seen_last;
@@ -72,8 +74,18 @@ module sha256_processor (
                     if (start) begin
                         core_first_run <= 1;
                         state <= LOAD;
-                        byte_index <= 0;
                         seen_last <= 0;
+
+                        // If a data byte is already present together with the start
+                        if (data_valid) begin
+                            // Store as byte 0 of the block (big-endian MSB first)
+                            block_buffer[511 -: 8] <= data_in;
+                            byte_index <= 1;
+                            if (data_last)
+                                seen_last <= 1;
+                        end else begin
+                            byte_index <= 0;
+                        end
                     end
                 end
 
