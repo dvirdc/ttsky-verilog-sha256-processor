@@ -58,7 +58,7 @@
   "FP_IO_HLENGTH": 2,
   "FP_IO_VLENGTH": 2,
 
-  "FP_PDN_VPITCH": 38.87,
+  "FP_PDN_VPITCH": 63,
 
   "//": "Clock",
   "RUN_CTS": 1,
