@@ -19,24 +19,6 @@ module sha256_core_v3 (
     // State machine
     reg [1:0] state;
     localparam IDLE = 2'd0, COMP = 2'd1, DONE = 2'd2;
-    
-    // K constant lookup module instance
-    // wire [31:0] k_value;
-
-    // sha256_k_constants k_lut (
-    //     .idx(t),
-    //     .k  (k_value)
-    // );
-
-    // wire [31:0] Kround;
-    // sha256_k_lfsr k_gen (
-    //     .clk   (clk),
-    //     .rst_n (~rst),
-    //     // Enable LFSR only for the 64 compression rounds (t = 0..63)
-    //     .en    (state == COMP && t < 64),
-    //     .k_out (Kround)
-    // );
-    // wire [31:0] k_value = Kround;
 
     wire [31:0] k_value;
     sha256_k_rom_soft KROM (.addr(t[5:0]), .data(k_value));
