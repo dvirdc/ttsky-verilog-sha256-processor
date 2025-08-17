@@ -131,7 +131,7 @@ def sha256_pad(msg: bytes) -> bytes:
 #  Tests                                                                       #
 # ════════════════════════════════════════════════════════════════════════════ #
 
-@cocotb.test()
+#@cocotb.test()
 async def single_block_hello(dut):
     """
     “hello tiny tapeout!” — fits in one 512-bit compression block.
@@ -156,17 +156,26 @@ async def single_block_hello(dut):
     )
 
 
-# @cocotb.test()
-async def two_block_random(dut):
+@cocotb.test()
+async def two_block_sentence(dut):
     """
-    100-byte random payload exercises the multi-block code path.
+    “hello tiny tapeout!” — fits in one 512-bit compression block.
     """
     cocotb.start_soon(Clock(dut.clk, CLK_PERIOD_NS, units="ns").start())
-    await tb_reset(dut)
+    await tb_reset(dut, 20)
 
-    message = os.urandom(100)          # >55 bytes ⇒ requires two blocks
-    await push_message(dut, message)
-    got = await read_digest(dut)
+    message = b"A curious fox ran swiftly through the forest, leaping over streams and hiding beneath tall trees."
+    padded_msg = sha256_pad(message)
     exp = hashlib.sha256(message).digest()
-
-    assert got == exp, "Digest mismatch on 100-byte random message"
+    print(f"exp={exp.hex()}")
+    await push_message(dut, padded_msg)
+    
+    # wait for the core to be done
+    # await wait_idle(dut)
+    got = await read_digest(dut)
+    
+    assert got == exp, (
+        f"Digest mismatch on long message:\n"
+        f"exp={exp.hex()}\n"
+        f"got={got.hex()}"
+    )
