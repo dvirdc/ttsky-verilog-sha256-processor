@@ -131,7 +131,7 @@ def sha256_pad(msg: bytes) -> bytes:
 #  Tests                                                                       #
 # ════════════════════════════════════════════════════════════════════════════ #
 
-#@cocotb.test()
+@cocotb.test()
 async def single_block_hello(dut):
     """
     “hello tiny tapeout!” — fits in one 512-bit compression block.
