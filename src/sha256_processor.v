@@ -75,6 +75,8 @@ module sha256_processor (
                         core_first_run <= 1;
                         state <= LOAD;
                         seen_last <= 0;
+                        // Start of a new message: clear the block buffer
+                        block_buffer <= 512'b0;
 
                         // If a data byte is already present together with the start
                         if (data_valid) begin
@@ -127,6 +129,8 @@ module sha256_processor (
                             state <= DONE;        // All data processed
                         end else begin
                             byte_index <= 0;      // Prepare to load the next block
+                            // Clear buffer before accepting the next block
+                            block_buffer <= 512'b0;
                             state <= LOAD;
                         end
                         // Clear last indicator so future blocks are treated normally
