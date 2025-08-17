@@ -159,7 +159,7 @@ async def single_block_hello(dut):
 @cocotb.test()
 async def two_block_sentence(dut):
     """
-    “hello tiny tapeout!” — fits in one 512-bit compression block.
+    “A curious fox ran swiftly through the forest, leaping over streams and hiding beneath tall trees.” — fits in two 512-bit compression blocks.
     """
     cocotb.start_soon(Clock(dut.clk, CLK_PERIOD_NS, units="ns").start())
     await tb_reset(dut, 20)
