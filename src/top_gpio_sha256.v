@@ -114,7 +114,7 @@ module top_gpio_sha256 (
                         data_byte <= din;
                         data_last <= last;
                     end
-                    state <= (data_last) ? WAIT : FEED;
+                    state <= ((pend0_valid ? pend0_last : last) ? WAIT : FEED);
                 end
             end
 
@@ -134,7 +134,7 @@ module top_gpio_sha256 (
                         data_byte <= din;
                         data_last <= last;
                     end
-                    if (data_last) state <= WAIT;
+                    if ((pend0_valid ? pend0_last : last)) state <= WAIT;
                 end else if (valid && !proc_in_ready) begin
                     // Already handled above: store into pending when not ready
                 end
