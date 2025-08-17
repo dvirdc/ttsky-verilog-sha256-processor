@@ -22,7 +22,8 @@ module top_gpio_sha256 (
     reg start_core;
     reg data_valid;
     reg data_last;
-    reg [7:0] data_byte;   // one-cycle delayed DIN to align with data_valid
+    // Byte driven into the streaming processor
+    reg [7:0] data_byte;
     
     wire proc_in_ready;   // handshake from processor
 
@@ -44,6 +45,11 @@ module top_gpio_sha256 (
     // Export to top level
     assign ready = proc_in_ready;
 
+    // Simple 2-byte skid buffer to avoid losing bytes across ready deassertions
+    reg        pend0_valid, pend1_valid;
+    reg [7:0]  pend0_byte,  pend1_byte;
+    reg        pend0_last,  pend1_last;
+
     //----------------------------------------------------------
     // 2.  FSM: IDLE → FEED → WAIT → DUMP → IDLE
     //----------------------------------------------------------
@@ -59,9 +65,15 @@ module top_gpio_sha256 (
             start_core  <= 1'b0;
             data_valid  <= 1'b0;
             data_last   <= 1'b0;
-            data_byte   <= 8'h00;
             dout        <= 8'h00;
+            data_byte   <= 8'h00;
             byte_cntr   <= 5'd0;
+            pend0_valid <= 1'b0;
+            pend1_valid <= 1'b0;
+            pend0_byte  <= 8'h00;
+            pend1_byte  <= 8'h00;
+            pend0_last  <= 1'b0;
+            pend1_last  <= 1'b0;
         end else begin
             // default strobes
             dvalid     <= 1'b0;
@@ -69,25 +81,62 @@ module top_gpio_sha256 (
             data_last  <= 1'b0;
             start_core <= 1'b0;
 
+            // Capture incoming byte into skid buffer if processor is not ready this cycle
+            if (valid && !proc_in_ready) begin
+                if (!pend0_valid) begin
+                    pend0_valid <= 1'b1;
+                    pend0_byte  <= din;
+                    pend0_last  <= last;
+                end else if (!pend1_valid) begin
+                    pend1_valid <= 1'b1;
+                    pend1_byte  <= din;
+                    pend1_last  <= last;
+                end
+            end
+
             case (state)
             IDLE: begin
                 busy <= 1'b0;
-                if (valid && proc_in_ready) begin  // first byte accepted when core ready
-                    start_core <= 1'b1;
+                // Choose source: pending buffer has priority when present
+                if (proc_in_ready && (pend0_valid || valid)) begin
+                    start_core <= 1'b1;     // starting a (possibly continued) message
                     data_valid <= 1'b1;
-                    data_last  <= last;
-                    data_byte  <= din;
                     busy       <= 1'b1;
-                    state      <= (last) ? WAIT : FEED;
+                    if (pend0_valid) begin
+                        data_byte  <= pend0_byte;
+                        data_last  <= pend0_last;
+                        // shift buffer
+                        pend0_valid <= pend1_valid;
+                        pend0_byte  <= pend1_byte;
+                        pend0_last  <= pend1_last;
+                        pend1_valid <= 1'b0;
+                    end else begin
+                        data_byte <= din;
+                        data_last <= last;
+                    end
+                    state <= (data_last) ? WAIT : FEED;
                 end
             end
 
             FEED: begin
-                if (valid && proc_in_ready) begin
+                // Send pending first when ready, otherwise pass through current byte
+                if (proc_in_ready && (pend0_valid || valid)) begin
                     data_valid <= 1'b1;
-                    data_last  <= last;
-                    data_byte  <= din;
-                    if (last) state <= WAIT;
+                    if (pend0_valid) begin
+                        data_byte  <= pend0_byte;
+                        data_last  <= pend0_last;
+                        // shift buffer
+                        pend0_valid <= pend1_valid;
+                        pend0_byte  <= pend1_byte;
+                        pend0_last  <= pend1_last;
+                        pend1_valid <= 1'b0;
+                    end else begin
+                        data_byte <= din;
+                        data_last <= last;
+                    end
+                    if (data_last) state <= WAIT;
+                end else if (valid && !proc_in_ready) begin
+                    // Already handled above: store into pending when not ready
                 end
             end
 
