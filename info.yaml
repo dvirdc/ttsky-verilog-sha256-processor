@@ -48,11 +48,11 @@ pinout:
   uo[7]: "DATA_OUT[7]"
 
   # Bidirectional pins
-  uio[0]: "VALID"
-  uio[1]: "LAST"
-  uio[2]: "DVALID"
-  uio[3]: "BUSY"
-  uio[4]: ""
+  uio[0]: "VALID_IN"
+  uio[1]: "LAST_IN"
+  uio[2]: "DVALID_OUT"
+  uio[3]: "BUSY_OUT"
+  uio[4]: "READY_OUT"
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""

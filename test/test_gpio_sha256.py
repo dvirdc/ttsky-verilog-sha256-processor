@@ -179,3 +179,28 @@ async def two_block_sentence(dut):
         f"exp={exp.hex()}\n"
         f"got={got.hex()}"
     )
+
+# Feel free to enable; It takes a few seconds to run on GATES=yes so be patient
+# @cocotb.test()
+async def multi_block_sentence(dut):
+    """
+    Under a tangerine sunset, curious travelers wander quiet lanes, trading riddles and recipes, while hidden owls watch kindly from cedars, and the river, glassy and patient, remembers every footstep, echo, promise, and laugh it ever carried, tonight!!!
+    """
+    cocotb.start_soon(Clock(dut.clk, CLK_PERIOD_NS, units="ns").start())
+    await tb_reset(dut, 20)
+
+    message = os.urandom(10000)
+    padded_msg = sha256_pad(message)
+    exp = hashlib.sha256(message).digest()
+    print(f"exp={exp.hex()}")
+    await push_message(dut, padded_msg)
+    
+    # wait for the core to be done
+    # await wait_idle(dut)
+    got = await read_digest(dut)
+    
+    assert got == exp, (
+        f"Digest mismatch on long message:\n"
+        f"exp={exp.hex()}\n"
+        f"got={got.hex()}"
+    )

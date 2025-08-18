@@ -9,70 +9,123 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-The design implements a **stream-oriented SHA-256 processor** completely in synthesizable Verilog.  It is split into two cooperating blocks:
+The design is a fully synthesizable, **stream-oriented SHA‑256 implementation** built from four simple modules. It consumes a byte stream that has already been padded according to FIPS 180‑4 (§5.1.1), performs the compression over 512‑bit blocks, and emits the 256‑bit digest as 32 raw bytes (MSB first).
 
-1. **`sha256_core`** – Performs the 64 compression rounds for a single 512-bit message block.  It contains the full message-schedule RAM, the 64 K-constants, and a small state-machine (IDLE → PREP → COMP → DONE).  A new 32-bit word is calculated every clock so one block is processed in **64 cycles**.
-2. **`sha256_processor`** – Wraps the core with logic that
-   • buffers incoming bytes into 512-bit blocks,
-   • adds the mandatory SHA-256 padding (0x80 + zeros + 64-bit length),
-   • chains the intermediate hash values, and
-   • presents the final 256-bit digest.
-   
-   Because the padding engine is built-in, **messages of any length** may be streamed in **a single pass** – no pre-counting of the message length is required on the host side.
+- **`sha256_core_v3`**: Compression engine for a single 512‑bit block.
+  - 64 rounds in **64 clock cycles** (one round per cycle).
+  - On‑the‑fly message schedule using a 16‑word circular buffer (`w[0..15]`).
+  - Selects IV vs. chained state via `first_run`.
+  - Asserts `ready` when the block is complete; digest is available on `hash_out`.
 
-### UART front-end
+- **`sha256_k_rom_soft`**: Small combinational ROM supplying the 64 K‑constants indexed by the round counter.
 
-For easy interaction the project also includes **`top_uart_sha256`** which connects the processor to a 115 200 baud UART:
+- **`sha256_processor`**: Byte‑stream front‑end for the core.
+  - Buffers incoming bytes into a 512‑bit `block_buffer`.
+  - States: `IDLE → LOAD → HASH → DONE`.
+  - Uses `start` to mark the first byte of a message and `data_last` to mark the final (already padded) byte of the full message.
+  - Chains block results by feeding the previous hash state back into the core when `first_run=0`.
+  - Exposes `in_ready` to indicate when the next byte may be accepted.
 
-• `ui_in[3]` – RX (input to the chip)  
-• `uo_out[4]` – TX (output from the chip)
+- **`top_gpio_sha256`**: Tiny Tapeout‑friendly GPIO wrapper.
+  - Implements a small **2‑byte skid buffer** so no bytes are lost when `in_ready` momentarily de‑asserts.
+  - FSM: `IDLE → FEED → WAIT → DUMP`.
+    - FEED passes bytes to `sha256_processor` while `in_ready` is high.
+    - WAIT stalls until the processor asserts `done` for the full message.
+    - DUMP streams the 32‑byte digest on `dout` with `dvalid` asserted; bytes are sent MSB‑first (`hash[255:248] … hash[7:0]`).
+  - Exports a `ready` indicator so the host can throttle transmission.
 
-Protocol:
+- **`tt_um_sha256_processor_dvirdc`**: Tiny Tapeout user‑module wrapper.
+  - Maps the GPIO streaming interface to `ui_in`, `uo_out`, and `uio_*` busses.
+  - Converts Tiny Tapeout’s active‑low `rst_n` to the active‑high `rst` used internally.
 
-1. Host sends **0x01** to indicate *start of a new message*.
-2. Stream the message bytes (any length ≥ 0).
-3. Send a single **0xFF** byte to mark *end of message* – the processor starts hashing immediately.
-4. When ready the core returns **64 ASCII hexadecimal characters** (most-significant nibble first) representing the 256-bit digest.
+### Module hierarchy
 
-The TX line stays idle while the hash is calculated (64 + overhead cycles per 512-bit block), then the ASCII result is streamed back.
+```
+tt_um_sha256_processor_dvirdc
+└─ top_gpio_sha256
+   └─ sha256_processor
+      ├─ sha256_core_v3
+      └─ sha256_k_rom_soft
+```
 
-### Timing & area
+### Tiny Tapeout GPIO streaming interface
 
-Running at 50 MHz a 1-block message is processed in ≈ 1 µs (64 cycles for the core + control overhead).  Longer messages add 64 cycles per additional block.  The design fits comfortably in Tiny Tapeout's area budget.
+All I/O are synchronous to `clk`. Reset is synchronous, active‑high inside the design (`rst = ~rst_n`).
+
+- **Inputs**
+  - `ui_in[7:0]`  — data byte
+  - `uio_in[0]`   — `VALID` (assert for one clock when `ui_in` is valid)
+  - `uio_in[1]`   — `LAST` (assert together with the final, already‑padded byte of the message)
+
+- **Outputs**
+  - `uo_out[7:0]` — digest byte stream (MSB‑first)
+  - `uio_out[2]`  — `DVALID` (digest byte valid strobe during the 32‑cycle dump)
+  - `uio_out[3]`  — `BUSY` (high from first accepted byte until digest dump completes)
+  - `uio_out[4]`  — `READY` (high when the design can accept the next input byte)
+
+- **Output‑enable**
+  - `uio_oe = 8'b0001_1100` so bits `[4,3,2]` are driven by the design; other `uio_*` bits are inputs.
+
+### Byte‑streaming protocol (host side)
+
+1. Apply synchronous reset (`rst_n=0` for a few cycles, then `rst_n=1`).
+2. Wait for `READY=1`.
+3. For each message byte (already padded):
+   - Drive the byte on `ui_in[7:0]`.
+   - Pulse `VALID` for one clock. Assert `LAST` only with the final padded byte.
+   - If `READY=0`, pause and retry when `READY` returns high (the 2‑byte skid buffer absorbs short stalls).
+4. After the final byte, the engine processes the data. When done, it emits 32 bytes on `uo_out[7:0]` with `DVALID=1` each cycle. Collect all 32 bytes to form the digest.
+
+Notes:
+- Input data must be padded by the host (append 0x80, zeros to 56 bytes mod 64, then 64‑bit big‑endian bit length).
+- Digest byte order is big‑endian: `hash[255:248]` first … `hash[7:0]` last.
+
+### Throughput and latency
+
+- Core latency per 512‑bit block: **64 cycles**.
+- Digest dump: **32 cycles**.
+- End‑to‑end for a 1‑block message at 50 MHz: ≈ 64 (hash) + 32 (dump) ≈ **1.92 µs** plus a few control cycles. Multi‑block messages add 64 cycles per additional block.
 
 ---
 
 ## How to test
 
-### RTL simulation
+### RTL simulation (cocotb)
 
 From the `test/` directory:
 ```sh
 cd test
-make -B         # runs cocotb against the RTL sources
+make -B    # runs cocotb against the RTL sources
 ```
-The supplied `test.py` can be extended to feed a sample string and compare the returned digest with Python's `hashlib.sha256()`.
+Key testbench: `test/test_gpio_sha256.py`.
 
-### FPGA / Tiny Tapeout silicon
+- It uses `sha256_pad()` to pad messages on the host, then streams the padded bytes via the GPIO protocol above.
+- It collects 32 digest bytes (raw, not ASCII) and compares against Python’s `hashlib.sha256(message).digest()`.
 
-1. Connect a 3.3 V USB-UART adapter:
-   • Adapter TX → `ui_in[3]` (chip RX)  
-   • Adapter RX → `uo_out[4]` (chip TX)  
-   • GND common
-2. Power the board and run a terminal at **115 200 8-N-1**.
-3. Example session (host side):
-   ```python
-   import serial, hashlib
-   msg = b"hello world"                    # test message
-   ser = serial.Serial('/dev/ttyUSB0', 115200)
-   ser.write(b'\x01' + msg + b'\xFF')      # protocol framing
-   digest_ascii = ser.read(64)              # blocking read
-   print(digest_ascii.decode())             # 64 hex chars
-   assert digest_ascii == hashlib.sha256(msg).hexdigest().encode()
-   ```
+Minimal host‑side example of padding and streaming logic (conceptual):
+```python
+def sha256_pad(msg: bytes) -> bytes:
+    padded = msg + b"\x80"
+    padded += b"\x00" * ((56 - (len(msg) + 1) % 64) % 64)
+    padded += (len(msg) * 8).to_bytes(8, "big")
+    return padded
+
+# For each byte in sha256_pad(message):
+#   wait until READY == 1
+#   drive ui_in[7:0] = byte
+#   pulse VALID for one clk (and LAST with the final byte only)
+# Read 32 bytes when DVALID == 1 to obtain the digest (MSB-first)
+```
+
+### Tiny Tapeout silicon / FPGA
+
+Drive the GPIO streaming signals via your harness or a small microcontroller/FPGA test jig at 3.3 V logic levels. Follow the protocol above. No UART is required for the default build.
+
+Legacy UART tops (`src/old_modules/top_uart_sha256*.v`) are provided for reference but are not used by the Tiny Tapeout wrapper in this project. 
+For FPGA I used Tang Nano 9k and the top module is available on `src/old_modules/top_wrapper_tang9k.v`
 
 ---
 
 ## External hardware
 
-No special peripherals are required – just a **USB-UART dongle** (3.3 V level) and a 50 MHz clock provided by the Tiny Tapeout infrastructure.  A status LED can optionally be wired to `uo_out[4]` to observe TX activity.
+No special peripherals are required. The design runs from the Tiny Tapeout 50 MHz clock and uses standard GPIO‑level handshakes. If desired, LEDs can be connected to observe `BUSY`/`DVALID` activity.
